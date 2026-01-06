@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Giffen.me" description="Andy Giffen — projects, writing, and lab work.">
+  <section class="section" style="border-bottom:none; padding-bottom:32px;">
+    <h1>Building products and shipping learning projects.</h1>
+    <p class="lede">
+      I work at the intersection of product, systems thinking, and execution.
+      This site is my home base for what I’ve built and what I’m learning.
+    </p>
+  </section>
+
+  <section class="section">
+    <p class="kicker">Hi, I’m Andy</p>
+    <div class="grid-2">
+      <div>
+        <h2>I like solving messy problems with simple systems.</h2>
+        <p class="muted">
+          I’m a product leader who enjoys turning ambiguity into shipped work—especially where
+          integrations, workflows, and customer pain collide.
+        </p>
+      </div>
+
+      <div class="card">
+        <p class="kicker" style="margin-bottom:10px;">Currently</p>
+        <ul class="list">
+          <li><span class="muted">Director of Product Management</span></li>
+          <li><span class="muted">Building in public via Lab projects</span></li>
+          <li><span class="muted">Based in Toronto</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>What I’m working on</h2>
+    <div class="grid-2">
+      <div class="card">
+        <p class="kicker">Featured project</p>
+        <h3>Lab: Django + HTMX Playground</h3>
+        <p class="muted">Notes + demo as I learn patterns for server-rendered interactivity.</p>
+        <p style="margin:14px 0 0;">
+          <a href="/lab">Read the lab →</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <p class="kicker">Consulting</p>
+        <p class="muted">
+          If you need help clarifying a product problem, improving an onboarding funnel, or
+          untangling integration/workflow complexity, you can reach me here.
+        </p>
+        <p style="margin:14px 0 0;">
+          <a href="/contact">Contact →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

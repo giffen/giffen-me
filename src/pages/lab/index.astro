@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("lab");
+posts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
+---
+
+<BaseLayout title="Lab — Giffen.me" description="Learning projects and experiments.">
+  <section class="section" style="border-bottom:none; padding-bottom:24px;">
+    <h1>Lab</h1>
+    <p class="lede">Notes on what I’m building, with links to repos and live demos.</p>
+  </section>
+
+  <section class="section" style="padding-top:24px;">
+    {posts.length === 0 && (
+        <p class="muted">No lab posts yet. Add one in <code>src/content/lab/</code>.</p>
+    )}
+    <ul style="list-style:none; padding:0; margin:0;">
+      {posts.map((p) => (
+        <li class="card" style="margin: 16px 0;">
+          <div class="kicker">{p.data.date}</div>
+
+          <h3 style="margin: 0 0 8px;">
+            <a href={`/lab/${p.slug}`}>{p.data.title}</a>
+          </h3>
+
+          {p.data.description && (
+            <p class="muted" style="margin: 0 0 12px;">
+              {p.data.description}
+            </p>
+          )}
+
+          <div style="display:flex; gap:14px; flex-wrap:wrap;">
+            <a href={`/lab/${p.slug}`}>Read</a>
+            {p.data.repoUrl && <a href={p.data.repoUrl}>Repo</a>}
+            {p.data.liveUrl && <a href={p.data.liveUrl}>Live</a>}
+          </div>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>

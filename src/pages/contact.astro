@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+---
+
+<BaseLayout title="Contact — Giffen.me" description="Get in touch.">
+  <h1>Contact</h1>
+
+  <form method="POST" action={FORMSPREE_ENDPOINT}>
+    <label>
+      Name<br />
+      <input name="name" required />
+    </label>
+
+    <br /><br />
+
+    <label>
+      Email<br />
+      <input type="email" name="email" required />
+    </label>
+
+    <br /><br />
+
+    <label>
+      Message<br />
+      <textarea name="message" rows="6" required></textarea>
+    </label>
+
+    <br /><br />
+
+    <button type="submit">Send</button>
+  </form>
+</BaseLayout>
