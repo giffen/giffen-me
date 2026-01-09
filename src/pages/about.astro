@@ -2,7 +2,227 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Giffen.me" description="Andrew Giffen — projects, writing, and lab work.">
-  <h1>Andrew Giffen</h1>
-  <p>Building products. Shipping experiments. Writing what I learn.</p>
+<BaseLayout title="About — Andrew Giffen" description="AI Product Manager based in Toronto. Building products, shipping experiments, writing what I learn.">
+  <section class="about-page">
+    <header class="page-header">
+      <p class="page-label">About</p>
+      <h1 class="page-title">Hey, I'm Andrew.</h1>
+    </header>
+
+    <div class="about-content">
+      <div class="about-intro">
+        <p class="intro-text">
+          I'm a product leader based in Toronto who loves solving messy problems with simple systems. 
+          Currently, I'm a Director of Product Management focused on AI products, integrations, and growth.
+        </p>
+        <p class="intro-text">
+          This site is my corner of the internet—a place to share what I'm building, what I'm learning, 
+          and what I've figured out along the way.
+        </p>
+      </div>
+
+      <div class="about-section">
+        <h2 class="section-heading">What I Do</h2>
+        <p>
+          I work at the intersection of product strategy, systems thinking, and execution. My sweet spot 
+          is taking ambiguous problems—the ones where stakeholders aren't sure what they want, where the 
+          technical path isn't clear, where multiple teams need to coordinate—and turning them into shipped work.
+        </p>
+        <p>
+          Areas I focus on: AI-powered products, integration & workflow complexity, onboarding & activation, 
+          and building internal tools that make teams more effective.
+        </p>
+      </div>
+
+      <div class="about-section">
+        <h2 class="section-heading">Fun Facts</h2>
+        <ul class="fun-facts">
+          <li>
+            <span class="fact-emoji">📚</span>
+            <span class="fact-text">I collect vintage paperback books with interesting cover designs. The aesthetic of this site is inspired by them.</span>
+          </li>
+          <li>
+            <span class="fact-emoji">🛠️</span>
+            <span class="fact-text">I taught myself to code so I could build the tools I wished existed. Now I can't stop tinkering.</span>
+          </li>
+          <li>
+            <span class="fact-emoji">🎧</span>
+            <span class="fact-text">I listen to the same three albums on repeat when I need to focus. Currently: Khruangbin.</span>
+          </li>
+          <li>
+            <span class="fact-emoji">☕</span>
+            <span class="fact-text">I have strong opinions about pour-over coffee and weak opinions about almost everything else.</span>
+          </li>
+          <li>
+            <span class="fact-emoji">✍️</span>
+            <span class="fact-text">I write to think. Most of my best ideas started as messy notes that I cleaned up into something shareable.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <h2 class="section-heading">How I Work</h2>
+        <div class="principles">
+          <div class="principle">
+            <h3>Start with the problem</h3>
+            <p>Before jumping to solutions, I make sure we're solving the right problem. This means talking to users, looking at data, and questioning assumptions.</p>
+          </div>
+          <div class="principle">
+            <h3>Ship to learn</h3>
+            <p>I'd rather ship something small and learn from it than perfect something large in isolation. Speed of learning beats polish.</p>
+          </div>
+          <div class="principle">
+            <h3>Write it down</h3>
+            <p>Clear thinking requires clear writing. I document decisions, write specs, and create artifacts that help the team stay aligned.</p>
+          </div>
+          <div class="principle">
+            <h3>Make it simple</h3>
+            <p>Complexity is easy. Simplicity is hard. I look for the simplest solution that solves the problem, even if it means saying no to scope.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <h2 class="section-heading">Get in Touch</h2>
+        <p>
+          I'm always happy to chat about product, building things, or interesting problems you're working on. 
+          Best way to reach me is on <a href="https://linkedin.com/in/andrewgiffen" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
+          or via <a href="mailto:hello@giffen.me">email</a>.
+        </p>
+        <p>
+          If you're looking for consulting help—whether that's product strategy, onboarding optimization, 
+          or untangling integration complexity—I occasionally take on advisory work. 
+          <a href="/contact">Let's talk</a>.
+        </p>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
+
+<style>
+  .about-page {
+    padding: var(--space-10) var(--space-7);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    margin-bottom: var(--space-8);
+  }
+
+  .page-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: var(--space-4);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+
+  .about-intro {
+    margin-bottom: var(--space-9);
+  }
+
+  .intro-text {
+    font-size: var(--text-xl);
+    color: var(--ink-soft);
+    line-height: 1.7;
+    margin-bottom: var(--space-5);
+  }
+
+  .about-section {
+    margin-bottom: var(--space-9);
+  }
+
+  .section-heading {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: var(--space-5);
+  }
+
+  .about-section p {
+    color: var(--ink-soft);
+    line-height: 1.8;
+    margin-bottom: var(--space-4);
+  }
+
+  .about-section a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .fun-facts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .fun-facts li {
+    display: flex;
+    gap: var(--space-4);
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--paper-edge);
+  }
+
+  .fun-facts li:last-child {
+    border-bottom: none;
+  }
+
+  .fact-emoji {
+    font-size: var(--text-xl);
+    flex-shrink: 0;
+  }
+
+  .fact-text {
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  .principles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .principle {
+    background: var(--cream-dark);
+    padding: var(--space-5);
+    border-radius: 8px;
+  }
+
+  .principle h3 {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: var(--space-3);
+  }
+
+  .principle p {
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .about-page {
+      padding: var(--space-9) var(--space-5);
+    }
+
+    .principles {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

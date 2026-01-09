@@ -1,60 +1,589 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import LabCard from "../components/LabCard.astro";
+import WritingCard from "../components/WritingCard.astro";
+import { getCollection } from "astro:content";
+
+// Get lab posts for the scroller
+const labPosts = await getCollection("lab");
+labPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
+
+// Get writing posts for the grid
+const writingPosts = await getCollection("writing");
+writingPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
 ---
 
-<BaseLayout title="Giffen.me" description="Andy Giffen — projects, writing, and lab work.">
-  <section class="section" style="border-bottom:none; padding-bottom:32px;">
-    <h1>Building products and shipping learning projects.</h1>
-    <p class="lede">
-      I work at the intersection of product, systems thinking, and execution.
-      This site is my home base for what I’ve built and what I’m learning.
-    </p>
+<BaseLayout title="Andrew Giffen — AI Product Manager">
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-label animate-in">AI Product Manager</p>
+      <h1 class="hero-title animate-in delay-1">
+        Building products.<br>
+        Shipping <em>experiments.</em><br>
+        Writing what I learn.
+      </h1>
+      <p class="hero-description animate-in delay-2">
+        I work at the intersection of product strategy, systems thinking, and hands-on execution. 
+        This is my home base for what I've built and what I'm learning.
+      </p>
+      <div class="hero-cta animate-in delay-3">
+        <a href="/about" class="cta-link">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          Learn fun facts about me
+          <svg class="arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="/lab" class="cta-link">
+          <svg viewBox="0 0 24 24"><path d="M9 3h6v2H9zM12 5v6M4.5 17h15l-1.5-8H6z"/><circle cx="8" cy="17" r="1"/><circle cx="16" cy="17" r="1"/></svg>
+          Check out experiments in the lab
+          <svg class="arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="/writing" class="cta-link">
+          <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          Read my writing
+          <svg class="arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/andrewgiffen" class="cta-link" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          Contact me on LinkedIn
+          <svg class="arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+    
+    <div class="hero-image animate-in delay-2">
+      <div class="hero-image-wrapper">
+        <div class="hero-pattern">
+          {Array.from({ length: 64 }).map((_, i) => (
+            <div class={`pattern-cell ${i === 37 ? 'accent' : ''}`}></div>
+          ))}
+        </div>
+      </div>
+      <p class="hero-image-caption">→ uniformity with one element of surprise</p>
+    </div>
   </section>
 
-  <section class="section">
-    <p class="kicker">Hi, I’m Andy</p>
-    <div class="grid-2">
+  <!-- Featured Work -->
+  <section class="featured" id="featured">
+    <div class="section-header">
       <div>
-        <h2>I like solving messy problems with simple systems.</h2>
-        <p class="muted">
-          I’m a product leader who enjoys turning ambiguity into shipped work—especially where
-          integrations, workflows, and customer pain collide.
-        </p>
+        <p class="section-label">Featured Work</p>
+        <h2 class="section-title">What I'm Building</h2>
       </div>
+    </div>
+    
+    {labPosts[0] && (
+      <article class="featured-card">
+        <div class="featured-image">
+          <div class="featured-image-placeholder">
+            <div class="placeholder-bar"></div>
+            <div class="placeholder-bar"></div>
+            <div class="placeholder-bar"></div>
+          </div>
+        </div>
+        <div class="featured-content">
+          <p class="featured-tag">Lab Experiment</p>
+          <h3 class="featured-title">{labPosts[0].data.title}</h3>
+          <p class="featured-description">{labPosts[0].data.description}</p>
+          <a href={`/lab/${labPosts[0].slug}`} class="btn">
+            View Project
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+    )}
+  </section>
 
-      <div class="card">
-        <p class="kicker" style="margin-bottom:10px;">Currently</p>
-        <ul class="list">
-          <li><span class="muted">Director of Product Management</span></li>
-          <li><span class="muted">Building in public via Lab projects</span></li>
-          <li><span class="muted">Based in Toronto</span></li>
-        </ul>
+  <!-- Lab Section -->
+  <section class="lab-section" id="lab">
+    <div class="lab-header">
+      <p class="section-label">The Lab</p>
+      <h2 class="section-title">Experiments & Learning Projects</h2>
+    </div>
+    
+    <div class="lab-scroller" id="labScroller">
+      {labPosts.map((post, index) => (
+        <LabCard 
+          title={post.data.title}
+          slug={post.slug}
+          year={post.data.date.split('-')[0]}
+          tags={post.data.tags.slice(0, 2)}
+          pattern={post.data.pattern || ((index % 6) + 1)}
+        />
+      ))}
+    </div>
+    
+    <div class="scroll-hint">
+      <span class="scroll-hint-text">Drag to explore</span>
+      <span class="scroll-hint-line"></span>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow prev" id="scrollLeft">
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <button class="scroll-arrow" id="scrollRight">
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <h2>What I’m working on</h2>
-    <div class="grid-2">
-      <div class="card">
-        <p class="kicker">Featured project</p>
-        <h3>Lab: Django + HTMX Playground</h3>
-        <p class="muted">Notes + demo as I learn patterns for server-rendered interactivity.</p>
-        <p style="margin:14px 0 0;">
-          <a href="/lab">Read the lab →</a>
-        </p>
-      </div>
-
-      <div class="card">
-        <p class="kicker">Consulting</p>
-        <p class="muted">
-          If you need help clarifying a product problem, improving an onboarding funnel, or
-          untangling integration/workflow complexity, you can reach me here.
-        </p>
-        <p style="margin:14px 0 0;">
-          <a href="/contact">Contact →</a>
-        </p>
+  <!-- Writing Section -->
+  <section class="writing-section" id="writing">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Writing</p>
+        <h2 class="section-title">Case Studies & Learnings</h2>
       </div>
     </div>
+    
+    <div class="writing-grid">
+      {writingPosts.slice(0, 4).map((post, index) => (
+        <WritingCard 
+          title={post.data.title}
+          slug={post.slug}
+          tag={post.data.tag}
+          excerpt={post.data.excerpt}
+          number={String(index + 1).padStart(2, '0')}
+        />
+      ))}
+    </div>
   </section>
+
 </BaseLayout>
+
+<style>
+  /* Hero Section */
+  .hero {
+    min-height: 100vh;
+    padding: var(--space-10) var(--space-7) var(--space-9);
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+  }
+  
+  .hero-content {
+    max-width: 650px;
+  }
+  
+  .hero-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: var(--space-5);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+  
+  .hero-label::before {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--accent);
+  }
+  
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: var(--text-5xl);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin-bottom: var(--space-6);
+  }
+  
+  .hero-title em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  
+  .hero-description {
+    font-size: var(--text-lg);
+    color: var(--ink-soft);
+    max-width: 50ch;
+    margin-bottom: var(--space-7);
+  }
+  
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  
+  .cta-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    color: var(--ink-soft);
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--paper-edge);
+    transition: all 0.3s ease;
+  }
+  
+  .cta-link:hover {
+    color: var(--ink);
+    padding-left: var(--space-3);
+    border-color: var(--accent);
+  }
+  
+  .cta-link svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--accent);
+    stroke-width: 1.5;
+    fill: none;
+  }
+  
+  .cta-link .arrow {
+    margin-left: auto;
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta-link:hover .arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Hero Image */
+  .hero-image {
+    position: relative;
+    height: 70vh;
+    max-height: 600px;
+  }
+  
+  .hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 
+      0 4px 6px rgba(0,0,0,0.02),
+      0 12px 24px rgba(0,0,0,0.04),
+      0 24px 48px rgba(0,0,0,0.06);
+  }
+  
+  .hero-pattern {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--cream-dark) 0%, var(--paper-edge) 100%);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 2px;
+    padding: var(--space-6);
+  }
+  
+  .pattern-cell {
+    background: var(--cream);
+    border-radius: 2px;
+    transition: all 0.4s ease;
+  }
+  
+  .pattern-cell.accent {
+    background: var(--accent);
+    animation: pulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  
+  .hero-image-caption {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+  }
+
+  /* Featured Section */
+  .featured {
+    padding: var(--space-10) var(--space-7);
+    background: var(--cream-dark);
+    position: relative;
+  }
+  
+  .featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: var(--space-7);
+    right: var(--space-7);
+    height: 1px;
+    background: var(--paper-edge);
+  }
+  
+  .featured-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    background: var(--cream);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 
+      0 2px 4px rgba(0,0,0,0.02),
+      0 8px 16px rgba(0,0,0,0.04);
+    transition: all 0.4s ease;
+  }
+  
+  .featured-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+      0 4px 8px rgba(0,0,0,0.04),
+      0 16px 32px rgba(0,0,0,0.08);
+  }
+  
+  .featured-image {
+    height: 400px;
+    background: var(--paper-edge);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .featured-image-placeholder {
+    width: 80%;
+    height: 70%;
+    background: var(--cream);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-4);
+  }
+  
+  .placeholder-bar {
+    height: 8px;
+    background: var(--paper-edge);
+    border-radius: 4px;
+    margin-bottom: var(--space-3);
+  }
+  
+  .placeholder-bar:nth-child(1) { width: 60%; }
+  .placeholder-bar:nth-child(2) { width: 80%; background: var(--accent-soft); }
+  .placeholder-bar:nth-child(3) { width: 40%; }
+  
+  .featured-content {
+    padding: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .featured-tag {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-4);
+  }
+  
+  .featured-title {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: var(--space-4);
+    line-height: 1.3;
+  }
+  
+  .featured-description {
+    color: var(--ink-soft);
+    margin-bottom: var(--space-6);
+    max-width: 45ch;
+  }
+
+  /* Lab Section */
+  .lab-section {
+    padding: var(--space-10) 0;
+    overflow: hidden;
+  }
+  
+  .lab-header {
+    padding: 0 var(--space-7);
+    margin-bottom: var(--space-6);
+  }
+  
+  .lab-scroller {
+    display: flex;
+    gap: var(--space-5);
+    padding: var(--space-5) var(--space-7);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: grab;
+  }
+  
+  .lab-scroller::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .lab-scroller:active {
+    cursor: grabbing;
+  }
+  
+  .scroll-hint {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-5) var(--space-7);
+  }
+  
+  .scroll-hint-text {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  .scroll-hint-line {
+    flex: 1;
+    height: 1px;
+    background: var(--paper-edge);
+  }
+  
+  .scroll-arrows {
+    display: flex;
+    gap: var(--space-2);
+  }
+  
+  .scroll-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--paper-edge);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .scroll-arrow:hover {
+    background: var(--ink);
+    border-color: var(--ink);
+  }
+  
+  .scroll-arrow:hover svg {
+    stroke: var(--cream);
+  }
+  
+  .scroll-arrow svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--ink-muted);
+    stroke-width: 1.5;
+    fill: none;
+  }
+  
+  .scroll-arrow.prev svg {
+    transform: rotate(180deg);
+  }
+
+  /* Writing Section */
+  .writing-section {
+    padding: var(--space-10) var(--space-7);
+    background: var(--cream-dark);
+  }
+  
+  .writing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .hero {
+      grid-template-columns: 1fr;
+      padding-top: var(--space-10);
+    }
+    
+    .hero-image {
+      display: none;
+    }
+    
+    .featured-card {
+      grid-template-columns: 1fr;
+    }
+    
+    .featured-image {
+      height: 300px;
+    }
+    
+    .writing-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: var(--space-9) var(--space-5);
+    }
+    
+    .featured,
+    .writing-section {
+      padding: var(--space-8) var(--space-5);
+    }
+  }
+</style>
+
+<script>
+  // Lab scroller drag functionality
+  const labScroller = document.getElementById('labScroller');
+  let isDown = false;
+  let startX = 0;
+  let scrollLeft = 0;
+  
+  if (labScroller) {
+    labScroller.addEventListener('mousedown', (e) => {
+      isDown = true;
+      labScroller.style.cursor = 'grabbing';
+      startX = e.pageX - labScroller.offsetLeft;
+      scrollLeft = labScroller.scrollLeft;
+    });
+    
+    labScroller.addEventListener('mouseleave', () => {
+      isDown = false;
+      labScroller.style.cursor = 'grab';
+    });
+    
+    labScroller.addEventListener('mouseup', () => {
+      isDown = false;
+      labScroller.style.cursor = 'grab';
+    });
+    
+    labScroller.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - labScroller.offsetLeft;
+      const walk = (x - startX) * 2;
+      labScroller.scrollLeft = scrollLeft - walk;
+    });
+  }
+  
+  // Scroll arrow buttons
+  document.getElementById('scrollRight')?.addEventListener('click', () => {
+    labScroller?.scrollBy({ left: 220, behavior: 'smooth' });
+  });
+  
+  document.getElementById('scrollLeft')?.addEventListener('click', () => {
+    labScroller?.scrollBy({ left: -220, behavior: 'smooth' });
+  });
+</script>

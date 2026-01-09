@@ -1,6 +1,14 @@
 ---
 import "../styles/global.css";
-const { title = "Giffen.me", description = "" } = Astro.props;
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Andrew Giffen — AI Product Manager. Building products, shipping experiments, writing what I learn." } = Astro.props;
 ---
 
 <!doctype html>
@@ -9,28 +17,23 @@ const { title = "Giffen.me", description = "" } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
     <title>{title}</title>
   </head>
 
   <body>
-    <header class="header">
-      <div class="container header-inner">
-        <a class="brand" href="/">giffen.me</a>
-        <nav class="nav">
-          <a href="/about">About</a>
-          <a href="/projects">Projects</a>
-          <a href="/lab">Lab</a>
-          <a href="/contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="container">
+    <Header />
+    
+    <main>
       <slot />
     </main>
 
-    <footer class="container" style="padding-top:48px; padding-bottom:48px;">
-      <div class="faint">© {new Date().getFullYear()} Andy Giffen</div>
-    </footer>
+    <Footer />
   </body>
 </html>

@@ -1,33 +1,272 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
 ---
 
-<BaseLayout title="Contact — Giffen.me" description="Get in touch.">
-  <h1>Contact</h1>
+<BaseLayout title="Contact — Andrew Giffen" description="Get in touch with Andrew Giffen.">
+  <section class="contact-page">
+    <header class="page-header">
+      <p class="page-label">Contact</p>
+      <h1 class="page-title">Let's connect.</h1>
+      <p class="page-description">
+        Have a question, want to collaborate, or just want to say hi? 
+        I'd love to hear from you.
+      </p>
+    </header>
 
-  <form method="POST" action={FORMSPREE_ENDPOINT}>
-    <label>
-      Name<br />
-      <input name="name" required />
-    </label>
+    <div class="contact-content">
+      <div class="contact-options">
+        <a href="mailto:hello@giffen.me" class="contact-option">
+          <div class="option-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="option-content">
+            <h2>Email</h2>
+            <p>hello@giffen.me</p>
+            <span class="option-hint">Best for detailed questions or consulting inquiries</span>
+          </div>
+        </a>
 
-    <br /><br />
+        <a href="https://linkedin.com/in/andrewgiffen" class="contact-option" target="_blank" rel="noopener noreferrer">
+          <div class="option-icon">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div class="option-content">
+            <h2>LinkedIn</h2>
+            <p>@andrewgiffen</p>
+            <span class="option-hint">Best for quick messages or professional networking</span>
+          </div>
+        </a>
 
-    <label>
-      Email<br />
-      <input type="email" name="email" required />
-    </label>
+        <a href="https://github.com/agiffen" class="contact-option" target="_blank" rel="noopener noreferrer">
+          <div class="option-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </div>
+          <div class="option-content">
+            <h2>GitHub</h2>
+            <p>@agiffen</p>
+            <span class="option-hint">Check out my lab projects and open source work</span>
+          </div>
+        </a>
+      </div>
 
-    <br /><br />
-
-    <label>
-      Message<br />
-      <textarea name="message" rows="6" required></textarea>
-    </label>
-
-    <br /><br />
-
-    <button type="submit">Send</button>
-  </form>
+      <div class="contact-form-section">
+        <h2 class="form-heading">Or send a message directly</h2>
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">What's this about?</label>
+            <select id="subject" name="subject">
+              <option value="general">General question</option>
+              <option value="consulting">Consulting inquiry</option>
+              <option value="collaboration">Collaboration opportunity</option>
+              <option value="feedback">Feedback on a post</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn">
+            Send Message
+            <svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+        <p class="form-note">
+          I typically respond within 1-2 business days.
+        </p>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
+
+<style>
+  .contact-page {
+    padding: var(--space-10) var(--space-7);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    margin-bottom: var(--space-9);
+    max-width: 500px;
+  }
+
+  .page-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: var(--space-4);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: var(--space-4);
+    line-height: 1.2;
+  }
+
+  .page-description {
+    font-size: var(--text-lg);
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--space-9);
+  }
+
+  .contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .contact-option {
+    display: flex;
+    gap: var(--space-5);
+    padding: var(--space-5);
+    background: var(--cream);
+    border: 1px solid var(--paper-edge);
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+  }
+
+  .contact-option:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+
+  .option-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--accent-soft);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .option-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--accent);
+    stroke-width: 1.5;
+    fill: none;
+  }
+
+  .option-content h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: var(--space-1);
+  }
+
+  .option-content p {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--accent);
+    margin-bottom: var(--space-2);
+  }
+
+  .option-hint {
+    font-size: 0.8rem;
+    color: var(--ink-muted);
+  }
+
+  .contact-form-section {
+    background: var(--cream-dark);
+    padding: var(--space-7);
+    border-radius: 12px;
+  }
+
+  .form-heading {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: var(--space-6);
+  }
+
+  .form-group {
+    margin-bottom: var(--space-5);
+  }
+
+  .form-group label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-2);
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: var(--space-4);
+    background: var(--cream);
+    border: 1px solid var(--paper-edge);
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    color: var(--ink);
+    transition: border-color 0.2s ease;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+
+  .form-note {
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+    margin-top: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .contact-page {
+      padding: var(--space-9) var(--space-5);
+    }
+
+    .contact-content {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-form-section {
+      padding: var(--space-5);
+    }
+  }
+</style>

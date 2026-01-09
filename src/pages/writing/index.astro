@@ -1,0 +1,197 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import WritingCard from "../../components/WritingCard.astro";
+import { getCollection } from "astro:content";
+
+const writingPosts = await getCollection("writing");
+writingPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
+---
+
+<BaseLayout title="Writing — Andrew Giffen" description="Case studies, essays, and frameworks on product management and building.">
+  <section class="writing-page">
+    <header class="page-header">
+      <p class="page-label">Writing</p>
+      <h1 class="page-title">Case Studies & Learnings</h1>
+      <p class="page-description">
+        Longer-form thinking on product management, growth, and building things. 
+        Case studies from work, frameworks I've developed, and lessons from failures.
+      </p>
+    </header>
+
+    <div class="writing-list">
+      {writingPosts.map((post, index) => (
+        <article class="writing-list-card">
+          <a href={`/writing/${post.slug}`} class="writing-list-link">
+            <span class="writing-list-number">{String(index + 1).padStart(2, '0')}</span>
+            <div class="writing-list-content">
+              <p class="writing-list-meta">
+                <span class="writing-list-tag">{post.data.tag}</span>
+                <span class="writing-list-date">{post.data.date}</span>
+              </p>
+              <h2 class="writing-list-title">{post.data.title}</h2>
+              <p class="writing-list-excerpt">{post.data.excerpt}</p>
+            </div>
+            <span class="writing-list-arrow">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .writing-page {
+    padding: var(--space-10) var(--space-7);
+    min-height: 100vh;
+  }
+
+  .page-header {
+    max-width: 600px;
+    margin-bottom: var(--space-9);
+  }
+
+  .page-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: var(--space-4);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: var(--space-5);
+    line-height: 1.2;
+  }
+
+  .page-description {
+    font-size: var(--text-lg);
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+
+  .writing-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .writing-list-card {
+    background: var(--cream);
+    border: 1px solid var(--paper-edge);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .writing-list-card:hover {
+    border-color: var(--accent);
+    transform: translateX(8px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+
+  .writing-list-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    padding: var(--space-6);
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .writing-list-number {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    color: var(--paper-edge);
+    min-width: 60px;
+  }
+
+  .writing-list-card:hover .writing-list-number {
+    color: var(--accent-soft);
+  }
+
+  .writing-list-content {
+    flex: 1;
+  }
+
+  .writing-list-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-2);
+  }
+
+  .writing-list-tag {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .writing-list-date {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--ink-muted);
+  }
+
+  .writing-list-title {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: var(--space-2);
+    line-height: 1.3;
+  }
+
+  .writing-list-excerpt {
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 60ch;
+  }
+
+  .writing-list-arrow {
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+
+  .writing-list-card:hover .writing-list-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .writing-list-arrow svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--accent);
+    stroke-width: 2;
+    fill: none;
+  }
+
+  @media (max-width: 768px) {
+    .writing-page {
+      padding: var(--space-9) var(--space-5);
+    }
+
+    .writing-list-link {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-3);
+    }
+
+    .writing-list-number {
+      font-size: var(--text-xl);
+    }
+
+    .writing-list-arrow {
+      display: none;
+    }
+  }
+</style>

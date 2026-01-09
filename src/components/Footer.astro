@@ -1,0 +1,197 @@
+---
+// Footer component
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-cta">
+      <h2 class="footer-title">
+        Let's build<br>
+        something <em>together.</em>
+      </h2>
+      <p class="footer-description">
+        Whether you need help clarifying a product problem, improving an onboarding funnel, 
+        or untangling integration complexity—I'd love to hear from you.
+      </p>
+      <div class="footer-links">
+        <a href="mailto:hello@giffen.me" class="footer-link">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email Me
+        </a>
+        <a href="https://linkedin.com" class="footer-link" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-info">
+      <div class="footer-info-item">
+        <p class="footer-info-label">Location</p>
+        <p class="footer-info-value">Toronto, Canada</p>
+      </div>
+      <div class="footer-info-item">
+        <p class="footer-info-label">Current Role</p>
+        <p class="footer-info-value">Director of Product Management</p>
+      </div>
+      <div class="footer-info-item">
+        <p class="footer-info-label">Focus Areas</p>
+        <p class="footer-info-value">AI Products • Integrations • Growth</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p class="footer-copyright">© {currentYear} Andrew Giffen. Built with curiosity.</p>
+    <nav class="footer-nav">
+      <a href="/lab">Lab</a>
+      <a href="/about">About</a>
+      <a href="/writing">Writing</a>
+    </nav>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    padding: var(--space-10) var(--space-7);
+    background: var(--ink);
+    color: var(--cream);
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-9);
+    align-items: start;
+  }
+  
+  .footer-cta {
+    max-width: 500px;
+  }
+  
+  .footer-title {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: var(--space-5);
+  }
+  
+  .footer-title em {
+    font-style: italic;
+    color: var(--accent-light);
+  }
+  
+  .footer-description {
+    color: rgba(255,255,255,0.7);
+    margin-bottom: var(--space-6);
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: var(--space-5);
+  }
+  
+  .footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-6);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 6px;
+    color: var(--cream);
+    font-size: var(--text-sm);
+    transition: all 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  
+  .footer-link svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    fill: none;
+  }
+  
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+  
+  .footer-info-item {
+    padding-bottom: var(--space-5);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  .footer-info-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: var(--space-2);
+  }
+  
+  .footer-info-value {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+  }
+  
+  .footer-bottom {
+    margin-top: var(--space-9);
+    padding-top: var(--space-6);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-copyright {
+    font-size: var(--text-sm);
+    color: rgba(255,255,255,0.5);
+  }
+  
+  .footer-nav {
+    display: flex;
+    gap: var(--space-6);
+  }
+  
+  .footer-nav a {
+    font-size: var(--text-sm);
+    color: rgba(255,255,255,0.5);
+    transition: color 0.2s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: var(--cream);
+  }
+
+  @media (max-width: 1024px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+      padding: var(--space-8) var(--space-5);
+    }
+    
+    .footer-links {
+      flex-direction: column;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      gap: var(--space-4);
+      text-align: center;
+    }
+  }
+</style>

@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("lab");
+  const posts = await getCollection("writing");
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: { post },
@@ -14,56 +14,48 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<BaseLayout title={`${post.data.title} — Lab`} description={post.data.description}>
-  <article class="lab-detail">
+<BaseLayout title={`${post.data.title} — Writing`} description={post.data.description}>
+  <article class="writing-detail">
     <header class="article-header">
-      <a href="/lab" class="back-link">
+      <a href="/writing" class="back-link">
         <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-        Back to Lab
+        Back to Writing
       </a>
       
       <div class="article-meta">
+        <span class="article-tag">{post.data.tag}</span>
         <span class="article-date">{post.data.date}</span>
-        {post.data.status === 'in-progress' && (
-          <span class="article-status">In Progress</span>
-        )}
       </div>
       
       <h1 class="article-title">{post.data.title}</h1>
       <p class="article-description">{post.data.description}</p>
-      
-      <div class="article-tags">
-        {post.data.tags.map((tag) => (
-          <span class="article-tag">{tag}</span>
-        ))}
-      </div>
-      
-      {(post.data.repoUrl || post.data.liveUrl) && (
-        <div class="article-links">
-          {post.data.repoUrl && (
-            <a href={post.data.repoUrl} class="article-link" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              View Repository
-            </a>
-          )}
-          {post.data.liveUrl && (
-            <a href={post.data.liveUrl} class="article-link" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-              Live Demo
-            </a>
-          )}
-        </div>
-      )}
     </header>
 
     <div class="article-content prose">
       <Content />
     </div>
+
+    <footer class="article-footer">
+      <p class="footer-text">
+        Thanks for reading. If you found this useful, you might also enjoy exploring 
+        my <a href="/lab">lab projects</a> or <a href="/writing">other writing</a>.
+      </p>
+      <div class="footer-cta">
+        <a href="https://linkedin.com/in/andrewgiffen" class="footer-link" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          Connect on LinkedIn
+        </a>
+        <a href="mailto:hello@giffen.me" class="footer-link">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Get in touch
+        </a>
+      </div>
+    </footer>
   </article>
 </BaseLayout>
 
 <style>
-  .lab-detail {
+  .writing-detail {
     padding: var(--space-10) var(--space-7);
     max-width: 800px;
     margin: 0 auto;
@@ -107,13 +99,7 @@ const { Content } = await post.render();
     margin-bottom: var(--space-4);
   }
 
-  .article-date {
-    font-family: var(--font-mono);
-    font-size: var(--text-sm);
-    color: var(--ink-muted);
-  }
-
-  .article-status {
+  .article-tag {
     font-family: var(--font-mono);
     font-size: 0.75rem;
     color: var(--accent);
@@ -122,6 +108,12 @@ const { Content } = await post.render();
     border-radius: 4px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+  }
+
+  .article-date {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
   }
 
   .article-title {
@@ -137,54 +129,6 @@ const { Content } = await post.render();
     font-size: var(--text-lg);
     color: var(--ink-soft);
     line-height: 1.7;
-    margin-bottom: var(--space-5);
-  }
-
-  .article-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2);
-    margin-bottom: var(--space-5);
-  }
-
-  .article-tag {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--ink-soft);
-    background: var(--cream-dark);
-    padding: 4px 12px;
-    border-radius: 4px;
-  }
-
-  .article-links {
-    display: flex;
-    gap: var(--space-4);
-  }
-
-  .article-link {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-2);
-    font-family: var(--font-mono);
-    font-size: var(--text-sm);
-    color: var(--accent);
-    padding: var(--space-3) var(--space-5);
-    border: 1px solid var(--accent);
-    border-radius: 6px;
-    transition: all 0.2s ease;
-  }
-
-  .article-link:hover {
-    background: var(--accent);
-    color: white;
-  }
-
-  .article-link svg {
-    width: 18px;
-    height: 18px;
-    stroke: currentColor;
-    stroke-width: 1.5;
-    fill: none;
   }
 
   /* Prose styles for markdown content */
@@ -291,8 +235,62 @@ const { Content } = await post.render();
     color: var(--ink);
   }
 
+  .prose :global(hr) {
+    border: none;
+    border-top: 1px solid var(--paper-edge);
+    margin: var(--space-8) 0;
+  }
+
+  /* Footer */
+  .article-footer {
+    margin-top: var(--space-9);
+    padding-top: var(--space-7);
+    border-top: 1px solid var(--paper-edge);
+  }
+
+  .footer-text {
+    font-size: var(--text-base);
+    color: var(--ink-soft);
+    margin-bottom: var(--space-5);
+  }
+
+  .footer-text a {
+    color: var(--accent);
+  }
+
+  .footer-cta {
+    display: flex;
+    gap: var(--space-4);
+  }
+
+  .footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+    padding: var(--space-3) var(--space-5);
+    border: 1px solid var(--paper-edge);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+  }
+
+  .footer-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .footer-link svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    fill: none;
+  }
+
   @media (max-width: 768px) {
-    .lab-detail {
+    .writing-detail {
       padding: var(--space-9) var(--space-5);
     }
 
@@ -300,7 +298,7 @@ const { Content } = await post.render();
       font-size: var(--text-3xl);
     }
 
-    .article-links {
+    .footer-cta {
       flex-direction: column;
     }
   }

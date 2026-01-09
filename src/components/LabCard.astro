@@ -1,0 +1,190 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  year: string;
+  tags: string[];
+  pattern?: number;
+}
+
+const { title, slug, year, tags, pattern = 1 } = Astro.props;
+---
+
+<article class="lab-card">
+  <a href={`/lab/${slug}`} class="lab-card-link"></a>
+  <div class={`lab-card-bg lab-pattern-${pattern}`}>
+    <div class="lab-card-content">
+      <p class="lab-card-meta">{year}</p>
+      <h3 class="lab-card-title">{title}</h3>
+      <div class="lab-card-tags">
+        {tags.map((tag, i) => (
+          <span class="lab-card-tag">{i > 0 ? '• ' : ''}{tag}</span>
+        ))}
+      </div>
+    </div>
+  </div>
+  <div class="lab-card-overlay">
+    <span class="lab-card-btn">
+      Learn More
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </span>
+  </div>
+</article>
+
+<style>
+  .lab-card {
+    flex: 0 0 200px;
+    height: 300px;
+    scroll-snap-align: start;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 
+      4px 4px 0 0 var(--paper-edge),
+      1px 1px 4px rgba(0,0,0,0.1);
+  }
+  
+  .lab-card:hover {
+    transform: translateY(-8px) rotate(-1deg);
+    box-shadow: 
+      6px 10px 0 0 var(--paper-edge),
+      2px 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .lab-card-bg {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-5);
+  }
+  
+  /* Book cover styles */
+  .lab-pattern-1 { background: linear-gradient(180deg, #1E4B8E 0%, #152F54 100%); }
+  .lab-pattern-2 { background: linear-gradient(180deg, #8E4B1E 0%, #5C3012 100%); }
+  .lab-pattern-3 { background: linear-gradient(180deg, #1E8E4B 0%, #125C2F 100%); }
+  .lab-pattern-4 { background: linear-gradient(180deg, #4B1E8E 0%, #2F125C 100%); }
+  .lab-pattern-5 { background: linear-gradient(180deg, #8E1E4B 0%, #5C122F 100%); }
+  .lab-pattern-6 { background: linear-gradient(180deg, #2D4A3E 0%, #1A2D26 100%); }
+  
+  /* Book spine effect */
+  .lab-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 12px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, transparent 100%);
+    z-index: 5;
+  }
+  
+  .lab-card-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--space-3);
+  }
+  
+  .lab-card-meta {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: auto;
+  }
+  
+  .lab-card-title {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: white;
+    line-height: 1.25;
+    margin-bottom: var(--space-3);
+  }
+  
+  .lab-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: auto;
+  }
+  
+  .lab-card-tag {
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .lab-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 26, 26, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+  }
+  
+  .lab-card:hover .lab-card-overlay {
+    opacity: 1;
+  }
+  
+  .lab-card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-5);
+    background: white;
+    color: var(--ink);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+  }
+  
+  .lab-card:hover .lab-card-btn:hover {
+    background: var(--accent);
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .lab-card-btn svg {
+    width: 14px;
+    height: 14px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+  }
+  
+  .lab-card-link {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+  }
+
+  @media (max-width: 1024px) {
+    .lab-card {
+      flex: 0 0 180px;
+      height: 270px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .lab-card {
+      flex: 0 0 160px;
+      height: 240px;
+    }
+  }
+</style>
