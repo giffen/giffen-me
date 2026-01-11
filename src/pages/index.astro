@@ -6,7 +6,9 @@ import { getCollection } from "astro:content";
 
 // Get lab posts for the scroller
 const labPosts = await getCollection("lab");
-labPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
+const publishedPosts = labPosts
+  .filter(labPosts => labPosts.data.published !== false)
+  .sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
 
 // Get writing posts for the grid
 const writingPosts = await getCollection("writing");
@@ -25,10 +27,10 @@ writingPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
     <div class="hero-content">
       <p class="hero-label animate-in">Hi, I'm Andrew Giffen</p>
       <h1 class="hero-title animate-in delay-1">
-        I explore <em>ideas</em> until they're worth keeping.<br>
+        I explore small <em>experiments</em> to find the ones worth scaling.<br>
       </h1>
       <p class="hero-description animate-in delay-2">
-        I work at the intersection of product strategy, systems thinking, and hands-on execution. 
+        I'm a product leader who connects the dots and helps teams ship. 
         This is my home base for what I've built and what I'm learning.
       </p>
       <div class="hero-cta animate-in delay-3">
@@ -92,11 +94,11 @@ writingPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
   <section class="lab-section" id="lab">
     <div class="lab-header">
       <p class="section-label">The Lab</p>
-      <h2 class="section-title">Experiments & Learning Projects</h2>
+      <h2 class="section-title">Experiments</h2>
     </div>
     
     <div class="lab-scroller" id="labScroller">
-      {labPosts.map((post, index) => (
+      {publishedPosts.map((post, index) => (
         <LabCard 
           title={post.data.title}
           slug={post.slug}

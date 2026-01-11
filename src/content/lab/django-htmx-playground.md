@@ -7,6 +7,7 @@ tags: ["Django", "HTMX", "Python"]
 pattern: 1
 repoUrl: "https://github.com/agiffen/lab-django-htmx"
 liveUrl: "https://django-htmx.giffen.me"
+published: false
 ---
 
 ## The Problem I Was Trying to Solve

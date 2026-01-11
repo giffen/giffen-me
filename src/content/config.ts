@@ -12,6 +12,7 @@ const lab = defineCollection({
     repoUrl: z.string().url().optional(),
     liveUrl: z.string().url().optional(),
     image: z.string().optional(),
+    published: z.boolean().default(true),
   }),
 });
 

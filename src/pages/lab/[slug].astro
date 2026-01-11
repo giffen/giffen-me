@@ -4,6 +4,10 @@ import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await getCollection("lab");
+
+  // Only generate pages for published posts
+  const publishedPosts = posts.filter(post => post.data.published !== false);
+  
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: { post },

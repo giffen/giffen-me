@@ -5,6 +5,7 @@ date: "2025-09-05"
 status: "complete"
 tags: ["UX", "Research", "Notion"]
 pattern: 5
+published: false
 ---
 
 ## The Problem I Was Trying to Solve

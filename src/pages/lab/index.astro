@@ -4,7 +4,9 @@ import LabCard from "../../components/LabCard.astro";
 import { getCollection } from "astro:content";
 
 const labPosts = await getCollection("lab");
-labPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
+const publishedPosts = labPosts
+  .filter(labPosts => labPosts.data.published !== false)
+  .sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
 ---
 
 <BaseLayout title="Lab — Andrew Giffen" description="Experiments and learning projects in product, engineering, and design.">
@@ -19,7 +21,7 @@ labPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
     </header>
 
     <div class="lab-grid">
-      {labPosts.map((post, index) => (
+      {publishedPosts.map((post, index) => (
         <article class="lab-grid-card">
           <a href={`/lab/${post.slug}`} class="lab-grid-link">
             <div class={`lab-grid-cover ${post.data.image ? 'has-image' : `lab-pattern-${post.data.pattern || ((index % 6) + 1)}`}`}>

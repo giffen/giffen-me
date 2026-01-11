@@ -6,6 +6,7 @@ status: "complete"
 tags: ["Python", "Click", "Rich"]
 pattern: 6
 repoUrl: "https://github.com/agiffen/cli-tools"
+published: false
 ---
 
 ## The Problem I Was Trying to Solve

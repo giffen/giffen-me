@@ -6,6 +6,7 @@ status: "complete"
 tags: ["Python", "OpenAI", "Pydantic"]
 pattern: 2
 repoUrl: "https://github.com/agiffen/doc-processor"
+published: false
 ---
 
 ## The Problem I Was Trying to Solve
