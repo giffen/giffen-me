@@ -11,6 +11,7 @@ const lab = defineCollection({
     pattern: z.number().min(1).max(6).default(1),
     repoUrl: z.string().url().optional(),
     liveUrl: z.string().url().optional(),
+    image: z.string().optional(),
   }),
 });
 

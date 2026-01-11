@@ -4,14 +4,14 @@ description: "Building a personal site with Astro, content collections, and a li
 date: "2025-11-20"
 status: "ongoing"
 tags: ["Astro", "TypeScript"]
-pattern: 3
+image: "/images/lab/lab-giffen-me.png"
 repoUrl: "https://github.com/agiffen/giffen-me"
 liveUrl: "https://giffen.me"
 ---
 
 ## The Problem I Was Trying to Solve
 
-I needed a home base on the internet—somewhere to showcase my work, share what I'm learning, and make it easy for people to get in touch. Most portfolio templates felt either too corporate or too minimal. I wanted something with personality.
+I needed a home base on the internet—somewhere to showcase my work, share what I'm learning, and make it easy for people to get in touch. I wanted a light weight authoring platform with no backend that could create static webpages so future maintenance would be easy. I also wanted to try to create something simple and get it into production using AI to walk me through the design and development of the site.
 
 ## What I Learned
 

@@ -19,13 +19,13 @@ writingPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
   <section class="hero">
     <!-- Full-width background image -->
     <div class="hero-bg">
-      <img src="/hero-banner.png" alt="" class="hero-bg-image" />
+      <img src="/images/hero-banner.png" alt="" class="hero-bg-image" />
     </div>
     
     <div class="hero-content">
       <p class="hero-label animate-in">Hi, I'm Andrew Giffen</p>
       <h1 class="hero-title animate-in delay-1">
-        I explore <em>ideas</em> until they’re worth keeping.<br>
+        I explore <em>ideas</em> until they're worth keeping.<br>
       </h1>
       <p class="hero-description animate-in delay-2">
         I work at the intersection of product strategy, systems thinking, and hands-on execution. 
@@ -37,7 +37,7 @@ writingPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
           Learn fun facts about me
           <svg class="arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="/lab" class="cta-link">
+        <a href="#lab" class="cta-link">
           <svg viewBox="0 0 24 24"><path d="M9 3h6v2H9zM12 5v6M4.5 17h15l-1.5-8H6z"/><circle cx="8" cy="17" r="1"/><circle cx="16" cy="17" r="1"/></svg>
           Check out experiments in the lab
           <svg class="arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -47,7 +47,7 @@ writingPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
           Read my writing
           <svg class="arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="https://linkedin.com/in/andrewgiffen" class="cta-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://linkedin.com/in/giffen" class="cta-link" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           Contact me on LinkedIn
           <svg class="arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -88,6 +88,7 @@ writingPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
   </section>
 
   <!-- Lab Section -->
+   <a name="lab"></a>
   <section class="lab-section" id="lab">
     <div class="lab-header">
       <p class="section-label">The Lab</p>
@@ -102,6 +103,7 @@ writingPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
           year={post.data.date.split('-')[0]}
           tags={post.data.tags.slice(0, 2)}
           pattern={post.data.pattern || ((index % 6) + 1)}
+          image={post.data.image}
         />
       ))}
     </div>
