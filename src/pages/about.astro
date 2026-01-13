@@ -2,7 +2,10 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="About — Andrew Giffen" description="AI Product Manager based in Toronto. Building products, shipping experiments, writing what I learn.">
+<BaseLayout
+  title="About - Andrew Giffen"
+  description="Product leader in Toronto. I build B2B SaaS in complex domains-AI, integrations, and platforms that teams can actually ship."
+>
   <section class="about-page">
     <header class="page-header">
       <p class="page-label">About</p>
@@ -12,26 +15,95 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <div class="about-content">
       <div class="about-intro">
         <p class="intro-text">
-          I'm a product leader based in Toronto who loves solving messy problems with simple systems. 
-          Currently, I'm a Director of Product Management focused on AI products, integrations, and growth.
+          I’m a Toronto-based product leader who likes hard problems: messy workflows, high-stakes domains,
+          and software that has to work across teams, systems, and regions.
         </p>
         <p class="intro-text">
-          This site is my corner of the internet—a place to share what I'm building, what I'm learning, 
-          and what I've figured out along the way.
+          Most of my career has been spent building and scaling B2B SaaS for enterprise customers-turning
+          specialized expertise into products, modernizing platforms, and helping teams ship consistently.
         </p>
       </div>
 
       <div class="about-section">
         <h2 class="section-heading">What I Do</h2>
         <p>
-          I work at the intersection of product strategy, systems thinking, and execution. My sweet spot 
-          is taking ambiguous problems—the ones where stakeholders aren't sure what they want, where the 
-          technical path isn't clear, where multiple teams need to coordinate—and turning them into shipped work.
+          I sit at the intersection of strategy and delivery. I’m the person you bring in when the problem is
+          ambiguous, the constraints are real, and the path forward needs both clarity and momentum.
         </p>
         <p>
-          Areas I focus on: AI-powered products, integration & workflow complexity, onboarding & activation, 
-          and building internal tools that make teams more effective.
+          My work tends to land in a few familiar buckets:
         </p>
+        <ul class="focus-list">
+          <li>
+            <strong>Product strategy that turns into shipped software.</strong> Framing the problem, defining the bet,
+            aligning stakeholders, and turning “we should” into an actual roadmap and release plan.
+          </li>
+          <li>
+            <strong>Platforms, integrations, and workflow complexity.</strong> Designing products that plug into existing
+            ecosystems, making tough tradeoffs, and simplifying systems without oversimplifying reality.
+          </li>
+          <li>
+            <strong>AI that’s useful (not just shiny).</strong> Applying AI to real user pain-recommendations, search,
+            and new interaction models-while staying grounded in trust, context, and the limits of automation.
+          </li>
+          <li>
+            <strong>Scaling teams and operating systems.</strong> Building product practice: cadences, artifacts,
+            decision-making habits, and the “how we build” that keeps shipping healthy as companies grow.
+          </li>
+          <li>
+            <strong>Executive communication and cross-functional leadership.</strong> Writing, presenting, and translating
+            between business goals, customer reality, and technical constraints.
+          </li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <h2 class="section-heading">Where I’ve Worked</h2>
+        <p>
+          I’ve led product in the environmental, health, safety, and regulatory space - where the details are complex,
+          customers are enterprise, and the cost of confusion is real. Along the way I’ve worn a few hats (including
+          a stint in technical leadership), partnered deeply with engineering, and helped guide the shift from
+          services-led delivery to scalable product lines.
+        </p>
+        <p>
+          Before that, I worked at an enterprise SaaS platform company and earlier in my career I helped move a
+          legacy content business into modern digital delivery - building APIs, streamlining operations, and learning
+          what it actually takes to change how work gets done.
+        </p>
+      </div>
+
+      <div class="about-section">
+        <h2 class="section-heading">How I Work</h2>
+        <div class="principles">
+          <div class="principle">
+            <h3>Start with the real problem</h3>
+            <p>
+              I’m allergic to feature-first thinking. I want to understand the job, the constraints, and what “better”
+              looks like for users and the business.
+            </p>
+          </div>
+          <div class="principle">
+            <h3>Write to clarify</h3>
+            <p>
+              Clear writing is a forcing function. I use it to make decisions explicit, reduce rework, and keep teams
+              aligned when things get noisy.
+            </p>
+          </div>
+          <div class="principle">
+            <h3>Ship to learn (and de-risk)</h3>
+            <p>
+              Big-bang launches are expensive. I prefer small, testable releases that prove value early and create
+              options as we learn.
+            </p>
+          </div>
+          <div class="principle">
+            <h3>Make complexity legible</h3>
+            <p>
+              Complex domains don’t need complex products. I aim for designs and systems that feel simple - without
+              hiding the important nuance.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="about-section">
@@ -39,59 +111,34 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <ul class="fun-facts">
           <li>
             <span class="fact-emoji">📚</span>
-            <span class="fact-text">I collect vintage paperback books with interesting cover designs. The aesthetic of this site is inspired by them.</span>
+            <span class="fact-text">I'm an avid reader. I will happily switch between productivity and business to fantasy / sci-fi books.</span>
+          </li>
+          <li>
+            <span class="fact-emoji">🥁</span>
+            <span class="fact-text">I’m a drummer. If I’m not shipping product work, I’m probably tinkering with a rhythm or building something unnecessarily nerdy.</span>
           </li>
           <li>
             <span class="fact-emoji">🛠️</span>
-            <span class="fact-text">I taught myself to code so I could build the tools I wished existed. Now I can't stop tinkering.</span>
-          </li>
-          <li>
-            <span class="fact-emoji">🎧</span>
-            <span class="fact-text">I listen to the same three albums on repeat when I need to focus. Currently: Khruangbin.</span>
-          </li>
-          <li>
-            <span class="fact-emoji">☕</span>
-            <span class="fact-text">I have strong opinions about pour-over coffee and weak opinions about almost everything else.</span>
+            <span class="fact-text">I like hands-on building-prototypes, little tools, automations. Enough to explore ideas and make better product calls.</span>
           </li>
           <li>
             <span class="fact-emoji">✍️</span>
-            <span class="fact-text">I write to think. Most of my best ideas started as messy notes that I cleaned up into something shareable.</span>
+            <span class="fact-text">I write (and draw) to think. Most of my best ideas start as messy notes and slowly get promoted into something shareable.</span>
           </li>
         </ul>
       </div>
 
       <div class="about-section">
-        <h2 class="section-heading">How I Work</h2>
-        <div class="principles">
-          <div class="principle">
-            <h3>Start with the problem</h3>
-            <p>Before jumping to solutions, I make sure we're solving the right problem. This means talking to users, looking at data, and questioning assumptions.</p>
-          </div>
-          <div class="principle">
-            <h3>Ship to learn</h3>
-            <p>I'd rather ship something small and learn from it than perfect something large in isolation. Speed of learning beats polish.</p>
-          </div>
-          <div class="principle">
-            <h3>Write it down</h3>
-            <p>Clear thinking requires clear writing. I document decisions, write specs, and create artifacts that help the team stay aligned.</p>
-          </div>
-          <div class="principle">
-            <h3>Make it simple</h3>
-            <p>Complexity is easy. Simplicity is hard. I look for the simplest solution that solves the problem, even if it means saying no to scope.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-section">
         <h2 class="section-heading">Get in Touch</h2>
         <p>
-          I'm always happy to chat about product, building things, or interesting problems you're working on. 
-          Best way to reach me is on <a href="https://linkedin.com/in/giffen" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
+          If you want to talk product, AI in real-world workflows, integrations, or the fun pain of scaling teams,
+          I’m always up for a chat. Best way to reach me is on
+          <a href="https://linkedin.com/in/giffen" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           or via <a href="mailto:andy@giffen.me">email</a>.
         </p>
         <p>
-          If you're looking for consulting help—whether that's product strategy, onboarding optimization, 
-          or untangling integration complexity—I occasionally take on advisory work. 
+          I occasionally take on advisory work-typically around product strategy, product org setup, onboarding/activation,
+          or untangling integration-heavy roadmaps.
         </p>
       </div>
     </div>
@@ -159,6 +206,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     color: var(--accent);
     text-decoration: underline;
     text-underline-offset: 2px;
+  }
+
+  .focus-list {
+    margin: var(--space-4) 0 0;
+    padding-left: 1.1rem;
+    color: var(--ink-soft);
+    line-height: 1.75;
+  }
+
+  .focus-list li {
+    margin-bottom: var(--space-3);
+  }
+
+  .focus-list strong {
+    color: var(--ink);
+    font-weight: 600;
   }
 
   .fun-facts {
