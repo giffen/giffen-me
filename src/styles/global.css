@@ -193,3 +193,25 @@ a {
     --text-3xl: 2rem;
   }
 }
+
+/* ========================================
+   IFRAME EMBED
+======================================== */
+
+.lab-embed--fullbleed {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  /* keep it from touching screen edges */
+  padding-inline: 16px;
+  box-sizing: border-box;
+}
+
+.lab-embed--fullbleed iframe {
+  width: 100%;
+  height: min(85vh, 900px); /* tall enough to feel like the real app */
+  border: 0;
+  border-radius: 16px;
+  display: block;
+}
+

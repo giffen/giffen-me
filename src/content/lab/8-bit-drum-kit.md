@@ -5,7 +5,7 @@ date: "2025-01-13"
 status: "complete"
 tags: ["web-audio", "sprite-animation", "8-bit", "ai-experiment", "music"]
 image: "/images/lab/8-bit-drum-hero.png"
-liveUrl: "https://yourliveurl.com" # Update with your actual URL
+liveUrl: "https://giffen.me/lab/8-bit-drum-hero/index.html" # Update with your actual URL
 published: true
 ---
 
@@ -50,3 +50,12 @@ This project is complete for what it is - a fun, functional drum kit experiment.
 ## Try It
 
 Open the drum kit and bash away on your keyboard. The animation glitch adds character, I've decided. That's my story and I'm sticking to it.
+
+<div class="lab-embed lab-embed--fullbleed">
+  <iframe
+    src="/lab/8-bit-drum-hero/index.html"
+    title="8-Bit Drum Hero"
+    loading="lazy"
+    allow="autoplay; fullscreen"
+  ></iframe>
+</div>
