@@ -67,20 +67,28 @@ writingPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
       </div>
     </div>
     
-    {labPosts[0] && (
+    {publishedPosts[0] && (
       <article class="featured-card">
         <div class="featured-image">
-          <div class="featured-image-placeholder">
-            <div class="placeholder-bar"></div>
-            <div class="placeholder-bar"></div>
-            <div class="placeholder-bar"></div>
-          </div>
+          {publishedPosts[0].data.image ? (
+            <img 
+              src={publishedPosts[0].data.image} 
+              alt={publishedPosts[0].data.title}
+              class="featured-img"
+            />
+          ) : (
+            <div class="featured-image-placeholder">
+              <div class="placeholder-bar"></div>
+              <div class="placeholder-bar"></div>
+              <div class="placeholder-bar"></div>
+            </div>
+          )}
         </div>
         <div class="featured-content">
           <p class="featured-tag">Lab Experiment</p>
-          <h3 class="featured-title">{labPosts[0].data.title}</h3>
-          <p class="featured-description">{labPosts[0].data.description}</p>
-          <a href={`/lab/${labPosts[0].slug}`} class="btn">
+          <h3 class="featured-title">{publishedPosts[0].data.title}</h3>
+          <p class="featured-description">{publishedPosts[0].data.description}</p>
+          <a href={`/lab/${publishedPosts[0].slug}`} class="btn">
             View Project
             <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
@@ -329,7 +337,17 @@ writingPosts.sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
     align-items: center;
     justify-content: center;
   }
-  
+
+  .featured-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  }
+
+  .featured-card:hover .featured-img {
+    transform: scale(1.03);
+  }
   .featured-image-placeholder {
     width: 80%;
     height: 70%;
