@@ -2,10 +2,9 @@
 title: "Edgewood Library"
 description: "A community tool-sharing app for neighbors - because that circular saw shouldn't gather dust for another 5 years"
 date: "2025-01-15"
-status: "in-progress"
+status: "backlog"
 tags: ["community", "sharing-economy", "nextjs", "authentication", "social", "local-first"]
 image: "/images/lab/edgewood-library.png"
-liveUrl: "https://www.edgewoodgreen.ca"
 published: true
 ---
 

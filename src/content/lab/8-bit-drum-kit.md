@@ -1,7 +1,7 @@
 ---
 title: "8-Bit Drum Kit"
 description: "An interactive drum kit with sprite animations - a nostalgic experiment in AI-assisted web development"
-date: "2025-01-13"
+date: "2026-01-02"
 status: "complete"
 tags: ["web-audio", "sprite-animation", "8-bit", "ai-experiment", "music"]
 image: "/images/lab/8-bit-drum-hero.png"

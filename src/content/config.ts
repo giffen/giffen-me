@@ -6,7 +6,7 @@ const lab = defineCollection({
     title: z.string(),
     description: z.string(),
     date: z.string(),
-    status: z.enum(["in-progress", "complete", "ongoing"]).default("complete"),
+    status: z.enum(["backlog", "in-progress", "complete", "ongoing"]).default("complete"),
     tags: z.array(z.string()),
     pattern: z.number().min(1).max(6).default(1),
     repoUrl: z.string().url().optional(),

@@ -5,8 +5,7 @@ date: "2026-01-15"
 status: "in-progress"
 tags: ["mobile", "gamification", "health-tech", "peer-support", "b2c", "community"]
 image: "/images/lab/brown-note.png"
-featuredImage: "/images/lab/brown-note-feature.png" 
-liveUrl: "http://www.brownnote.app"
+featuredImage: "/images/lab/brown-note-feature.png"
 published: true
 ---
 
