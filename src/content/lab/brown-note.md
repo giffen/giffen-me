@@ -2,10 +2,11 @@
 title: "Brown Note"
 description: "A peer support app for bathroom isolation - because you're not alone on the throne"
 date: "2026-01-15"
-status: "in-progress"
+status: "complete"
 tags: ["mobile", "gamification", "health-tech", "peer-support", "b2c", "community"]
 image: "/images/lab/brown-note.png"
 featuredImage: "/images/lab/brown-note-feature.png"
+liveUrl: "https://www.brownnote.app"
 published: true
 ---
 
