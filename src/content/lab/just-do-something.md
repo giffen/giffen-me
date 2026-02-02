@@ -4,7 +4,7 @@ description: "A mobile app that breaks up sedentary work with 1-5 minute micro-w
 date: "2025-02-01"
 status: "backlog"
 tags: ["mobile-app", "health-wellness", "workplace-wellness", "movement-reminders", "micro-workouts"]
-pattern: 5
+image: "/images/lab/just-do-something.png"
 published: true
 ---
 
