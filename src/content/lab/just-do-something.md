@@ -2,7 +2,7 @@
 title: "Just Do Something"
 description: "A mobile app that breaks up sedentary work with 1-5 minute micro-workouts every 30 minutes"
 date: "2025-02-01"
-status: "ongoing"
+status: "backlog"
 tags: ["mobile-app", "health-wellness", "workplace-wellness", "movement-reminders", "micro-workouts"]
 pattern: 5
 published: true
