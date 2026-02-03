@@ -4,7 +4,7 @@ description: "A tarot-based daily horoscope app that remembers your past reading
 date: "2025-01-11"
 status: "backlog"
 tags: ["mobile-app", "ai-integration", "tarot", "personalization", "app-store"]
-pattern: 1
+image: "/images/lab/daily-prophet.png"
 published: true
 ---
 
