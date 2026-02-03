@@ -1,7 +1,7 @@
 ---
 title: "Love Will Tear Us Apart"
 description: "An 8-bit proximity app that plays your song when you're close to the people who matter"
-date: "2025-01-11"
+date: "2026-02-01"
 status: "backlog"
 tags: ["mobile-app", "location-services", "8-bit", "spotify-api", "apple-music", "couples"]
 image: "/images/lab/love-will-tear-us-apart.png"
