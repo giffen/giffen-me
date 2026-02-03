@@ -4,7 +4,7 @@ description: "A lightweight CRM for solo consultants with AI-powered ghost detec
 date: "2025-01-11"
 status: "backlog"
 tags: ["mobile-app", "crm", "gmail-api", "ai-integration", "freelance", "sentiment-analysis"]
-pattern: 3
+image: "/images/lab/spectrecrm.png"
 published: true
 ---
 
