@@ -5,6 +5,7 @@ date: "2026-02-01"
 status: "backlog"
 tags: ["mobile-app", "location-services", "8-bit", "spotify-api", "apple-music", "couples"]
 image: "/images/lab/love-will-tear-us-apart.png"
+featuredImage: "/images/lab/love-will-tear-us-apart-feature.png"
 published: true
 ---
 
