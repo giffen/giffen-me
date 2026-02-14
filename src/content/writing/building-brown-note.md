@@ -155,7 +155,7 @@ The Claude subscription is the biggest line item, and it's also the one that rep
 
 **Skip the web app entirely.** For a product like Brown Note — used in a specific physical context (the bathroom), on a specific device (phone) — a web app adds maintenance burden without adding much value. The mobile app is the product. The web app is a nice-to-have.
 
-**Set up the OpenAI Moderation API from day one.** Pattern-based content moderation works for development, but App Store reviewers will test with abusive content. I'm upgrading to OpenAI's moderation before submission, and I wish I'd done it from the start. It's free-tier and takes an hour to integrate.
+**Consider AI-powered moderation earlier.** I shipped with pattern-based content moderation (regex for self-harm and aggression) plus a user reporting system with 3-strike bans. It's working so far, but if the community scales, pattern matching will have blind spots. The OpenAI Moderation API is free-tier and would catch more edge cases. It's on my "if needed" list.
 
 ## The Unsexy Truth About Shipping
 
