@@ -46,9 +46,9 @@ In my 20s, I thought about learning in terms of "how long until I'm good." The a
 
 There's a quote often attributed to Earl Nightingale: "Don't let the fear of the time it will take to accomplish something stand in the way of your doing it. The time will pass anyway."
 
-I must have read that quote a dozen times in my 20s. It never landed. Now, at 42, it's the operating principle of my entire life.
+I must have read that quote a dozen times in my 20s. It never landed. Now, at 43, it's the operating principle of my entire life.
 
-Here's the reframe: if I practice drums for fifteen minutes a day, every day, for ten years — I will not suck at the drums. I don't need to be great. I don't need to play in a band. I just need to be meaningfully better than I am today, compounded over a decade. When I'm 52, I'll have been playing for ten years. That's true whether I start now or don't. The only variable is whether 52-year-old me can play.
+Here's the reframe: if I practice drums for fifteen minutes a day, every day, for ten years — I will not suck at the drums. I don't need to be great. I don't need to play in a band. I just need to be meaningfully better than I am today, compounded over a decade. When I'm 53, I'll have been playing for ten years. That's true whether I start now or don't. The only variable is whether 53-year-old me can play.
 
 James Clear writes about this in *Atomic Habits* — the idea that tiny, consistent actions compound into remarkable results. Getting 1% better each day doesn't feel like anything in the moment. But it's 37x improvement over a year. The math is unintuitive, which is why most people don't trust it. They want to feel the progress in real time, and when they don't, they quit.
 
