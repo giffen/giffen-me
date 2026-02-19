@@ -6,7 +6,7 @@ tag: "Musing"
 excerpt: "There's a moment in Halt and Catch Fire where the Comet team is working around the clock, cataloging the internet by hand, making real progress on a real product. And then search arrives and none of it matters. That's happening right now across the industry. But unlike the show, I think this time the shift is something to run toward."
 ---
 
-*This is part 2 of a three-part series on how AI is reshaping product management. [Part 1](/writing/beyond-agile) covers why agile needs to evolve, and [Part 3](/writing/future-product-team) covers what teams will look like on the other side.*
+*This is part 2 of a three-part series on how AI is reshaping product management. [Part 1](/writing/beyond-agile) covers why agile needs to evolve, and [Part 3](/writing/the-new-team) covers what teams will look like on the other side.*
 
 ## The Scene That Stuck With Me
 
@@ -120,4 +120,4 @@ The Comet team's story is a cautionary tale. But the broader story of that era, 
 
 That's the opportunity right now. Don't be Comet. But don't be afraid of the shift either. Run toward it.
 
-*Next up: [Part 3](/writing/future-product-team) looks at what product teams actually look like on the other side of this shift.*
+*Next up: [Part 3](/writing/the-new-team) looks at what product teams actually look like on the other side of this shift.*
