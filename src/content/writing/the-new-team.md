@@ -78,6 +78,20 @@ If I were hiring a team to build a product today, here's what I'd want: three pe
 
 That team of three, with AI handling code automation, can outship a traditional squad of ten. Not because they work harder. Because the coordination costs, the handoff delays, the ceremony overhead, all of it disappears when you're three people in a room who trust each other.
 
+## Building Is Easy. Maintaining Is the Job.
+
+Here's the pushback I hear most from engineering, and it's a good one: if everyone's a builder, who's maintaining it?
+
+Software doesn't just need to be built. It needs to be kept alive. Dependencies need updating. Security patches need applying. Performance needs monitoring. The database schema that made sense for ten users doesn't make sense for ten thousand. The quick feature a PM shipped with AI last Tuesday might conflict with the architecture decisions the team made six months ago.
+
+When building is cheap, the temptation is to keep building new things. Ship the feature, move on, ship the next one. But unmaintained software decays fast. And when non-engineers are shipping code with AI, the surface area of "things that need to be maintained" grows quickly.
+
+This is exactly why the architect role on the team elevates rather than disappears. The architect isn't just building new things. They're the one who owns the system over time. They ensure the codebase stays coherent when multiple people are contributing to it. They catch the subtle issues that AI-generated code introduces. They make the call on when to refactor, when to pay down tech debt, and when a quick prototype needs to be rebuilt properly before it becomes load-bearing.
+
+"Everyone is a builder" doesn't mean "nobody owns the codebase." It means ownership shifts from "who wrote this code" to "who understands this system." And that shift makes the senior technical role more important, not less. The architect becomes the person who ensures that fast iteration doesn't create a house of cards.
+
+This is also where code automation helps with maintenance itself. AI is good at understanding existing codebases, writing tests for untested code, identifying security issues, and handling the tedious refactoring work that humans put off for months. The maintenance burden doesn't disappear, but the tools for handling it get dramatically better at the same time the need increases.
+
 ## Singular Vision, Collaborative Execution
 
 I honestly believe that anything with a singular vision is better than something designed by committee. Music, movies, products, websites. They are more interesting, more coherent, and more compelling when there is a strong voice guiding them.
