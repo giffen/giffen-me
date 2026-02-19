@@ -6,7 +6,7 @@ tag: "Musing"
 excerpt: "The Agile Manifesto got it right. Then we spent twenty years building processes that violate almost every principle in it. SAFe, Scrum, story points, velocity charts, two-week mini-waterfalls. AI doesn't just change how we build. It gives us a chance to actually practice what the Manifesto preached."
 ---
 
-*This is part 1 of a three-part series on how AI is reshaping product management. [Part 2](/writing/busy-building-while-world-changes) covers the urgency gap, and [Part 3](/writing/future-product-team) covers what teams will look like on the other side.*
+*This is part 1 of a three-part series on how AI is reshaping product management. [Part 2](/writing/the-comet-problem) covers the urgency gap, and [Part 3](/writing/future-product-team) covers what teams will look like on the other side.*
 
 ## The Manifesto Was Right
 
@@ -97,4 +97,4 @@ The question isn't whether agile needs to evolve. It does. The question is wheth
 
 I know which one I'm betting on.
 
-*Next up: [Part 2](/writing/busy-building-while-world-changes) looks at why most teams are heads-down building while the ground is shifting under them.*
+*Next up: [Part 2](/writing/the-comet-problem) looks at why most teams are heads-down building while the ground is shifting under them.*
