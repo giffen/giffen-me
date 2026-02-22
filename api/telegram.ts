@@ -11,17 +11,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   const { message } = req.body ?? {};
-  if (!message?.text) {
-    return res.status(200).json({ ok: true, reason: "no text" });
-  }
-  if (message.from?.id !== ALLOWED_USER_ID) {
-    return res.status(200).json({ ok: true, reason: "wrong user" });
-  }
-
-  // Debug: confirm env vars are set
-  if (!TELEGRAM_TOKEN || !GITHUB_TOKEN) {
-    console.error("Missing env vars", { hasTelegram: !!TELEGRAM_TOKEN, hasGithub: !!GITHUB_TOKEN });
-    return res.status(200).json({ ok: false, reason: "missing env vars" });
+  if (!message?.text || message.from?.id !== ALLOWED_USER_ID) {
+    return res.status(200).json({ ok: true });
   }
 
   const text = message.text.trim();
