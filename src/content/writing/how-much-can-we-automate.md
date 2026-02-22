@@ -58,7 +58,7 @@ So where does the human stay essential?
 
 ## Taste
 
-Steve Jobs killed the physical keyboard on phones. Every piece of market research, every focus group, every data point said people wanted physical keys. BlackBerry was dominating. Palm had built an entire ecosystem around the stylus and buttons. If an AI had analyzed the market in 2006, it would have designed a better Palm Pilot. It would have optimized what already existed based on every signal available.
+Steve Jobs killed the physical keyboard on phones. Every piece of market research, every focus group, every data point said people wanted physical keys. BlackBerry was dominating. The entire industry was built around physical keyboards and enterprise email. If an AI had analyzed the market in 2006, it would have designed a better BlackBerry. It would have optimized what already existed based on every signal available.
 
 Jobs built the iPhone instead. That's taste.
 
