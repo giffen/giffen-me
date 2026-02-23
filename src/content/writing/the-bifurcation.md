@@ -84,7 +84,7 @@ The person who stays essential isn't the one who can direct AI the fastest. It's
 
 I've written before about [taste as the irreducible human contribution](/writing/how-much-can-we-automate) — the thing AI is structurally bad at. I used the Steve Jobs example: AI in 2006 would have designed a better BlackBerry; Jobs built the iPhone instead.
 
-The fair pushback, which I got directly from [Kim Faura](https://www.linkedin.com/in/kimfaura/) after she wrote about the PM role splitting, is that the stakes are unreasonably high if the expectation is Steve Jobs-level vision. "Not many of those to go around," she said. She's right.
+The fair pushback, which I got directly from [Kim Faura](https://www.linkedin.com/in/kimfaura/) after he wrote about the PM role splitting, is that the stakes are unreasonably high if the expectation is Steve Jobs-level vision. "Not many of those to go around," he said. He's right.
 
 So let me be more precise about what I mean by taste.
 
