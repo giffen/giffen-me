@@ -28,7 +28,7 @@ AI is compressing what used to take a team of engineers weeks into what one pers
 
 That's a different speed of change than anything I've experienced in twenty years.
 
-## You Might Be Building Comet Right Now
+## You Might Be in the Path Right Now
 
 I keep thinking about that scene because I see the same pattern playing out across the industry right now. Teams are heads-down. Roadmaps are full. Sprints are planned. Everyone's busy. The work feels productive because it is productive, in the context of today's assumptions.
 
@@ -42,23 +42,23 @@ Think about where this lands:
 
 **Workflow optimization products.** If your product exists to manage a complex manual process, and AI can collapse that entire process into a single step, you're not being disrupted by a better workflow tool. You're being disrupted by the workflow disappearing.
 
-**Aggregation and curation products.** Comet's problem, literally. If humans are organizing, tagging, summarizing, or categorizing information, and an AI can do it instantly, the hand-built index is dead. It doesn't matter how good your taxonomy is.
+**Aggregation and curation products.** If humans are organizing, tagging, summarizing, or categorizing information, and an AI can do it instantly, the hand-built index is dead. It doesn't matter how good your taxonomy is.
 
 **Middleware and integration products.** If your product exists because two systems don't talk to each other and you sit in between, AI agents that can navigate both systems directly threaten your entire value proposition.
 
 **Process management tools.** This connects directly to [Part 1](/writing/beyond-agile). If your product helps teams manage sprints, track velocity, or coordinate handoffs, and AI collapses the team size and build cycle, you're managing a process that's shrinking.
 
-None of these are bad products. The teams building them aren't doing anything wrong. That's what makes it so hard to see. Comet wasn't a bad product either.
+None of these are bad products. The teams building them aren't doing anything wrong. That's what makes it so hard to see.
 
 ## Why It's Hard to See the Wave
 
-The Comet team had every reason to believe they were on the right track. Users were growing. The product was improving. The team was shipping. Every metric they looked at said "keep going."
+Most teams in the path of a paradigm shift have every reason to believe they're on the right track. Users are growing. The product is improving. The team is shipping. Every metric says "keep going."
 
 That's exactly the trap.
 
 When you're heads-down in execution mode, you evaluate progress against your current plan. Are we hitting our sprint goals? Are users growing? Is the product getting better? And the answer can be yes to all of those while the entire market shifts around you.
 
-The problem isn't that teams aren't paying attention. It's that the signals of a paradigm shift look different from the signals of normal competition. A competitor launching a similar product is a signal you know how to read. A completely new approach that makes your category irrelevant is much harder to see, because it doesn't show up on your competitive radar. Search wasn't competing with Comet. It was making Comet's approach obsolete.
+The problem isn't that teams aren't paying attention. It's that the signals of a paradigm shift look different from the signals of normal competition. A competitor launching a similar product is a signal you know how to read. A completely new approach that makes your category irrelevant is much harder to see, because it doesn't show up on your competitive radar.
 
 Right now, most product teams are evaluating AI as a feature to add or a tool to adopt. "Should we add AI to our product?" is the wrong question. The right question is: "Does AI change whether our product needs to exist?"
 
@@ -66,7 +66,7 @@ That's a harder question. But it's the right one.
 
 ## Building on the Shift vs. Building in Its Path
 
-Not every product is a Comet. Some products are positioned to benefit from the paradigm shift rather than be consumed by it.
+Not every product is in the path. Some are positioned to benefit from the paradigm shift rather than be consumed by it.
 
 The difference comes down to where your value actually lives.
 
@@ -82,7 +82,7 @@ The question for every PM: is your product reducing complexity that AI will elim
 
 ## What PMs Should Be Asking Right Now
 
-If the Comet parallel resonates, here are the questions I'd be sitting with:
+If any of this resonates, here are the questions I'd be sitting with:
 
 **"What assumption does my product depend on that AI might invalidate?"** Every product is built on assumptions about how work gets done. If AI changes how that work gets done, your product might still solve a real problem in a way that no longer makes sense.
 
