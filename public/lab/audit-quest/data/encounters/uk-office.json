@@ -4,8 +4,9 @@
     "facility_type": "office",
     "jurisdiction": "UK",
     "title": "Expired Fire Extinguisher Tag",
-    "scene_description": "You notice a fire extinguisher mounted on the wall near the break room. The inspection tag shows it was last checked 14 months ago. Dust has gathered on the handle.",
+    "scene_description": "You notice a fire extinguisher mounted on the wall in the server room. The inspection tag shows it was last checked 14 months ago. Dust has gathered on the handle.",
     "scene_art_key": "fire_extinguisher_expired",
+    "scene_image": "assets/ui/encounters/fire_extinguisher_expired.png",
     "is_noncompliance": true,
     "correct_category": "Fire Safety & Emergency Preparedness",
     "distractor_categories": [
