@@ -26,6 +26,7 @@
     "title": "Properly Marked Emergency Exit",
     "scene_description": "You walk down a corridor and spot a clearly illuminated green 'Emergency Exit' sign above a door. The door opens easily and leads to a clear, unobstructed stairwell. The sign is clean and well-lit.",
     "scene_art_key": "emergency_exit_proper",
+    "scene_image": "assets/ui/encounters/emergency_exit_proper.png",
     "is_noncompliance": false,
     "correct_category": "Fire Safety & Emergency Preparedness",
     "distractor_categories": [
@@ -45,6 +46,7 @@
     "title": "Unlabeled Electrical Panel",
     "scene_description": "In a hallway near the server closet, you find an electrical distribution panel. The panel door is closed but there are no hazard warning labels, no voltage markings, and no 'Danger: Electricity' signage anywhere on or near it.",
     "scene_art_key": "electrical_panel_unlabeled",
+    "scene_image": "assets/ui/encounters/electrical_panel_unlabeled.png",
     "is_noncompliance": true,
     "correct_category": "Electrical Safety",
     "distractor_categories": [
@@ -64,6 +66,7 @@
     "title": "Blocked Fire Exit Corridor",
     "scene_description": "The corridor leading to the fire exit on the ground floor has several large cardboard boxes stacked along one side, narrowing the path to about half its normal width. A sign on the wall reads 'Fire Exit — Keep Clear'.",
     "scene_art_key": "blocked_fire_exit",
+    "scene_image": "assets/ui/encounters/blocked_fire_exit.png",
     "is_noncompliance": true,
     "correct_category": "Fire Safety & Emergency Preparedness",
     "distractor_categories": [
@@ -83,6 +86,7 @@
     "title": "Properly Set Up Workstation",
     "scene_description": "You inspect a desk in the open-plan office. The monitor is at eye level on an adjustable arm, the chair has lumbar support and is adjusted to the correct height, and a footrest is tucked underneath. The employee has a separate keyboard and mouse.",
     "scene_art_key": "proper_workstation",
+    "scene_image": "assets/ui/encounters/proper_workstation.png",
     "is_noncompliance": false,
     "correct_category": "Ergonomics & Workplace Conditions",
     "distractor_categories": [
@@ -102,6 +106,7 @@
     "title": "Overloaded Extension Lead",
     "scene_description": "Under a desk near the server closet, you spot a single extension lead with a 4-gang socket. All four sockets are occupied, and another extension lead is plugged into one of them, powering three more devices. The cables are warm to the touch.",
     "scene_art_key": "overloaded_extension",
+    "scene_image": "assets/ui/encounters/overloaded_extension.png",
     "is_noncompliance": true,
     "correct_category": "Electrical Safety",
     "distractor_categories": [
@@ -121,6 +126,7 @@
     "title": "Suspicious Stain Near Server Room",
     "scene_description": "You notice a dark stain on the carpet tiles just outside the server closet. It could be a water leak from the ceiling, a coffee spill, or something from the cleaning crew. There's no wet floor sign, but the stain appears dry.",
     "scene_art_key": "mysterious_stain",
+    "scene_image": "assets/ui/encounters/mysterious_stain.png",
     "is_noncompliance": "ambiguous",
     "correct_category": "Ergonomics & Workplace Conditions",
     "distractor_categories": [
@@ -140,6 +146,7 @@
     "title": "Missing Risk Assessment Folder",
     "scene_description": "In the manager's office, you ask to see the fire risk assessment documentation. The manager searches through filing cabinets and desk drawers but cannot locate the folder. 'I'm sure it's here somewhere,' they say. 'We definitely had one done last year.'",
     "scene_art_key": "missing_risk_assessment",
+    "scene_image": "assets/ui/encounters/missing_risk_assessment.png",
     "is_noncompliance": true,
     "correct_category": "Permits, Signage & Documentation",
     "distractor_categories": [
