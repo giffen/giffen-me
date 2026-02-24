@@ -1,0 +1,57 @@
+{
+  "_instructions": {
+    "overview": "This directory contains the encounter database for Audit Quest: Global Compliance. Each facility has its own JSON file containing an array of encounter objects. The game loads these files at runtime — edit them and reload the browser to see changes.",
+    "how_to_add_encounters": [
+      "1. Open the facility file (e.g., encounters/uk-office.json)",
+      "2. Find a PLACEHOLDER entry or copy the template below",
+      "3. Replace ALL placeholder values with real content from Enhesa audit scorecards",
+      "4. Ensure is_noncompliance is: true, false, or \"ambiguous\"",
+      "5. Ensure correct_category is one of the 8 valid categories listed below",
+      "6. Ensure distractor_categories has exactly 3 OTHER valid categories",
+      "7. Save the file and reload the game — no rebuild needed"
+    ],
+    "valid_categories": [
+      "Fire Safety & Emergency Preparedness",
+      "Chemical Management & Hazcom",
+      "PPE & Personal Protection",
+      "Electrical Safety",
+      "Ergonomics & Workplace Conditions",
+      "Waste Management & Environmental",
+      "Machine Guarding & Equipment Safety",
+      "Permits, Signage & Documentation"
+    ],
+    "id_format": "XX-YYY-NNN where XX=country code, YYY=facility abbreviation, NNN=number (e.g., UK-OFF-001, DE-MFG-012)",
+    "facility_codes": {
+      "uk-office": "UK-OFF",
+      "be-datacenter": "BE-DC",
+      "ca-pharmaceutical": "CA-PH",
+      "de-manufacturing": "DE-MFG",
+      "br-construction": "BR-CON",
+      "us-warehouse": "US-WH",
+      "jp-chemlab": "JP-CL",
+      "cn-foodprocessing": "CN-FP"
+    },
+    "content_guidelines": {
+      "mix": "Aim for ~65% non-compliance, ~25% compliant (answer: No), ~10% ambiguous (answer: Need More Info)",
+      "difficulty_scale": "1 = obvious violations, 2 = moderate, 3 = subtle, 4 = edge cases, 5 = expert-level",
+      "scene_description": "2-3 sentences describing what the player SEES. Be specific and visual. Don't reveal the answer.",
+      "explanation": "2-4 sentences. State the correct answer, explain WHY referencing the regulation, connect to the category, use accessible language for new hires.",
+      "humor": "Occasional funny or absurd situations are encouraged while keeping the compliance content accurate."
+    },
+    "encounter_template": {
+      "id": "XX-YYY-NNN",
+      "facility_type": "office",
+      "jurisdiction": "UK",
+      "title": "Short descriptive title",
+      "scene_description": "What the player sees (2-3 sentences)",
+      "scene_art_key": "snake_case_art_reference",
+      "is_noncompliance": true,
+      "correct_category": "One of the 8 valid categories",
+      "distractor_categories": ["Category A", "Category B", "Category C"],
+      "explanation": "Teaching explanation (2-4 sentences)",
+      "difficulty": 1,
+      "source_reference": "Enhesa reference string",
+      "tags": ["tag1", "tag2"]
+    }
+  }
+}
