@@ -160,6 +160,86 @@
     "tags": ["documentation", "risk_assessment", "record_keeping"]
   },
   {
+    "id": "UK-OFF-K01",
+    "facility_type": "office",
+    "jurisdiction": "UK",
+    "title": "Microwave with Damaged Door Seal",
+    "scene_description": "You inspect the microwave in the kitchen. The door seal is visibly warped along the bottom edge, with a small gap where the rubber has pulled away from the frame. Someone has taped a handwritten note to it reading 'Push hard to close'. The microwave is plugged in and appears to be in regular use.",
+    "scene_art_key": "microwave_damaged_seal",
+    "scene_image": "assets/ui/encounters/microwave_damaged_seal.png",
+    "is_noncompliance": true,
+    "correct_category": "Machine Guarding & Equipment Safety",
+    "distractor_categories": [
+      "Electrical Safety",
+      "Fire Safety & Emergency Preparedness",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is a non-compliance under Machine Guarding & Equipment Safety. Under PUWER 1998 (Regulations 5 and 11-12), all work equipment must be maintained in good repair and safety devices such as door interlocks must be functional. A damaged microwave door seal compromises the interlock system designed to contain microwave radiation. The appliance should be immediately taken out of service and tagged out until repaired or replaced.",
+    "difficulty": 2,
+    "source_reference": "UK Provision and Use of Work Equipment Regulations 1998, Regulations 5, 11-12",
+    "tags": ["equipment_safety", "microwave", "interlock", "puwer", "non_ionizing_radiation", "kitchen"]
+  },
+  {
+    "id": "UK-OFF-K02",
+    "facility_type": "office",
+    "jurisdiction": "UK",
+    "title": "Cleaning Chemicals Stored Next to Food",
+    "scene_description": "You open the cupboard under the kitchen sink looking for dishwashing liquid. Inside, you find a bottle of industrial oven cleaner, a container of bleach with a corroded cap and no label, and a descaling agent — all sitting directly beside a stack of mugs and a box of tea bags. There are no Safety Data Sheets posted nearby.",
+    "scene_art_key": "chemicals_near_food",
+    "scene_image": "assets/ui/encounters/chemicals_near_food.png",
+    "is_noncompliance": true,
+    "correct_category": "Chemical Management & Hazcom",
+    "distractor_categories": [
+      "Ergonomics & Workplace Conditions",
+      "Waste Management & Environmental",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is a non-compliance under Chemical Management & Hazcom. The COSHH Regulations 2002 require hazardous substances (bleach, oven cleaner, descaler) to be stored separately from food items in a secure area, with Safety Data Sheets accessible nearby. An unlabelled container with a corroded cap violates COSHH Regulation 7 (control measures) and Regulation 9 (labelling). Chemical contamination of food and drink is a recognised hazard that must be prevented.",
+    "difficulty": 2,
+    "source_reference": "UK Control of Substances Hazardous to Health Regulations 2002, Regulations 7 and 9",
+    "tags": ["coshh", "chemical_storage", "food_safety", "labelling", "kitchen"]
+  },
+  {
+    "id": "UK-OFF-K03",
+    "facility_type": "office",
+    "jurisdiction": "UK",
+    "title": "Kitchen Appliances Without PAT Stickers",
+    "scene_description": "You examine the kitchen appliances along the counter: a kettle, toaster, and coffee machine. None of them have PAT testing stickers. The appliances all appear to be in good physical condition — no frayed cables, no cracked casings, and the plugs look intact. You ask the office manager, who says 'We've never had those tested, do we need to?'",
+    "scene_art_key": "kitchen_no_pat",
+    "scene_image": "assets/ui/encounters/kitchen_no_pat.png",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Electrical Safety",
+    "distractor_categories": [
+      "Machine Guarding & Equipment Safety",
+      "Permits, Signage & Documentation",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is ambiguous — more information is needed. PAT testing is not a specific legal requirement in the UK. However, the Electricity at Work Regulations 1989 require that electrical equipment likely to cause injury is maintained in a safe condition. PAT testing is the widely accepted way to demonstrate compliance with this duty. Kitchen appliances in a wet environment with high use typically warrant regular testing. While the equipment appears physically sound, the employer cannot currently demonstrate their maintenance regime — a good auditor would recommend formal testing and record-keeping.",
+    "difficulty": 2,
+    "source_reference": "UK Electricity at Work Regulations 1989, Regulation 4",
+    "tags": ["electrical", "pat_testing", "maintenance", "ambiguous", "kitchen"]
+  },
+  {
+    "id": "UK-OFF-K04",
+    "facility_type": "office",
+    "jurisdiction": "UK",
+    "title": "Wrong Fire Extinguisher Type in Kitchen",
+    "scene_description": "On the wall near the kitchen entrance, you spot a CO2 fire extinguisher with a black band. The kitchen has a toaster, microwave, and a small countertop deep-fat fryer that staff use for Friday lunch. There is no fire blanket anywhere in the kitchen. The extinguisher's service tag shows it was last inspected 8 months ago.",
+    "scene_art_key": "wrong_extinguisher_kitchen",
+    "scene_image": "assets/ui/encounters/wrong_extinguisher_kitchen.png",
+    "is_noncompliance": true,
+    "correct_category": "Fire Safety & Emergency Preparedness",
+    "distractor_categories": [
+      "Machine Guarding & Equipment Safety",
+      "Permits, Signage & Documentation",
+      "Chemical Management & Hazcom"
+    ],
+    "explanation": "This is a non-compliance under Fire Safety & Emergency Preparedness. A kitchen with a deep-fat fryer requires a Class F wet chemical extinguisher (yellow band) and a fire blanket under the Regulatory Reform (Fire Safety) Order 2005. A CO2 extinguisher is suitable for electrical fires but not cooking oil fires — using CO2 on a fat fire can cause a violent flashover. While the CO2 unit is correctly serviced, it is the wrong type for the primary fire risk present.",
+    "difficulty": 2,
+    "source_reference": "UK Regulatory Reform (Fire Safety) Order 2005, BS 5306",
+    "tags": ["fire_safety", "extinguisher", "fire_blanket", "kitchen", "cooking_oil"]
+  },
+  {
     "id": "UK-OFF-009",
     "scene_description": "PLACEHOLDER - Describe what the player sees in 2-3 sentences. Be specific and visual.",
     "scene_art_key": "placeholder_004",
