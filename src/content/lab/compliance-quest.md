@@ -7,6 +7,7 @@ tags: ["game", "education", "pixel-art", "ai-generated-art", "react", "canvas", 
 image: "/images/lab/compliance-quest-poster.png"
 featuredImage: "/images/lab/compliance-quest-feature.png"
 repoUrl: "https://github.com/giffen/compliance-quest"
+liveUrl: "https://compliance-quest.giffen.me"
 published: true
 ---
 
