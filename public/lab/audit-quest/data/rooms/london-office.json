@@ -16,36 +16,6 @@
       "wallColor": "#3a3a5a",
       "objects": [
         {
-          "type": "desk",
-          "x": 8,
-          "y": 3
-        },
-        {
-          "type": "desk",
-          "x": 9,
-          "y": 3
-        },
-        {
-          "type": "monitor",
-          "x": 8,
-          "y": 2
-        },
-        {
-          "type": "monitor",
-          "x": 9,
-          "y": 2
-        },
-        {
-          "type": "chair",
-          "x": 8,
-          "y": 4
-        },
-        {
-          "type": "chair",
-          "x": 9,
-          "y": 4
-        },
-        {
           "type": "plant",
           "x": 1,
           "y": 2
@@ -54,16 +24,6 @@
           "type": "plant",
           "x": 18,
           "y": 2
-        },
-        {
-          "type": "couch",
-          "x": 3,
-          "y": 8
-        },
-        {
-          "type": "couch",
-          "x": 3,
-          "y": 10
         },
         {
           "type": "table_round",
@@ -86,14 +46,169 @@
           "y": 2
         },
         {
-          "type": "water_cooler",
-          "x": 17,
-          "y": 6
-        },
-        {
           "type": "bookshelf",
           "x": 12,
           "y": 2
+        },
+        {
+          "type": "couch",
+          "x": 4,
+          "y": 8
+        },
+        {
+          "type": "couch",
+          "x": 5,
+          "y": 8
+        },
+        {
+          "type": "couch",
+          "x": 6,
+          "y": 8
+        },
+        {
+          "type": "couch",
+          "x": 4,
+          "y": 10
+        },
+        {
+          "type": "couch",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "type": "couch",
+          "x": 6,
+          "y": 10
+        },
+        {
+          "type": "couch",
+          "x": 12,
+          "y": 8
+        },
+        {
+          "type": "couch",
+          "x": 13,
+          "y": 8
+        },
+        {
+          "type": "couch",
+          "x": 14,
+          "y": 8
+        },
+        {
+          "type": "couch",
+          "x": 12,
+          "y": 10
+        },
+        {
+          "type": "couch",
+          "x": 13,
+          "y": 10
+        },
+        {
+          "type": "couch",
+          "x": 14,
+          "y": 10
+        },
+        {
+          "type": "table_round",
+          "x": 13,
+          "y": 9
+        },
+        {
+          "type": "water_cooler",
+          "x": 5,
+          "y": 12
+        },
+        {
+          "type": "plant",
+          "x": 7,
+          "y": 2
+        },
+        {
+          "type": "plant",
+          "x": 11,
+          "y": 2
+        },
+        {
+          "type": "bookshelf",
+          "x": 6,
+          "y": 2
+        },
+        {
+          "type": "lamp",
+          "x": 9,
+          "y": 2
+        },
+        {
+          "type": "filing_cabinet",
+          "x": 16,
+          "y": 2
+        },
+        {
+          "type": "filing_cabinet",
+          "x": 17,
+          "y": 2
+        },
+        {
+          "type": "printer",
+          "x": 8,
+          "y": 2
+        },
+        {
+          "type": "monitor",
+          "x": 10,
+          "y": 2
+        },
+        {
+          "type": "table_long",
+          "x": 7,
+          "y": 5
+        },
+        {
+          "type": "table_long",
+          "x": 11,
+          "y": 5
+        },
+        {
+          "type": "table_long",
+          "x": 10,
+          "y": 5
+        },
+        {
+          "type": "table_long",
+          "x": 9,
+          "y": 5
+        },
+        {
+          "type": "table_long",
+          "x": 8,
+          "y": 5
+        },
+        {
+          "type": "chair",
+          "x": 8,
+          "y": 4
+        },
+        {
+          "type": "chair",
+          "x": 10,
+          "y": 4
+        },
+        {
+          "type": "lamp",
+          "x": 17,
+          "y": 11
+        },
+        {
+          "type": "lamp",
+          "x": 2,
+          "y": 11
+        },
+        {
+          "type": "lamp",
+          "x": 2,
+          "y": 6
         }
       ],
       "walkable": [
@@ -143,8 +258,96 @@
         ],
         [
           false,
+          false,
           true,
           true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          false,
           true,
           true,
           true,
@@ -213,6 +416,7 @@
           true,
           true,
           true,
+          false,
           true,
           true,
           true,
@@ -220,8 +424,7 @@
           true,
           true,
           true,
-          true,
-          true,
+          false,
           true,
           true,
           true,
@@ -254,26 +457,6 @@
         [
           false,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
           false,
           true,
           true,
@@ -289,13 +472,16 @@
           true,
           true,
           true,
-          true,
-          true,
-          true,
+          false,
           true,
           false
         ],
         [
+          false,
+          false,
+          true,
+          true,
+          true,
           false,
           true,
           true,
@@ -309,78 +495,7 @@
           true,
           true,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
           false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
           false
         ],
         [
@@ -422,7 +537,13 @@
           "spawnY": 6
         }
       ],
-      "encounters": []
+      "encounters": [
+        {
+          "x": 17,
+          "y": 5,
+          "encounterId": "UK-OFF-002"
+        }
+      ]
     },
     "open_office": {
       "id": "open_office",
@@ -430,6 +551,316 @@
       "width": 20,
       "height": 14,
       "floorStyle": "carpet",
+      "floors": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          null
+        ],
+        [
+          null,
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          null
+        ],
+        [
+          null,
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
       "wallColor": "#3a3a5a",
       "objects": [
         {
@@ -553,49 +984,304 @@
           "y": 7
         },
         {
-          "type": "printer",
-          "x": 7,
-          "y": 2
-        },
-        {
-          "type": "plant",
-          "x": 1,
-          "y": 2
-        },
-        {
-          "type": "plant",
-          "x": 17,
-          "y": 2
-        },
-        {
-          "type": "bookshelf",
+          "type": "wall_horizontal",
           "x": 1,
           "y": 9
         },
         {
-          "type": "bookshelf",
-          "x": 17,
+          "type": "wall_horizontal",
+          "x": 2,
           "y": 9
         },
         {
-          "type": "filing_cabinet",
+          "type": "wall_horizontal",
+          "x": 4,
+          "y": 9
+        },
+        {
+          "type": "wall_horizontal",
+          "x": 5,
+          "y": 9
+        },
+        {
+          "type": "wall_horizontal",
+          "x": 6,
+          "y": 9
+        },
+        {
+          "type": "wall_horizontal",
           "x": 7,
           "y": 9
         },
         {
-          "type": "water_cooler",
+          "type": "wall_horizontal",
+          "x": 11,
+          "y": 9
+        },
+        {
+          "type": "wall_horizontal",
+          "x": 12,
+          "y": 9
+        },
+        {
+          "type": "wall_horizontal",
+          "x": 14,
+          "y": 9
+        },
+        {
+          "type": "wall_horizontal",
+          "x": 15,
+          "y": 9
+        },
+        {
+          "type": "wall_horizontal",
           "x": 16,
           "y": 9
         },
         {
-          "type": "trash_can",
+          "type": "wall_horizontal",
+          "x": 17,
+          "y": 9
+        },
+        {
+          "type": "wall_horizontal",
+          "x": 18,
+          "y": 9
+        },
+        {
+          "type": "wall_vertical",
+          "x": 11,
+          "y": 10
+        },
+        {
+          "type": "wall_vertical",
+          "x": 11,
+          "y": 11
+        },
+        {
+          "type": "wall_vertical",
+          "x": 11,
+          "y": 12
+        },
+        {
+          "type": "wall_vertical",
+          "x": 7,
+          "y": 10
+        },
+        {
+          "type": "wall_vertical",
+          "x": 7,
+          "y": 11
+        },
+        {
+          "type": "wall_vertical",
+          "x": 7,
+          "y": 12
+        },
+        {
+          "type": "desk",
+          "x": 16,
+          "y": 2
+        },
+        {
+          "type": "desk",
+          "x": 16,
+          "y": 6
+        },
+        {
+          "type": "desk",
+          "x": 6,
+          "y": 2
+        },
+        {
+          "type": "desk",
+          "x": 6,
+          "y": 6
+        },
+        {
+          "type": "monitor",
+          "x": 6,
+          "y": 1
+        },
+        {
+          "type": "monitor",
+          "x": 16,
+          "y": 1
+        },
+        {
+          "type": "monitor",
+          "x": 16,
+          "y": 5
+        },
+        {
+          "type": "monitor",
+          "x": 6,
+          "y": 5
+        },
+        {
+          "type": "chair",
+          "x": 16,
+          "y": 7
+        },
+        {
+          "type": "chair",
+          "x": 6,
+          "y": 7
+        },
+        {
+          "type": "printer",
+          "x": 18,
+          "y": 2
+        },
+        {
+          "type": "printer",
           "x": 18,
           "y": 3
         },
         {
-          "type": "lamp",
-          "x": 6,
+          "type": "chair",
+          "x": 16,
+          "y": 3
+        },
+        {
+          "type": "filing_cabinet",
+          "x": 1,
           "y": 1
+        },
+        {
+          "type": "filing_cabinet",
+          "x": 13,
+          "y": 1
+        },
+        {
+          "type": "filing_cabinet",
+          "x": 17,
+          "y": 1
+        },
+        {
+          "type": "plant",
+          "x": 18,
+          "y": 8
+        },
+        {
+          "type": "plant",
+          "x": 1,
+          "y": 8
+        },
+        {
+          "type": "plant",
+          "x": 18,
+          "y": 1
+        },
+        {
+          "type": "lamp",
+          "x": 7,
+          "y": 2
+        },
+        {
+          "type": "lamp",
+          "x": 7,
+          "y": 6
+        },
+        {
+          "type": "lamp",
+          "x": 11,
+          "y": 6
+        },
+        {
+          "type": "lamp",
+          "x": 11,
+          "y": 2
+        },
+        {
+          "type": "chair",
+          "x": 6,
+          "y": 3
+        },
+        {
+          "type": "water_cooler",
+          "x": 8,
+          "y": 12
+        },
+        {
+          "type": "water_cooler_bottles",
+          "x": 8,
+          "y": 11
+        },
+        {
+          "type": "whiteboard",
+          "x": 12,
+          "y": 11
+        },
+        {
+          "type": "desk",
+          "x": 17,
+          "y": 10
+        },
+        {
+          "type": "chair",
+          "x": 18,
+          "y": 10
+        },
+        {
+          "type": "monitor",
+          "x": 16,
+          "y": 10
+        },
+        {
+          "type": "bookshelf",
+          "x": 17,
+          "y": 12
+        },
+        {
+          "type": "filing_cabinet",
+          "x": 18,
+          "y": 12
+        },
+        {
+          "type": "cardboard_box",
+          "x": 12,
+          "y": 12
+        },
+        {
+          "type": "table_round",
+          "x": 5,
+          "y": 11
+        },
+        {
+          "type": "chair",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "type": "chair",
+          "x": 6,
+          "y": 11
+        },
+        {
+          "type": "chair",
+          "x": 5,
+          "y": 12
+        },
+        {
+          "type": "chair",
+          "x": 4,
+          "y": 11
+        },
+        {
+          "type": "whiteboard",
+          "x": 1,
+          "y": 11
+        },
+        {
+          "type": "bookshelf",
+          "x": 1,
+          "y": 10
+        },
+        {
+          "type": "lamp",
+          "x": 1,
+          "y": 12
         }
       ],
       "walkable": [
@@ -625,21 +1311,65 @@
           false,
           false,
           false,
+          true,
           false,
+          true,
           false,
-          false,
+          true,
+          true,
+          true,
+          true,
+          true,
           false,
           false,
           false,
           true,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          false,
+          true,
+          false,
           true,
           false,
           false,
+          true,
+          true,
+          true,
           false,
           false,
+          true,
           false,
+          true,
           false,
+          true,
           false,
+          false
+        ],
+        [
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
           false,
           false
         ],
@@ -668,26 +1398,71 @@
         [
           false,
           true,
+          false,
+          true,
+          false,
+          true,
+          false,
           true,
           true,
           true,
           true,
           true,
+          false,
           true,
+          false,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
+          false,
           true,
           true,
           false
         ],
         [
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
           false,
           true,
           true,
@@ -705,90 +1480,67 @@
           true,
           true,
           true,
-          true,
-          true,
+          false,
           false
         ],
         [
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
           false,
           true,
           true,
           true,
           true,
           true,
+          false,
           true,
           true,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
           false,
           true,
           true,
           true,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
+          false,
+          false,
+          false,
           false
         ],
         [
           false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
           false,
           true,
           true,
           true,
+          false,
+          true,
+          false,
+          false,
           true,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
+          false,
+          false,
           true,
           true,
           true,
@@ -799,90 +1551,24 @@
         ],
         [
           false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
           false,
           true,
           true,
           true,
           true,
           true,
+          false,
+          false,
           true,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
+          false,
           false,
           true,
           true,
           true,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
           false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
+          false,
           false
         ],
         [
@@ -966,7 +1652,18 @@
           "spawnY": 3
         }
       ],
-      "encounters": []
+      "encounters": [
+        {
+          "x": 5,
+          "y": 2,
+          "encounterId": "UK-OFF-005"
+        },
+        {
+          "x": 17,
+          "y": 5,
+          "encounterId": "UK-OFF-007"
+        }
+      ]
     },
     "meeting_room": {
       "id": "meeting_room",
@@ -974,6 +1671,316 @@
       "width": 20,
       "height": 14,
       "floorStyle": "carpet",
+      "floors": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          "checkerboard",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "marble",
+          "marble",
+          "marble",
+          "marble",
+          "marble",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "marble",
+          "marble",
+          "marble",
+          "marble",
+          "marble",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "marble",
+          "marble",
+          "marble",
+          "marble",
+          "marble",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "marble",
+          "marble",
+          "marble",
+          "marble",
+          "marble",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "marble",
+          "marble",
+          "marble",
+          "marble",
+          "marble",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "marble",
+          "marble",
+          "marble",
+          "marble",
+          "marble",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
       "wallColor": "#3a3a5a",
       "objects": [
         {
@@ -1060,6 +2067,236 @@
           "type": "trash_can",
           "x": 11,
           "y": 8
+        },
+        {
+          "type": "wall_vertical",
+          "x": 13,
+          "y": 2
+        },
+        {
+          "type": "wall_vertical",
+          "x": 13,
+          "y": 3
+        },
+        {
+          "type": "wall_vertical",
+          "x": 13,
+          "y": 5
+        },
+        {
+          "type": "wall_vertical",
+          "x": 13,
+          "y": 6
+        },
+        {
+          "type": "wall_vertical",
+          "x": 13,
+          "y": 7
+        },
+        {
+          "type": "wall_vertical",
+          "x": 13,
+          "y": 8
+        },
+        {
+          "type": "wall_vertical",
+          "x": 13,
+          "y": 9
+        },
+        {
+          "type": "wall_vertical",
+          "x": 13,
+          "y": 11
+        },
+        {
+          "type": "wall_vertical",
+          "x": 13,
+          "y": 12
+        },
+        {
+          "type": "wall_horizontal",
+          "x": 14,
+          "y": 6
+        },
+        {
+          "type": "wall_horizontal",
+          "x": 15,
+          "y": 6
+        },
+        {
+          "type": "wall_horizontal",
+          "x": 16,
+          "y": 6
+        },
+        {
+          "type": "wall_horizontal",
+          "x": 17,
+          "y": 6
+        },
+        {
+          "type": "wall_horizontal",
+          "x": 18,
+          "y": 6
+        },
+        {
+          "type": "table_long",
+          "x": 6,
+          "y": 4
+        },
+        {
+          "type": "table_long",
+          "x": 5,
+          "y": 5
+        },
+        {
+          "type": "table_long",
+          "x": 6,
+          "y": 5
+        },
+        {
+          "type": "table_long",
+          "x": 7,
+          "y": 5
+        },
+        {
+          "type": "table_long",
+          "x": 8,
+          "y": 5
+        },
+        {
+          "type": "table_long",
+          "x": 8,
+          "y": 4
+        },
+        {
+          "type": "chair",
+          "x": 8,
+          "y": 3
+        },
+        {
+          "type": "chair",
+          "x": 8,
+          "y": 6
+        },
+        {
+          "type": "chair",
+          "x": 6,
+          "y": 6
+        },
+        {
+          "type": "chair",
+          "x": 6,
+          "y": 3
+        },
+        {
+          "type": "monitor",
+          "x": 1,
+          "y": 4
+        },
+        {
+          "type": "monitor",
+          "x": 1,
+          "y": 5
+        },
+        {
+          "type": "table_long",
+          "x": 16,
+          "y": 8
+        },
+        {
+          "type": "monitor",
+          "x": 16,
+          "y": 9
+        },
+        {
+          "type": "chair",
+          "x": 16,
+          "y": 7
+        },
+        {
+          "type": "bookshelf",
+          "x": 18,
+          "y": 7
+        },
+        {
+          "type": "bookshelf",
+          "x": 18,
+          "y": 8
+        },
+        {
+          "type": "bookshelf",
+          "x": 18,
+          "y": 9
+        },
+        {
+          "type": "plant",
+          "x": 14,
+          "y": 7
+        },
+        {
+          "type": "plant",
+          "x": 18,
+          "y": 5
+        },
+        {
+          "type": "couch",
+          "x": 18,
+          "y": 11
+        },
+        {
+          "type": "couch",
+          "x": 18,
+          "y": 12
+        },
+        {
+          "type": "table_round",
+          "x": 15,
+          "y": 12
+        },
+        {
+          "type": "chair",
+          "x": 14,
+          "y": 12
+        },
+        {
+          "type": "chair",
+          "x": 16,
+          "y": 12
+        },
+        {
+          "type": "whiteboard",
+          "x": 15,
+          "y": 11
+        },
+        {
+          "type": "desk",
+          "x": 17,
+          "y": 3
+        },
+        {
+          "type": "chair",
+          "x": 18,
+          "y": 3
+        },
+        {
+          "type": "monitor",
+          "x": 16,
+          "y": 3
+        },
+        {
+          "type": "printer",
+          "x": 14,
+          "y": 2
+        },
+        {
+          "type": "filing_cabinet",
+          "x": 15,
+          "y": 2
+        },
+        {
+          "type": "lamp",
+          "x": 14,
+          "y": 5
         }
       ],
       "walkable": [
@@ -1109,6 +2346,28 @@
         ],
         [
           false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
           true,
           true,
           true,
@@ -1121,12 +2380,144 @@
           true,
           true,
           true,
+          false,
+          true,
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
           true,
           true,
           true,
           true,
           true,
           true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false,
+          true,
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false,
+          true,
+          false,
           false
         ],
         [
@@ -1165,12 +2556,12 @@
           true,
           true,
           true,
+          false,
+          true,
+          false,
           true,
           true,
-          true,
-          true,
-          true,
-          true,
+          false,
           false
         ],
         [
@@ -1187,166 +2578,12 @@
           true,
           true,
           true,
+          false,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
           false,
           true,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
           false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
           false
         ],
         [
@@ -1388,7 +2625,18 @@
           "spawnY": 3
         }
       ],
-      "encounters": []
+      "encounters": [
+        {
+          "x": 15,
+          "y": 8,
+          "encounterId": "UK-OFF-008"
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "encounterId": "UK-OFF-006"
+        }
+      ]
     },
     "server_room": {
       "id": "server_room",
@@ -1424,34 +2672,209 @@
           "y": 2
         },
         {
+          "type": "fire_extinguisher",
+          "x": 18,
+          "y": 2
+        },
+        {
+          "type": "cardboard_box",
+          "x": 15,
+          "y": 12
+        },
+        {
+          "type": "cardboard_box",
+          "x": 16,
+          "y": 12
+        },
+        {
+          "type": "cardboard_box",
+          "x": 17,
+          "y": 12
+        },
+        {
+          "type": "cardboard_box",
+          "x": 16,
+          "y": 11
+        },
+        {
+          "type": "electrical_panel",
+          "x": 3,
+          "y": 13
+        },
+        {
+          "type": "lamp",
+          "x": 12,
+          "y": 2
+        },
+        {
+          "type": "cardboard_box",
+          "x": 18,
+          "y": 10
+        },
+        {
+          "type": "cardboard_box",
+          "x": 18,
+          "y": 9
+        },
+        {
+          "type": "cardboard_box",
+          "x": 18,
+          "y": 8
+        },
+        {
+          "type": "trash_can",
+          "x": 18,
+          "y": 5
+        },
+        {
+          "type": "water_cooler_bottles",
+          "x": 18,
+          "y": 12
+        },
+        {
+          "type": "water_cooler_bottles",
+          "x": 18,
+          "y": 11
+        },
+        {
+          "type": "monitor",
+          "x": 14,
+          "y": 2
+        },
+        {
+          "type": "desk",
+          "x": 15,
+          "y": 3
+        },
+        {
+          "type": "chair",
+          "x": 15,
+          "y": 4
+        },
+        {
+          "type": "monitor",
+          "x": 15,
+          "y": 2
+        },
+        {
+          "type": "monitor",
+          "x": 16,
+          "y": 2
+        },
+        {
           "type": "server_rack",
           "x": 2,
-          "y": 5
+          "y": 4
         },
         {
           "type": "server_rack",
           "x": 4,
-          "y": 5
+          "y": 4
         },
         {
           "type": "server_rack",
           "x": 6,
-          "y": 5
+          "y": 4
         },
         {
           "type": "server_rack",
           "x": 8,
-          "y": 5
+          "y": 4
         },
         {
           "type": "server_rack",
           "x": 10,
-          "y": 5
+          "y": 4
         },
         {
-          "type": "fire_extinguisher",
-          "x": 18,
-          "y": 2
+          "type": "filing_cabinet",
+          "x": 8,
+          "y": 12
+        },
+        {
+          "type": "filing_cabinet",
+          "x": 9,
+          "y": 12
+        },
+        {
+          "type": "filing_cabinet",
+          "x": 10,
+          "y": 12
+        },
+        {
+          "type": "bookshelf",
+          "x": 11,
+          "y": 12
+        },
+        {
+          "type": "bookshelf",
+          "x": 7,
+          "y": 12
+        },
+        {
+          "type": "server_rack",
+          "x": 2,
+          "y": 7
+        },
+        {
+          "type": "server_rack",
+          "x": 4,
+          "y": 7
+        },
+        {
+          "type": "server_rack",
+          "x": 6,
+          "y": 7
+        },
+        {
+          "type": "server_rack",
+          "x": 8,
+          "y": 7
+        },
+        {
+          "type": "server_rack",
+          "x": 10,
+          "y": 7
+        },
+        {
+          "type": "server_rack",
+          "x": 2,
+          "y": 9
+        },
+        {
+          "type": "server_rack",
+          "x": 4,
+          "y": 9
+        },
+        {
+          "type": "server_rack",
+          "x": 6,
+          "y": 9
+        },
+        {
+          "type": "server_rack",
+          "x": 8,
+          "y": 9
+        },
+        {
+          "type": "server_rack",
+          "x": 10,
+          "y": 9
+        },
+        {
+          "type": "lamp",
+          "x": 12,
+          "y": 7
+        },
+        {
+          "type": "lamp",
+          "x": 12,
+          "y": 9
+        },
+        {
+          "type": "lamp",
+          "x": 12,
+          "y": 4
         }
       ],
       "walkable": [
@@ -1512,6 +2935,72 @@
           true,
           false,
           true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
           true,
           true,
           true,
@@ -1546,26 +3035,6 @@
         [
           false,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
           false,
           true,
           false,
@@ -1577,8 +3046,6 @@
           false,
           true,
           false,
-          true,
-          true,
           true,
           true,
           true,
@@ -1606,7 +3073,29 @@
           true,
           true,
           true,
+          false,
+          false
+        ],
+        [
+          false,
           true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
           false
         ],
         [
@@ -1628,7 +3117,7 @@
           true,
           true,
           true,
-          true,
+          false,
           false
         ],
         [
@@ -1648,9 +3137,9 @@
           true,
           true,
           true,
+          false,
           true,
-          true,
-          true,
+          false,
           false
         ],
         [
@@ -1661,84 +3150,18 @@
           true,
           true,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
+          false,
+          false,
+          false,
+          false,
           false,
           true,
           true,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
           false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
           false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
+          false,
+          false,
           false
         ],
         [
@@ -1758,7 +3181,7 @@
           false,
           false,
           false,
-          false,
+          true,
           false,
           false,
           false
@@ -1778,6 +3201,13 @@
           "targetRoom": "open_office",
           "spawnX": 18,
           "spawnY": 6
+        },
+        {
+          "x": 16,
+          "y": 13,
+          "targetRoom": "reception",
+          "spawnX": 1,
+          "spawnY": 1
         }
       ],
       "encounters": [
@@ -1785,6 +3215,16 @@
           "x": 17,
           "y": 2,
           "encounterId": "UK-OFF-001"
+        },
+        {
+          "x": 15,
+          "y": 11,
+          "encounterId": "UK-OFF-004"
+        },
+        {
+          "x": 3,
+          "y": 12,
+          "encounterId": "UK-OFF-003"
         }
       ]
     },
@@ -1819,11 +3259,6 @@
         {
           "type": "counter",
           "x": 5,
-          "y": 2
-        },
-        {
-          "type": "counter",
-          "x": 10,
           "y": 2
         },
         {
@@ -1925,6 +3360,101 @@
           "type": "microwave",
           "x": 7,
           "y": 2
+        },
+        {
+          "type": "table_round",
+          "x": 4,
+          "y": 10
+        },
+        {
+          "type": "table_round",
+          "x": 9,
+          "y": 10
+        },
+        {
+          "type": "water_cooler_bottles",
+          "x": 14,
+          "y": 6
+        },
+        {
+          "type": "counter",
+          "x": 15,
+          "y": 2
+        },
+        {
+          "type": "counter",
+          "x": 16,
+          "y": 2
+        },
+        {
+          "type": "fire_extinguisher",
+          "x": 18,
+          "y": 2
+        },
+        {
+          "type": "sink",
+          "x": 17,
+          "y": 2
+        },
+        {
+          "type": "chair",
+          "x": 9,
+          "y": 9
+        },
+        {
+          "type": "chair",
+          "x": 8,
+          "y": 10
+        },
+        {
+          "type": "chair",
+          "x": 10,
+          "y": 10
+        },
+        {
+          "type": "chair",
+          "x": 9,
+          "y": 11
+        },
+        {
+          "type": "chair",
+          "x": 4,
+          "y": 9
+        },
+        {
+          "type": "chair",
+          "x": 5,
+          "y": 10
+        },
+        {
+          "type": "chair",
+          "x": 4,
+          "y": 11
+        },
+        {
+          "type": "chair",
+          "x": 3,
+          "y": 10
+        },
+        {
+          "type": "plant",
+          "x": 12,
+          "y": 11
+        },
+        {
+          "type": "plant",
+          "x": 1,
+          "y": 11
+        },
+        {
+          "type": "trash_can",
+          "x": 13,
+          "y": 12
+        },
+        {
+          "type": "counter",
+          "x": 8,
+          "y": 2
         }
       ],
       "walkable": [
@@ -1974,24 +3504,24 @@
         ],
         [
           false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
           true,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
           false
         ],
         [
@@ -2053,6 +3583,72 @@
           true,
           true,
           true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
           true,
           true,
           true,
@@ -2087,6 +3683,12 @@
           true,
           true,
           true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
           true,
           true,
           true,
@@ -2096,6 +3698,22 @@
           true,
           true,
           true,
+          false
+        ],
+        [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
           true,
           true,
           true,
@@ -2118,95 +3736,7 @@
           true,
           true,
           true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
           false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          false
-        ],
-        [
-          false,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
-          true,
           true,
           true,
           true,
@@ -2253,7 +3783,28 @@
           "spawnY": 12
         }
       ],
-      "encounters": []
+      "encounters": [
+        {
+          "x": 7,
+          "y": 3,
+          "encounterId": "UK-OFF-K01"
+        },
+        {
+          "x": 15,
+          "y": 3,
+          "encounterId": "UK-OFF-K02"
+        },
+        {
+          "x": 4,
+          "y": 3,
+          "encounterId": "UK-OFF-K03"
+        },
+        {
+          "x": 18,
+          "y": 3,
+          "encounterId": "UK-OFF-K04"
+        }
+      ]
     }
   }
 }
