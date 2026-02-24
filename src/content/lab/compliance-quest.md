@@ -6,8 +6,7 @@ status: "in-progress"
 tags: ["game", "education", "pixel-art", "ai-generated-art", "react", "canvas", "ehs", "compliance"]
 image: "/images/lab/compliance-quest-poster.png"
 featuredImage: "/images/lab/compliance-quest-feature.png"
-repoUrl: "https://github.com/giffen/compliance-quest"
-liveUrl: "https://www.giffen.me/lab/audit-quest"
+liveUrl: "https://www.giffen.me/lab/audit-quest/"
 published: true
 ---
 
