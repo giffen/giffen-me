@@ -22,8 +22,6 @@ Audit Quest: Global Compliance is a Dragon Quest-meets-Street Fighter 2 mashup. 
 
 The eight facilities span London, Brussels, Toronto, Frankfurt, Sao Paulo, California, Osaka, and Shanghai—each with jurisdiction-specific regulations and escalating difficulty. The MVP ships with the London Office fully playable and the other seven marked "Coming Soon."
 
-![Movie poster for Audit Quest: Global Compliance](/images/lab/compliance-quest-poster.png)
-
 ## The Art Style Saga
 
 This was the hardest part of the entire project, and it had nothing to do with code.
@@ -72,15 +70,7 @@ For assets that needed more fidelity—the title screen, character portraits, en
 
 ## How Long It Took
 
-About two weeks from blank directory to playable MVP, working with Claude Code as a pair programming partner. The breakdown:
-
-- **Days 1-2**: PRD, MVP plan, project scaffolding, title screen with AI-generated art
-- **Days 3-4**: Full game state architecture, 11 screens wired up, character creation, mode selection
-- **Days 5-6**: World map, flight animations, narrative system, jurisdiction data for all 8 facilities
-- **Days 7-8**: The big pivot—scrapping purchased tileset packs and building the programmatic canvas renderer from scratch. This was the turning point. Once the `fillRect` approach clicked, rooms came together fast.
-- **Days 9-10**: Encounter battle system, scoring, two-phase design, encounter JSON templates
-- **Days 11-12**: Map editor, room refinement, encounter trigger placement, London Office with 5 connected rooms
-- **Days 13-14**: Character select overhaul (TMNT arcade portraits), diverse player sprites, polish, production build gating
+A long weekend. Started Friday evening, finished Monday—working part-time around everything else. From blank directory to a playable MVP with a full game loop, 11 screens, a programmatic rendering engine, AI-generated art, and a built-in map editor.
 
 Claude Code handled roughly 90% of the implementation. I drove architecture decisions, art direction, and all the iteration on visual style. The AI image generation pipeline (Replicate MCP + Stability AI MCP) was invaluable for assets that needed more than colored rectangles—but the irony is that the most distinctive part of the game's look came from deliberately choosing *less* fidelity, not more.
 
