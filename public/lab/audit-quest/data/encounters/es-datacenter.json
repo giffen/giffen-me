@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ES-DC-001",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "Water Sprinklers in Server Hall",
+    "scene_description": "You look up and notice traditional water sprinkler heads installed across the ceiling of a server hall filled with expensive computing equipment. Water damage from an accidental discharge could destroy millions of euros in hardware.",
+    "scene_art_key": "water_sprinklers_server",
+    "scene_image": "assets/ui/encounters/water_sprinklers_server.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Fire Safety & Emergency Preparedness",
+    "distractor_categories": [
+      "Electrical Safety",
+      "Machine Guarding & Equipment Safety",
+      "Waste Management & Environmental"
+    ],
+    "explanation": "This is a non-compliance under Fire Safety & Emergency Preparedness. While water sprinklers are common in offices, data center server halls should use clean agent suppression systems (e.g., FM-200 or Novec 1230) to protect sensitive electronics. Water-based systems pose a greater damage risk than the fire itself. Spanish regulations under LPRL require fire protection measures appropriate to the specific hazards present.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER — Ley de Prevención de Riesgos Laborales, Real Decreto 2267/2004 (RSCIEI)",
+    "tags": ["fire_safety", "suppression", "data_center", "water_damage"]
+  },
+  {
+    "id": "ES-DC-002",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "Missing Bilingual Safety Signage",
+    "scene_description": "At the security entrance, you notice the emergency evacuation map and fire procedure signs are posted only in English. Several technicians on site speak primarily Spanish, and the site is located in Madrid.",
+    "scene_art_key": "missing_bilingual_signs",
+    "scene_image": "assets/ui/encounters/missing_bilingual_signs.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Permits, Signage & Documentation",
+    "distractor_categories": [
+      "Fire Safety & Emergency Preparedness",
+      "Ergonomics & Workplace Conditions",
+      "PPE & Personal Protection"
+    ],
+    "explanation": "This is a non-compliance under Permits, Signage & Documentation. Under Spanish law (LPRL Article 18), employers must ensure that safety information is accessible and understandable to all workers. In Spain, safety signage must be in Spanish at minimum. Having English-only signs in a Madrid facility means Spanish-speaking workers cannot understand critical emergency procedures.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER — LPRL Article 18, Real Decreto 485/1997 (Safety Signage)",
+    "tags": ["signage", "documentation", "language", "accessibility"]
+  },
+  {
+    "id": "ES-DC-003",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "UPS Bypass Switch Without Lockout",
+    "scene_description": "In the NOC, you spot a large UPS bypass switch panel. The switch can route mains power directly to the servers, bypassing all battery protection. There are no lockout/tagout devices on the switch, and no procedure posted nearby.",
+    "scene_art_key": "ups_bypass_no_loto",
+    "scene_image": "assets/ui/encounters/ups_bypass_no_loto.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Machine Guarding & Equipment Safety",
+    "distractor_categories": [
+      "Electrical Safety",
+      "Permits, Signage & Documentation",
+      "Fire Safety & Emergency Preparedness"
+    ],
+    "explanation": "This is a non-compliance under Machine Guarding & Equipment Safety. The UPS bypass switch can release hazardous energy and must have lockout/tagout (LOTO) provisions. Without LOTO devices or procedures, a worker could accidentally energize equipment during maintenance, creating risk of electrocution or equipment damage. Spain's LPRL and EU Directive 2009/104/EC require safeguards for equipment that can release hazardous energy.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER — LPRL, EU Directive 2009/104/EC (Work Equipment)",
+    "tags": ["lockout_tagout", "energy_control", "ups", "safety_procedure"]
+  },
+  {
+    "id": "ES-DC-004",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "Properly Set Up NOC Workstation",
+    "scene_description": "A NOC operator's workstation has an adjustable monitor arm positioning the screen at eye level, an ergonomic keyboard tray at the correct height, a footrest under the desk, and an adjustable chair with lumbar support. A small lamp provides task lighting without screen glare.",
+    "scene_art_key": "noc_workstation_proper",
+    "scene_image": "assets/ui/encounters/noc_workstation_proper.jpg",
+    "is_noncompliance": false,
+    "correct_category": "Ergonomics & Workplace Conditions",
+    "distractor_categories": [
+      "Electrical Safety",
+      "Permits, Signage & Documentation",
+      "PPE & Personal Protection"
+    ],
+    "explanation": "This is actually compliant. The workstation meets ergonomic requirements under Real Decreto 488/1997 for display screen equipment. The adjustable monitor at eye level, proper keyboard height, footrest, adjustable chair with lumbar support, and appropriate task lighting all demonstrate good ergonomic practice for 24/7 NOC operations.",
+    "difficulty": 1,
+    "source_reference": "PLACEHOLDER — Real Decreto 488/1997 (Display Screen Equipment)",
+    "tags": ["ergonomics", "workstation", "display_screen", "compliant"]
+  },
+  {
+    "id": "ES-DC-005",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "NOC Operator Working 14-Hour Shift",
+    "scene_description": "You chat with a NOC operator who mentions he's been on shift for 14 hours straight because his replacement called in sick. He's monitoring dozens of screens, and there are empty energy drink cans on his desk. He says this happens 'a couple times a month.'",
+    "scene_art_key": "noc_long_shift",
+    "scene_image": "assets/ui/encounters/noc_long_shift.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Ergonomics & Workplace Conditions",
+    "distractor_categories": [
+      "PPE & Personal Protection",
+      "Permits, Signage & Documentation",
+      "Machine Guarding & Equipment Safety"
+    ],
+    "explanation": "This is a non-compliance under Ergonomics & Workplace Conditions. Spain's Estatuto de los Trabajadores (Workers' Statute) limits regular working hours and requires minimum rest periods. A 14-hour shift violates the maximum working time provisions, and recurring instances suggest a systemic scheduling failure. Fatigue from extended shifts also impairs the ability to monitor critical systems effectively.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER — Estatuto de los Trabajadores, LPRL Article 15",
+    "tags": ["working_hours", "fatigue", "ergonomics", "scheduling"]
+  },
+  {
+    "id": "ES-DC-006",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "Exposed Cable Run Under Raised Floor",
+    "scene_description": "A raised floor tile has been removed in the server hall, exposing a tangled mass of power cables and network cabling underneath. Several power cables have damaged insulation, and there's no barrier or warning sign around the open tile.",
+    "scene_art_key": "exposed_cables_floor",
+    "scene_image": "assets/ui/encounters/exposed_cables_floor.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Electrical Safety",
+    "distractor_categories": [
+      "Fire Safety & Emergency Preparedness",
+      "Permits, Signage & Documentation",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under Electrical Safety. Exposed power cables with damaged insulation present a serious electrocution hazard. Under Spain's Reglamento Electrotécnico de Baja Tensión (REBT) and LPRL, electrical installations must be properly maintained with intact insulation. The open floor tile without a barrier also creates a fall hazard and allows unauthorized access to electrical infrastructure.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER — REBT (Real Decreto 842/2002), LPRL",
+    "tags": ["electrical", "cables", "insulation", "fall_hazard"]
+  },
+  {
+    "id": "ES-DC-007",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "Properly Maintained Clean Agent System",
+    "scene_description": "In the server hall, you inspect a clean agent fire suppression system. The FM-200 cylinders show current inspection tags dated two months ago. The discharge nozzles are unobstructed, the control panel shows a green 'READY' status, and a certification placard is mounted nearby.",
+    "scene_art_key": "clean_agent_proper",
+    "scene_image": "assets/ui/encounters/clean_agent_proper.jpg",
+    "is_noncompliance": false,
+    "correct_category": "Fire Safety & Emergency Preparedness",
+    "distractor_categories": [
+      "Permits, Signage & Documentation",
+      "Chemical Management & Hazcom",
+      "Machine Guarding & Equipment Safety"
+    ],
+    "explanation": "This is actually compliant. The clean agent (FM-200) fire suppression system is properly maintained with current inspection tags, unobstructed nozzles, an active monitoring panel, and proper certification. This meets the requirements of Spain's RSCIEI and Reglamento de Instalaciones de Protección contra Incendios for fire suppression in high-value equipment areas.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER — Real Decreto 2267/2004 (RSCIEI), RIPCI",
+    "tags": ["fire_safety", "suppression", "clean_agent", "compliant"]
+  },
+  {
+    "id": "ES-DC-008",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "E-Waste Mixed with General Waste",
+    "scene_description": "Near the back of the server hall, you see a regular trash bin overflowing with discarded hard drives, old RAM modules, a cracked motherboard, and used thermal paste tubes mixed in with coffee cups and food wrappers.",
+    "scene_art_key": "ewaste_mixed_general",
+    "scene_image": "assets/ui/encounters/ewaste_mixed_general.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Waste Management & Environmental",
+    "distractor_categories": [
+      "Chemical Management & Hazcom",
+      "Permits, Signage & Documentation",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under Waste Management & Environmental. Electronic waste (WEEE) must be separated from general waste under Spanish law implementing EU Directive 2012/19/EU on waste electrical and electronic equipment. Hard drives, RAM, and motherboards contain hazardous materials and must be handled by authorized waste management operators. Additionally, hard drives may contain sensitive data requiring secure destruction.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER — Real Decreto 110/2015 (WEEE), Ley 7/2022 (Waste Law)",
+    "tags": ["waste", "ewaste", "recycling", "environmental"]
+  },
+  {
+    "id": "ES-DC-009",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "Missing Hearing Protection Near Cooling",
+    "scene_description": "You step into the cooling plant where rows of industrial CRAC units are running at full speed. The noise is intense — you have to raise your voice to be heard by the technician next to you. Neither the technician nor you were offered hearing protection upon entry.",
+    "scene_art_key": "cooling_no_hearing",
+    "scene_image": "assets/ui/encounters/cooling_no_hearing.jpg",
+    "is_noncompliance": true,
+    "correct_category": "PPE & Personal Protection",
+    "distractor_categories": [
+      "Ergonomics & Workplace Conditions",
+      "Machine Guarding & Equipment Safety",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is a non-compliance under PPE & Personal Protection. Having to raise your voice to be heard typically indicates noise levels above 85 dB(A). Under Spain's Real Decreto 286/2006 on noise protection and LPRL, employers must provide hearing protection and post warning signs when noise exceeds exposure limits. Data center cooling plants frequently exceed these thresholds.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER — Real Decreto 286/2006 (Noise), LPRL, EU Directive 2003/10/EC",
+    "tags": ["ppe", "hearing", "noise", "cooling"]
+  },
+  {
+    "id": "ES-DC-010",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "Properly Labeled High-Voltage Panel",
+    "scene_description": "A high-voltage electrical distribution panel in the cooling plant has clear yellow warning labels with lightning bolt symbols, voltage ratings prominently displayed, and 'PELIGRO: ALTA TENSIÓN' signs in Spanish. The panel door is secured with a lock.",
+    "scene_art_key": "hv_panel_proper",
+    "scene_image": "assets/ui/encounters/hv_panel_proper.jpg",
+    "is_noncompliance": false,
+    "correct_category": "Electrical Safety",
+    "distractor_categories": [
+      "Permits, Signage & Documentation",
+      "Fire Safety & Emergency Preparedness",
+      "Machine Guarding & Equipment Safety"
+    ],
+    "explanation": "This is actually compliant. The electrical panel has proper warning labels, voltage markings, Spanish-language hazard signs, and is secured with a lock to prevent unauthorized access. This meets the requirements of Spain's REBT and Real Decreto 485/1997 for safety signage and electrical installation safety.",
+    "difficulty": 1,
+    "source_reference": "PLACEHOLDER — REBT, Real Decreto 485/1997 (Safety Signage)",
+    "tags": ["electrical", "signage", "labeling", "compliant"]
+  },
+  {
+    "id": "ES-DC-011",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "Unmarked Battery Acid Spill Kit",
+    "scene_description": "In the cooling plant, you spot a yellow cabinet against the wall. Inside are absorbent pads, neutralizing powder, protective gloves, and goggles — clearly a spill response kit. However, the cabinet has no label identifying its contents or purpose, and there's no SDS posted nearby for the battery electrolyte it's meant to address.",
+    "scene_art_key": "spill_kit_unmarked",
+    "scene_image": "assets/ui/encounters/spill_kit_unmarked.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Chemical Management & Hazcom",
+    "distractor_categories": [
+      "PPE & Personal Protection",
+      "Permits, Signage & Documentation",
+      "Waste Management & Environmental"
+    ],
+    "explanation": "This is ambiguous. The spill kit itself is a positive safety measure and contains appropriate supplies. However, the lack of labeling means workers may not recognize it in an emergency, and the missing SDS violates hazard communication requirements. A thorough auditor would note the good practice while flagging the labeling gap — this needs further investigation to determine if it rises to a formal non-compliance.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER — LPRL, Real Decreto 374/2001 (Chemical Agents), CLP Regulation",
+    "tags": ["chemical", "spill_kit", "labeling", "hazcom", "ambiguous"]
+  },
+  {
+    "id": "ES-DC-012",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "Blocked Emergency Power Off Button",
+    "scene_description": "In the battery room, you notice the Emergency Power Off (EPO) button — a large red mushroom button on a yellow plate. A rolling tool cart has been parked directly in front of it, and a cardboard box of spare parts is stacked on top of the cart, completely obscuring the button from view.",
+    "scene_art_key": "epo_blocked",
+    "scene_image": "assets/ui/encounters/epo_blocked.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Fire Safety & Emergency Preparedness",
+    "distractor_categories": [
+      "Electrical Safety",
+      "Ergonomics & Workplace Conditions",
+      "Machine Guarding & Equipment Safety"
+    ],
+    "explanation": "This is a non-compliance under Fire Safety & Emergency Preparedness. Emergency Power Off buttons must be clearly visible and immediately accessible at all times. A blocked EPO prevents rapid de-energization during emergencies such as electrical fires or personnel contact with live equipment. Under LPRL and Spain's emergency preparedness requirements, all emergency controls must remain unobstructed.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER — LPRL Article 20, Real Decreto 486/1997 (Workplace Safety)",
+    "tags": ["fire_safety", "emergency", "epo", "obstruction"]
+  },
+  {
+    "id": "ES-DC-013",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "UPS Battery Room Ventilation",
+    "scene_description": "The UPS battery room contains rows of valve-regulated lead-acid (VRLA) batteries. You notice the room feels warm and slightly stuffy. There's a ventilation grille on one wall, but you can't tell if it's actively circulating air. The battery manufacturer's spec sheet on the wall recommends a specific air exchange rate.",
+    "scene_art_key": "battery_ventilation",
+    "scene_image": "assets/ui/encounters/battery_ventilation.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Electrical Safety",
+    "distractor_categories": [
+      "Chemical Management & Hazcom",
+      "Fire Safety & Emergency Preparedness",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is ambiguous. VRLA batteries can release hydrogen gas during charging or in fault conditions. Inadequate ventilation creates explosion risk. While the room has a ventilation grille, you cannot verify if the air exchange rate meets the manufacturer's specifications or UNE-EN 50272-2 requirements without further testing. The warm, stuffy conditions are concerning but not conclusive evidence of non-compliance without airflow measurements.",
+    "difficulty": 4,
+    "source_reference": "PLACEHOLDER — UNE-EN 50272-2, REBT ITC-BT-30, LPRL",
+    "tags": ["electrical", "ventilation", "battery", "hydrogen", "ambiguous"]
+  },
+  {
+    "id": "ES-DC-014",
+    "facility_type": "datacenter",
+    "jurisdiction": "ES",
+    "title": "Technician Lifting Server Without PPE",
+    "scene_description": "At the loading dock, a technician is single-handedly lifting a 2U server chassis (approximately 25 kg) from a pallet onto a cart. He's wearing shorts, sneakers with no steel toe, and no back support belt. He lifts with a rounded back, twisting as he places the server down.",
+    "scene_art_key": "lifting_no_ppe",
+    "scene_image": "assets/ui/encounters/lifting_no_ppe.jpg",
+    "is_noncompliance": true,
+    "correct_category": "PPE & Personal Protection",
+    "distractor_categories": [
+      "Ergonomics & Workplace Conditions",
+      "Machine Guarding & Equipment Safety",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is a non-compliance under PPE & Personal Protection. The technician lacks appropriate PPE for manual handling: no safety footwear (steel-toed boots), no gloves for gripping, and inappropriate clothing for a loading dock environment. Under LPRL and Real Decreto 773/1997, employers must provide and enforce use of appropriate PPE. The poor lifting technique is also a training concern but the primary finding is the PPE violation.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER — Real Decreto 773/1997 (PPE), Real Decreto 487/1997 (Manual Handling), LPRL",
+    "tags": ["ppe", "manual_handling", "lifting", "safety_footwear"]
+  }
+]

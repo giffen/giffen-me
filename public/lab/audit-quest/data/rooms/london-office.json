@@ -1010,16 +1010,6 @@
         },
         {
           "type": "wall_horizontal",
-          "x": 7,
-          "y": 9
-        },
-        {
-          "type": "wall_horizontal",
-          "x": 11,
-          "y": 9
-        },
-        {
-          "type": "wall_horizontal",
           "x": 12,
           "y": 9
         },
@@ -1282,6 +1272,16 @@
           "type": "lamp",
           "x": 1,
           "y": 12
+        },
+        {
+          "type": "wall_corner_tl",
+          "x": 11,
+          "y": 9
+        },
+        {
+          "type": "wall_corner_tr",
+          "x": 7,
+          "y": 9
         }
       ],
       "walkable": [

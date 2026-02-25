@@ -23,7 +23,7 @@
     "id_format": "XX-YYY-NNN where XX=country code, YYY=facility abbreviation, NNN=number (e.g., UK-OFF-001, DE-MFG-012)",
     "facility_codes": {
       "uk-office": "UK-OFF",
-      "be-datacenter": "BE-DC",
+      "es-datacenter": "ES-DC",
       "ca-pharmaceutical": "CA-PH",
       "de-manufacturing": "DE-MFG",
       "br-construction": "BR-CON",
