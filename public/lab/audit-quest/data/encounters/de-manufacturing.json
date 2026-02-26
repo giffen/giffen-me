@@ -1,0 +1,356 @@
+[
+  {
+    "id": "DE-MF-001",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "Visitor on Production Floor Without Safety Induction",
+    "scene_description": "At the guard house, you notice a man in business clothes and dress shoes walking through the entrance toward the production floor. He's not wearing a hard hat, safety glasses, or high-vis vest. The visitor log book on the security desk shows his name but the 'Safety Briefing Completed' column is blank. The security guard shrugs and says, 'He said he's been here before.'",
+    "scene_art_key": "visitor_no_induction",
+    "scene_image": "assets/ui/encounters/visitor_no_induction.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Permits, Signage & Documentation",
+    "distractor_categories": [
+      "PPE & Personal Protection",
+      "Fire Safety & Emergency Preparedness",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under Permits, Signage & Documentation. Under the Arbeitsschutzgesetz (ArbSchG) Section 12 and DGUV Regulation 1, all persons entering a production area \u2014 including visitors \u2014 must receive a documented safety briefing (Sicherheitsunterweisung) before entry. The missing signature in the visitor log demonstrates a procedural failure. While the lack of PPE is also concerning, the root cause is the documentation gap.",
+    "difficulty": 1,
+    "source_reference": "PLACEHOLDER \u2014 ArbSchG \u00a712, DGUV Vorschrift 1 \u00a74",
+    "tags": [
+      "documentation",
+      "visitor",
+      "safety_briefing",
+      "unterweisung"
+    ]
+  },
+  {
+    "id": "DE-MF-002",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "Properly Guarded Stamping Press",
+    "scene_description": "You inspect a hydraulic stamping press on the production floor. It has a CE marking plate, a light curtain across the operator zone, a two-hand control that requires simultaneous activation, and an emergency stop mushroom button within reach. The last inspection sticker shows a Pr\u00fcfung (test) completed two months ago by a certified Sachkundiger. The safety data sheet is posted on the machine frame.",
+    "scene_art_key": "press_properly_guarded",
+    "scene_image": "assets/ui/encounters/press_properly_guarded.jpg",
+    "is_noncompliance": false,
+    "correct_category": "Machine Guarding & Equipment Safety",
+    "distractor_categories": [
+      "Electrical Safety",
+      "Permits, Signage & Documentation",
+      "PPE & Personal Protection"
+    ],
+    "explanation": "This is actually compliant. The stamping press meets all requirements under the BetrSichV (Betriebssicherheitsverordnung) and EU Machinery Directive 2006/42/EC. The CE marking confirms conformity, the light curtain and two-hand control provide adequate safeguarding, the emergency stop meets EN ISO 13850, and the recent inspection by a qualified person (Sachkundiger) satisfies the periodic examination requirement.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER \u2014 BetrSichV, EU Machinery Directive 2006/42/EC, EN ISO 13850",
+    "tags": [
+      "machine_guarding",
+      "stamping_press",
+      "ce_marking",
+      "compliant"
+    ]
+  },
+  {
+    "id": "DE-MF-003",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "Safety Interlock Bypassed on CNC Machine",
+    "scene_description": "At a CNC machining center, you notice the sliding safety door's interlock sensor has been defeated \u2014 someone has wedged a small metal bracket into the sensor housing so the machine thinks the door is closed even when it's open. The operator explains, 'The door sensor keeps tripping when I need to check tool alignment. It slows us down.' The machine is currently running with the door ajar.",
+    "scene_art_key": "interlock_bypassed",
+    "scene_image": "assets/ui/encounters/interlock_bypassed.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Machine Guarding & Equipment Safety",
+    "distractor_categories": [
+      "Electrical Safety",
+      "Permits, Signage & Documentation",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a serious non-compliance under Machine Guarding & Equipment Safety. Bypassing a safety interlock violates the BetrSichV \u00a74-5, the Machinery Directive, and EN ISO 14119 (interlocking devices). Safety interlocks are designed to prevent access to moving parts during operation. A defeated interlock means the operator has direct exposure to rotating tools, flying chips, and pinch points. This is one of the most dangerous findings an auditor can make.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER \u2014 BetrSichV \u00a74-5, EN ISO 14119, DGUV Regel 100-500",
+    "tags": [
+      "machine_guarding",
+      "interlock",
+      "bypass",
+      "cnc"
+    ]
+  },
+  {
+    "id": "DE-MF-004",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "High Noise Area Without Mandatory Signage",
+    "scene_description": "In the production hall near the stamping presses, the noise level is clearly high \u2014 you have to lean in close to hear the worker next to you. Workers in this section are all wearing ear defenders. However, you notice there is no 'Geh\u00f6rschutz tragen' (wear hearing protection) mandatory sign posted anywhere in the area. The blue mandatory action signs are missing entirely from this section of the floor.",
+    "scene_art_key": "noise_no_signage",
+    "scene_image": "assets/ui/encounters/noise_no_signage.jpg",
+    "is_noncompliance": true,
+    "correct_category": "PPE & Personal Protection",
+    "distractor_categories": [
+      "Permits, Signage & Documentation",
+      "Ergonomics & Workplace Conditions",
+      "Machine Guarding & Equipment Safety"
+    ],
+    "explanation": "This is a non-compliance under PPE & Personal Protection. Under the L\u00e4rm- und Vibrations-Arbeitsschutzverordnung (L\u00e4rmVibrationsArbSchV) and ASR A1.3 (safety signage), areas exceeding 85 dB(A) must display mandatory hearing protection signs (Geh\u00f6rschutz-Gebotszeichen). While workers are currently wearing protection \u2014 a positive sign \u2014 the lack of posted signage means visitors, temporary workers, or anyone unfamiliar with the area would not know protection is required. The PPE duty extends beyond just providing equipment.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER \u2014 L\u00e4rmVibrationsArbSchV, ASR A1.3, DGUV Regel 112-194",
+    "tags": [
+      "ppe",
+      "noise",
+      "hearing_protection",
+      "signage"
+    ]
+  },
+  {
+    "id": "DE-MF-005",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "Paint Booth LEV Running Below Capacity",
+    "scene_description": "The spray paint booth appears clean and well-maintained. A painter is applying a solvent-based automotive coating with proper PPE \u2014 respirator, goggles, coveralls. But you check the booth's airflow indicator mounted on the wall: the manometer reads 0.2 m/s face velocity. The booth specification plate states minimum 0.5 m/s. The painter says, 'It's been like that for a while but the paint still looks fine.'",
+    "scene_art_key": "paint_booth_low_lev",
+    "scene_image": "assets/ui/encounters/paint_booth_low_lev.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Chemical Management & Hazcom",
+    "distractor_categories": [
+      "Machine Guarding & Equipment Safety",
+      "PPE & Personal Protection",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under Chemical Management & Hazcom. The local exhaust ventilation (LEV) is the primary engineering control for solvent vapour exposure. At 0.2 m/s \u2014 less than half the required 0.5 m/s \u2014 the booth cannot adequately capture and remove solvent vapours, creating inhalation and explosion hazards. Under GefStoffV (Gefahrstoffverordnung) \u00a77-9 and TRGS 900/901, engineering controls must be maintained at their design specifications. That the paint 'looks fine' is irrelevant to vapour exposure.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 GefStoffV \u00a77-9, TRGS 900, DGUV Regel 109-013",
+    "tags": [
+      "chemical",
+      "ventilation",
+      "lev",
+      "paint_booth",
+      "tricky"
+    ]
+  },
+  {
+    "id": "DE-MF-006",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "Complete REACH-Compliant SDS Binder",
+    "scene_description": "In the paint booth area, you pull the SDS binder from its wall-mounted holder. It contains Safety Data Sheets for every chemical product used in the booth. Each SDS is in German, follows the 16-section EU format per REACH Regulation Annex II, and shows revision dates within the last two years. The binder index matches the chemical inventory list taped inside the cabinet door.",
+    "scene_art_key": "sds_binder_proper",
+    "scene_image": "assets/ui/encounters/sds_binder_proper.jpg",
+    "is_noncompliance": false,
+    "correct_category": "Permits, Signage & Documentation",
+    "distractor_categories": [
+      "Chemical Management & Hazcom",
+      "PPE & Personal Protection",
+      "Waste Management & Environmental"
+    ],
+    "explanation": "This is actually compliant. The SDS binder meets all requirements under EU REACH Regulation (EC 1907/2006) Annex II and GefStoffV. All 16 sections are present, documents are in German (as required for a German workplace), revision dates are current, and the binder index reconciles with the chemical inventory. This demonstrates good chemical documentation practice.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER \u2014 REACH Regulation (EC 1907/2006) Annex II, GefStoffV \u00a76",
+    "tags": [
+      "documentation",
+      "sds",
+      "reach",
+      "compliant"
+    ]
+  },
+  {
+    "id": "DE-MF-007",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "Ergonomically Designed Assembly Workstation",
+    "scene_description": "On the assembly line, you examine a workstation closely. The bench height is adjustable and set to the worker's elbow level. An anti-fatigue mat covers the standing area. Tool balancers suspend frequently-used pneumatic drivers at shoulder height, reducing lift effort. The worker rotates to a different station every two hours per the posted schedule. Task lighting is adjustable and glare-free.",
+    "scene_art_key": "ergonomic_workstation",
+    "scene_image": "assets/ui/encounters/ergonomic_workstation.jpg",
+    "is_noncompliance": false,
+    "correct_category": "Ergonomics & Workplace Conditions",
+    "distractor_categories": [
+      "Machine Guarding & Equipment Safety",
+      "PPE & Personal Protection",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is actually compliant. The workstation demonstrates excellent ergonomic design under the Arbeitsst\u00e4ttenverordnung (ArbSt\u00e4ttV) and associated ASR rules. Adjustable bench height, anti-fatigue matting, tool balancers, job rotation, and proper task lighting all reduce musculoskeletal disorder risk. This meets and exceeds the requirements of the Lastenhandhabungsverordnung for repetitive manual tasks.",
+    "difficulty": 1,
+    "source_reference": "PLACEHOLDER \u2014 ArbSt\u00e4ttV, Lastenhandhabungsverordnung, ASR A3.4",
+    "tags": [
+      "ergonomics",
+      "workstation",
+      "assembly",
+      "compliant"
+    ]
+  },
+  {
+    "id": "DE-MF-008",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "Manual Handling of Heavy Component Without Assessment",
+    "scene_description": "Near the assembly line, a worker is lifting a stamped metal housing (approximately 28 kg based on the part label) from a pallet to the workbench. He lifts it from below waist height, twists to place it, and repeats this roughly every 3 minutes. There is a small hydraulic lift table nearby but it's pushed against the wall, unused. You ask the supervisor if a Gef\u00e4hrdungsbeurteilung (risk assessment) has been done for this task \u2014 she pauses and says, 'I'm not sure we have one specifically for this.'",
+    "scene_art_key": "heavy_lifting_no_assessment",
+    "scene_image": "assets/ui/encounters/heavy_lifting_no_assessment.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Ergonomics & Workplace Conditions",
+    "distractor_categories": [
+      "PPE & Personal Protection",
+      "Permits, Signage & Documentation",
+      "Machine Guarding & Equipment Safety"
+    ],
+    "explanation": "This is a non-compliance under Ergonomics & Workplace Conditions. The Lastenhandhabungsverordnung requires employers to assess manual handling risks through a specific Gef\u00e4hrdungsbeurteilung. There is no single 'weight limit' in German law \u2014 instead, risk depends on frequency, posture, distance, and conditions. A 28 kg load lifted every 3 minutes with twisting from below waist level would almost certainly require mechanical aids. The unused lift table nearby makes the finding worse \u2014 the control measure exists but isn't being used.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 Lastenhandhabungsverordnung, ArbSchG \u00a75 (Gef\u00e4hrdungsbeurteilung)",
+    "tags": [
+      "ergonomics",
+      "manual_handling",
+      "risk_assessment",
+      "tricky"
+    ]
+  },
+  {
+    "id": "DE-MF-009",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "LOTO Procedure Posted But Lockout Devices Missing",
+    "scene_description": "On the maintenance workshop wall, a detailed Lockout/Tagout procedure is posted in a laminated frame \u2014 clear steps in German, hazard identification, responsible persons listed. However, the LOTO station board next to it, which should hold padlocks, hasps, and lockout tags, is empty. The hooks are labeled but bare. A maintenance tech says, 'Some guys keep locks in their toolboxes, but we ran out of the communal ones a few months ago.'",
+    "scene_art_key": "loto_no_locks",
+    "scene_image": "assets/ui/encounters/loto_no_locks.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Machine Guarding & Equipment Safety",
+    "distractor_categories": [
+      "Permits, Signage & Documentation",
+      "Electrical Safety",
+      "PPE & Personal Protection"
+    ],
+    "explanation": "This is a non-compliance under Machine Guarding & Equipment Safety. Having a written LOTO procedure without available lockout devices renders the procedure unenforceable. Under BetrSichV \u00a78 and DGUV Regel 100-500, energy isolation must be physically secured \u2014 a posted procedure alone is not sufficient. The fact that some workers keep personal locks is not an acceptable substitute for readily available communal lockout devices at the point of use.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 BetrSichV \u00a78, DGUV Regel 100-500, EN 1037",
+    "tags": [
+      "loto",
+      "lockout",
+      "machine_guarding",
+      "tricky"
+    ]
+  },
+  {
+    "id": "DE-MF-010",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "Welding Area Without Fire Protection Screening",
+    "scene_description": "In the maintenance workshop, a welder is performing MIG welding on a bracket. Sparks are visibly flying 2-3 metres across the floor. About 4 metres away, several cardboard boxes of packing materials and a wooden pallet sit against the wall. There is no welding curtain or spark screen set up around the welding area, and no hot work permit is posted on the wall. A fire extinguisher is mounted nearby.",
+    "scene_art_key": "welding_no_screen",
+    "scene_image": "assets/ui/encounters/welding_no_screen.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Fire Safety & Emergency Preparedness",
+    "distractor_categories": [
+      "Machine Guarding & Equipment Safety",
+      "Chemical Management & Hazcom",
+      "PPE & Personal Protection"
+    ],
+    "explanation": "This is a non-compliance under Fire Safety & Emergency Preparedness. Under DGUV Regel 100-500 (Section 2.26 \u2014 Schwei\u00dfarbeiten) and the ArbSt\u00e4ttV, hot work such as welding requires fire protection measures including spark screens/welding curtains to contain spatter, removal or protection of combustible materials within the hazard zone, and \u2014 depending on the facility \u2014 a written hot work permit (Schwei\u00dferlaubnis). The nearby fire extinguisher is good but doesn't substitute for prevention.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 DGUV Regel 100-500 \u00a72.26, ArbSt\u00e4ttV, ASR A2.2",
+    "tags": [
+      "fire_safety",
+      "welding",
+      "hot_work",
+      "spark_screen"
+    ]
+  },
+  {
+    "id": "DE-MF-011",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "Gas Cylinders Chained but Improperly Stored Together",
+    "scene_description": "In the maintenance workshop, you see two compressed gas cylinders chained upright to the wall \u2014 proper restraint. Both have current test stamps and intact valve caps. One is labelled 'Acetylen' (maroon/brown) and the other 'Sauerstoff' (blue/white). They are side by side, approximately 30 cm apart, with no physical barrier between them.",
+    "scene_art_key": "gas_cylinders_together",
+    "scene_image": "assets/ui/encounters/gas_cylinders_together.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Chemical Management & Hazcom",
+    "distractor_categories": [
+      "Fire Safety & Emergency Preparedness",
+      "Machine Guarding & Equipment Safety",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is ambiguous but leans toward non-compliance. The cylinders are properly chained (good), have current test stamps (good), and have valve caps in place (good). However, TRGS 510 and DGUV Regel 100-500 require that flammable gases (acetylene) and oxidizing gases (oxygen) be stored with adequate separation \u2014 typically 5 metres or a fire-resistant barrier. While 'in use' cylinders on a welding cart may be stored closer during active work, these appear to be in general storage. A thorough auditor would investigate whether these are actively in use or simply stored.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 TRGS 510, DGUV Regel 100-500, BetrSichV",
+    "tags": [
+      "chemical",
+      "gas_cylinders",
+      "incompatible_storage",
+      "ambiguous",
+      "tricky"
+    ]
+  },
+  {
+    "id": "DE-MF-012",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "Missing Gefahrstoffverzeichnis (Hazardous Substance Register)",
+    "scene_description": "In the warehouse office area, you ask the safety officer for the facility's Gefahrstoffverzeichnis \u2014 the hazardous substance register. She produces a large SDS binder with all Safety Data Sheets organized alphabetically. 'Here's everything,' she says. When you specifically ask for the separate register listing all hazardous substances with their classification, quantities, and areas of use, she looks confused. 'Isn't the SDS binder the register?'",
+    "scene_art_key": "missing_gefahrstoff_register",
+    "scene_image": "assets/ui/encounters/missing_gefahrstoff_register.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Permits, Signage & Documentation",
+    "distractor_categories": [
+      "Chemical Management & Hazcom",
+      "Waste Management & Environmental",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under Permits, Signage & Documentation. Under GefStoffV \u00a76(12), German employers must maintain a Gefahrstoffverzeichnis \u2014 a specific register separate from the SDS binder \u2014 listing all hazardous substances used or stored, their GHS classification, quantities, and areas of use. An SDS binder is necessary but not sufficient. This is a distinctly German documentation requirement that auditors unfamiliar with local law often miss.",
+    "difficulty": 4,
+    "source_reference": "PLACEHOLDER \u2014 GefStoffV \u00a76(12), TRGS 400",
+    "tags": [
+      "documentation",
+      "gefahrstoffverzeichnis",
+      "german_specific",
+      "tricky"
+    ]
+  },
+  {
+    "id": "DE-MF-013",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "Faded but Visible Forklift Aisle Markings",
+    "scene_description": "Walking through the warehouse, you notice the yellow floor markings that delineate forklift lanes from pedestrian walkways. The paint is noticeably faded \u2014 perhaps 60% of original brightness \u2014 but the lines are still visible and the pattern is clearly discernible. The markings haven't been repainted in what appears to be a couple of years. Forklifts and pedestrians are currently using their respective zones correctly.",
+    "scene_art_key": "faded_aisle_markings",
+    "scene_image": "assets/ui/encounters/faded_aisle_markings.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Ergonomics & Workplace Conditions",
+    "distractor_categories": [
+      "Fire Safety & Emergency Preparedness",
+      "Permits, Signage & Documentation",
+      "Machine Guarding & Equipment Safety"
+    ],
+    "explanation": "This is ambiguous. Under ASR A1.3 and ASR A1.8, floor markings for traffic routes must be 'clearly recognizable' (deutlich erkennbar). The markings are faded but still visible and workers are following them correctly. Whether this rises to non-compliance depends on interpretation: a strict auditor would flag the deterioration as a maintenance issue that will eventually become non-compliant, while noting that current effectiveness is maintained. This is a judgment call that tests an auditor's ability to assess real-world risk versus technical compliance.",
+    "difficulty": 4,
+    "source_reference": "PLACEHOLDER \u2014 ASR A1.3, ASR A1.8, ArbSt\u00e4ttV",
+    "tags": [
+      "ergonomics",
+      "floor_markings",
+      "forklift",
+      "ambiguous",
+      "tricky"
+    ]
+  },
+  {
+    "id": "DE-MF-014",
+    "facility_type": "manufacturing",
+    "jurisdiction": "DE",
+    "title": "Electrical Panel Behind Unlocked Door in Canteen",
+    "scene_description": "In the canteen, you notice a grey metal door in the wall marked 'Elektroverteiler \u2014 Zutritt nur f\u00fcr Elektrofachkr\u00e4fte' (Electrical Panel \u2014 Access for Qualified Electricians Only). You try the door handle \u2014 it opens freely. Inside, a well-maintained electrical distribution panel with proper labelling and recent inspection stickers. The panel itself is in good condition, but the door has no lock. When you mention this to the facility manager, he says, 'It's just the canteen, who would touch it?'",
+    "scene_art_key": "unlocked_electrical_panel",
+    "scene_image": "assets/ui/encounters/unlocked_electrical_panel.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Electrical Safety",
+    "distractor_categories": [
+      "Fire Safety & Emergency Preparedness",
+      "Machine Guarding & Equipment Safety",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is ambiguous. The panel is properly labeled, well-maintained, and recently inspected (all positive). The sign restricts access to qualified electricians. Under DGUV Vorschrift 3 and the Niederspannungsanlagenrichtlinie, electrical panels must be secured against unauthorized access. However, whether a closed but unlocked door in a staff-only canteen constitutes 'unsecured' is debatable. In a public area this would be clearly non-compliant, but in a restricted workplace area the risk profile is different. A thorough auditor would recommend a lock while acknowledging the mitigating factors.",
+    "difficulty": 4,
+    "source_reference": "PLACEHOLDER \u2014 DGUV Vorschrift 3, DIN VDE 0100, ArbSt\u00e4ttV",
+    "tags": [
+      "electrical",
+      "access_control",
+      "panel",
+      "ambiguous",
+      "tricky"
+    ]
+  }
+]

@@ -1,0 +1,356 @@
+[
+  {
+    "id": "CA-PH-001",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "Unlabeled Transfer Containers at Gowning Station",
+    "scene_description": "Near the gowning bench, you spot three spray bottles of cleaning solution lined up on a shelf. They've clearly been transferred from their original containers \u2014 the bottles are generic and unmarked. No WHMIS workplace labels, no product identifiers, no hazard pictograms. A worker reaches for one to wipe down the bench before gowning up.",
+    "scene_art_key": "unlabeled_transfer_bottles",
+    "scene_image": "assets/ui/encounters/unlabeled_transfer_bottles.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Chemical Management & Hazcom",
+    "distractor_categories": [
+      "Permits, Signage & Documentation",
+      "PPE & Personal Protection",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under Chemical Management & Hazcom. Under WHMIS 2015 (Hazardous Products Regulations), any hazardous product transferred from its original container to a secondary container must bear a workplace label identifying the product, hazard information, and reference to the SDS. Ontario OHSA Section 38 reinforces that workers must be able to identify the hazards of products they handle.",
+    "difficulty": 1,
+    "source_reference": "PLACEHOLDER \u2014 WHMIS 2015, Hazardous Products Regulations, Ontario OHSA s.38",
+    "tags": [
+      "whmis",
+      "labeling",
+      "chemical_transfer",
+      "secondary_container"
+    ]
+  },
+  {
+    "id": "CA-PH-002",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "Properly Maintained Emergency Eyewash Station",
+    "scene_description": "Near the gowning area entrance, you inspect a plumbed eyewash station mounted on the wall. The weekly inspection tag is current \u2014 signed and dated three days ago. You activate the test valve: water flows clear within one second, both nozzles spray evenly, and the dust covers pop off cleanly. A green 'EYEWASH STATION' sign with an arrow is posted above it.",
+    "scene_art_key": "eyewash_proper",
+    "scene_image": "assets/ui/encounters/eyewash_proper.jpg",
+    "is_noncompliance": false,
+    "correct_category": "Fire Safety & Emergency Preparedness",
+    "distractor_categories": [
+      "PPE & Personal Protection",
+      "Chemical Management & Hazcom",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is actually compliant. The eyewash station meets ANSI/ISEA Z358.1 requirements adopted under Ontario's Workplace Hazardous Materials Information System and industrial regulations. Weekly inspections, clear water flow, proper signage, and functional dust covers all demonstrate proper maintenance. Note: eyewash stations are emergency response equipment, not PPE \u2014 they fall under emergency preparedness.",
+    "difficulty": 1,
+    "source_reference": "PLACEHOLDER \u2014 ANSI/ISEA Z358.1, Ontario OHSA, O.Reg 851 s.124",
+    "tags": [
+      "emergency_equipment",
+      "eyewash",
+      "inspection",
+      "compliant"
+    ]
+  },
+  {
+    "id": "CA-PH-003",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "Fume Hood Sash Raised Above Safe Working Height",
+    "scene_description": "In the QC lab, a technician is pipetting a volatile organic solvent inside a fume hood. The sash is raised all the way to the top \u2014 well above the indicated safe working height marked by a red arrow sticker on the frame. The digital airflow monitor on the hood reads 0.3 m/s face velocity, below the 0.5 m/s minimum indicated on the certification sticker.",
+    "scene_art_key": "fume_hood_sash_high",
+    "scene_image": "assets/ui/encounters/fume_hood_sash_high.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Chemical Management & Hazcom",
+    "distractor_categories": [
+      "Machine Guarding & Equipment Safety",
+      "Ergonomics & Workplace Conditions",
+      "PPE & Personal Protection"
+    ],
+    "explanation": "This is a non-compliance under Chemical Management & Hazcom. The fume hood sash must be at or below the marked safe working height to maintain adequate face velocity for containment. At 0.3 m/s (below the 0.5 m/s minimum), volatile solvent vapors can escape into the lab. Under Ontario OHSA and O.Reg 833 (Control of Exposure to Biological or Chemical Agents), employers must ensure engineering controls function as designed.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER \u2014 Ontario OHSA, O.Reg 833, CSA Z316.5",
+    "tags": [
+      "fume_hood",
+      "chemical_exposure",
+      "engineering_controls",
+      "ventilation"
+    ]
+  },
+  {
+    "id": "CA-PH-004",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "Lab Technician With Repetitive Strain Signs",
+    "scene_description": "A QC technician has been doing manual pipetting at a bench for the past four hours without a break. You notice she's wearing a wrist brace on her right hand and occasionally shakes out her fingers. A posted sign on the wall reads 'RSI Prevention Policy \u2014 Take a 5-minute break every 60 minutes.' When you ask, she says, 'I know about the policy but we're behind on batch testing and my supervisor said to push through.'",
+    "scene_art_key": "pipetting_rsi",
+    "scene_image": "assets/ui/encounters/pipetting_rsi.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Ergonomics & Workplace Conditions",
+    "distractor_categories": [
+      "PPE & Personal Protection",
+      "Permits, Signage & Documentation",
+      "Machine Guarding & Equipment Safety"
+    ],
+    "explanation": "This is ambiguous \u2014 further investigation is needed. The employer has a posted RSI prevention policy (a positive sign), but the worker reports her supervisor told her to override it. Under Ontario OHSA, both employers and supervisors have a duty to ensure policies are followed (Section 25-27), and workers have a right to refuse unsafe work. The wrist brace suggests an existing injury. A thorough auditor would investigate whether the policy is being enforced by management or merely posted for show.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 Ontario OHSA s.25-27, O.Reg 851 (Industrial Establishments)",
+    "tags": [
+      "ergonomics",
+      "repetitive_strain",
+      "policy_enforcement",
+      "ambiguous"
+    ]
+  },
+  {
+    "id": "CA-PH-005",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "Worker in Street Clothes in QC Lab",
+    "scene_description": "Walking through the QC lab, you encounter a worker handling sample vials at a bench. They're wearing jeans, a hoodie, and open-toed sandals \u2014 no lab coat, no safety glasses, no gloves. Their employee badge identifies them as a QC analyst. A sign on the lab entrance clearly states 'Lab Coat, Safety Glasses, and Closed-Toe Shoes Required Beyond This Point.'",
+    "scene_art_key": "no_lab_coat",
+    "scene_image": "assets/ui/encounters/no_lab_coat.jpg",
+    "is_noncompliance": true,
+    "correct_category": "PPE & Personal Protection",
+    "distractor_categories": [
+      "Chemical Management & Hazcom",
+      "Permits, Signage & Documentation",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under PPE & Personal Protection. Ontario OHSA Section 25(2)(h) requires employers to take every reasonable precaution to protect workers, which includes enforcing PPE requirements. The posted signage makes the requirement clear, yet the worker lacks a lab coat, safety glasses, gloves, and is wearing open-toed footwear in a chemical handling area. This is a PPE violation, not merely a signage issue \u2014 the signs are present and correct.",
+    "difficulty": 1,
+    "source_reference": "PLACEHOLDER \u2014 Ontario OHSA s.25(2)(h), O.Reg 851 s.79-84",
+    "tags": [
+      "ppe",
+      "lab_coat",
+      "safety_glasses",
+      "footwear"
+    ]
+  },
+  {
+    "id": "CA-PH-006",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "Up-to-Date Joint Health and Safety Committee Inspection Log",
+    "scene_description": "On the clean room wall near the airlock, a binder labeled 'JHSC Monthly Workplace Inspections' sits in a wall-mounted holder. You flip through it: inspections are conducted monthly, each signed by both a worker representative and a management representative. Findings are tracked with target dates and status updates. The most recent inspection was completed 12 days ago.",
+    "scene_art_key": "jhsc_log_proper",
+    "scene_image": "assets/ui/encounters/jhsc_log_proper.jpg",
+    "is_noncompliance": false,
+    "correct_category": "Permits, Signage & Documentation",
+    "distractor_categories": [
+      "Fire Safety & Emergency Preparedness",
+      "Ergonomics & Workplace Conditions",
+      "Machine Guarding & Equipment Safety"
+    ],
+    "explanation": "This is actually compliant. Under Ontario OHSA Section 9, workplaces with 20 or more employees must have a Joint Health and Safety Committee (JHSC) that conducts regular workplace inspections. The log shows monthly inspections with proper co-chair signatures, tracked findings, and current documentation \u2014 all meeting or exceeding the statutory requirements.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER \u2014 Ontario OHSA s.9, O.Reg 857 (JHSC Requirements)",
+    "tags": [
+      "documentation",
+      "jhsc",
+      "inspection",
+      "compliant"
+    ]
+  },
+  {
+    "id": "CA-PH-007",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "Forklift Parked in Front of Emergency Exit",
+    "scene_description": "In the warehouse, a propane-powered forklift is parked directly in front of a fire exit door. The door has a green 'EMERGENCY EXIT' sign illuminated above it. The forklift key is still in the ignition. A shipping manifest clipped to the forklift's cage suggests the operator stepped away mid-task. The exit corridor beyond would be impassable with the forklift blocking it.",
+    "scene_art_key": "forklift_blocking_exit",
+    "scene_image": "assets/ui/encounters/forklift_blocking_exit.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Fire Safety & Emergency Preparedness",
+    "distractor_categories": [
+      "Machine Guarding & Equipment Safety",
+      "Permits, Signage & Documentation",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under Fire Safety & Emergency Preparedness. Under the Ontario Fire Code (O.Reg 213/07) and Ontario OHSA, emergency exits must remain clear and unobstructed at all times. Blocking a fire exit with a forklift creates a life-safety hazard during evacuation. Additionally, leaving the key in the ignition of an unattended forklift is a separate equipment safety concern.",
+    "difficulty": 1,
+    "source_reference": "PLACEHOLDER \u2014 Ontario Fire Code O.Reg 213/07, Ontario OHSA s.25",
+    "tags": [
+      "fire_safety",
+      "emergency_exit",
+      "forklift",
+      "obstruction"
+    ]
+  },
+  {
+    "id": "CA-PH-008",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "Chemical Container with Correct Labels But Outdated SDS",
+    "scene_description": "In the chemical storage room, you examine a 2.5L bottle of isopropyl alcohol. The WHMIS supplier label is intact \u2014 correct product identifier, GHS pictograms (flame, exclamation mark), signal word 'DANGER', and hazard statements all present. However, when you check the SDS binder, the Safety Data Sheet for this product was issued in 2019 and has not been updated. The supplier's website shows a revised SDS from 2024.",
+    "scene_art_key": "outdated_sds",
+    "scene_image": "assets/ui/encounters/outdated_sds.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Permits, Signage & Documentation",
+    "distractor_categories": [
+      "Chemical Management & Hazcom",
+      "PPE & Personal Protection",
+      "Waste Management & Environmental"
+    ],
+    "explanation": "This is a non-compliance under Permits, Signage & Documentation. While the container labeling is correct (which might lead you to think this is a chemical management issue), the actual violation is a documentation failure. Under WHMIS 2015 and the Hazardous Products Regulations, employers must maintain current SDSs \u2014 they must not be older than three years and must be updated when the supplier issues a revision. A 2019 SDS when a 2024 revision exists is a clear documentation gap.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 WHMIS 2015, Hazardous Products Regulations s.32.4, Ontario OHSA s.38",
+    "tags": [
+      "whmis",
+      "sds",
+      "documentation",
+      "labeling",
+      "tricky"
+    ]
+  },
+  {
+    "id": "CA-PH-009",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "Safety Glasses Instead of Splash Goggles for Acid Handling",
+    "scene_description": "A worker in the chemical storage area is decanting hydrochloric acid from a large bottle into smaller laboratory containers. She is wearing a lab coat, nitrile gloves, and safety glasses with side shields. The SDS for hydrochloric acid, posted on the cabinet, specifically recommends 'chemical splash goggles' under Section 8 (Exposure Controls / Personal Protection). The worker says her supervisor issued these glasses last month.",
+    "scene_art_key": "wrong_eye_protection",
+    "scene_image": "assets/ui/encounters/wrong_eye_protection.jpg",
+    "is_noncompliance": true,
+    "correct_category": "PPE & Personal Protection",
+    "distractor_categories": [
+      "Chemical Management & Hazcom",
+      "Machine Guarding & Equipment Safety",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is a non-compliance under PPE & Personal Protection. Although the worker IS wearing eye protection, safety glasses \u2014 even with side shields \u2014 do not protect against chemical splashes from below or around the edges. Hydrochloric acid is a corrosive that requires chemical splash goggles (CSA Z94.3 or ANSI Z87.1 rated) as specified in the SDS. Under Ontario OHSA and O.Reg 851, employers must provide PPE appropriate to the hazard, not just any PPE.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 Ontario OHSA s.25(2)(h), O.Reg 851 s.79, CSA Z94.3",
+    "tags": [
+      "ppe",
+      "eye_protection",
+      "splash_goggles",
+      "corrosive",
+      "tricky"
+    ]
+  },
+  {
+    "id": "CA-PH-010",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "Oxidizer Stored with Flammable Solvents",
+    "scene_description": "In the chemical storage room, you open a yellow flammable storage cabinet. Inside, properly labeled bottles of acetone and toluene (both flammable) sit on the same shelf as a bottle of concentrated nitric acid, which bears the WHMIS 'flame over circle' (oxidizer) pictogram. All three bottles have correct WHMIS labels. The cabinet itself is properly grounded and in good condition.",
+    "scene_art_key": "incompatible_chemicals",
+    "scene_image": "assets/ui/encounters/incompatible_chemicals.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Chemical Management & Hazcom",
+    "distractor_categories": [
+      "Fire Safety & Emergency Preparedness",
+      "Permits, Signage & Documentation",
+      "PPE & Personal Protection"
+    ],
+    "explanation": "This is a non-compliance under Chemical Management & Hazcom. Despite all containers being properly labeled and the cabinet being in good condition, oxidizers (nitric acid) and flammable solvents (acetone, toluene) are incompatible chemical classes and must never be stored together. Contact between an oxidizer and flammable materials can cause spontaneous ignition or explosion. Under WHMIS 2015 and Ontario OHSA, chemical storage must follow compatibility guidelines \u2014 a proper cabinet alone is not sufficient.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 WHMIS 2015, NFPA 400, Ontario Fire Code, Ontario OHSA",
+    "tags": [
+      "chemical_storage",
+      "incompatible",
+      "oxidizer",
+      "flammable",
+      "tricky"
+    ]
+  },
+  {
+    "id": "CA-PH-011",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "Clean Room Differential Pressure Below Specification",
+    "scene_description": "On the clean room wall, a differential pressure gauge shows the room is at +8 Pa relative to the adjacent corridor. A laminated specification card taped next to the gauge states 'Minimum differential pressure: +12.5 Pa.' The HVAC system is humming normally, and the room feels slightly pressurized when you open the door. The most recent calibration sticker on the gauge is from six months ago.",
+    "scene_art_key": "pressure_gauge_low",
+    "scene_image": "assets/ui/encounters/pressure_gauge_low.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Machine Guarding & Equipment Safety",
+    "distractor_categories": [
+      "Ergonomics & Workplace Conditions",
+      "Permits, Signage & Documentation",
+      "Chemical Management & Hazcom"
+    ],
+    "explanation": "This is ambiguous \u2014 further investigation is needed. The gauge reads +8 Pa against a +12.5 Pa specification, which is below spec. However, several factors need investigation: Is the gauge accurately calibrated? Has a door been left open elsewhere affecting pressures? Is this a transient reading or persistent? The room does feel pressurized, which is a positive sign. A thorough auditor would flag this for HVAC investigation and verify gauge calibration before determining whether it constitutes a formal non-compliance.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 Health Canada GMP Guidelines, ISO 14644, Ontario OHSA",
+    "tags": [
+      "clean_room",
+      "hvac",
+      "differential_pressure",
+      "ambiguous"
+    ]
+  },
+  {
+    "id": "CA-PH-012",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "Properly Set Up Chemical Receiving Area",
+    "scene_description": "At the warehouse receiving dock, you inspect the chemical unloading area. A containment berm surrounds the designated unloading zone, with a capacity placard indicating it can hold 110% of the largest container. Drip pans sit under the transfer points. A fully stocked spill kit is mounted on the wall with an inventory checklist dated last week. The SDS binder for incoming chemicals is within arm's reach.",
+    "scene_art_key": "chemical_receiving_proper",
+    "scene_image": "assets/ui/encounters/chemical_receiving_proper.jpg",
+    "is_noncompliance": false,
+    "correct_category": "Waste Management & Environmental",
+    "distractor_categories": [
+      "Chemical Management & Hazcom",
+      "Fire Safety & Emergency Preparedness",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is actually compliant. The chemical receiving area demonstrates good practice: secondary containment berms meeting the 110% capacity requirement, drip pans at transfer points, a maintained spill kit, and accessible SDSs. This meets Ontario Environmental Protection Act requirements and O.Reg 347 (Waste Management) for spill prevention at chemical handling areas.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER \u2014 Ontario EPA, O.Reg 347, Ontario OHSA, Environmental Protection Act",
+    "tags": [
+      "spill_containment",
+      "chemical_receiving",
+      "environmental",
+      "compliant"
+    ]
+  },
+  {
+    "id": "CA-PH-013",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "\"Emptied\" Solvent Drum on Warehouse Floor",
+    "scene_description": "Against a warehouse wall, you notice a 205-litre steel drum with a faded toluene label and GHS flammable pictogram. Someone has written 'EMPTY' across it in black marker and the bung cap is loosely resting on top, not sealed. There is no secondary containment \u2014 the drum sits directly on the concrete floor. You can smell a faint solvent odour when you get close. A worker says, 'It's been there a couple weeks, we're waiting for the waste hauler.'",
+    "scene_art_key": "empty_drum_no_containment",
+    "scene_image": "assets/ui/encounters/empty_drum_no_containment.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Waste Management & Environmental",
+    "distractor_categories": [
+      "Chemical Management & Hazcom",
+      "Fire Safety & Emergency Preparedness",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is ambiguous but leans toward non-compliance. An 'empty' solvent drum still contains residual vapours and liquid \u2014 the smell confirms this. Under Ontario EPA, O.Reg 347, and Transportation of Dangerous Goods regulations, containers that held hazardous materials require secondary containment until properly decontaminated or disposed of. The unsealed bung allows vapour release, creating both environmental and fire hazards. However, whether this rises to formal non-compliance depends on the facility's waste accumulation procedures and timelines.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 Ontario EPA, O.Reg 347 (Waste Management), TDG Act, Ontario OHSA",
+    "tags": [
+      "waste",
+      "drum",
+      "residual_hazard",
+      "containment",
+      "ambiguous"
+    ]
+  },
+  {
+    "id": "CA-PH-014",
+    "facility_type": "pharmaceutical",
+    "jurisdiction": "CA",
+    "title": "Microwave with Spliced Power Cord",
+    "scene_description": "In the break room, you examine the microwave on the counter. The power cord has a visible splice repair about 30 cm from the plug \u2014 the original cord appears to have been cut and reconnected using electrical tape and wire nuts. The tape is slightly unravelling, exposing the wire nut underneath. The microwave itself powers on and heats food normally. A sticker on the back shows the last electrical inspection was 18 months ago.",
+    "scene_art_key": "microwave_spliced_cord",
+    "scene_image": "assets/ui/encounters/microwave_spliced_cord.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Electrical Safety",
+    "distractor_categories": [
+      "Fire Safety & Emergency Preparedness",
+      "Machine Guarding & Equipment Safety",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under Electrical Safety. Under Ontario OHSA and the Ontario Electrical Safety Code (OESC), spliced appliance cords are not permitted \u2014 damaged cords must be replaced, not repaired with tape and wire nuts. The unravelling tape creates an electrocution and fire risk. That the appliance 'works fine' is irrelevant; the cord modification itself is the hazard. The appliance should be immediately removed from service.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER \u2014 Ontario OHSA s.25, Ontario Electrical Safety Code, CSA C22.1",
+    "tags": [
+      "electrical",
+      "cord_damage",
+      "appliance",
+      "splice_repair"
+    ]
+  }
+]
