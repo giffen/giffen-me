@@ -1,0 +1,345 @@
+{
+  "facilityId": "osaka-chemlab",
+  "startRoom": "reception_changing",
+  "startPosition": {
+    "x": 7,
+    "y": 5
+  },
+  "encounterFile": "jp-chemlab.json",
+  "rooms": {
+    "reception_changing": {
+      "id": "reception_changing",
+      "name": "Reception / Changing Room",
+      "width": 14,
+      "height": 10,
+      "floorStyle": "tile",
+      "wallColor": "#3a3a5a",
+      "objects": [
+        { "type": "desk", "x": 2, "y": 2 },
+        { "type": "monitor", "x": 3, "y": 2 },
+        { "type": "chair", "x": 4, "y": 2 },
+        { "type": "filing_cabinet", "x": 1, "y": 1 },
+        { "type": "whiteboard", "x": 6, "y": 1 },
+        { "type": "plant", "x": 12, "y": 2 },
+        { "type": "couch", "x": 2, "y": 7 },
+        { "type": "couch", "x": 4, "y": 7 },
+        { "type": "safety_sign", "x": 10, "y": 1 },
+        { "type": "trash_can", "x": 11, "y": 8 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+        [false,false,true,true,true,true,false,true,true,true,false,true,true,false],
+        [false,true,false,false,false,true,true,true,true,true,true,true,false,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,false,true,false,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,false,true,false],
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 13, "y": 5, "targetRoom": "main_lab_corridor", "spawnX": 1, "spawnY": 8 }
+      ],
+      "encounters": [
+        { "x": 8, "y": 3, "encounterId": "JP-CL-001" },
+        { "x": 5, "y": 7, "encounterId": "JP-CL-002" }
+      ]
+    },
+    "main_lab_corridor": {
+      "id": "main_lab_corridor",
+      "name": "Main Lab Corridor",
+      "width": 24,
+      "height": 16,
+      "floorStyle": "lab_vinyl",
+      "wallColor": "#2a3a4a",
+      "objects": [
+        { "type": "fire_extinguisher", "x": 1, "y": 1 },
+        { "type": "fire_extinguisher", "x": 22, "y": 1 },
+        { "type": "safety_sign", "x": 5, "y": 1 },
+        { "type": "safety_sign", "x": 16, "y": 1 },
+        { "type": "safety_sign", "x": 11, "y": 14 },
+        { "type": "whiteboard", "x": 8, "y": 1 },
+        { "type": "emergency_exit_door", "x": 22, "y": 14 },
+        { "type": "eye_wash_station", "x": 1, "y": 14 },
+        { "type": "lamp", "x": 6, "y": 7 },
+        { "type": "lamp", "x": 17, "y": 7 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false],
+        [false,false,true,true,true,false,true,true,false,true,true,true,true,true,true,true,false,true,true,true,true,true,false,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,false,true,true,true,true,true,true,true,true,true,true,false,true,true,true,true,true,false],
+        [true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,false,true,true,true,true,true,true,true,true,true,false,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,true,false,false,false]
+      ],
+      "doors": [
+        { "x": 0, "y": 8, "targetRoom": "reception_changing", "spawnX": 12, "spawnY": 5 },
+        { "x": 12, "y": 0, "targetRoom": "chemical_storage", "spawnX": 7, "spawnY": 8 },
+        { "x": 23, "y": 4, "targetRoom": "instrument_room", "spawnX": 1, "spawnY": 5 },
+        { "x": 23, "y": 10, "targetRoom": "analytical_lab", "spawnX": 1, "spawnY": 6 },
+        { "x": 0, "y": 4, "targetRoom": "synthesis_lab", "spawnX": 14, "spawnY": 6 },
+        { "x": 12, "y": 15, "targetRoom": "waste_handling", "spawnX": 6, "spawnY": 1 },
+        { "x": 20, "y": 15, "targetRoom": "emergency_corridor", "spawnX": 5, "spawnY": 1 }
+      ],
+      "encounters": [
+        { "x": 10, "y": 6, "encounterId": "JP-CL-003" },
+        { "x": 14, "y": 6, "encounterId": "JP-CL-004" }
+      ]
+    },
+    "analytical_lab": {
+      "id": "analytical_lab",
+      "name": "Analytical Lab",
+      "width": 18,
+      "height": 12,
+      "floorStyle": "antistatic_lab",
+      "wallColor": "#2a3a4a",
+      "objects": [
+        { "type": "lab_bench", "x": 2, "y": 2 },
+        { "type": "lab_bench", "x": 2, "y": 5 },
+        { "type": "lab_bench", "x": 2, "y": 8 },
+        { "type": "fume_hood", "x": 15, "y": 1 },
+        { "type": "fume_hood", "x": 15, "y": 4 },
+        { "type": "hplc_unit", "x": 8, "y": 2 },
+        { "type": "monitor", "x": 10, "y": 2 },
+        { "type": "desk", "x": 12, "y": 8 },
+        { "type": "chair", "x": 13, "y": 8 },
+        { "type": "chemical_cabinet", "x": 16, "y": 8 },
+        { "type": "eye_wash_station", "x": 16, "y": 1 },
+        { "type": "fire_extinguisher", "x": 1, "y": 1 },
+        { "type": "biohazard_bin", "x": 14, "y": 10 },
+        { "type": "printer", "x": 14, "y": 8 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+        [false,false,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false,false],
+        [false,true,false,true,true,true,true,true,false,true,false,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,true,false],
+        [false,true,false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,false,true,true,true,true,true,true,true,true,true,false,false,false,true,false,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,false,true,true,false],
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 0, "y": 6, "targetRoom": "main_lab_corridor", "spawnX": 22, "spawnY": 10 }
+      ],
+      "encounters": [
+        { "x": 14, "y": 3, "encounterId": "JP-CL-005" },
+        { "x": 9, "y": 4, "encounterId": "JP-CL-006" }
+      ]
+    },
+    "synthesis_lab": {
+      "id": "synthesis_lab",
+      "name": "Synthesis Lab",
+      "width": 16,
+      "height": 12,
+      "floorStyle": "antistatic_lab",
+      "wallColor": "#2a3a4a",
+      "objects": [
+        { "type": "fume_hood", "x": 1, "y": 1 },
+        { "type": "fume_hood", "x": 1, "y": 4 },
+        { "type": "fume_hood", "x": 1, "y": 7 },
+        { "type": "lab_bench", "x": 5, "y": 2 },
+        { "type": "lab_bench", "x": 5, "y": 5 },
+        { "type": "lab_bench", "x": 5, "y": 8 },
+        { "type": "glovebox", "x": 12, "y": 2 },
+        { "type": "gas_cylinder", "x": 14, "y": 1 },
+        { "type": "gas_cylinder", "x": 14, "y": 3 },
+        { "type": "chemical_cabinet", "x": 13, "y": 9 },
+        { "type": "safety_shower", "x": 1, "y": 10 },
+        { "type": "centrifuge", "x": 10, "y": 8 },
+        { "type": "fire_extinguisher", "x": 14, "y": 5 },
+        { "type": "chemical_spill_kit", "x": 13, "y": 10 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+        [false,false,true,true,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,true,true,true,true,false,true,true,true,true,true,true,false,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,false,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,false,true,true,true,true,true,true,true,true,false,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true],
+        [false,false,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,false,true,true,true,true,false,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false,true,false],
+        [false,false,true,true,true,true,true,true,true,true,true,true,true,false,true,false],
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 15, "y": 6, "targetRoom": "main_lab_corridor", "spawnX": 1, "spawnY": 4 }
+      ],
+      "encounters": [
+        { "x": 11, "y": 4, "encounterId": "JP-CL-007" },
+        { "x": 8, "y": 7, "encounterId": "JP-CL-008" }
+      ]
+    },
+    "chemical_storage": {
+      "id": "chemical_storage",
+      "name": "Chemical Storage",
+      "width": 14,
+      "height": 10,
+      "floorStyle": "lab_vinyl",
+      "wallColor": "#3a3a3a",
+      "objects": [
+        { "type": "chemical_cabinet", "x": 2, "y": 2 },
+        { "type": "chemical_cabinet", "x": 2, "y": 5 },
+        { "type": "chemical_cabinet", "x": 11, "y": 2 },
+        { "type": "chemical_cabinet", "x": 11, "y": 5 },
+        { "type": "chemical_drum", "x": 6, "y": 2 },
+        { "type": "chemical_drum", "x": 8, "y": 2 },
+        { "type": "lab_refrigerator", "x": 12, "y": 1 },
+        { "type": "fire_extinguisher", "x": 1, "y": 1 },
+        { "type": "safety_sign", "x": 5, "y": 1 },
+        { "type": "safety_sign", "x": 9, "y": 1 },
+        { "type": "chemical_spill_kit", "x": 12, "y": 8 },
+        { "type": "filing_cabinet", "x": 1, "y": 8 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+        [false,false,true,true,true,false,true,true,true,false,true,true,false,false],
+        [false,true,false,true,true,true,false,true,false,true,true,false,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,false,true,true,true,true,true,true,true,true,false,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,false,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,false,false,false,false,false,false,true,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 7, "y": 9, "targetRoom": "main_lab_corridor", "spawnX": 12, "spawnY": 1 }
+      ],
+      "encounters": [
+        { "x": 4, "y": 4, "encounterId": "JP-CL-009" },
+        { "x": 10, "y": 4, "encounterId": "JP-CL-010" }
+      ]
+    },
+    "instrument_room": {
+      "id": "instrument_room",
+      "name": "Instrument Room",
+      "width": 14,
+      "height": 10,
+      "floorStyle": "antistatic_lab",
+      "wallColor": "#2a3a4a",
+      "objects": [
+        { "type": "autoclave", "x": 1, "y": 1 },
+        { "type": "hplc_unit", "x": 4, "y": 1 },
+        { "type": "ups_cabinet", "x": 12, "y": 1 },
+        { "type": "monitor", "x": 8, "y": 2 },
+        { "type": "monitor", "x": 10, "y": 2 },
+        { "type": "desk", "x": 8, "y": 5 },
+        { "type": "desk", "x": 10, "y": 5 },
+        { "type": "chair", "x": 9, "y": 3 },
+        { "type": "chair", "x": 11, "y": 5 },
+        { "type": "lab_bench", "x": 3, "y": 7 },
+        { "type": "lab_bench", "x": 6, "y": 7 },
+        { "type": "fire_extinguisher", "x": 12, "y": 8 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+        [false,false,true,true,false,true,true,true,true,true,true,true,false,false],
+        [false,true,true,true,true,true,true,true,false,true,false,true,true,false],
+        [false,true,true,true,true,true,true,true,true,false,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [true,true,true,true,true,true,true,true,false,true,false,false,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,false,true,true,false,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 0, "y": 5, "targetRoom": "main_lab_corridor", "spawnX": 22, "spawnY": 4 }
+      ],
+      "encounters": [
+        { "x": 6, "y": 4, "encounterId": "JP-CL-011" }
+      ]
+    },
+    "waste_handling": {
+      "id": "waste_handling",
+      "name": "Waste Handling Area",
+      "width": 12,
+      "height": 10,
+      "floorStyle": "lab_vinyl",
+      "wallColor": "#3a3a3a",
+      "objects": [
+        { "type": "chemical_drum", "x": 2, "y": 3 },
+        { "type": "chemical_drum", "x": 4, "y": 3 },
+        { "type": "chemical_drum", "x": 6, "y": 3 },
+        { "type": "chemical_drum", "x": 8, "y": 3 },
+        { "type": "chemical_cabinet", "x": 10, "y": 1 },
+        { "type": "biohazard_bin", "x": 10, "y": 6 },
+        { "type": "chemical_spill_kit", "x": 1, "y": 1 },
+        { "type": "safety_sign", "x": 1, "y": 8 },
+        { "type": "fire_extinguisher", "x": 10, "y": 8 },
+        { "type": "filing_cabinet", "x": 9, "y": 7 },
+        { "type": "fume_scrubber", "x": 3, "y": 7 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,true,false,false,false,false,false],
+        [false,false,true,true,true,true,true,true,true,true,false,false],
+        [false,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,false,true,false,true,false,true,false,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,false,false],
+        [false,true,true,false,true,true,true,true,true,false,true,false],
+        [false,false,true,true,true,true,true,true,true,true,false,false],
+        [false,false,false,false,false,false,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 6, "y": 0, "targetRoom": "main_lab_corridor", "spawnX": 12, "spawnY": 14 }
+      ],
+      "encounters": [
+        { "x": 5, "y": 6, "encounterId": "JP-CL-012" },
+        { "x": 8, "y": 5, "encounterId": "JP-CL-013" }
+      ]
+    },
+    "emergency_corridor": {
+      "id": "emergency_corridor",
+      "name": "Emergency Shower Corridor",
+      "width": 10,
+      "height": 8,
+      "floorStyle": "tile",
+      "wallColor": "#3a4a5a",
+      "objects": [
+        { "type": "safety_shower", "x": 1, "y": 2 },
+        { "type": "safety_shower", "x": 1, "y": 5 },
+        { "type": "eye_wash_station", "x": 8, "y": 2 },
+        { "type": "eye_wash_station", "x": 8, "y": 5 },
+        { "type": "fire_extinguisher", "x": 4, "y": 1 },
+        { "type": "emergency_exit_door", "x": 8, "y": 6 },
+        { "type": "safety_sign", "x": 1, "y": 1 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,true,false,false,false,false],
+        [false,false,true,true,false,true,true,true,true,false],
+        [false,false,true,true,true,true,true,true,false,false],
+        [false,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,false],
+        [false,false,true,true,true,true,true,true,false,false],
+        [false,true,true,true,true,true,true,true,false,false],
+        [false,false,false,false,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 5, "y": 0, "targetRoom": "main_lab_corridor", "spawnX": 20, "spawnY": 14 }
+      ],
+      "encounters": [
+        { "x": 5, "y": 4, "encounterId": "JP-CL-014" }
+      ]
+    }
+  }
+}
