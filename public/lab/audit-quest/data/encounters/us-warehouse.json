@@ -1,0 +1,282 @@
+[
+  {
+    "id": "US-WH-001",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "Forklift Operator Without Cal/OSHA Certification",
+    "scene_description": "At the loading dock, a forklift operator is moving pallets efficiently. You ask to see his certification. He produces a card from a previous employer in Texas that expired two months ago. He says his supervisor told him the Texas cert 'carries over' to California.",
+    "scene_art_key": "forklift_no_cal_cert",
+    "scene_image": "assets/ui/encounters/forklift_no_cal_cert.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Training & Competency",
+    "distractor_categories": [
+      "Permits, Signage & Documentation",
+      "Machine Safety & Guarding",
+      "PPE & Personal Safety"
+    ],
+    "explanation": "This is a non-compliance under Training & Competency. Cal/OSHA CCR 3668 requires employer-specific forklift training and evaluation. Certifications do not transfer between employers, and expired certifications require retraining and re-evaluation. The operator must be trained and certified by the current employer before operating powered industrial trucks.",
+    "difficulty": 3,
+    "source_reference": "Cal/OSHA Title 8 CCR 3668, OSHA 29 CFR 1910.178(l)",
+    "tags": ["forklift", "training", "certification", "powered_industrial_trucks"]
+  },
+  {
+    "id": "US-WH-002",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "Properly Maintained Eyewash Station",
+    "scene_description": "Near the battery charging bay, you find an eyewash station mounted on the wall. The weekly inspection tag shows current dates with initials. You activate the station — water runs clear and at adequate pressure. The area around it is unobstructed with clear signage pointing to its location.",
+    "scene_art_key": "eyewash_station_proper",
+    "scene_image": "assets/ui/encounters/eyewash_station_proper.jpg",
+    "is_noncompliance": false,
+    "correct_category": "Emergency Preparedness",
+    "distractor_categories": [
+      "Chemical & Hazardous Materials",
+      "Permits, Signage & Documentation",
+      "Structural & Housekeeping"
+    ],
+    "explanation": "This is compliant. The eyewash station meets ANSI Z358.1 requirements: it is properly maintained with documented weekly inspections, delivers clean water at adequate pressure, and is accessible within the required distance of the battery charging area. Cal/OSHA CCR 5162 requires emergency eyewash where employees may be exposed to corrosive materials, including battery acid.",
+    "difficulty": 2,
+    "source_reference": "ANSI Z358.1, Cal/OSHA Title 8 CCR 5162",
+    "tags": ["eyewash", "emergency_equipment", "battery_charging", "compliant"]
+  },
+  {
+    "id": "US-WH-003",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "Blocked Emergency Exit in Warehouse",
+    "scene_description": "An emergency exit door in the main warehouse has several pallets of merchandise stacked within three feet of it. The illuminated exit sign above the door is working, but the path to the door requires navigating around the pallets. A worker nearby says 'they're just there temporarily until the truck comes.'",
+    "scene_art_key": "blocked_emergency_exit_warehouse",
+    "scene_image": "assets/ui/encounters/blocked_exit_warehouse.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Fire Safety & Emergency Preparedness",
+    "distractor_categories": [
+      "Structural & Housekeeping",
+      "Permits, Signage & Documentation",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under Fire Safety & Emergency Preparedness. OSHA 29 CFR 1910.37(a)(3) requires that exit routes be free and unobstructed, and no materials or equipment may be placed that obscures visibility of an exit. 'Temporary' storage near exits is a common excuse but does not satisfy the regulation. Cal/OSHA enforces this with equal or greater strictness.",
+    "difficulty": 3,
+    "source_reference": "OSHA 29 CFR 1910.37(a)(3), Cal/OSHA Title 8 CCR 3215",
+    "tags": ["exit_route", "obstruction", "fire_safety", "emergency_exit"]
+  },
+  {
+    "id": "US-WH-004",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "Missing Injury & Illness Prevention Program",
+    "scene_description": "In the shipping office, you ask the site supervisor for the facility's written Injury and Illness Prevention Program. She pauses, then says 'We follow all OSHA regulations — we have the poster up and everything.' When pressed, she cannot produce any written IIPP documentation, hazard assessment records, or training logs.",
+    "scene_art_key": "missing_iipp",
+    "scene_image": "assets/ui/encounters/missing_iipp.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Permits, Signage & Documentation",
+    "distractor_categories": [
+      "Training & Competency",
+      "Ergonomics & Workplace Conditions",
+      "Emergency Preparedness"
+    ],
+    "explanation": "This is a non-compliance under Permits, Signage & Documentation. Cal/OSHA CCR 3203 requires every California employer to establish, implement, and maintain a written, effective Injury and Illness Prevention Program (IIPP). This is California's cornerstone safety requirement with no direct federal OSHA equivalent. The IIPP must include responsibility assignment, hazard identification, employee communication, training, and recordkeeping procedures.",
+    "difficulty": 4,
+    "source_reference": "Cal/OSHA Title 8 CCR 3203",
+    "tags": ["iipp", "documentation", "california_specific", "safety_program"]
+  },
+  {
+    "id": "US-WH-005",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "No Indoor Heat Illness Prevention Measures",
+    "scene_description": "The main warehouse interior reads 88°F on a wall thermometer. Workers are visibly sweating as they move product. There are no shade structures or designated cool-down rest areas inside the warehouse. The single water cooler near the office is empty. When you ask about heat procedures, the supervisor says 'We open the dock doors for air circulation.'",
+    "scene_art_key": "indoor_heat_no_water",
+    "scene_image": "assets/ui/encounters/indoor_heat_no_water.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Ergonomics & Workplace Conditions",
+    "distractor_categories": [
+      "Emergency Preparedness",
+      "PPE & Personal Safety",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is a non-compliance under Ergonomics & Workplace Conditions. Cal/OSHA's Indoor Heat Illness Prevention standard (CCR 3396) requires employers to provide access to fresh, cool drinking water, designate cool-down rest areas, and implement high-heat procedures when indoor temperatures exceed 82°F. Opening dock doors is not a substitute for these specific requirements. This California-specific standard is stricter than federal OSHA.",
+    "difficulty": 4,
+    "source_reference": "Cal/OSHA Title 8 CCR 3396",
+    "tags": ["heat_illness", "indoor_heat", "water", "california_specific"]
+  },
+  {
+    "id": "US-WH-006",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "Proper Lockout/Tagout on Conveyor",
+    "scene_description": "In the pick and pack area, a conveyor belt is shut down for maintenance. A lockout/tagout padlock is properly secured on the energy disconnect switch, with a tag clearly identifying the authorized employee performing the work. The employee shows you his personal lock with his photo ID attached. A written LOTO procedure for the conveyor is posted nearby.",
+    "scene_art_key": "conveyor_loto_proper",
+    "scene_image": "assets/ui/encounters/conveyor_loto_proper.jpg",
+    "is_noncompliance": false,
+    "correct_category": "Machine Safety & Guarding",
+    "distractor_categories": [
+      "Electrical Safety",
+      "Training & Competency",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is compliant. The lockout/tagout procedure meets OSHA 29 CFR 1910.147 requirements: the energy-isolating device is locked with the authorized employee's personal lock, the tag identifies the employee, and machine-specific LOTO procedures are documented and available. Cal/OSHA CCR 3314 mirrors these federal requirements.",
+    "difficulty": 3,
+    "source_reference": "OSHA 29 CFR 1910.147, Cal/OSHA Title 8 CCR 3314",
+    "tags": ["loto", "lockout_tagout", "conveyor", "machine_safety", "compliant"]
+  },
+  {
+    "id": "US-WH-007",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "Repetitive Motion Injury Reports Ignored",
+    "scene_description": "At the pick stations, you review the OSHA 300 log and find three workers performing identical picking tasks have reported wrist and shoulder pain over the past six months. Management has not conducted an ergonomic evaluation or implemented any work practice changes. When asked, the supervisor says 'They just need to stretch more — we tell them that at orientation.'",
+    "scene_art_key": "repetitive_motion_ignored",
+    "scene_image": "assets/ui/encounters/repetitive_motion_ignored.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Ergonomics & Workplace Conditions",
+    "distractor_categories": [
+      "Training & Competency",
+      "Permits, Signage & Documentation",
+      "PPE & Personal Safety"
+    ],
+    "explanation": "This is a non-compliance under Ergonomics & Workplace Conditions. Cal/OSHA's Repetitive Motion Injuries standard (CCR 5110) requires employers to establish a program to minimize repetitive motion injuries when two or more employees performing identical work activities report RMIs. The program must include worksite evaluation, control measures, and employee training. 'Telling them to stretch' does not satisfy the requirement for systematic evaluation and controls. This is a California-specific standard.",
+    "difficulty": 5,
+    "source_reference": "Cal/OSHA Title 8 CCR 5110",
+    "tags": ["ergonomics", "repetitive_motion", "california_specific", "rmi"]
+  },
+  {
+    "id": "US-WH-008",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "Damaged Pallet Racking Not Tagged Out",
+    "scene_description": "Walking through the main warehouse, you notice a pallet racking upright with a visible dent approximately three inches deep. The rack is still fully loaded with heavy pallets of product above the damaged section. There is no damage report tag, no out-of-service marking, and no evidence the damage has been documented or assessed.",
+    "scene_art_key": "damaged_pallet_racking",
+    "scene_image": "assets/ui/encounters/damaged_pallet_racking.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Structural & Housekeeping",
+    "distractor_categories": [
+      "Machine Safety & Guarding",
+      "Permits, Signage & Documentation",
+      "Emergency Preparedness"
+    ],
+    "explanation": "This is a non-compliance under Structural & Housekeeping. ANSI/RMI MH16.1 and OSHA 29 CFR 1910.176 require storage racks to be maintained in safe condition. A three-inch dent in a rack upright significantly reduces load capacity and creates a collapse risk. Damaged sections must be immediately unloaded, tagged out of service, and assessed by a qualified engineer before returning to service. Cal/OSHA enforces this under the General Industry Safety Orders.",
+    "difficulty": 4,
+    "source_reference": "ANSI/RMI MH16.1, OSHA 29 CFR 1910.176, Cal/OSHA Title 8 CCR 3231",
+    "tags": ["racking", "structural", "damage", "housekeeping"]
+  },
+  {
+    "id": "US-WH-009",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "Battery Charging Area Ventilation Questionable",
+    "scene_description": "The battery charging bay has a ceiling-mounted exhaust fan running above the three charging stations. However, the fan appears undersized for the space, and there is no posted ventilation survey or engineering assessment. You can smell a faint chemical odor. The area has no hydrogen gas detector. A maintenance worker says 'the fan has always been there — nobody's ever measured the airflow.'",
+    "scene_art_key": "battery_charging_ventilation",
+    "scene_image": "assets/ui/encounters/battery_charging_ventilation.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Chemical & Hazardous Materials",
+    "distractor_categories": [
+      "Electrical Safety",
+      "Permits, Signage & Documentation",
+      "Structural & Housekeeping"
+    ],
+    "explanation": "This is ambiguous. Cal/OSHA CCR 5185 requires adequate ventilation in battery charging areas to prevent hydrogen gas accumulation to dangerous levels. A ventilation system exists (the fan), but without an engineering assessment or airflow measurements, it's impossible to confirm adequacy. The faint chemical odor and absent hydrogen detector are red flags, but the presence of the exhaust fan means it's not a clear-cut violation — an industrial hygiene assessment would be needed to determine if the ventilation rate meets the required air changes per hour.",
+    "difficulty": 4,
+    "source_reference": "Cal/OSHA Title 8 CCR 5185, OSHA 29 CFR 1926.441",
+    "tags": ["battery_charging", "ventilation", "hydrogen", "ambiguous"]
+  },
+  {
+    "id": "US-WH-010",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "Forklift Pre-Shift Inspection — Out-of-State Form",
+    "scene_description": "On a forklift at the loading dock, you find a completed pre-shift inspection checklist on the dashboard. The inspection is dated today, thorough, and signed by the operator. However, the form header reads 'Texas OSHA Forklift Daily Checklist' and the checklist items don't include Cal/OSHA-specific items like seatbelt condition verification or California-required brake testing procedures.",
+    "scene_art_key": "forklift_texas_inspection",
+    "scene_image": "assets/ui/encounters/forklift_texas_form.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Permits, Signage & Documentation",
+    "distractor_categories": [
+      "Training & Competency",
+      "Machine Safety & Guarding",
+      "Structural & Housekeeping"
+    ],
+    "explanation": "This is ambiguous. Federal OSHA 29 CFR 1910.178(q)(7) requires pre-operation inspections, which was done. However, Cal/OSHA has additional requirements under CCR 3664-3668 that may not be captured on an out-of-state form. The inspection was completed and documented, which satisfies the basic federal requirement, but using a form that doesn't address California-specific items creates a documentation gap. Some auditors would cite this, others would note it as an observation pending form update.",
+    "difficulty": 5,
+    "source_reference": "OSHA 29 CFR 1910.178(q)(7), Cal/OSHA Title 8 CCR 3664-3668",
+    "tags": ["forklift", "inspection", "documentation", "california_specific", "ambiguous"]
+  },
+  {
+    "id": "US-WH-011",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "Undisclosed Warehouse Productivity Quotas",
+    "scene_description": "In the shipping office, workers mention that their individual productivity quotas increased 20% this quarter. You ask for written quota descriptions — the supervisor says quotas are 'internal metrics' and declines to share specifics. Workers report feeling pressure to skip safety steps to meet targets. The facility has not disclosed quota details to Cal/OSHA or provided written descriptions to employees.",
+    "scene_art_key": "warehouse_quota_pressure",
+    "scene_image": "assets/ui/encounters/warehouse_quota_pressure.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Ergonomics & Workplace Conditions",
+    "distractor_categories": [
+      "Permits, Signage & Documentation",
+      "Training & Competency",
+      "PPE & Personal Safety"
+    ],
+    "explanation": "This is a non-compliance under Ergonomics & Workplace Conditions. California AB 701 (Labor Code 2100-2112) requires warehouse employers to provide written descriptions of any quotas to each affected employee upon hire and within two business days of any quota change. Quotas that prevent compliance with health and safety laws are prohibited. Failure to disclose quotas in writing is itself a violation, and the reported pressure to skip safety steps suggests the quotas may interfere with safety compliance.",
+    "difficulty": 5,
+    "source_reference": "California AB 701, Labor Code 2100-2112",
+    "tags": ["quota", "ab701", "california_specific", "warehouse_productivity"]
+  },
+  {
+    "id": "US-WH-012",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "Cold Storage Entry Protocol Properly Implemented",
+    "scene_description": "The cold storage area entrance has a buddy system sign-in board with all current entries logged. Workers wear insulated jackets, gloves, and face protection. An internal alarm pull station is clearly visible near the door. Temperature is monitored and logged every four hours on a posted chart. The freezer door has a clearly marked interior emergency release handle with glow-in-the-dark markings.",
+    "scene_art_key": "cold_storage_entry_proper",
+    "scene_image": "assets/ui/encounters/cold_storage_proper.jpg",
+    "is_noncompliance": false,
+    "correct_category": "PPE & Personal Safety",
+    "distractor_categories": [
+      "Emergency Preparedness",
+      "Permits, Signage & Documentation",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is compliant. The cold storage area meets Cal/OSHA requirements: workers have appropriate PPE for cold environments, the buddy system ensures accountability, the interior emergency release prevents entrapment (Cal/OSHA CCR 3328), temperature monitoring is documented, and the alarm system provides emergency communication. This represents best practice for cold storage operations.",
+    "difficulty": 3,
+    "source_reference": "Cal/OSHA Title 8 CCR 3328, OSHA 29 CFR 1910.36",
+    "tags": ["cold_storage", "ppe", "buddy_system", "emergency_release", "compliant"]
+  },
+  {
+    "id": "US-WH-013",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "No Workplace Violence Prevention Plan",
+    "scene_description": "In the break room, you notice a California workers' rights poster and a workplace safety poster, but no workplace violence prevention plan is posted or available in a binder. When you ask the HR representative about the facility's Workplace Violence Prevention Plan, she says 'We have an open-door policy and an employee assistance program.' She cannot produce a written WVPP, a violent incident log, or records of WVPP training.",
+    "scene_art_key": "no_wvpp",
+    "scene_image": "assets/ui/encounters/no_wvpp_posted.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Permits, Signage & Documentation",
+    "distractor_categories": [
+      "Training & Competency",
+      "Ergonomics & Workplace Conditions",
+      "Emergency Preparedness"
+    ],
+    "explanation": "This is a non-compliance under Permits, Signage & Documentation. California SB 553 (Labor Code 6401.9, effective July 1, 2024) requires virtually all California employers to maintain a written Workplace Violence Prevention Plan (WVPP), maintain a violent incident log, and provide WVPP training to employees. An 'open-door policy' and EAP do not satisfy the requirement for a formal, written plan with specific elements including hazard identification, response procedures, and incident investigation protocols.",
+    "difficulty": 5,
+    "source_reference": "California SB 553, Labor Code 6401.9",
+    "tags": ["workplace_violence", "wvpp", "sb553", "california_specific", "documentation"]
+  },
+  {
+    "id": "US-WH-014",
+    "facility_type": "warehouse",
+    "jurisdiction": "US-CA",
+    "title": "Faded Forklift/Pedestrian Zone Markings",
+    "scene_description": "In the main warehouse, yellow floor markings that separate forklift travel lanes from pedestrian walkways are visibly faded. In several sections, the lines are barely distinguishable from the epoxy floor. You observe a forklift crossing through what should be a pedestrian-only zone, and two workers stepping into the forklift lane to retrieve product. A supervisor says 'We're due for repainting next quarter.'",
+    "scene_art_key": "faded_pedestrian_markings",
+    "scene_image": "assets/ui/encounters/faded_pedestrian_markings.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Structural & Housekeeping",
+    "distractor_categories": [
+      "Machine Safety & Guarding",
+      "Training & Competency",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is ambiguous. OSHA 29 CFR 1910.176 requires safe clearances and designated aisles/passageways in storage areas. Cal/OSHA requires permanent aisles to be appropriately marked (CCR 3231). Markings do exist, suggesting the facility once met the standard, but their current faded state raises the question of whether the requirement is still being met. The observed mixing of forklift and pedestrian traffic increases the urgency. Some auditors would cite this as non-compliance due to ineffective controls, while others might classify it as an observation with a corrective action recommendation.",
+    "difficulty": 4,
+    "source_reference": "OSHA 29 CFR 1910.176, Cal/OSHA Title 8 CCR 3231",
+    "tags": ["floor_markings", "pedestrian_safety", "forklift", "housekeeping", "ambiguous"]
+  }
+]
