@@ -1,0 +1,2745 @@
+{
+  "facilityId": "saopaulo-construction",
+  "startRoom": "site_entrance",
+  "startPosition": {
+    "x": 6,
+    "y": 4
+  },
+  "encounterFile": "br-construction.json",
+  "rooms": {
+    "site_entrance": {
+      "id": "site_entrance",
+      "name": "Site Entrance / Guard Booth",
+      "width": 12,
+      "height": 8,
+      "floorStyle": "concrete",
+      "wallColor": "#5a5050",
+      "objects": [
+        {
+          "type": "desk",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "type": "chair",
+          "x": 3,
+          "y": 3
+        },
+        {
+          "type": "monitor",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "type": "filing_cabinet",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "type": "safety_sign",
+          "x": 5,
+          "y": 1
+        },
+        {
+          "type": "fire_extinguisher",
+          "x": 10,
+          "y": 1
+        },
+        {
+          "type": "whiteboard",
+          "x": 7,
+          "y": 1
+        },
+        {
+          "type": "hard_hat_rack",
+          "x": 9,
+          "y": 1
+        },
+        {
+          "type": "cardboard_box",
+          "x": 1,
+          "y": 5
+        }
+      ],
+      "walkable": [
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "doors": [
+        {
+          "x": 11,
+          "y": 4,
+          "targetRoom": "main_yard",
+          "spawnX": 1,
+          "spawnY": 9
+        }
+      ],
+      "encounters": [
+        {
+          "x": 6,
+          "y": 3,
+          "encounterId": "BR-CS-001"
+        }
+      ]
+    },
+    "main_yard": {
+      "id": "main_yard",
+      "name": "Main Construction Yard",
+      "width": 28,
+      "height": 18,
+      "floorStyle": "dirt",
+      "wallColor": "#6a6050",
+      "objects": [
+        {
+          "type": "concrete_mixer",
+          "x": 4,
+          "y": 3
+        },
+        {
+          "type": "crane_base",
+          "x": 13,
+          "y": 2
+        },
+        {
+          "type": "safety_barrier",
+          "x": 8,
+          "y": 5
+        },
+        {
+          "type": "safety_barrier",
+          "x": 19,
+          "y": 5
+        },
+        {
+          "type": "rebar_stack",
+          "x": 22,
+          "y": 3
+        },
+        {
+          "type": "rebar_stack",
+          "x": 23,
+          "y": 3
+        },
+        {
+          "type": "forklift",
+          "x": 16,
+          "y": 8
+        },
+        {
+          "type": "safety_sign",
+          "x": 3,
+          "y": 1
+        },
+        {
+          "type": "safety_sign",
+          "x": 14,
+          "y": 1
+        },
+        {
+          "type": "safety_sign",
+          "x": 25,
+          "y": 1
+        },
+        {
+          "type": "cardboard_box",
+          "x": 24,
+          "y": 14
+        },
+        {
+          "type": "cardboard_box",
+          "x": 25,
+          "y": 14
+        },
+        {
+          "type": "chemical_drum",
+          "x": 3,
+          "y": 14
+        },
+        {
+          "type": "pallet",
+          "x": 5,
+          "y": 14
+        },
+        {
+          "type": "tool_rack",
+          "x": 10,
+          "y": 1
+        },
+        {
+          "type": "hard_hat_rack",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "type": "generator",
+          "x": 26,
+          "y": 8
+        }
+      ],
+      "walkable": [
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 9,
+          "targetRoom": "site_entrance",
+          "spawnX": 10,
+          "spawnY": 4
+        },
+        {
+          "x": 13,
+          "y": 0,
+          "targetRoom": "scaffolding_zone",
+          "spawnX": 10,
+          "spawnY": 12
+        },
+        {
+          "x": 13,
+          "y": 17,
+          "targetRoom": "excavation_zone",
+          "spawnX": 11,
+          "spawnY": 1
+        },
+        {
+          "x": 27,
+          "y": 9,
+          "targetRoom": "material_storage",
+          "spawnX": 1,
+          "spawnY": 6
+        },
+        {
+          "x": 22,
+          "y": 0,
+          "targetRoom": "site_office",
+          "spawnX": 7,
+          "spawnY": 6
+        },
+        {
+          "x": 22,
+          "y": 17,
+          "targetRoom": "worker_welfare",
+          "spawnX": 8,
+          "spawnY": 1
+        },
+        {
+          "x": 6,
+          "y": 0,
+          "targetRoom": "electrical_room",
+          "spawnX": 5,
+          "spawnY": 6
+        }
+      ],
+      "encounters": [
+        {
+          "x": 10,
+          "y": 6,
+          "encounterId": "BR-CS-002"
+        },
+        {
+          "x": 18,
+          "y": 10,
+          "encounterId": "BR-CS-003"
+        },
+        {
+          "x": 6,
+          "y": 12,
+          "encounterId": "BR-CS-004"
+        }
+      ]
+    },
+    "scaffolding_zone": {
+      "id": "scaffolding_zone",
+      "name": "Scaffolding Zone",
+      "width": 20,
+      "height": 14,
+      "floorStyle": "plywood",
+      "wallColor": "#5a5a48",
+      "objects": [
+        {
+          "type": "scaffolding",
+          "x": 3,
+          "y": 2
+        },
+        {
+          "type": "scaffolding",
+          "x": 4,
+          "y": 2
+        },
+        {
+          "type": "scaffolding",
+          "x": 5,
+          "y": 2
+        },
+        {
+          "type": "scaffolding",
+          "x": 14,
+          "y": 2
+        },
+        {
+          "type": "scaffolding",
+          "x": 15,
+          "y": 2
+        },
+        {
+          "type": "scaffolding",
+          "x": 16,
+          "y": 2
+        },
+        {
+          "type": "scaffolding",
+          "x": 3,
+          "y": 8
+        },
+        {
+          "type": "scaffolding",
+          "x": 4,
+          "y": 8
+        },
+        {
+          "type": "safety_barrier",
+          "x": 7,
+          "y": 4
+        },
+        {
+          "type": "safety_barrier",
+          "x": 12,
+          "y": 4
+        },
+        {
+          "type": "safety_net",
+          "x": 8,
+          "y": 2
+        },
+        {
+          "type": "safety_net",
+          "x": 9,
+          "y": 2
+        },
+        {
+          "type": "safety_sign",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "type": "safety_sign",
+          "x": 18,
+          "y": 1
+        },
+        {
+          "type": "tool_rack",
+          "x": 18,
+          "y": 5
+        },
+        {
+          "type": "hard_hat_rack",
+          "x": 1,
+          "y": 5
+        },
+        {
+          "type": "fire_extinguisher",
+          "x": 1,
+          "y": 10
+        },
+        {
+          "type": "gas_cylinder",
+          "x": 17,
+          "y": 10
+        }
+      ],
+      "walkable": [
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "doors": [
+        {
+          "x": 10,
+          "y": 13,
+          "targetRoom": "main_yard",
+          "spawnX": 13,
+          "spawnY": 2
+        }
+      ],
+      "encounters": [
+        {
+          "x": 6,
+          "y": 6,
+          "encounterId": "BR-CS-005"
+        },
+        {
+          "x": 13,
+          "y": 3,
+          "encounterId": "BR-CS-006"
+        },
+        {
+          "x": 9,
+          "y": 9,
+          "encounterId": "BR-CS-007"
+        }
+      ]
+    },
+    "excavation_zone": {
+      "id": "excavation_zone",
+      "name": "Excavation Zone",
+      "width": 22,
+      "height": 12,
+      "floorStyle": "dirt",
+      "wallColor": "#5a4a3a",
+      "objects": [
+        {
+          "type": "excavator",
+          "x": 4,
+          "y": 2
+        },
+        {
+          "type": "safety_barrier",
+          "x": 7,
+          "y": 3
+        },
+        {
+          "type": "safety_barrier",
+          "x": 8,
+          "y": 3
+        },
+        {
+          "type": "safety_barrier",
+          "x": 9,
+          "y": 3
+        },
+        {
+          "type": "safety_barrier",
+          "x": 10,
+          "y": 3
+        },
+        {
+          "type": "safety_barrier",
+          "x": 7,
+          "y": 7
+        },
+        {
+          "type": "safety_barrier",
+          "x": 8,
+          "y": 7
+        },
+        {
+          "type": "safety_barrier",
+          "x": 9,
+          "y": 7
+        },
+        {
+          "type": "safety_barrier",
+          "x": 10,
+          "y": 7
+        },
+        {
+          "type": "safety_sign",
+          "x": 6,
+          "y": 3
+        },
+        {
+          "type": "safety_sign",
+          "x": 11,
+          "y": 5
+        },
+        {
+          "type": "chemical_drum",
+          "x": 18,
+          "y": 3
+        },
+        {
+          "type": "pallet",
+          "x": 16,
+          "y": 8
+        },
+        {
+          "type": "rebar_stack",
+          "x": 19,
+          "y": 8
+        },
+        {
+          "type": "portable_toilet",
+          "x": 20,
+          "y": 2
+        }
+      ],
+      "walkable": [
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "doors": [
+        {
+          "x": 11,
+          "y": 0,
+          "targetRoom": "main_yard",
+          "spawnX": 13,
+          "spawnY": 15
+        }
+      ],
+      "encounters": [
+        {
+          "x": 3,
+          "y": 4,
+          "encounterId": "BR-CS-008"
+        },
+        {
+          "x": 14,
+          "y": 2,
+          "encounterId": "BR-CS-009"
+        }
+      ]
+    },
+    "material_storage": {
+      "id": "material_storage",
+      "name": "Material Storage Yard",
+      "width": 16,
+      "height": 12,
+      "floorStyle": "gravel",
+      "wallColor": "#5a5a52",
+      "objects": [
+        {
+          "type": "rebar_stack",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "type": "rebar_stack",
+          "x": 3,
+          "y": 2
+        },
+        {
+          "type": "pallet",
+          "x": 6,
+          "y": 2
+        },
+        {
+          "type": "pallet",
+          "x": 7,
+          "y": 2
+        },
+        {
+          "type": "pallet",
+          "x": 8,
+          "y": 2
+        },
+        {
+          "type": "chemical_drum",
+          "x": 12,
+          "y": 2
+        },
+        {
+          "type": "chemical_drum",
+          "x": 13,
+          "y": 2
+        },
+        {
+          "type": "chemical_drum",
+          "x": 12,
+          "y": 3
+        },
+        {
+          "type": "chemical_cabinet",
+          "x": 14,
+          "y": 2
+        },
+        {
+          "type": "cardboard_box",
+          "x": 2,
+          "y": 8
+        },
+        {
+          "type": "cardboard_box",
+          "x": 3,
+          "y": 8
+        },
+        {
+          "type": "cardboard_box",
+          "x": 2,
+          "y": 9
+        },
+        {
+          "type": "forklift",
+          "x": 8,
+          "y": 8
+        },
+        {
+          "type": "safety_sign",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "type": "fire_extinguisher",
+          "x": 14,
+          "y": 9
+        },
+        {
+          "type": "hard_hat_rack",
+          "x": 10,
+          "y": 1
+        }
+      ],
+      "walkable": [
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          false,
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "doors": [
+        {
+          "x": 0,
+          "y": 6,
+          "targetRoom": "main_yard",
+          "spawnX": 25,
+          "spawnY": 9
+        }
+      ],
+      "encounters": [
+        {
+          "x": 10,
+          "y": 4,
+          "encounterId": "BR-CS-010"
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "encounterId": "BR-CS-011"
+        }
+      ]
+    },
+    "site_office": {
+      "id": "site_office",
+      "name": "Site Office Trailer",
+      "width": 14,
+      "height": 8,
+      "floorStyle": "linoleum",
+      "wallColor": "#5a5a6a",
+      "objects": [
+        {
+          "type": "desk",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "type": "desk",
+          "x": 8,
+          "y": 2
+        },
+        {
+          "type": "chair",
+          "x": 3,
+          "y": 3
+        },
+        {
+          "type": "chair",
+          "x": 9,
+          "y": 3
+        },
+        {
+          "type": "monitor",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "type": "monitor",
+          "x": 8,
+          "y": 1
+        },
+        {
+          "type": "filing_cabinet",
+          "x": 12,
+          "y": 1
+        },
+        {
+          "type": "filing_cabinet",
+          "x": 12,
+          "y": 2
+        },
+        {
+          "type": "filing_cabinet",
+          "x": 12,
+          "y": 3
+        },
+        {
+          "type": "printer",
+          "x": 5,
+          "y": 1
+        },
+        {
+          "type": "whiteboard",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "type": "coffee_machine",
+          "x": 11,
+          "y": 5
+        },
+        {
+          "type": "bookshelf",
+          "x": 1,
+          "y": 5
+        },
+        {
+          "type": "fire_extinguisher",
+          "x": 12,
+          "y": 5
+        }
+      ],
+      "walkable": [
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "doors": [
+        {
+          "x": 7,
+          "y": 7,
+          "targetRoom": "main_yard",
+          "spawnX": 22,
+          "spawnY": 2
+        }
+      ],
+      "encounters": [
+        {
+          "x": 6,
+          "y": 4,
+          "encounterId": "BR-CS-012"
+        }
+      ]
+    },
+    "worker_welfare": {
+      "id": "worker_welfare",
+      "name": "Worker Welfare Area",
+      "width": 16,
+      "height": 10,
+      "floorStyle": "concrete",
+      "wallColor": "#5a5a5a",
+      "objects": [
+        {
+          "type": "table_long",
+          "x": 3,
+          "y": 3
+        },
+        {
+          "type": "table_long",
+          "x": 3,
+          "y": 5
+        },
+        {
+          "type": "chair",
+          "x": 2,
+          "y": 3
+        },
+        {
+          "type": "chair",
+          "x": 5,
+          "y": 3
+        },
+        {
+          "type": "chair",
+          "x": 2,
+          "y": 5
+        },
+        {
+          "type": "chair",
+          "x": 5,
+          "y": 5
+        },
+        {
+          "type": "counter",
+          "x": 9,
+          "y": 1
+        },
+        {
+          "type": "sink",
+          "x": 11,
+          "y": 1
+        },
+        {
+          "type": "fridge",
+          "x": 13,
+          "y": 1
+        },
+        {
+          "type": "water_cooler",
+          "x": 14,
+          "y": 1
+        },
+        {
+          "type": "portable_toilet",
+          "x": 1,
+          "y": 7
+        },
+        {
+          "type": "portable_toilet",
+          "x": 2,
+          "y": 7
+        },
+        {
+          "type": "portable_toilet",
+          "x": 3,
+          "y": 7
+        },
+        {
+          "type": "trash_can",
+          "x": 7,
+          "y": 7
+        },
+        {
+          "type": "couch",
+          "x": 12,
+          "y": 6
+        }
+      ],
+      "walkable": [
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "doors": [
+        {
+          "x": 8,
+          "y": 0,
+          "targetRoom": "main_yard",
+          "spawnX": 22,
+          "spawnY": 15
+        }
+      ],
+      "encounters": [
+        {
+          "x": 10,
+          "y": 4,
+          "encounterId": "BR-CS-013"
+        }
+      ]
+    },
+    "electrical_room": {
+      "id": "electrical_room",
+      "name": "Electrical / Mechanical Room",
+      "width": 10,
+      "height": 8,
+      "floorStyle": "concrete",
+      "wallColor": "#3a3a4a",
+      "objects": [
+        {
+          "type": "electrical_panel",
+          "x": 2,
+          "y": 1
+        },
+        {
+          "type": "electrical_panel",
+          "x": 4,
+          "y": 1
+        },
+        {
+          "type": "electrical_panel",
+          "x": 6,
+          "y": 1
+        },
+        {
+          "type": "generator",
+          "x": 8,
+          "y": 1
+        },
+        {
+          "type": "gas_cylinder",
+          "x": 1,
+          "y": 5
+        },
+        {
+          "type": "safety_sign",
+          "x": 1,
+          "y": 1
+        },
+        {
+          "type": "fire_extinguisher",
+          "x": 8,
+          "y": 5
+        },
+        {
+          "type": "loto_station",
+          "x": 3,
+          "y": 5
+        },
+        {
+          "type": "cable_tray",
+          "x": 5,
+          "y": 3
+        },
+        {
+          "type": "tool_rack",
+          "x": 7,
+          "y": 3
+        }
+      ],
+      "walkable": [
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          false,
+          true,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "doors": [
+        {
+          "x": 5,
+          "y": 7,
+          "targetRoom": "main_yard",
+          "spawnX": 6,
+          "spawnY": 2
+        }
+      ],
+      "encounters": [
+        {
+          "x": 6,
+          "y": 4,
+          "encounterId": "BR-CS-014"
+        }
+      ]
+    }
+  }
+}

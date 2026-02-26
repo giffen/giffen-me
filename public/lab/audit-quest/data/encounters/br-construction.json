@@ -1,0 +1,365 @@
+[
+  {
+    "id": "BR-CS-001",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "Visitor Entering Site Without Safety Induction",
+    "scene_description": "At the site entrance, a client representative in business casual walks past the guard booth toward the main yard. He's wearing dress shoes, no hard hat, no high-vis vest, and no safety boots. The visitor log shows his name but the 'Integra\u00e7\u00e3o de Seguran\u00e7a' (Safety Integration) column is unsigned. The security guard shrugs and says, 'He said he just needs to check on the concrete pour for five minutes.'",
+    "scene_art_key": "visitor_no_induction_br",
+    "scene_image": "assets/ui/encounters/visitor_no_induction_br.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Permits, Signage & Documentation",
+    "distractor_categories": [
+      "PPE & Personal Protection",
+      "Fire Safety & Emergency Preparedness",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under Permits, Signage & Documentation. Under NR-18 and NR-1, all persons entering a construction site \u2014 including visitors \u2014 must receive a documented safety integration (Integra\u00e7\u00e3o de Seguran\u00e7a) before access. The unsigned column in the visitor log demonstrates a procedural failure. While the lack of PPE is also concerning, the root cause is the missing documented safety briefing, which is a documentation and process violation.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER \u2014 NR-18, NR-1, Portaria 3214",
+    "tags": [
+      "documentation",
+      "visitor",
+      "safety_induction",
+      "integracao"
+    ]
+  },
+  {
+    "id": "BR-CS-002",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "Properly Maintained Guardrail System at Floor Edge",
+    "scene_description": "At the edge of a second-floor slab, you inspect a guardrail system (Sistema de Guarda-Corpo e Rodap\u00e9). The upper rail is at 1.20m, with an intermediate rail at 0.70m and a toeboard at 0.18m. Wire mesh fills the gap between rails. The system appears rigid and well-anchored. A dated inspection tag from the safety technician hangs from the post, signed three days ago. Workers nearby are wearing hard hats and safety harnesses as secondary protection.",
+    "scene_art_key": "guardrail_proper",
+    "scene_image": "assets/ui/encounters/guardrail_proper.jpg",
+    "is_noncompliance": false,
+    "correct_category": "PPE & Personal Protection",
+    "distractor_categories": [
+      "Machine Guarding & Equipment Safety",
+      "Permits, Signage & Documentation",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is actually compliant. The guardrail system meets all NR-18 requirements: upper rail at 1.20m (correct), intermediate rail at 0.70m (correct), toeboard at 0.18m (exceeds the 0.15m minimum), wire mesh fill between rails, and a current inspection tag. The workers wearing harnesses as secondary protection alongside the collective guardrail system demonstrates best practice per NR-35. The guardrails themselves are a collective protection measure, but the PPE category is correct because the encounter tests recognition of the overall fall protection system including the harnesses.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 NR-18 (SGCR specifications), NR-35",
+    "tags": [
+      "fall_protection",
+      "guardrail",
+      "sgcr",
+      "compliant"
+    ]
+  },
+  {
+    "id": "BR-CS-003",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "Forklift Operating Near Pedestrians Without Segregation",
+    "scene_description": "In the main yard, a forklift loaded with concrete bags is reversing through an area where several workers are manually carrying rebar. There are no designated pedestrian walkways, no physical barriers, and no spotter guiding the forklift. The forklift's reverse alarm appears to be working, but several workers have ear protection in and may not hear it. A faded yellow line on the ground is barely visible.",
+    "scene_art_key": "forklift_no_segregation",
+    "scene_image": "assets/ui/encounters/forklift_no_segregation.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Ergonomics & Workplace Conditions",
+    "distractor_categories": [
+      "Machine Guarding & Equipment Safety",
+      "PPE & Personal Protection",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is a non-compliance under Ergonomics & Workplace Conditions. The core issue is traffic management and workplace layout per NR-11 and NR-18, which require segregation of vehicle and pedestrian traffic in the work environment. While players might focus on the forklift (Machine Guarding) or ear protection blocking the alarm (PPE), the fundamental failure is the lack of physical segregation between vehicular and pedestrian zones \u2014 a workplace conditions issue.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 NR-11, NR-18, NR-12",
+    "tags": [
+      "traffic_management",
+      "forklift",
+      "pedestrian_segregation",
+      "workplace_layout"
+    ]
+  },
+  {
+    "id": "BR-CS-004",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "DDS Board Without Current Date",
+    "scene_description": "Near the main yard entrance, a large whiteboard titled 'DDS \u2014 Di\u00e1logo Di\u00e1rio de Seguran\u00e7a' displays a safety topic about trenching hazards. The handwriting is clear and the content is relevant. However, the date field shows last Thursday's date \u2014 five days ago. The attendance sign-off sheet attached to the board also shows signatures only through that date. The site foreman says, 'We do DDS every morning, we just forgot to update the board.'",
+    "scene_art_key": "dds_board_outdated",
+    "scene_image": "assets/ui/encounters/dds_board_outdated.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Permits, Signage & Documentation",
+    "distractor_categories": [
+      "Ergonomics & Workplace Conditions",
+      "Fire Safety & Emergency Preparedness",
+      "PPE & Personal Protection"
+    ],
+    "explanation": "This is ambiguous \u2014 further investigation is needed. The DDS (Di\u00e1logo Di\u00e1rio de Seguran\u00e7a) is a widely practiced safety tool in Brazilian construction but is not explicitly mandated by a specific NR \u2014 it falls under the general training and communication requirements of NR-1 and NR-18. The foreman claims DDS happens daily but the documentation gap could be a procedural lapse or evidence of skipped sessions. An auditor must weigh verbal claims against documentary evidence. This tests understanding of Brazilian construction safety culture versus strict regulatory requirements.",
+    "difficulty": 4,
+    "source_reference": "PLACEHOLDER \u2014 NR-1, NR-18 (training/communication requirements)",
+    "tags": [
+      "dds",
+      "documentation",
+      "safety_dialogue",
+      "ambiguous",
+      "tricky"
+    ]
+  },
+  {
+    "id": "BR-CS-005",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "Worker at Height With Expired Work Permit",
+    "scene_description": "On the scaffolding, a worker is installing formwork at approximately 6 metres above ground level. He is wearing a full-body harness (cinto de seguran\u00e7a tipo paraquedista) properly connected to a horizontal lifeline. His hard hat has a chin strap. When you ask to see the Permiss\u00e3o de Trabalho (PT / Work Permit), he produces a crumpled paper from his pocket \u2014 it is dated from two days ago. Per NR-35, the permit is valid only for one shift or working day. He says the conditions haven't changed since then.",
+    "scene_art_key": "expired_work_permit",
+    "scene_image": "assets/ui/encounters/expired_work_permit.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Permits, Signage & Documentation",
+    "distractor_categories": [
+      "PPE & Personal Protection",
+      "Machine Guarding & Equipment Safety",
+      "Fire Safety & Emergency Preparedness"
+    ],
+    "explanation": "This is a non-compliance under Permits, Signage & Documentation. The worker's PPE appears correct and proper \u2014 full-body harness, lifeline connection, hard hat with chin strap. The non-compliance is purely procedural: under NR-35, the Permiss\u00e3o de Trabalho (Work Permit) for work at height is valid only for one shift or working day. A two-day-old permit has expired regardless of whether conditions have changed. Only the person responsible for the permit can revalidate it.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 NR-35 (Permiss\u00e3o de Trabalho), NR-18",
+    "tags": [
+      "work_at_height",
+      "permit",
+      "nr35",
+      "documentation",
+      "tricky"
+    ]
+  },
+  {
+    "id": "BR-CS-006",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "Scaffold In Use Without Formal Release Document",
+    "scene_description": "You notice a newly assembled tubular scaffold reaching about 12 metres. The scaffold appears well-constructed \u2014 diagonal bracing is in place, base plates sit on mud sills, and guardrails are installed at working levels. Workers are already using it. However, when you ask the engenheiro de seguran\u00e7a (safety engineer) for the formal scaffold release document (libera\u00e7\u00e3o de andaime), she cannot produce one. 'The montador said it was ready, so we started using it.'",
+    "scene_art_key": "scaffold_no_release",
+    "scene_image": "assets/ui/encounters/scaffold_no_release.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Machine Guarding & Equipment Safety",
+    "distractor_categories": [
+      "Permits, Signage & Documentation",
+      "PPE & Personal Protection",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under Machine Guarding & Equipment Safety. The scaffold physically appears compliant \u2014 good construction, proper bracing, guardrails present. But under NR-18, scaffolds must have a formal, signed release (libera\u00e7\u00e3o) by a qualified safety professional before use. Verbal clearance from the assembler (montador) is not sufficient. The scaffold is equipment that has not been formally certified as safe for use, making this a machine/equipment safety issue rather than a documentation issue \u2014 the missing release means the equipment's safety status is unverified.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 NR-18 (scaffold requirements), NR-35",
+    "tags": [
+      "scaffold",
+      "liberacao",
+      "formal_release",
+      "equipment_safety",
+      "tricky"
+    ]
+  },
+  {
+    "id": "BR-CS-007",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "Fall Arrest Lanyard Connected to Guardrail Tube",
+    "scene_description": "A worker on the scaffolding is wearing a proper full-body harness. His lanyard is connected to a horizontal guardrail tube rather than a designated anchor point or horizontal lifeline. The guardrail tube is standard 48.3mm scaffold tube, and the connection allows the lanyard to slide along the rail. The worker says, 'The engenheiro de seguran\u00e7a showed us this was okay because it gives us more mobility.'",
+    "scene_art_key": "harness_wrong_anchor",
+    "scene_image": "assets/ui/encounters/harness_wrong_anchor.jpg",
+    "is_noncompliance": true,
+    "correct_category": "PPE & Personal Protection",
+    "distractor_categories": [
+      "Machine Guarding & Equipment Safety",
+      "Permits, Signage & Documentation",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under PPE & Personal Protection. The worker appears to be using fall protection, and the guardrail seems like a reasonable anchor point. However, NR-35 Annex II specifies that anchor points must be designed by a qualified professional and must withstand the dynamic forces of a fall arrest (minimum 15 kN). Standard scaffold guardrail tubes are designed for lateral push loads (90 kgf/m per NR-18), not fall arrest impact forces. Using a guardrail as a fall arrest anchor could lead to catastrophic failure. The claim that a safety engineer approved it adds a deceptive layer of credibility.",
+    "difficulty": 4,
+    "source_reference": "PLACEHOLDER \u2014 NR-35 Annex II (anchor points), NR-18 (guardrail specifications)",
+    "tags": [
+      "fall_protection",
+      "anchor_point",
+      "harness",
+      "guardrail",
+      "tricky"
+    ]
+  },
+  {
+    "id": "BR-CS-008",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "Unshored Trench in Clay Soil",
+    "scene_description": "In the excavation zone, a trench approximately 1.8 metres deep has been dug for foundation work. The sides are vertical \u2014 no sloping, benching, or shoring. Two workers are inside laying rebar. A small pump is removing groundwater. The soil appears to be firm clay. The excavation supervisor says, 'It's clay \u2014 it holds itself. We'll only be in here a couple of hours.'",
+    "scene_art_key": "trench_no_shoring",
+    "scene_image": "assets/ui/encounters/trench_no_shoring.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Ergonomics & Workplace Conditions",
+    "distractor_categories": [
+      "Machine Guarding & Equipment Safety",
+      "PPE & Personal Protection",
+      "Permits, Signage & Documentation"
+    ],
+    "explanation": "This is ambiguous \u2014 further investigation is needed. At 1.8 metres depth in what appears to be firm clay, the need for shoring is a judgment call. NR-18 requires protective measures for excavations where workers are exposed to cave-in risk, but doesn't specify a strict universal depth threshold for all soil types. The presence of groundwater (hence the pump) is a significant concern that weakens even firm clay. However, short-duration work in competent clay at less than 2 metres is sometimes accepted with close supervision. A strict auditor would flag this; a pragmatic one would consider the soil assessment, duration, and groundwater factors before deciding. The supervisor's casual attitude ('it holds itself') is a red flag regardless.",
+    "difficulty": 4,
+    "source_reference": "PLACEHOLDER \u2014 NR-18 (excavation requirements)",
+    "tags": [
+      "excavation",
+      "trench",
+      "shoring",
+      "cave_in",
+      "soil_assessment",
+      "ambiguous",
+      "tricky"
+    ]
+  },
+  {
+    "id": "BR-CS-009",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "Properly Barricaded Excavation With Correct Signage",
+    "scene_description": "Walking through the excavation zone, you inspect a section of deep trench (approximately 2.5 metres). The entire perimeter is surrounded by orange mesh safety fencing on steel posts at 1.2 metres height. 'PERIGO \u2014 Escava\u00e7\u00e3o Profunda \u2014 Acesso Restrito' signs are posted every 5 metres in Portuguese. A single controlled access point has a gate with a lock, and a worker nearby confirms that only authorized personnel with trench entry training can open it. Spoil piles are set back at least 1 metre from the trench edge.",
+    "scene_art_key": "excavation_proper",
+    "scene_image": "assets/ui/encounters/excavation_proper.jpg",
+    "is_noncompliance": false,
+    "correct_category": "Ergonomics & Workplace Conditions",
+    "distractor_categories": [
+      "Permits, Signage & Documentation",
+      "Fire Safety & Emergency Preparedness",
+      "PPE & Personal Protection"
+    ],
+    "explanation": "This is actually compliant. The excavation perimeter demonstrates good practice: orange mesh fencing at adequate height, Portuguese-language signage at regular intervals (correct for a Brazilian site \u2014 no multilingual requirement), controlled access with a locked gate, authorized-only entry policy, and spoil piles set back from the edge per NR-18. This tests whether players can recognize compliant excavation site management.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 NR-18 (excavation perimeter protection)",
+    "tags": [
+      "excavation",
+      "barricade",
+      "signage",
+      "compliant"
+    ]
+  },
+  {
+    "id": "BR-CS-010",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "Chemical Drums Without SDS and Missing Containment",
+    "scene_description": "In the material storage yard, you find several 200-litre drums of concrete curing compound and form release oil. The drums are sitting directly on bare gravel with no secondary containment (bacia de conten\u00e7\u00e3o) underneath. Labels on the drums are partially illegible due to sun exposure and rain damage. You ask the almoxarife (warehouse attendant) for the FISPQ (Ficha de Informa\u00e7\u00e3o de Seguran\u00e7a de Produtos Qu\u00edmicos \u2014 the Brazilian SDS equivalent). He rummages through a folder and produces FISPQs for two of the five chemicals present.",
+    "scene_art_key": "chemical_drums_no_sds",
+    "scene_image": "assets/ui/encounters/chemical_drums_no_sds.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Chemical Management & Hazcom",
+    "distractor_categories": [
+      "Waste Management & Environmental",
+      "Permits, Signage & Documentation",
+      "Fire Safety & Emergency Preparedness"
+    ],
+    "explanation": "This is a non-compliance under Chemical Management & Hazcom. Multiple issues present \u2014 missing containment AND missing FISPQs AND illegible labels. Players might focus on the environmental aspect (containment) and select Waste Management. However, the root issues are chemical hazard communication failures: illegible labels violate GHS/NR-26 labeling requirements, and missing FISPQs for three of five chemicals violate NR-26 and hazard communication requirements. The containment issue falls under chemical management controls, not waste management, as these are active-use chemicals rather than waste.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 NR-26 (hazard communication), NR-18, GHS implementation",
+    "tags": [
+      "chemical",
+      "fispq",
+      "labeling",
+      "containment",
+      "hazcom"
+    ]
+  },
+  {
+    "id": "BR-CS-011",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "Safety Helmet Without Valid Certificate of Approval",
+    "scene_description": "Inspecting the PPE storage area in the material yard, you pick up a safety helmet from a newly delivered box. The helmet appears well-made, meets the printed markings for EN 397 (European standard), and has clear manufacturer information. However, when you look for the CA (Certificado de Aprova\u00e7\u00e3o) number \u2014 the mandatory Brazilian government approval marking \u2014 it is absent. The purchasing agent says, 'These are imported from a reputable European manufacturer. They're actually better quality than the Brazilian-approved ones.'",
+    "scene_art_key": "helmet_no_ca",
+    "scene_image": "assets/ui/encounters/helmet_no_ca.jpg",
+    "is_noncompliance": true,
+    "correct_category": "PPE & Personal Protection",
+    "distractor_categories": [
+      "Permits, Signage & Documentation",
+      "Machine Guarding & Equipment Safety",
+      "Ergonomics & Workplace Conditions"
+    ],
+    "explanation": "This is a non-compliance under PPE & Personal Protection. This is distinctly Brazilian: under NR-6, every piece of PPE sold or used in Brazil must have a CA (Certificado de Aprova\u00e7\u00e3o) issued by the Secretaria de Inspe\u00e7\u00e3o do Trabalho. Without a CA, PPE cannot legally be used, regardless of international certifications like EN 397. The purchasing agent's argument about superior quality is irrelevant \u2014 this is a legal compliance issue unique to Brazil's PPE regulatory framework. In most other countries, an EN 397 helmet would be perfectly acceptable.",
+    "difficulty": 4,
+    "source_reference": "PLACEHOLDER \u2014 NR-6 (CA requirement), Portaria 3214",
+    "tags": [
+      "ppe",
+      "ca_certificate",
+      "helmet",
+      "nr6",
+      "brazil_specific",
+      "tricky"
+    ]
+  },
+  {
+    "id": "BR-CS-012",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "PGR Document Missing Current Construction Phase Risks",
+    "scene_description": "In the site office trailer, you review the facility's PGR (Programa de Gerenciamento de Riscos). The document is well-organized and signed by a registered safety engineer (engenheiro de seguran\u00e7a do trabalho). However, you notice the risk inventory covers the earthwork and foundation phase but the site has progressed to structural framing. When you point this out, the safety engineer says, 'The PGR is a living document \u2014 I'm working on the update for the current phase. The risks were assessed verbally during the DDS sessions.'",
+    "scene_art_key": "pgr_outdated_phase",
+    "scene_image": "assets/ui/encounters/pgr_outdated_phase.jpg",
+    "is_noncompliance": "ambiguous",
+    "correct_category": "Permits, Signage & Documentation",
+    "distractor_categories": [
+      "Ergonomics & Workplace Conditions",
+      "Chemical Management & Hazcom",
+      "Machine Guarding & Equipment Safety"
+    ],
+    "explanation": "This is ambiguous \u2014 further investigation is needed. The PGR exists, is signed by a qualified professional, and was valid for a previous phase. Under NR-1 and NR-18, the PGR must be continuously updated to reflect current conditions. However, the NR does not specify exact update timelines, and the engineer's claim of verbal risk assessment during DDS sessions has some merit \u2014 DDS is a recognized practice in Brazilian construction. A strict auditor would flag the documentation gap; a pragmatic one might accept it with a corrective action timeline. This is the hardest encounter in the facility, testing understanding of PGR lifecycle management versus practical construction realities.",
+    "difficulty": 5,
+    "source_reference": "PLACEHOLDER \u2014 NR-1 (PGR requirements), NR-18",
+    "tags": [
+      "pgr",
+      "documentation",
+      "risk_assessment",
+      "phase_update",
+      "ambiguous",
+      "tricky"
+    ]
+  },
+  {
+    "id": "BR-CS-013",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "Worker Welfare Facilities Below Required Ratios",
+    "scene_description": "In the worker welfare area (canteiro de viv\u00eancia), you count the sanitation facilities and compare against the posted worker count of 85. You find 3 toilet units (requirement: 1 per 20 = minimum 5), 5 showers (requirement: 1 per 10 = minimum 9), and 2 drinking fountains (requirement: 1 per 25 = minimum 4). The dining area has seating for about 30 workers. The facilities are clean and well-maintained, but the numbers don't meet the ratios. The site manager says, 'We're adding more next week \u2014 we just had a crew surge.'",
+    "scene_art_key": "welfare_below_ratios",
+    "scene_image": "assets/ui/encounters/welfare_below_ratios.jpg",
+    "is_noncompliance": true,
+    "correct_category": "Ergonomics & Workplace Conditions",
+    "distractor_categories": [
+      "Permits, Signage & Documentation",
+      "Fire Safety & Emergency Preparedness",
+      "PPE & Personal Protection"
+    ],
+    "explanation": "This is a non-compliance under Ergonomics & Workplace Conditions. The facilities are clean and maintained \u2014 which might suggest compliance to a casual observer. The non-compliance is purely numerical: NR-18 and NR-24 prescribe specific ratios (1 toilet per 20 workers, 1 shower per 10 workers, 1 drinking fountain per 25 workers), and the site falls short on all three. The 'crew surge' excuse does not change the fact that current conditions are non-compliant. These are workplace conditions requirements, not documentation issues.",
+    "difficulty": 2,
+    "source_reference": "PLACEHOLDER \u2014 NR-18 (sanitation ratios), NR-24",
+    "tags": [
+      "welfare",
+      "sanitation",
+      "ratios",
+      "canteiro_vivencia"
+    ]
+  },
+  {
+    "id": "BR-CS-014",
+    "facility_type": "construction",
+    "jurisdiction": "BR",
+    "title": "Temporary Electrical Installation With Proper Grounding and RCD",
+    "scene_description": "In the electrical room, you inspect the temporary electrical distribution panel. It is installed in a weatherproof enclosure raised 30cm off the ground on a concrete pad. The panel has clearly labelled circuit breakers, each circuit protected by a residual current device (DR \u2014 Dispositivo Diferencial Residual) rated at 30mA. All grounding conductors are visible and properly connected to ground rods. Cable runs use armoured cable in areas of vehicle traffic and are elevated on cable trays elsewhere. The last inspection by an NR-10 qualified electrician was two weeks ago, with the signed report posted inside the panel door.",
+    "scene_art_key": "electrical_proper",
+    "scene_image": "assets/ui/encounters/electrical_proper.jpg",
+    "is_noncompliance": false,
+    "correct_category": "Electrical Safety",
+    "distractor_categories": [
+      "Machine Guarding & Equipment Safety",
+      "Permits, Signage & Documentation",
+      "Fire Safety & Emergency Preparedness"
+    ],
+    "explanation": "This is actually compliant. All NR-10 requirements for temporary construction electrical installations are met: weatherproof enclosure, ground fault protection (DR at 30mA \u2014 the correct threshold for personnel protection), proper grounding with visible ground rod connections, protected cable routing (armoured cable in traffic areas, cable trays elsewhere), and documented inspection by a qualified NR-10 electrician. This tests whether players can recognize a fully compliant temporary electrical setup, which is rarer on construction sites than non-compliance.",
+    "difficulty": 3,
+    "source_reference": "PLACEHOLDER \u2014 NR-10 (electrical installations), NR-18",
+    "tags": [
+      "electrical",
+      "temporary_installation",
+      "grounding",
+      "rcd",
+      "compliant"
+    ]
+  }
+]
