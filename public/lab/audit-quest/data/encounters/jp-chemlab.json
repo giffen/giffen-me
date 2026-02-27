@@ -8,16 +8,21 @@
     "scene_art_key": "visitor_induction_incomplete",
     "scene_image": "assets/ui/encounters/visitor_induction_incomplete.jpg",
     "is_noncompliance": true,
-    "correct_category": "Training & Competency",
+    "correct_category": "Permits, Signage & Documentation",
     "distractor_categories": [
-      "Permits, Signage & Documentation",
-      "Emergency Preparedness",
-      "PPE & Personal Safety"
+      "Chemical Management & Hazcom",
+      "Fire Safety & Emergency Preparedness",
+      "PPE & Personal Protection"
     ],
     "explanation": "This is a non-compliance under Training & Competency. Under ISHL Article 59 and the related Ordinance on Industrial Safety and Health, employers must provide safety and health education that covers the hazards of the workplace. While visitors aren't employees, ISHL Article 25 places a duty on the employer to prevent danger to all persons present. A visitor induction that omits chemical hazard awareness and specific evacuation procedures for a chemical lab fails this duty.",
     "difficulty": 3,
     "source_reference": "ISHL Article 25, Article 59, Ordinance on Industrial Safety and Health Article 35",
-    "tags": ["visitor_safety", "induction", "training", "chemical_hazards"]
+    "tags": [
+      "visitor_safety",
+      "induction",
+      "training",
+      "chemical_hazards"
+    ]
   },
   {
     "id": "JP-CL-002",
@@ -28,16 +33,21 @@
     "scene_art_key": "ppe_changing_protocol",
     "scene_image": "assets/ui/encounters/ppe_changing_protocol.jpg",
     "is_noncompliance": false,
-    "correct_category": "PPE & Personal Safety",
+    "correct_category": "PPE & Personal Protection",
     "distractor_categories": [
-      "Training & Competency",
       "Permits, Signage & Documentation",
-      "Chemical & Hazardous Materials"
+      "Fire Safety & Emergency Preparedness",
+      "Chemical Management & Hazcom"
     ],
     "explanation": "This is compliant. ISHL Article 22 and the Ordinance on Prevention of Hazards Due to Specified Chemical Substances require appropriate PPE for chemical handling. The changing area demonstrates best practice: clear protocols, proper organization, bilingual signage, and a system for separating clean and contaminated PPE. The posted sequence aligns with the substances used in the facility.",
     "difficulty": 3,
     "source_reference": "ISHL Article 22, Ordinance on Prevention of Hazards Due to Specified Chemical Substances Article 38",
-    "tags": ["ppe", "changing_room", "chemical_lab", "compliant"]
+    "tags": [
+      "ppe",
+      "changing_room",
+      "chemical_lab",
+      "compliant"
+    ]
   },
   {
     "id": "JP-CL-003",
@@ -50,14 +60,19 @@
     "is_noncompliance": true,
     "correct_category": "Permits, Signage & Documentation",
     "distractor_categories": [
-      "Chemical & Hazardous Materials",
-      "Structural & Housekeeping",
-      "Training & Competency"
+      "Chemical Management & Hazcom",
+      "Ergonomics & Workplace Conditions",
+      "Fire Safety & Emergency Preparedness"
     ],
     "explanation": "This is a non-compliance under Permits, Signage & Documentation. Japan's Poisonous and Deleterious Substances Control Act (毒物及び劇物取締法) prescribes specific signage: poisonous substances require white text on a red background (白地に赤文字 is reversed — 赤地に白文字), and deleterious substances require red text on a white background (白地に赤文字). These color requirements are legally mandated and not interchangeable with international conventions. Reversing or substituting colors constitutes non-compliance.",
     "difficulty": 5,
     "source_reference": "Poisonous and Deleterious Substances Control Act Article 12, Enforcement Regulations Article 11-5",
-    "tags": ["signage", "color_coding", "poison", "deleterious_substances"]
+    "tags": [
+      "signage",
+      "color_coding",
+      "poison",
+      "deleterious_substances"
+    ]
   },
   {
     "id": "JP-CL-004",
@@ -70,14 +85,19 @@
     "is_noncompliance": "ambiguous",
     "correct_category": "Permits, Signage & Documentation",
     "distractor_categories": [
-      "Training & Competency",
-      "Monitoring & Health Surveillance",
-      "Emergency Preparedness"
+      "Chemical Management & Hazcom",
+      "Waste Management & Environmental",
+      "Fire Safety & Emergency Preparedness"
     ],
     "explanation": "This situation is ambiguous. ISHL Article 19 requires the Safety and Health Committee to meet at least once per month. A five-week gap technically means one calendar month was missed. However, the committee is otherwise functional — minutes are substantive, representation is balanced, and corrective actions are tracked. An auditor could reasonably cite the missed monthly meeting as a technical non-compliance under ISHL, or could note it as an observation with a recommendation to ensure monthly cadence is maintained regardless of scheduling conflicts. The 'combining' of meetings suggests the intent exists but the execution fell short.",
     "difficulty": 4,
     "source_reference": "ISHL Articles 17, 18, 19; Ordinance on Industrial Safety and Health Article 23",
-    "tags": ["safety_committee", "meeting_minutes", "documentation", "compliant"]
+    "tags": [
+      "safety_committee",
+      "meeting_minutes",
+      "documentation",
+      "compliant"
+    ]
   },
   {
     "id": "JP-CL-005",
@@ -88,16 +108,21 @@
     "scene_art_key": "missing_b_measurements",
     "scene_image": "assets/ui/encounters/missing_b_measurements.jpg",
     "is_noncompliance": true,
-    "correct_category": "Monitoring & Health Surveillance",
+    "correct_category": "Waste Management & Environmental",
     "distractor_categories": [
       "Permits, Signage & Documentation",
-      "Chemical & Hazardous Materials",
-      "Training & Competency"
+      "Chemical Management & Hazcom",
+      "Fire Safety & Emergency Preparedness"
     ],
     "explanation": "This is a non-compliance under Monitoring & Health Surveillance. Japan's Work Environment Measurement Standards (作業環境測定基準) require both A-measurements (area sampling on a systematic grid) AND B-measurements (sampling at locations of highest expected exposure) to complete a valid assessment. Without B-measurements, the Management Classification cannot be properly determined, regardless of A-measurement results. The assessment is incomplete and the work environment cannot be legally classified.",
     "difficulty": 5,
     "source_reference": "ISHL Article 65, Work Environment Measurement Act, Work Environment Measurement Standards Article 2, Article 10",
-    "tags": ["work_environment_measurement", "a_measurement", "b_measurement", "exposure_monitoring"]
+    "tags": [
+      "work_environment_measurement",
+      "a_measurement",
+      "b_measurement",
+      "exposure_monitoring"
+    ]
   },
   {
     "id": "JP-CL-006",
@@ -108,16 +133,21 @@
     "scene_art_key": "solvent_waste_ambiguity",
     "scene_image": "assets/ui/encounters/solvent_waste_ambiguity.jpg",
     "is_noncompliance": "ambiguous",
-    "correct_category": "Chemical & Hazardous Materials",
+    "correct_category": "Chemical Management & Hazcom",
     "distractor_categories": [
-      "Training & Competency",
       "Permits, Signage & Documentation",
-      "Structural & Housekeeping"
+      "Fire Safety & Emergency Preparedness",
+      "Ergonomics & Workplace Conditions"
     ],
     "explanation": "This situation is ambiguous. TFA (trifluoroacetic acid) is technically a halogenated compound, so placing the waste in the halogenated container is chemically defensible. However, the inconsistency between analysts indicates the SOP either doesn't address this edge case or wasn't effectively communicated. Under ISHL's risk assessment obligation and the Waste Management Act, the key issue is whether the facility has a documented protocol that addresses mixed-solvent waste classification. Without seeing the SOP, an auditor could reasonably flag this as a training gap or accept it as a borderline case with a recommendation to clarify procedures.",
     "difficulty": 4,
     "source_reference": "ISHL Article 57-3, Waste Management and Public Cleansing Act, PRTR Act",
-    "tags": ["waste_segregation", "solvents", "hplc", "chemical_waste"]
+    "tags": [
+      "waste_segregation",
+      "solvents",
+      "hplc",
+      "chemical_waste"
+    ]
   },
   {
     "id": "JP-CL-007",
@@ -128,16 +158,21 @@
     "scene_art_key": "glovebox_operating_correct",
     "scene_image": "assets/ui/encounters/glovebox_operating_correct.jpg",
     "is_noncompliance": false,
-    "correct_category": "Machine Safety & Guarding",
+    "correct_category": "Machine Guarding & Equipment Safety",
     "distractor_categories": [
-      "Chemical & Hazardous Materials",
-      "Monitoring & Health Surveillance",
-      "PPE & Personal Safety"
+      "Chemical Management & Hazcom",
+      "Waste Management & Environmental",
+      "PPE & Personal Protection"
     ],
     "explanation": "This is compliant. The glovebox demonstrates proper engineering controls as required by the Ordinance on Prevention of Hazards Due to Specified Chemical Substances. The atmosphere is controlled and monitored, calibration records are maintained, and the equipment is inspected according to schedule. Under ISHL Article 20, employers must take measures to prevent dangers from machinery — the glovebox maintenance and monitoring program satisfies this requirement.",
     "difficulty": 4,
     "source_reference": "ISHL Article 20, Ordinance on Prevention of Hazards Due to Specified Chemical Substances",
-    "tags": ["glovebox", "engineering_controls", "inert_atmosphere", "compliant"]
+    "tags": [
+      "glovebox",
+      "engineering_controls",
+      "inert_atmosphere",
+      "compliant"
+    ]
   },
   {
     "id": "JP-CL-008",
@@ -148,16 +183,21 @@
     "scene_art_key": "wrong_biomarker_exam",
     "scene_image": "assets/ui/encounters/wrong_biomarker_exam.jpg",
     "is_noncompliance": true,
-    "correct_category": "Monitoring & Health Surveillance",
+    "correct_category": "Waste Management & Environmental",
     "distractor_categories": [
-      "Chemical & Hazardous Materials",
-      "Training & Competency",
-      "Permits, Signage & Documentation"
+      "Chemical Management & Hazcom",
+      "Permits, Signage & Documentation",
+      "Fire Safety & Emergency Preparedness"
     ],
     "explanation": "This is a non-compliance under Monitoring & Health Surveillance. ISHL Article 66 and the Ordinance on Prevention of Organic Solvent Poisoning require substance-specific health examinations using prescribed biomarkers. Japan updated the required biological monitoring parameters — for toluene, urinary hippuric acid was replaced with urinary o-cresol as the specified biomarker. Conducting the examination using the outdated biomarker means the health examination does not satisfy the legal requirement, even though examinations are being performed at the correct frequency.",
     "difficulty": 5,
     "source_reference": "ISHL Article 66, Ordinance on Prevention of Organic Solvent Poisoning Article 29, Special Health Examination Guidelines",
-    "tags": ["health_examination", "biomarker", "toluene", "organic_solvents"]
+    "tags": [
+      "health_examination",
+      "biomarker",
+      "toluene",
+      "organic_solvents"
+    ]
   },
   {
     "id": "JP-CL-009",
@@ -170,14 +210,19 @@
     "is_noncompliance": true,
     "correct_category": "Permits, Signage & Documentation",
     "distractor_categories": [
-      "Chemical & Hazardous Materials",
-      "Structural & Housekeeping",
-      "PPE & Personal Safety"
+      "Chemical Management & Hazcom",
+      "Ergonomics & Workplace Conditions",
+      "PPE & Personal Protection"
     ],
     "explanation": "This is a non-compliance under Permits, Signage & Documentation. The Poisonous and Deleterious Substances Control Act requires poisonous substance (毒物) storage to display '医薬用外毒物' in white text on a red background (赤地に白文字). The sign shown has the colors reversed — red text on white background is the prescribed format for deleterious substances (劇物), not poisons. The GHS diamond color for acute toxicity is irrelevant; Japan's domestic signage requirements under this Act are separate from GHS implementation and must be followed exactly.",
     "difficulty": 5,
     "source_reference": "Poisonous and Deleterious Substances Control Act Article 12, Enforcement Regulations Article 11-5, Article 11-6",
-    "tags": ["poisonous_substances", "signage", "color_coding", "storage"]
+    "tags": [
+      "poisonous_substances",
+      "signage",
+      "color_coding",
+      "storage"
+    ]
   },
   {
     "id": "JP-CL-010",
@@ -188,16 +233,22 @@
     "scene_art_key": "risk_assessment_not_updated",
     "scene_image": "assets/ui/encounters/risk_assessment_not_updated.jpg",
     "is_noncompliance": true,
-    "correct_category": "Chemical & Hazardous Materials",
+    "correct_category": "Chemical Management & Hazcom",
     "distractor_categories": [
       "Permits, Signage & Documentation",
-      "Training & Competency",
-      "Monitoring & Health Surveillance"
+      "Fire Safety & Emergency Preparedness",
+      "Waste Management & Environmental"
     ],
     "explanation": "This is a non-compliance under Chemical & Hazardous Materials. Since the 2024 ISHL amendment, risk assessment is mandatory for ALL substances that have GHS classification — the obligation now covers the full list of GHS-classified substances, not just the 674 substances on the notification list. New substances introduced to the workplace must have risk assessments completed before use. Having the SDS on file but failing to conduct the mandated risk assessment is a clear non-compliance with the expanded obligation under ISHL Article 57-3.",
     "difficulty": 5,
     "source_reference": "ISHL Article 57-3 (2024 amendment), GHS Classification and Labelling Regulations",
-    "tags": ["risk_assessment", "sds", "ghs", "new_substances", "2024_amendment"]
+    "tags": [
+      "risk_assessment",
+      "sds",
+      "ghs",
+      "new_substances",
+      "2024_amendment"
+    ]
   },
   {
     "id": "JP-CL-011",
@@ -208,16 +259,21 @@
     "scene_art_key": "autoclave_inspection_current",
     "scene_image": "assets/ui/encounters/autoclave_inspection_current.jpg",
     "is_noncompliance": false,
-    "correct_category": "Machine Safety & Guarding",
+    "correct_category": "Machine Guarding & Equipment Safety",
     "distractor_categories": [
       "Permits, Signage & Documentation",
-      "Monitoring & Health Surveillance",
-      "Structural & Housekeeping"
+      "Waste Management & Environmental",
+      "Ergonomics & Workplace Conditions"
     ],
     "explanation": "This is compliant. Under the Ordinance on Boilers and Pressure Vessels (ボイラー及び圧力容器安全規則), pressure vessels require periodic self-inspections (monthly/annual by the employer) and performance inspections by a registered inspection agency. The autoclave meets all requirements: current agency inspection, regular self-inspections documented in the log, and a tested pressure relief valve. ISHL Article 38 sets the framework for these inspection obligations.",
     "difficulty": 4,
     "source_reference": "ISHL Article 38, Ordinance on Boilers and Pressure Vessels Articles 67, 73, 88",
-    "tags": ["autoclave", "pressure_vessel", "inspection", "compliant"]
+    "tags": [
+      "autoclave",
+      "pressure_vessel",
+      "inspection",
+      "compliant"
+    ]
   },
   {
     "id": "JP-CL-012",
@@ -228,16 +284,21 @@
     "scene_art_key": "waste_manifest_missing",
     "scene_image": "assets/ui/encounters/waste_manifest_missing.jpg",
     "is_noncompliance": true,
-    "correct_category": "Chemical & Hazardous Materials",
+    "correct_category": "Chemical Management & Hazcom",
     "distractor_categories": [
       "Permits, Signage & Documentation",
-      "Structural & Housekeeping",
-      "Training & Competency"
+      "Ergonomics & Workplace Conditions",
+      "Fire Safety & Emergency Preparedness"
     ],
     "explanation": "This is a non-compliance under Chemical & Hazardous Materials. Under the Waste Management and Public Cleansing Act (廃棄物の処理及び清掃に関する法律), generators of specially controlled industrial waste must maintain their own manifest records — they cannot rely solely on the disposal contractor. The generator must confirm receipt by the transporter (B2 manifest) and final disposal confirmation (E manifest). Failure to maintain and confirm manifests at each stage is a violation of the generator's duty of care.",
     "difficulty": 5,
     "source_reference": "Waste Management and Public Cleansing Act Article 12-3, Article 12-5, Manifest System Guidelines",
-    "tags": ["waste_manifest", "industrial_waste", "disposal", "generator_responsibility"]
+    "tags": [
+      "waste_manifest",
+      "industrial_waste",
+      "disposal",
+      "generator_responsibility"
+    ]
   },
   {
     "id": "JP-CL-013",
@@ -250,14 +311,19 @@
     "is_noncompliance": "ambiguous",
     "correct_category": "Permits, Signage & Documentation",
     "distractor_categories": [
-      "Chemical & Hazardous Materials",
-      "Monitoring & Health Surveillance",
-      "Training & Competency"
+      "Chemical Management & Hazcom",
+      "Waste Management & Environmental",
+      "Fire Safety & Emergency Preparedness"
     ],
     "explanation": "This situation is ambiguous. The PRTR Act requires facilities handling Class I designated chemical substances to determine whether they meet reporting thresholds. The facility does track quantities — via procurement records in a spreadsheet — but the method is informal and estimates rather than measures actual usage. An auditor could argue this is sufficient due diligence (the data exists and shows sub-threshold levels) or could cite the lack of a formalized procedure and measured usage data as a documentation gap. Best practice is to maintain a formal annual evaluation procedure, but the PRTR Act doesn't prescribe a specific tracking methodology.",
     "difficulty": 4,
     "source_reference": "PRTR Act (Act on Confirmation of Release Amounts of Specific Chemical Substances) Article 5, Enforcement Order Article 5",
-    "tags": ["prtr", "chemical_tracking", "reporting_threshold", "designated_substances"]
+    "tags": [
+      "prtr",
+      "chemical_tracking",
+      "reporting_threshold",
+      "designated_substances"
+    ]
   },
   {
     "id": "JP-CL-014",
@@ -268,15 +334,20 @@
     "scene_art_key": "emergency_shower_low_flow",
     "scene_image": "assets/ui/encounters/emergency_shower_low_flow.jpg",
     "is_noncompliance": true,
-    "correct_category": "Emergency Preparedness",
+    "correct_category": "Fire Safety & Emergency Preparedness",
     "distractor_categories": [
-      "Structural & Housekeeping",
-      "Machine Safety & Guarding",
-      "Monitoring & Health Surveillance"
+      "Ergonomics & Workplace Conditions",
+      "Machine Guarding & Equipment Safety",
+      "Waste Management & Environmental"
     ],
     "explanation": "This is a non-compliance under Emergency Preparedness. ISHL Article 24 and the Ordinance on Prevention of Hazards Due to Specified Chemical Substances require emergency washing facilities where workers handle hazardous chemicals. JIS T 7201 (aligned with ANSI Z358.1) specifies a minimum flow rate of 75.7 liters per minute for emergency showers. At 50 L/min, this shower fails the standard. More critically, a known deficiency was documented but left unrepaired for three weeks while the unit remains designated as the primary emergency shower — this represents a failure to maintain emergency equipment in operational condition.",
     "difficulty": 4,
     "source_reference": "ISHL Article 24, Ordinance on Prevention of Hazards Due to Specified Chemical Substances Article 37, JIS T 7201",
-    "tags": ["emergency_shower", "flow_rate", "maintenance", "chemical_safety"]
+    "tags": [
+      "emergency_shower",
+      "flow_rate",
+      "maintenance",
+      "chemical_safety"
+    ]
   }
 ]

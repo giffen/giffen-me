@@ -4,100 +4,128 @@
     "facility_type": "food_processing",
     "jurisdiction": "CN",
     "title": "Cold Chain Break During Compressor Maintenance",
-    "scene_description": "A blast chiller unit displays a temperature of -12\u00b0C. The required setpoint for the frozen product stored inside is -18\u00b0C per GB 31646. The temperature log shows the deviation began 6 hours ago during a compressor maintenance cycle \u2014 the maintenance team warmed the unit for repair work but never verified temperature recovery afterward. The HACCP CCP monitoring sheet shows the last check was 'within limits' \u2014 timestamped 8 hours ago, before the deviation. A supervisor says 'the product is still frozen solid, it's fine.'",
+    "scene_description": "A blast chiller unit displays a temperature of -12°C. The required setpoint for the frozen product stored inside is -18°C per GB 31646. The temperature log shows the deviation began 6 hours ago during a compressor maintenance cycle — the maintenance team warmed the unit for repair work but never verified temperature recovery afterward. The HACCP CCP monitoring sheet shows the last check was 'within limits' — timestamped 8 hours ago, before the deviation. A supervisor says 'the product is still frozen solid, it's fine.'",
     "scene_art_key": "cold_chain_break",
     "scene_image": "assets/ui/encounters/cold_chain_break.jpg",
     "is_noncompliance": true,
-    "correct_category": "Monitoring & Health Surveillance",
+    "correct_category": "Waste Management & Environmental",
     "distractor_categories": [
-      "Machine Safety & Guarding",
-      "Emergency Preparedness",
+      "Machine Guarding & Equipment Safety",
+      "Fire Safety & Emergency Preparedness",
       "Permits, Signage & Documentation"
     ],
-    "explanation": "This is a non-compliance under Monitoring & Health Surveillance. GB 31646 (Cold Chain Logistics) requires continuous temperature maintenance for frozen products. The 6-hour deviation from -18\u00b0C to -12\u00b0C is a cold chain break. More critically, the HACCP CCP monitoring gap \u2014 no check for 8 hours despite a required monitoring frequency \u2014 means the food safety system failed. The maintenance team's failure to verify temperature recovery post-repair also violates Work Safety Law Article 41 requirements for equipment maintenance procedures. This is a dual non-compliance: food safety monitoring AND maintenance procedure failures.",
+    "explanation": "This is a non-compliance under Monitoring & Health Surveillance. GB 31646 (Cold Chain Logistics) requires continuous temperature maintenance for frozen products. The 6-hour deviation from -18°C to -12°C is a cold chain break. More critically, the HACCP CCP monitoring gap — no check for 8 hours despite a required monitoring frequency — means the food safety system failed. The maintenance team's failure to verify temperature recovery post-repair also violates Work Safety Law Article 41 requirements for equipment maintenance procedures. This is a dual non-compliance: food safety monitoring AND maintenance procedure failures.",
     "difficulty": 5,
     "source_reference": "GB 31646, Food Safety Law Art. 33, Work Safety Law Art. 41, HACCP Codex CCP Monitoring",
-    "tags": ["cold_chain", "temperature", "haccp", "maintenance", "dual_framework"]
+    "tags": [
+      "cold_chain",
+      "temperature",
+      "haccp",
+      "maintenance",
+      "dual_framework"
+    ]
   },
   {
     "id": "CN-FP-002",
     "facility_type": "food_processing",
     "jurisdiction": "CN",
     "title": "Ammonia Detector Mounted at Wrong Height",
-    "scene_description": "The ammonia plant room houses the facility's refrigeration compressors. A functioning ammonia leak detector is mounted at eye level \u2014 approximately 1.5 meters from the floor. Ammonia is lighter than air and rises; detectors should be ceiling-mounted per AQ 3036 guidelines. Additionally, the emergency ventilation system's activation switch is located inside the room, not outside \u2014 a worker responding to an alarm must enter the hazardous space to activate ventilation. The self-contained breathing apparatus for emergency response is stored in a cabinet inside the same room.",
+    "scene_description": "The ammonia plant room houses the facility's refrigeration compressors. A functioning ammonia leak detector is mounted at eye level — approximately 1.5 meters from the floor. Ammonia is lighter than air and rises; detectors should be ceiling-mounted per AQ 3036 guidelines. Additionally, the emergency ventilation system's activation switch is located inside the room, not outside — a worker responding to an alarm must enter the hazardous space to activate ventilation. The self-contained breathing apparatus for emergency response is stored in a cabinet inside the same room.",
     "scene_art_key": "ammonia_detector_wrong",
     "scene_image": "assets/ui/encounters/ammonia_detector_wrong.jpg",
     "is_noncompliance": true,
-    "correct_category": "Emergency Preparedness",
+    "correct_category": "Fire Safety & Emergency Preparedness",
     "distractor_categories": [
-      "Machine Safety & Guarding",
-      "Monitoring & Health Surveillance",
+      "Machine Guarding & Equipment Safety",
+      "Waste Management & Environmental",
       "Permits, Signage & Documentation"
     ],
-    "explanation": "This is a non-compliance under Emergency Preparedness with three distinct failures. First, ammonia detectors must be mounted near the ceiling since ammonia (NH3) is lighter than air and rises \u2014 eye-level mounting misses the gas entirely until concentrations are already dangerous (AQ 3036, GB 50058). Second, the emergency ventilation switch inside the hazardous space means a responder must enter danger to activate the safety system. Third, SCBA stored inside the ammonia room defeats its purpose \u2014 it should be immediately accessible outside the hazardous area per GB/T 29639 emergency response plan requirements.",
+    "explanation": "This is a non-compliance under Emergency Preparedness with three distinct failures. First, ammonia detectors must be mounted near the ceiling since ammonia (NH3) is lighter than air and rises — eye-level mounting misses the gas entirely until concentrations are already dangerous (AQ 3036, GB 50058). Second, the emergency ventilation switch inside the hazardous space means a responder must enter danger to activate the safety system. Third, SCBA stored inside the ammonia room defeats its purpose — it should be immediately accessible outside the hazardous area per GB/T 29639 emergency response plan requirements.",
     "difficulty": 5,
     "source_reference": "AQ 3036, GB 50058, Work Safety Law Art. 32, GB/T 29639",
-    "tags": ["ammonia", "gas_detection", "emergency_ventilation", "scba", "multiple_failures"]
+    "tags": [
+      "ammonia",
+      "gas_detection",
+      "emergency_ventilation",
+      "scba",
+      "multiple_failures"
+    ]
   },
   {
     "id": "CN-FP-003",
     "facility_type": "food_processing",
     "jurisdiction": "CN",
     "title": "Hot Work Permit vs Food Safety Contamination Risk",
-    "scene_description": "A contractor crew is performing welding repairs on a stainless steel conveyor frame in the processing hall. They hold a valid hot work permit issued by the facility safety department per Work Safety Law requirements. However, production has not been fully halted \u2014 food product is still on adjacent lines 3 meters away, separated only by a portable partition screen. The food safety manager demands all production stop within 10 meters. The safety manager says the Work Safety Law permit is sufficient and the 3-meter separation meets GB 50016 fire safety distances. Neither has consulted the other's regulatory framework.",
+    "scene_description": "A contractor crew is performing welding repairs on a stainless steel conveyor frame in the processing hall. They hold a valid hot work permit issued by the facility safety department per Work Safety Law requirements. However, production has not been fully halted — food product is still on adjacent lines 3 meters away, separated only by a portable partition screen. The food safety manager demands all production stop within 10 meters. The safety manager says the Work Safety Law permit is sufficient and the 3-meter separation meets GB 50016 fire safety distances. Neither has consulted the other's regulatory framework.",
     "scene_art_key": "hot_work_vs_food_safety",
     "scene_image": "assets/ui/encounters/hot_work_vs_food_safety.jpg",
     "is_noncompliance": "ambiguous",
     "correct_category": "Permits, Signage & Documentation",
     "distractor_categories": [
       "Fire Safety & Emergency Preparedness",
-      "Chemical & Hazardous Materials",
-      "Structural & Housekeeping"
+      "Chemical Management & Hazcom",
+      "Ergonomics & Workplace Conditions"
     ],
-    "explanation": "This situation is ambiguous because two mandatory regulatory frameworks are in tension. The Work Safety Law hot work permit IS valid, and the 3-meter fire safety separation may satisfy GB 50016 requirements. However, Food Safety Law Article 33 and GB 14881 require prevention of food contamination \u2014 welding fumes, sparks, and particulates near open food product arguably violate this obligation regardless of fire safety compliance. The correct approach is that both frameworks must be satisfied simultaneously, and the more stringent requirement controls. An auditor could reasonably cite this as non-compliant (food contamination risk) or note it as an observation requiring the two management systems to coordinate.",
+    "explanation": "This situation is ambiguous because two mandatory regulatory frameworks are in tension. The Work Safety Law hot work permit IS valid, and the 3-meter fire safety separation may satisfy GB 50016 requirements. However, Food Safety Law Article 33 and GB 14881 require prevention of food contamination — welding fumes, sparks, and particulates near open food product arguably violate this obligation regardless of fire safety compliance. The correct approach is that both frameworks must be satisfied simultaneously, and the more stringent requirement controls. An auditor could reasonably cite this as non-compliant (food contamination risk) or note it as an observation requiring the two management systems to coordinate.",
     "difficulty": 5,
     "source_reference": "Work Safety Law Art. 47, GB 50016, Food Safety Law Art. 33, GB 14881",
-    "tags": ["hot_work", "dual_framework", "contamination", "contractor_safety"]
+    "tags": [
+      "hot_work",
+      "dual_framework",
+      "contamination",
+      "contractor_safety"
+    ]
   },
   {
     "id": "CN-FP-004",
     "facility_type": "food_processing",
     "jurisdiction": "CN",
     "title": "Sanitizer Mixed by 'Feel' at Double Concentration",
-    "scene_description": "The night sanitation crew is mixing chlorine-based sanitizer for the end-of-shift washdown. The SDS specifies a working concentration of 200 ppm for food contact surfaces per GB 14930.1. A worker is mixing by 'feel' with no measuring equipment. When asked about the concentration, the worker says 'I've done this for 10 years, I know the right amount.' The mixed solution tests at 450 ppm \u2014 more than double the required concentration. The worker is wearing rubber gloves but no eye protection or respiratory protection for the mixing process.",
+    "scene_description": "The night sanitation crew is mixing chlorine-based sanitizer for the end-of-shift washdown. The SDS specifies a working concentration of 200 ppm for food contact surfaces per GB 14930.1. A worker is mixing by 'feel' with no measuring equipment. When asked about the concentration, the worker says 'I've done this for 10 years, I know the right amount.' The mixed solution tests at 450 ppm — more than double the required concentration. The worker is wearing rubber gloves but no eye protection or respiratory protection for the mixing process.",
     "scene_art_key": "sanitizer_double_concentration",
     "scene_image": "assets/ui/encounters/sanitizer_double_concentration.jpg",
     "is_noncompliance": true,
-    "correct_category": "Chemical & Hazardous Materials",
+    "correct_category": "Chemical Management & Hazcom",
     "distractor_categories": [
-      "Training & Competency",
-      "PPE & Personal Safety",
-      "Permits, Signage & Documentation"
+      "Permits, Signage & Documentation",
+      "PPE & Personal Protection",
+      "Fire Safety & Emergency Preparedness"
     ],
-    "explanation": "This is a non-compliance under Chemical & Hazardous Materials with dual impact. The over-concentration (450 ppm vs 200 ppm spec) violates GB 14930.1 disinfectant standards and creates a food safety risk \u2014 excess chlorine residue on food contact surfaces can exceed GB 2760 limits. Simultaneously, the higher concentration increases worker exposure to chlorine, violating GBZ 2.1 occupational exposure limits. The PPE gap (no eye protection or respiratory protection during mixing) compounds the worker safety violation under Work Safety Law Article 42. Experience-based mixing without measurement fails both regulatory frameworks.",
+    "explanation": "This is a non-compliance under Chemical & Hazardous Materials with dual impact. The over-concentration (450 ppm vs 200 ppm spec) violates GB 14930.1 disinfectant standards and creates a food safety risk — excess chlorine residue on food contact surfaces can exceed GB 2760 limits. Simultaneously, the higher concentration increases worker exposure to chlorine, violating GBZ 2.1 occupational exposure limits. The PPE gap (no eye protection or respiratory protection during mixing) compounds the worker safety violation under Work Safety Law Article 42. Experience-based mixing without measurement fails both regulatory frameworks.",
     "difficulty": 4,
     "source_reference": "GB 14930.1, GB 2760, GBZ 2.1, Work Safety Law Art. 42, Food Safety Law Art. 34",
-    "tags": ["sanitizer", "chemical_mixing", "concentration", "ppe", "dual_framework"]
+    "tags": [
+      "sanitizer",
+      "chemical_mixing",
+      "concentration",
+      "ppe",
+      "dual_framework"
+    ]
   },
   {
     "id": "CN-FP-005",
     "facility_type": "food_processing",
     "jurisdiction": "CN",
     "title": "Heat Stress on the Cook Line Without Management Program",
-    "scene_description": "It's midsummer. Ambient temperature outside is 38\u00b0C. Inside the cooking area, with steam kettles and stoves running, the wet-bulb globe temperature (WBGT) reads 34\u00b0C. Workers are on a continuous 8-hour shift with no scheduled heat breaks. One worker shows signs of heat exhaustion \u2014 dizziness, heavy sweating, pale skin. The supervisor gives the worker water and tells them to 'take it easy for a few minutes' before returning to the line. There is no documented heat stress management program, no WBGT monitoring log, and no defined work-rest schedule.",
+    "scene_description": "It's midsummer. Ambient temperature outside is 38°C. Inside the cooking area, with steam kettles and stoves running, the wet-bulb globe temperature (WBGT) reads 34°C. Workers are on a continuous 8-hour shift with no scheduled heat breaks. One worker shows signs of heat exhaustion — dizziness, heavy sweating, pale skin. The supervisor gives the worker water and tells them to 'take it easy for a few minutes' before returning to the line. There is no documented heat stress management program, no WBGT monitoring log, and no defined work-rest schedule.",
     "scene_art_key": "heat_stress_cook_line",
     "scene_image": "assets/ui/encounters/heat_stress_cook_line.jpg",
     "is_noncompliance": true,
     "correct_category": "Ergonomics & Workplace Conditions",
     "distractor_categories": [
-      "Emergency Preparedness",
-      "Training & Competency",
-      "Monitoring & Health Surveillance"
+      "Fire Safety & Emergency Preparedness",
+      "Permits, Signage & Documentation",
+      "Waste Management & Environmental"
     ],
-    "explanation": "This is a non-compliance under Ergonomics & Workplace Conditions. GBZ/T 189.7 requires systematic heat stress measurement and management, including WBGT monitoring, documented work-rest schedules, and cool-down procedures. At 34\u00b0C WBGT, continuous 8-hour shifts without rest periods violate GBZ 2.2 occupational exposure limits for physical agents. The Interim Provisions on Heat Stroke Prevention require employers to provide adequate working conditions. The challenge here is that cooking temperatures can't simply be lowered (food safety requires them), so the solution must involve engineering controls (ventilation, cooling stations) and administrative controls (work-rest cycles) that satisfy both Worker Safety Law and food safety requirements.",
+    "explanation": "This is a non-compliance under Ergonomics & Workplace Conditions. GBZ/T 189.7 requires systematic heat stress measurement and management, including WBGT monitoring, documented work-rest schedules, and cool-down procedures. At 34°C WBGT, continuous 8-hour shifts without rest periods violate GBZ 2.2 occupational exposure limits for physical agents. The Interim Provisions on Heat Stroke Prevention require employers to provide adequate working conditions. The challenge here is that cooking temperatures can't simply be lowered (food safety requires them), so the solution must involve engineering controls (ventilation, cooling stations) and administrative controls (work-rest cycles) that satisfy both Worker Safety Law and food safety requirements.",
     "difficulty": 4,
     "source_reference": "GBZ 2.2, GBZ/T 189.7, Work Safety Law Art. 42, Interim Provisions on Heat Stroke Prevention",
-    "tags": ["heat_stress", "wbgt", "cooking_area", "work_rest_schedule"]
+    "tags": [
+      "heat_stress",
+      "wbgt",
+      "cooking_area",
+      "work_rest_schedule"
+    ]
   },
   {
     "id": "CN-FP-006",
@@ -108,96 +136,125 @@
     "scene_art_key": "allergen_changeover_proper",
     "scene_image": "assets/ui/encounters/allergen_changeover_proper.jpg",
     "is_noncompliance": false,
-    "correct_category": "Chemical & Hazardous Materials",
+    "correct_category": "Chemical Management & Hazcom",
     "distractor_categories": [
       "Permits, Signage & Documentation",
-      "Training & Competency",
+      "Fire Safety & Emergency Preparedness",
       "Ergonomics & Workplace Conditions"
     ],
-    "explanation": "This is compliant. The allergen changeover procedure demonstrates best practice under both GB 7718 (allergen labeling) and GB 14881 (sanitary practice \u2014 cross-contamination prevention). The three-stage cleaning, verification testing, dual sign-off, and full production halt are exactly what's required for allergen management. The PPE worn during cleaning (chemical-resistant gloves, eye protection, aprons) satisfies Work Safety Law Article 42 requirements for chemical handling during the sanitizer stage. The 90-minute downtime may seem excessive but is standard for verified allergen changeovers.",
+    "explanation": "This is compliant. The allergen changeover procedure demonstrates best practice under both GB 7718 (allergen labeling) and GB 14881 (sanitary practice — cross-contamination prevention). The three-stage cleaning, verification testing, dual sign-off, and full production halt are exactly what's required for allergen management. The PPE worn during cleaning (chemical-resistant gloves, eye protection, aprons) satisfies Work Safety Law Article 42 requirements for chemical handling during the sanitizer stage. The 90-minute downtime may seem excessive but is standard for verified allergen changeovers.",
     "difficulty": 4,
     "source_reference": "GB 7718, GB 14881, Food Safety Law Art. 50, Work Safety Law Art. 42",
-    "tags": ["allergen", "changeover", "cleaning", "ppe", "compliant"]
+    "tags": [
+      "allergen",
+      "changeover",
+      "cleaning",
+      "ppe",
+      "compliant"
+    ]
   },
   {
     "id": "CN-FP-007",
     "facility_type": "food_processing",
     "jurisdiction": "CN",
     "title": "Confined Space Entry in Ammonia Evaporator",
-    "scene_description": "A maintenance technician needs to enter a large ammonia evaporator vessel for internal inspection. A confined space entry permit has been issued. Atmospheric testing was performed before entry and showed safe levels. However: (1) the permit lists only the entrant with no designated attendant or hole watch, (2) continuous atmospheric monitoring is not set up \u2014 only the single pre-entry test was done, (3) the ammonia isolation valves are closed but not locked out \u2014 tagged only, and (4) the rescue plan states 'call 119' with no on-site rescue capability or equipment specified. A rescue tripod is visible in the corner but is not set up at the entry point.",
+    "scene_description": "A maintenance technician needs to enter a large ammonia evaporator vessel for internal inspection. A confined space entry permit has been issued. Atmospheric testing was performed before entry and showed safe levels. However: (1) the permit lists only the entrant with no designated attendant or hole watch, (2) continuous atmospheric monitoring is not set up — only the single pre-entry test was done, (3) the ammonia isolation valves are closed but not locked out — tagged only, and (4) the rescue plan states 'call 119' with no on-site rescue capability or equipment specified. A rescue tripod is visible in the corner but is not set up at the entry point.",
     "scene_art_key": "confined_space_ammonia",
     "scene_image": "assets/ui/encounters/confined_space_ammonia.jpg",
     "is_noncompliance": true,
     "correct_category": "Permits, Signage & Documentation",
     "distractor_categories": [
-      "Emergency Preparedness",
-      "Machine Safety & Guarding",
-      "Training & Competency"
+      "Fire Safety & Emergency Preparedness",
+      "Machine Guarding & Equipment Safety",
+      "Chemical Management & Hazcom"
     ],
-    "explanation": "This is a non-compliance under Permits, Signage & Documentation with four critical failures in a life-threatening scenario. GB 8958 (Safety Requirements for Confined Space Operations) requires: (1) a designated attendant maintaining communication with the entrant at all times, (2) continuous atmospheric monitoring throughout the entry \u2014 not just pre-entry testing, (3) positive isolation of all energy sources including lockout, not just tagging \u2014 tag-only does not prevent accidental valve opening, and (4) a documented rescue plan with on-site rescue capability and staged equipment. The rescue tripod exists but unstaged is useless. Each individual failure could be fatal. The permit exists and pre-entry testing was done, which makes this look 'partly compliant' \u2014 but partial compliance in confined space entry is no compliance at all.",
+    "explanation": "This is a non-compliance under Permits, Signage & Documentation with four critical failures in a life-threatening scenario. GB 8958 (Safety Requirements for Confined Space Operations) requires: (1) a designated attendant maintaining communication with the entrant at all times, (2) continuous atmospheric monitoring throughout the entry — not just pre-entry testing, (3) positive isolation of all energy sources including lockout, not just tagging — tag-only does not prevent accidental valve opening, and (4) a documented rescue plan with on-site rescue capability and staged equipment. The rescue tripod exists but unstaged is useless. Each individual failure could be fatal. The permit exists and pre-entry testing was done, which makes this look 'partly compliant' — but partial compliance in confined space entry is no compliance at all.",
     "difficulty": 5,
     "source_reference": "GB 8958, Work Safety Law Art. 25, AQ 3036, GB/T 33000",
-    "tags": ["confined_space", "ammonia", "permit", "rescue", "lockout", "multiple_failures"]
+    "tags": [
+      "confined_space",
+      "ammonia",
+      "permit",
+      "rescue",
+      "lockout",
+      "multiple_failures"
+    ]
   },
   {
     "id": "CN-FP-008",
     "facility_type": "food_processing",
     "jurisdiction": "CN",
     "title": "Receiving Inspection Shortcuts on Raw Poultry",
-    "scene_description": "A refrigerated truck delivers raw poultry. The receiving inspection checklist requires checking supplier certificate, product temperature, packaging integrity, and expiration dates. The worker scans the delivery receipt, checks the temperature of one box from the back of the truck (-2\u00b0C, within spec), and signs off the entire load as accepted. However: the worker didn't check temperature of boxes from the truck center where cooling may be uneven, didn't verify the supplier's food production license (just the delivery note), and the receiving area ambient temperature is 22\u00b0C \u2014 the raw poultry has been sitting on the unrefrigerated dock for 25 minutes during paperwork processing.",
+    "scene_description": "A refrigerated truck delivers raw poultry. The receiving inspection checklist requires checking supplier certificate, product temperature, packaging integrity, and expiration dates. The worker scans the delivery receipt, checks the temperature of one box from the back of the truck (-2°C, within spec), and signs off the entire load as accepted. However: the worker didn't check temperature of boxes from the truck center where cooling may be uneven, didn't verify the supplier's food production license (just the delivery note), and the receiving area ambient temperature is 22°C — the raw poultry has been sitting on the unrefrigerated dock for 25 minutes during paperwork processing.",
     "scene_art_key": "receiving_inspection_gap",
     "scene_image": "assets/ui/encounters/receiving_inspection_gap.jpg",
     "is_noncompliance": true,
     "correct_category": "Permits, Signage & Documentation",
     "distractor_categories": [
-      "Chemical & Hazardous Materials",
-      "Monitoring & Health Surveillance",
-      "Structural & Housekeeping"
+      "Chemical Management & Hazcom",
+      "Waste Management & Environmental",
+      "Ergonomics & Workplace Conditions"
     ],
-    "explanation": "This is a non-compliance under Permits, Signage & Documentation. Food Safety Law Article 50 requires supplier verification including production licenses \u2014 a delivery note is not a substitute. GB 31646 cold chain requirements demand representative temperature sampling, not single-point checks from the coldest location. GB 14881 Article 7 requires effective raw material control procedures. The 25-minute dock time at 22\u00b0C breaks cold chain continuity for raw poultry. Each individual shortcut seems minor, but the cumulative effect is a receiving process that fails to verify product safety at multiple points.",
+    "explanation": "This is a non-compliance under Permits, Signage & Documentation. Food Safety Law Article 50 requires supplier verification including production licenses — a delivery note is not a substitute. GB 31646 cold chain requirements demand representative temperature sampling, not single-point checks from the coldest location. GB 14881 Article 7 requires effective raw material control procedures. The 25-minute dock time at 22°C breaks cold chain continuity for raw poultry. Each individual shortcut seems minor, but the cumulative effect is a receiving process that fails to verify product safety at multiple points.",
     "difficulty": 4,
     "source_reference": "Food Safety Law Art. 50, GB 31646, GB 14881 Art. 7, Food Safety Law Art. 33",
-    "tags": ["receiving", "cold_chain", "supplier_verification", "temperature"]
+    "tags": [
+      "receiving",
+      "cold_chain",
+      "supplier_verification",
+      "temperature"
+    ]
   },
   {
     "id": "CN-FP-009",
     "facility_type": "food_processing",
     "jurisdiction": "CN",
     "title": "Evacuation Route Through the Freezer",
-    "scene_description": "The facility's emergency evacuation plan shows one of two primary evacuation routes for the processing hall passes through the cold storage area maintained at -25\u00b0C. The route is the shortest path to the emergency assembly point. Exit doors are unlocked and open easily. Emergency lighting and exit signs are properly installed. However, processing hall workers wear light clothing \u2014 t-shirts, hairnets, light aprons \u2014 suitable for a warm processing environment. In a real evacuation, these workers would pass through -25\u00b0C for approximately 45-60 seconds. The alternative route is 40 meters longer but stays at ambient temperature.",
+    "scene_description": "The facility's emergency evacuation plan shows one of two primary evacuation routes for the processing hall passes through the cold storage area maintained at -25°C. The route is the shortest path to the emergency assembly point. Exit doors are unlocked and open easily. Emergency lighting and exit signs are properly installed. However, processing hall workers wear light clothing — t-shirts, hairnets, light aprons — suitable for a warm processing environment. In a real evacuation, these workers would pass through -25°C for approximately 45-60 seconds. The alternative route is 40 meters longer but stays at ambient temperature.",
     "scene_art_key": "evacuation_through_freezer",
     "scene_image": "assets/ui/encounters/evacuation_through_freezer.jpg",
     "is_noncompliance": "ambiguous",
     "correct_category": "Fire Safety & Emergency Preparedness",
     "distractor_categories": [
-      "Structural & Housekeeping",
-      "PPE & Personal Safety",
-      "Ergonomics & Workplace Conditions"
+      "Ergonomics & Workplace Conditions",
+      "PPE & Personal Protection",
+      "Chemical Management & Hazcom"
     ],
-    "explanation": "This situation is ambiguous. The evacuation route technically meets GB 50016 requirements for distance, width, and exit signage. Brief cold exposure (45-60 seconds) is unlikely to cause frostbite. However, the sudden thermal shock from a warm processing area to -25\u00b0C could cause workers to slow down, slip on cold or icy surfaces, or panic \u2014 undermining evacuation effectiveness. China's regulations don't explicitly address thermal transitions in evacuation routes. Marking this compliant (meets the letter of GB 50016) or non-compliant (creates a foreseeable hazard per Work Safety Law Article 32) are both defensible positions. Best practice would be to designate the ambient-temperature route as primary.",
+    "explanation": "This situation is ambiguous. The evacuation route technically meets GB 50016 requirements for distance, width, and exit signage. Brief cold exposure (45-60 seconds) is unlikely to cause frostbite. However, the sudden thermal shock from a warm processing area to -25°C could cause workers to slow down, slip on cold or icy surfaces, or panic — undermining evacuation effectiveness. China's regulations don't explicitly address thermal transitions in evacuation routes. Marking this compliant (meets the letter of GB 50016) or non-compliant (creates a foreseeable hazard per Work Safety Law Article 32) are both defensible positions. Best practice would be to designate the ambient-temperature route as primary.",
     "difficulty": 4,
     "source_reference": "GB 50016, Work Safety Law Art. 32, GB/T 29639",
-    "tags": ["evacuation", "cold_storage", "thermal_shock", "emergency_route"]
+    "tags": [
+      "evacuation",
+      "cold_storage",
+      "thermal_shock",
+      "emergency_route"
+    ]
   },
   {
     "id": "CN-FP-010",
     "facility_type": "food_processing",
     "jurisdiction": "CN",
     "title": "HACCP Investigation vs Safety Lockout Conflict",
-    "scene_description": "The metal detector on the packaging line rejects a package. Per the HACCP plan, this Critical Control Point failure requires immediate line stoppage and investigation of the upstream 30 minutes of production. During the investigation, the safety team identifies that a machine guard on the upstream meat grinder is damaged \u2014 the same grinder that may have shed the metal fragment. Work Safety Law requires immediate lockout/tagout and machine shutdown for the damaged guard. The HACCP team wants to run the line in reverse to identify the contamination source before shutdown. The safety team wants immediate LOTO. The production manager demands a resolution because every minute of downtime costs money.",
+    "scene_description": "The metal detector on the packaging line rejects a package. Per the HACCP plan, this Critical Control Point failure requires immediate line stoppage and investigation of the upstream 30 minutes of production. During the investigation, the safety team identifies that a machine guard on the upstream meat grinder is damaged — the same grinder that may have shed the metal fragment. Work Safety Law requires immediate lockout/tagout and machine shutdown for the damaged guard. The HACCP team wants to run the line in reverse to identify the contamination source before shutdown. The safety team wants immediate LOTO. The production manager demands a resolution because every minute of downtime costs money.",
     "scene_art_key": "haccp_vs_loto_conflict",
     "scene_image": "assets/ui/encounters/haccp_vs_loto_conflict.jpg",
     "is_noncompliance": "ambiguous",
-    "correct_category": "Machine Safety & Guarding",
+    "correct_category": "Machine Guarding & Equipment Safety",
     "distractor_categories": [
       "Permits, Signage & Documentation",
-      "Chemical & Hazardous Materials",
-      "Training & Competency"
+      "Chemical Management & Hazcom",
+      "Fire Safety & Emergency Preparedness"
     ],
-    "explanation": "This is the hardest encounter in the facility. Two mandatory legal frameworks are in direct operational conflict. The HACCP investigation requires the line to run (in reverse) to identify contamination scope. The safety LOTO requirement mandates the line stop immediately due to the damaged guard. Both the food safety manager and the safety manager are legally correct within their own domain. Work Safety Law Article 56 grants primacy to safety shutdown \u2014 workers have the right to refuse unsafe work and equipment must be stopped when a hazard is identified. However, the HACCP investigation obligation doesn't disappear. The correct resolution is: immediate LOTO first (worker safety takes precedence), then complete the HACCP investigation through alternative methods (manual inspection, records review) after the guard is repaired. Both frameworks must ultimately be satisfied.",
+    "explanation": "This is the hardest encounter in the facility. Two mandatory legal frameworks are in direct operational conflict. The HACCP investigation requires the line to run (in reverse) to identify contamination scope. The safety LOTO requirement mandates the line stop immediately due to the damaged guard. Both the food safety manager and the safety manager are legally correct within their own domain. Work Safety Law Article 56 grants primacy to safety shutdown — workers have the right to refuse unsafe work and equipment must be stopped when a hazard is identified. However, the HACCP investigation obligation doesn't disappear. The correct resolution is: immediate LOTO first (worker safety takes precedence), then complete the HACCP investigation through alternative methods (manual inspection, records review) after the guard is repaired. Both frameworks must ultimately be satisfied.",
     "difficulty": 5,
     "source_reference": "Food Safety Law Art. 109, Work Safety Law Art. 56, GB 14881, GB/T 27341",
-    "tags": ["haccp", "loto", "dual_framework", "machine_guard", "metal_detection"]
+    "tags": [
+      "haccp",
+      "loto",
+      "dual_framework",
+      "machine_guard",
+      "metal_detection"
+    ]
   },
   {
     "id": "CN-FP-011",
@@ -208,75 +265,100 @@
     "scene_art_key": "qc_lab_dual_pressure",
     "scene_image": "assets/ui/encounters/qc_lab_dual_pressure.jpg",
     "is_noncompliance": false,
-    "correct_category": "Structural & Housekeeping",
+    "correct_category": "Ergonomics & Workplace Conditions",
     "distractor_categories": [
-      "Chemical & Hazardous Materials",
-      "PPE & Personal Safety",
-      "Monitoring & Health Surveillance"
+      "Chemical Management & Hazcom",
+      "PPE & Personal Protection",
+      "Waste Management & Environmental"
     ],
-    "explanation": "This is compliant. The dual negative-pressure ventilation design serves both food safety (GBZ 1 \u2014 lab air doesn't contaminate production per GB 14881) and occupational health (chemical fumes don't reach the corridor per GBZ 2.1). The differentiated PPE by task type demonstrates sophisticated compliance thinking \u2014 micro work and chemical work have different hazard profiles requiring different protection. Separated waste streams meet both biohazard disposal and chemical waste requirements. The locked chemical cabinet with accessible SDS satisfies both Food Safety Law testing facility requirements and Work Safety Law chemical management obligations.",
+    "explanation": "This is compliant. The dual negative-pressure ventilation design serves both food safety (GBZ 1 — lab air doesn't contaminate production per GB 14881) and occupational health (chemical fumes don't reach the corridor per GBZ 2.1). The differentiated PPE by task type demonstrates sophisticated compliance thinking — micro work and chemical work have different hazard profiles requiring different protection. Separated waste streams meet both biohazard disposal and chemical waste requirements. The locked chemical cabinet with accessible SDS satisfies both Food Safety Law testing facility requirements and Work Safety Law chemical management obligations.",
     "difficulty": 4,
     "source_reference": "GBZ 1, GB 14881, Work Safety Law Art. 42, GBZ 2.1, Food Safety Law Art. 33",
-    "tags": ["ventilation", "negative_pressure", "dual_framework", "qc_lab", "compliant"]
+    "tags": [
+      "ventilation",
+      "negative_pressure",
+      "dual_framework",
+      "qc_lab",
+      "compliant"
+    ]
   },
   {
     "id": "CN-FP-012",
     "facility_type": "food_processing",
     "jurisdiction": "CN",
     "title": "Steam Kettle LOTO Missing Steam Isolation",
-    "scene_description": "A maintenance worker is repairing the steam inlet valve on a 500-liter steam-jacketed kettle. The worker has locked out the electrical supply to the kettle's tilting mechanism and placed a personal lock with their name on it. However, the steam supply line to the kettle jacket has not been isolated \u2014 it is only valve-closed, not locked, blanked, or bled. Residual steam pressure exists in the jacket. The worker says 'I closed the valve, it's fine.' The kettle still contains approximately 100 liters of partially cooked product at 85\u00b0C. The food safety team is pressuring maintenance to finish quickly because the product will be ruined if it cools below 74\u00b0C.",
+    "scene_description": "A maintenance worker is repairing the steam inlet valve on a 500-liter steam-jacketed kettle. The worker has locked out the electrical supply to the kettle's tilting mechanism and placed a personal lock with their name on it. However, the steam supply line to the kettle jacket has not been isolated — it is only valve-closed, not locked, blanked, or bled. Residual steam pressure exists in the jacket. The worker says 'I closed the valve, it's fine.' The kettle still contains approximately 100 liters of partially cooked product at 85°C. The food safety team is pressuring maintenance to finish quickly because the product will be ruined if it cools below 74°C.",
     "scene_art_key": "steam_kettle_no_loto",
     "scene_image": "assets/ui/encounters/steam_kettle_no_loto.jpg",
     "is_noncompliance": true,
-    "correct_category": "Machine Safety & Guarding",
+    "correct_category": "Machine Guarding & Equipment Safety",
     "distractor_categories": [
       "Permits, Signage & Documentation",
-      "Emergency Preparedness",
+      "Fire Safety & Emergency Preparedness",
       "Ergonomics & Workplace Conditions"
     ],
-    "explanation": "This is a non-compliance under Machine Safety & Guarding. GB/T 33000 LOTO requirements mandate isolation of ALL energy sources when performing maintenance. The electrical LOTO is correct, but the steam energy source \u2014 the actual hazard being worked on \u2014 is not locked out, bled, or blanked. A valve-closed-only condition cannot prevent accidental re-energization if someone opens the valve upstream. Residual steam pressure in the jacket creates a burn risk. The food safety pressure to finish quickly (the product cooling below the HACCP CCP threshold) creates a real-world incentive to cut corners, but production schedule concerns do not override lockout requirements under Work Safety Law Article 36.",
+    "explanation": "This is a non-compliance under Machine Safety & Guarding. GB/T 33000 LOTO requirements mandate isolation of ALL energy sources when performing maintenance. The electrical LOTO is correct, but the steam energy source — the actual hazard being worked on — is not locked out, bled, or blanked. A valve-closed-only condition cannot prevent accidental re-energization if someone opens the valve upstream. Residual steam pressure in the jacket creates a burn risk. The food safety pressure to finish quickly (the product cooling below the HACCP CCP threshold) creates a real-world incentive to cut corners, but production schedule concerns do not override lockout requirements under Work Safety Law Article 36.",
     "difficulty": 4,
     "source_reference": "GB/T 33000, Work Safety Law Art. 36, GB 14881",
-    "tags": ["loto", "steam", "energy_isolation", "maintenance", "food_safety_pressure"]
+    "tags": [
+      "loto",
+      "steam",
+      "energy_isolation",
+      "maintenance",
+      "food_safety_pressure"
+    ]
   },
   {
     "id": "CN-FP-013",
     "facility_type": "food_processing",
     "jurisdiction": "CN",
     "title": "Rodenticide Bait Stations Inside Food Handling Area",
-    "scene_description": "The facility's pest control program uses exterior bait stations with rodenticide and interior insect light traps. A new pest control technician has placed two rodenticide bait stations inside the receiving dock area, directly adjacent to the raw material staging zone. The bait stations are locked and tamper-resistant, meeting the pest control SOP for secure stations. However, GB 14881 strictly prohibits chemical rodenticides inside food handling areas. The technician is wearing regular work gloves instead of the specified chemical-resistant gloves for handling rodenticide. The facility's pest control map on the wall doesn't show these two interior stations \u2014 they were added without updating the documented plan.",
+    "scene_description": "The facility's pest control program uses exterior bait stations with rodenticide and interior insect light traps. A new pest control technician has placed two rodenticide bait stations inside the receiving dock area, directly adjacent to the raw material staging zone. The bait stations are locked and tamper-resistant, meeting the pest control SOP for secure stations. However, GB 14881 strictly prohibits chemical rodenticides inside food handling areas. The technician is wearing regular work gloves instead of the specified chemical-resistant gloves for handling rodenticide. The facility's pest control map on the wall doesn't show these two interior stations — they were added without updating the documented plan.",
     "scene_art_key": "rodenticide_inside_food_area",
     "scene_image": "assets/ui/encounters/rodenticide_inside_food_area.jpg",
     "is_noncompliance": true,
-    "correct_category": "Chemical & Hazardous Materials",
+    "correct_category": "Chemical Management & Hazcom",
     "distractor_categories": [
       "Permits, Signage & Documentation",
-      "Structural & Housekeeping",
-      "Training & Competency"
+      "Ergonomics & Workplace Conditions",
+      "Fire Safety & Emergency Preparedness"
     ],
-    "explanation": "This is a non-compliance under Chemical & Hazardous Materials. GB 14881 Article 6.4 explicitly prohibits chemical rodenticides inside food handling areas \u2014 this is a strict prohibition regardless of how secure the bait stations are. The tamper-resistant locking is correct practice for exterior stations but irrelevant to the prohibition on interior placement. Additionally, the PPE gap (regular gloves instead of chemical-resistant gloves for rodenticide handling) violates Work Safety Law Article 42. The undocumented placement also means the pest control program documentation is out of date, adding a third compliance failure. The technician applied outdoor pest control logic to an indoor food environment.",
+    "explanation": "This is a non-compliance under Chemical & Hazardous Materials. GB 14881 Article 6.4 explicitly prohibits chemical rodenticides inside food handling areas — this is a strict prohibition regardless of how secure the bait stations are. The tamper-resistant locking is correct practice for exterior stations but irrelevant to the prohibition on interior placement. Additionally, the PPE gap (regular gloves instead of chemical-resistant gloves for rodenticide handling) violates Work Safety Law Article 42. The undocumented placement also means the pest control program documentation is out of date, adding a third compliance failure. The technician applied outdoor pest control logic to an indoor food environment.",
     "difficulty": 4,
     "source_reference": "GB 14881 Art. 6.4, Food Safety Law Art. 33, Work Safety Law Art. 42, GB/T 27341",
-    "tags": ["pest_control", "rodenticide", "food_handling", "ppe", "documentation"]
+    "tags": [
+      "pest_control",
+      "rodenticide",
+      "food_handling",
+      "ppe",
+      "documentation"
+    ]
   },
   {
     "id": "CN-FP-014",
     "facility_type": "food_processing",
     "jurisdiction": "CN",
     "title": "Comprehensive Dual-Framework Compliance Documentation",
-    "scene_description": "The facility manager presents the annual comprehensive review documentation. The package includes: dual-registered Safety Production License AND Food Production License, both current. Annual work safety training records show 24+ hours per worker per year with food safety modules integrated. Occupational health examination records cover all workers in hazardous positions (cold storage, ammonia plant room, cooking area) per GBZ 188. Emergency response drill records show two drills per year \u2014 fire evacuation and ammonia leak scenario \u2014 with food safety incident communication procedures integrated. Joint safety-food safety committee meeting minutes show monthly meetings reviewing both frameworks. Internal audit schedule shows quarterly self-inspections covering both frameworks simultaneously.",
+    "scene_description": "The facility manager presents the annual comprehensive review documentation. The package includes: dual-registered Safety Production License AND Food Production License, both current. Annual work safety training records show 24+ hours per worker per year with food safety modules integrated. Occupational health examination records cover all workers in hazardous positions (cold storage, ammonia plant room, cooking area) per GBZ 188. Emergency response drill records show two drills per year — fire evacuation and ammonia leak scenario — with food safety incident communication procedures integrated. Joint safety-food safety committee meeting minutes show monthly meetings reviewing both frameworks. Internal audit schedule shows quarterly self-inspections covering both frameworks simultaneously.",
     "scene_art_key": "comprehensive_dual_compliance",
     "scene_image": "assets/ui/encounters/comprehensive_dual_compliance.jpg",
     "is_noncompliance": false,
     "correct_category": "Permits, Signage & Documentation",
     "distractor_categories": [
-      "Training & Competency",
-      "Monitoring & Health Surveillance",
-      "Emergency Preparedness"
+      "Chemical Management & Hazcom",
+      "Waste Management & Environmental",
+      "Fire Safety & Emergency Preparedness"
     ],
-    "explanation": "This is compliant \u2014 and it's the final test. After 13 encounters where most things were broken, the player faces comprehensive documentation where everything is genuinely right. Both licenses are current (Work Safety Law Art. 17, Food Safety Law Art. 35). Training exceeds the 24-hour annual minimum with integrated food safety content. Health examinations cover all hazardous positions per GBZ 188. Emergency drills address both scenarios with cross-framework communication. The joint committee approach and integrated auditing demonstrate exactly what dual-framework compliance should look like. Players conditioned to find problems must have the confidence to recognize excellence when they see it.",
+    "explanation": "This is compliant — and it's the final test. After 13 encounters where most things were broken, the player faces comprehensive documentation where everything is genuinely right. Both licenses are current (Work Safety Law Art. 17, Food Safety Law Art. 35). Training exceeds the 24-hour annual minimum with integrated food safety content. Health examinations cover all hazardous positions per GBZ 188. Emergency drills address both scenarios with cross-framework communication. The joint committee approach and integrated auditing demonstrate exactly what dual-framework compliance should look like. Players conditioned to find problems must have the confidence to recognize excellence when they see it.",
     "difficulty": 5,
     "source_reference": "Work Safety Law Art. 17, Art. 25, Food Safety Law Art. 35, GBZ 188, GB/T 29639, GB/T 33000",
-    "tags": ["dual_framework", "documentation", "licenses", "training", "compliant", "final_encounter"]
+    "tags": [
+      "dual_framework",
+      "documentation",
+      "licenses",
+      "training",
+      "compliant",
+      "final_encounter"
+    ]
   }
 ]
