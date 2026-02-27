@@ -1,0 +1,356 @@
+{
+  "facilityId": "shanghai-foodprocessing",
+  "startRoom": "loading_dock",
+  "startPosition": {
+    "x": 8,
+    "y": 5
+  },
+  "encounterFile": "cn-foodprocessing.json",
+  "rooms": {
+    "loading_dock": {
+      "id": "loading_dock",
+      "name": "Loading Dock / Receiving",
+      "width": 16,
+      "height": 10,
+      "floorStyle": "epoxy_warehouse",
+      "wallColor": "#3a3a4a",
+      "objects": [
+        { "type": "dock_leveler", "x": 1, "y": 1 },
+        { "type": "dock_leveler", "x": 4, "y": 1 },
+        { "type": "pallet_rack", "x": 8, "y": 1 },
+        { "type": "pallet_rack", "x": 10, "y": 1 },
+        { "type": "pallet_rack", "x": 12, "y": 1 },
+        { "type": "pick_cart", "x": 14, "y": 3 },
+        { "type": "hand_scanner", "x": 14, "y": 5 },
+        { "type": "haccp_checkpoint", "x": 6, "y": 4 },
+        { "type": "safety_sign", "x": 1, "y": 4 },
+        { "type": "safety_sign", "x": 7, "y": 1 },
+        { "type": "fire_extinguisher", "x": 14, "y": 8 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+        [false,false,true,true,false,true,true,false,false,true,false,true,false,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,false,true,true,true,true,false,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,false,true],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 15, "y": 5, "targetRoom": "central_processing", "spawnX": 1, "spawnY": 14 },
+        { "x": 8, "y": 9, "targetRoom": "sanitation_store", "spawnX": 6, "spawnY": 1 }
+      ],
+      "encounters": [
+        { "x": 3, "y": 6, "encounterId": "CN-FP-008" },
+        { "x": 11, "y": 6, "encounterId": "CN-FP-013" }
+      ]
+    },
+    "central_processing": {
+      "id": "central_processing",
+      "name": "Central Processing Hall",
+      "width": 20,
+      "height": 16,
+      "floorStyle": "food_grade_tile",
+      "wallColor": "#3a4a5a",
+      "objects": [
+        { "type": "conveyor_belt", "x": 5, "y": 5 },
+        { "type": "conveyor_belt", "x": 7, "y": 5 },
+        { "type": "conveyor_belt", "x": 9, "y": 5 },
+        { "type": "conveyor_belt", "x": 5, "y": 10 },
+        { "type": "conveyor_belt", "x": 7, "y": 10 },
+        { "type": "conveyor_belt", "x": 9, "y": 10 },
+        { "type": "haccp_checkpoint", "x": 3, "y": 5 },
+        { "type": "haccp_checkpoint", "x": 12, "y": 10 },
+        { "type": "sanitizer_station", "x": 1, "y": 3 },
+        { "type": "sanitizer_station", "x": 18, "y": 3 },
+        { "type": "fire_extinguisher", "x": 1, "y": 1 },
+        { "type": "fire_extinguisher", "x": 18, "y": 1 },
+        { "type": "safety_sign", "x": 8, "y": 1 },
+        { "type": "safety_sign", "x": 14, "y": 1 },
+        { "type": "whiteboard", "x": 5, "y": 1 },
+        { "type": "emergency_exit_door", "x": 18, "y": 8 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false],
+        [false,false,true,true,true,false,true,true,false,true,true,true,true,true,false,true,true,true,false,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,false,false,false,true,false,true,false,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,false,true,false,true,false,true,true,false,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true],
+        [false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 10, "y": 0, "targetRoom": "ammonia_plant", "spawnX": 7, "spawnY": 10 },
+        { "x": 19, "y": 7, "targetRoom": "cooking_area", "spawnX": 1, "spawnY": 6 },
+        { "x": 19, "y": 14, "targetRoom": "packaging_hall", "spawnX": 1, "spawnY": 6 },
+        { "x": 10, "y": 15, "targetRoom": "cold_storage", "spawnX": 7, "spawnY": 1 },
+        { "x": 0, "y": 12, "targetRoom": "qc_lab", "spawnX": 12, "spawnY": 5 },
+        { "x": 1, "y": 14, "targetRoom": "loading_dock", "spawnX": 13, "spawnY": 5 }
+      ],
+      "encounters": [
+        { "x": 6, "y": 7, "encounterId": "CN-FP-003" },
+        { "x": 14, "y": 9, "encounterId": "CN-FP-010" }
+      ]
+    },
+    "cold_storage": {
+      "id": "cold_storage",
+      "name": "Cold Storage",
+      "width": 14,
+      "height": 12,
+      "floorStyle": "cold_storage_floor",
+      "wallColor": "#2a3a4a",
+      "objects": [
+        { "type": "blast_chiller", "x": 2, "y": 2 },
+        { "type": "blast_chiller", "x": 2, "y": 5 },
+        { "type": "blast_chiller", "x": 2, "y": 8 },
+        { "type": "fridge", "x": 11, "y": 2 },
+        { "type": "fridge", "x": 11, "y": 5 },
+        { "type": "haccp_checkpoint", "x": 6, "y": 6 },
+        { "type": "safety_sign", "x": 5, "y": 1 },
+        { "type": "safety_sign", "x": 9, "y": 1 },
+        { "type": "fire_extinguisher", "x": 12, "y": 10 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,false,true,false,false,false,false,false,false],
+        [false,true,true,true,true,false,true,true,true,false,true,true,true,false],
+        [false,true,false,true,true,true,true,true,true,true,true,false,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,false,true,true,true,true,true,true,true,true,false,true,false],
+        [false,true,true,true,true,true,false,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,false,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 7, "y": 0, "targetRoom": "central_processing", "spawnX": 10, "spawnY": 14 }
+      ],
+      "encounters": [
+        { "x": 5, "y": 3, "encounterId": "CN-FP-001" },
+        { "x": 9, "y": 7, "encounterId": "CN-FP-009" }
+      ]
+    },
+    "cooking_area": {
+      "id": "cooking_area",
+      "name": "Cooking Area",
+      "width": 16,
+      "height": 12,
+      "floorStyle": "drainage_grate",
+      "wallColor": "#4a3a3a",
+      "objects": [
+        { "type": "steam_kettle", "x": 2, "y": 2 },
+        { "type": "steam_kettle", "x": 5, "y": 2 },
+        { "type": "stove", "x": 8, "y": 2 },
+        { "type": "stove", "x": 10, "y": 2 },
+        { "type": "counter", "x": 2, "y": 7 },
+        { "type": "counter", "x": 4, "y": 7 },
+        { "type": "sink", "x": 13, "y": 2 },
+        { "type": "fire_extinguisher", "x": 14, "y": 1 },
+        { "type": "fire_extinguisher", "x": 14, "y": 10 },
+        { "type": "safety_sign", "x": 1, "y": 1 },
+        { "type": "eye_wash_station", "x": 14, "y": 5 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+        [false,false,true,true,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,true,false,true,true,false,true,true,false,true,false,true,true,false,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false],
+        [true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,false,true,false,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 0, "y": 6, "targetRoom": "central_processing", "spawnX": 18, "spawnY": 7 }
+      ],
+      "encounters": [
+        { "x": 7, "y": 4, "encounterId": "CN-FP-005" },
+        { "x": 11, "y": 8, "encounterId": "CN-FP-012" }
+      ]
+    },
+    "packaging_hall": {
+      "id": "packaging_hall",
+      "name": "Packaging Hall",
+      "width": 16,
+      "height": 12,
+      "floorStyle": "food_grade_tile",
+      "wallColor": "#3a4a5a",
+      "objects": [
+        { "type": "packaging_line", "x": 3, "y": 2 },
+        { "type": "packaging_line", "x": 3, "y": 5 },
+        { "type": "packaging_line", "x": 3, "y": 8 },
+        { "type": "conveyor_belt", "x": 6, "y": 2 },
+        { "type": "conveyor_belt", "x": 6, "y": 5 },
+        { "type": "packing_station", "x": 10, "y": 3 },
+        { "type": "packing_station", "x": 10, "y": 7 },
+        { "type": "haccp_checkpoint", "x": 13, "y": 4 },
+        { "type": "safety_sign", "x": 1, "y": 1 },
+        { "type": "lamp", "x": 8, "y": 1 },
+        { "type": "lamp", "x": 8, "y": 10 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+        [false,false,true,true,true,true,true,true,false,true,true,true,true,true,true,false],
+        [false,true,true,false,true,true,false,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,false,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false,true,false],
+        [false,true,true,false,true,true,false,true,true,true,true,true,true,true,true,false],
+        [true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,false,true,true,true,true,false],
+        [false,true,true,false,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,false,true,true,true,true,true,true,false],
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 0, "y": 6, "targetRoom": "central_processing", "spawnX": 18, "spawnY": 14 }
+      ],
+      "encounters": [
+        { "x": 8, "y": 3, "encounterId": "CN-FP-006" },
+        { "x": 12, "y": 9, "encounterId": "CN-FP-014" }
+      ]
+    },
+    "qc_lab": {
+      "id": "qc_lab",
+      "name": "QC Laboratory",
+      "width": 14,
+      "height": 10,
+      "floorStyle": "lab_vinyl",
+      "wallColor": "#2a3a4a",
+      "objects": [
+        { "type": "lab_bench", "x": 2, "y": 2 },
+        { "type": "lab_bench", "x": 2, "y": 5 },
+        { "type": "monitor", "x": 4, "y": 2 },
+        { "type": "monitor", "x": 4, "y": 5 },
+        { "type": "chemical_cabinet", "x": 8, "y": 1 },
+        { "type": "sink", "x": 10, "y": 1 },
+        { "type": "fume_hood", "x": 12, "y": 1 },
+        { "type": "lab_refrigerator", "x": 12, "y": 4 },
+        { "type": "biohazard_bin", "x": 12, "y": 7 },
+        { "type": "desk", "x": 6, "y": 7 },
+        { "type": "chair", "x": 7, "y": 7 },
+        { "type": "fire_extinguisher", "x": 1, "y": 1 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+        [false,false,true,true,true,true,true,true,false,true,false,true,false,false],
+        [false,true,false,true,false,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,true,false,true,false,true,true,true,true,true,true,true,true,true],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,false,false,true,true,true,true,false,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 13, "y": 5, "targetRoom": "central_processing", "spawnX": 1, "spawnY": 12 }
+      ],
+      "encounters": [
+        { "x": 6, "y": 3, "encounterId": "CN-FP-011" }
+      ]
+    },
+    "ammonia_plant": {
+      "id": "ammonia_plant",
+      "name": "Ammonia Plant Room",
+      "width": 14,
+      "height": 12,
+      "floorStyle": "concrete",
+      "wallColor": "#3a3a3a",
+      "objects": [
+        { "type": "ammonia_compressor", "x": 2, "y": 2 },
+        { "type": "ammonia_compressor", "x": 5, "y": 2 },
+        { "type": "ammonia_compressor", "x": 8, "y": 2 },
+        { "type": "gas_cylinder", "x": 11, "y": 2 },
+        { "type": "gas_cylinder", "x": 11, "y": 4 },
+        { "type": "safety_sign", "x": 1, "y": 1 },
+        { "type": "safety_sign", "x": 6, "y": 1 },
+        { "type": "safety_sign", "x": 12, "y": 1 },
+        { "type": "chemical_spill_kit", "x": 12, "y": 8 },
+        { "type": "safety_shower", "x": 1, "y": 8 },
+        { "type": "eye_wash_station", "x": 1, "y": 10 },
+        { "type": "monitor", "x": 12, "y": 6 },
+        { "type": "fire_extinguisher", "x": 12, "y": 10 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,false,false,false,false,false,false,false,false],
+        [false,false,true,true,true,true,false,true,true,true,true,true,false,false],
+        [false,true,false,true,true,false,true,true,false,true,true,false,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,false,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,false,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,true,true,true,true,true,true,true,true,true,true,true,true,false],
+        [false,false,true,true,true,true,true,true,true,true,true,true,false,false],
+        [false,false,false,false,false,false,false,true,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 7, "y": 11, "targetRoom": "central_processing", "spawnX": 10, "spawnY": 1 }
+      ],
+      "encounters": [
+        { "x": 6, "y": 5, "encounterId": "CN-FP-002" },
+        { "x": 9, "y": 8, "encounterId": "CN-FP-007" }
+      ]
+    },
+    "sanitation_store": {
+      "id": "sanitation_store",
+      "name": "Sanitation & Chemical Store",
+      "width": 12,
+      "height": 10,
+      "floorStyle": "concrete",
+      "wallColor": "#3a3a3a",
+      "objects": [
+        { "type": "chemical_cabinet", "x": 2, "y": 2 },
+        { "type": "chemical_cabinet", "x": 2, "y": 5 },
+        { "type": "chemical_drum", "x": 5, "y": 2 },
+        { "type": "chemical_drum", "x": 7, "y": 2 },
+        { "type": "chemical_drum", "x": 9, "y": 2 },
+        { "type": "chemical_wash_station", "x": 5, "y": 7 },
+        { "type": "chemical_spill_kit", "x": 10, "y": 7 },
+        { "type": "safety_sign", "x": 1, "y": 1 },
+        { "type": "safety_sign", "x": 4, "y": 1 },
+        { "type": "sanitizer_station", "x": 10, "y": 4 },
+        { "type": "filing_cabinet", "x": 1, "y": 8 },
+        { "type": "eye_wash_station", "x": 10, "y": 1 }
+      ],
+      "walkable": [
+        [false,false,false,false,false,false,true,false,false,false,false,false],
+        [false,false,true,true,false,true,true,true,true,true,false,false],
+        [false,true,false,true,true,false,true,false,true,false,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,false,false],
+        [false,true,false,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,true,true,true,true,true,true,false],
+        [false,true,true,true,true,false,true,true,true,true,false,false],
+        [false,false,true,true,true,true,true,true,true,true,true,false],
+        [false,false,false,false,false,false,false,false,false,false,false,false]
+      ],
+      "doors": [
+        { "x": 6, "y": 0, "targetRoom": "loading_dock", "spawnX": 8, "spawnY": 8 }
+      ],
+      "encounters": [
+        { "x": 6, "y": 5, "encounterId": "CN-FP-004" }
+      ]
+    }
+  }
+}
