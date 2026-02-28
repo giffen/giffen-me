@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 580" fill="none">
+  <!-- Grid dodecagons -->
+  <path d="M 370,120 L 450,141 L 509,200 L 530,280 L 509,360 L 450,419 L 370,440 L 290,419 L 231,360 L 210,280 L 231,200 L 290,141 Z" stroke="#D0C9BD" stroke-width="1.5" fill="#FAF7F2"/>
+  <path d="M 370,160 L 430,176 L 474,220 L 490,280 L 474,340 L 430,384 L 370,400 L 310,384 L 266,340 L 250,280 L 266,220 L 310,176 Z" stroke="#E5DFD5" stroke-width="1" fill="none"/>
+  <path d="M 370,200 L 410,211 L 439,240 L 450,280 L 439,320 L 410,349 L 370,360 L 330,349 L 301,320 L 290,280 L 301,240 L 330,211 Z" stroke="#E5DFD5" stroke-width="1" fill="none"/>
+  <path d="M 370,240 L 390,245 L 405,260 L 410,280 L 405,300 L 390,315 L 370,320 L 350,315 L 335,300 L 330,280 L 335,260 L 350,245 Z" stroke="#E5DFD5" stroke-width="0.8" fill="none"/>
+
+  <!-- 12 axis lines -->
+  <g stroke="#D5CFC5" stroke-width="0.8" stroke-linecap="round">
+    <line x1="370" y1="280" x2="370" y2="120"/>
+    <line x1="370" y1="280" x2="450" y2="141"/>
+    <line x1="370" y1="280" x2="509" y2="200"/>
+    <line x1="370" y1="280" x2="530" y2="280"/>
+    <line x1="370" y1="280" x2="509" y2="360"/>
+    <line x1="370" y1="280" x2="450" y2="419"/>
+    <line x1="370" y1="280" x2="370" y2="440"/>
+    <line x1="370" y1="280" x2="290" y2="419"/>
+    <line x1="370" y1="280" x2="231" y2="360"/>
+    <line x1="370" y1="280" x2="210" y2="280"/>
+    <line x1="370" y1="280" x2="231" y2="200"/>
+    <line x1="370" y1="280" x2="290" y2="141"/>
+  </g>
+
+  <!-- Center dot -->
+  <circle cx="370" cy="280" r="2" fill="#C5BFB5"/>
+
+  <!-- DANGER ZONE shape (gray dashed, behind others) -->
+  <path d="M 330,211 L 370,208 L 406,218 L 439,240 L 434,280 L 432,316 L 410,349 L 370,352 L 338,335 L 294,324 L 290,280 L 294,236 Z"
+        stroke="#9B9488" stroke-width="1.5" stroke-dasharray="5,4" stroke-linejoin="round"
+        fill="#9B9488" fill-opacity="0.06"/>
+
+  <!-- BUILDER shape (rust) -->
+  <path d="M 302,162 L 370,152 L 426,183 L 446,236 L 418,280 L 419,308 L 446,412 L 370,432 L 302,398 L 328,304 L 338,280 L 322,252 Z"
+        stroke="#B44A3A" stroke-width="2" stroke-linejoin="round"
+        fill="#B44A3A" fill-opacity="0.10"/>
+  <!-- Builder data points -->
+  <g fill="#B44A3A">
+    <circle cx="302" cy="162" r="3.5"/>
+    <circle cx="370" cy="152" r="3.5"/>
+    <circle cx="426" cy="183" r="3.5"/>
+    <circle cx="446" cy="236" r="3.5"/>
+    <circle cx="418" cy="280" r="3.5"/>
+    <circle cx="419" cy="308" r="3.5"/>
+    <circle cx="446" cy="412" r="3.5"/>
+    <circle cx="370" cy="432" r="3.5"/>
+    <circle cx="302" cy="398" r="3.5"/>
+    <circle cx="328" cy="304" r="3.5"/>
+    <circle cx="338" cy="280" r="3.5"/>
+    <circle cx="322" cy="252" r="3.5"/>
+  </g>
+
+  <!-- STRATEGIST shape (teal) -->
+  <path d="M 302,162 L 370,168 L 434,169 L 495,208 L 522,280 L 488,348 L 386,308 L 370,320 L 346,322 L 252,348 L 226,280 L 259,216 Z"
+        stroke="#2A7B88" stroke-width="2" stroke-linejoin="round"
+        fill="#2A7B88" fill-opacity="0.10"/>
+  <!-- Strategist data points -->
+  <g fill="#2A7B88">
+    <circle cx="302" cy="162" r="3.5"/>
+    <circle cx="370" cy="168" r="3.5"/>
+    <circle cx="434" cy="169" r="3.5"/>
+    <circle cx="495" cy="208" r="3.5"/>
+    <circle cx="522" cy="280" r="3.5"/>
+    <circle cx="488" cy="348" r="3.5"/>
+    <circle cx="386" cy="308" r="3.5"/>
+    <circle cx="370" cy="320" r="3.5"/>
+    <circle cx="346" cy="322" r="3.5"/>
+    <circle cx="252" cy="348" r="3.5"/>
+    <circle cx="226" cy="280" r="3.5"/>
+    <circle cx="259" cy="216" r="3.5"/>
+  </g>
+
+  <!-- Axis labels (muted, smaller) -->
+  <text x="275" y="126" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6B6B6B">Voice of Customer</text>
+  <text x="370" y="100" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6B6B6B">UX Intuition</text>
+  <text x="466" y="126" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6B6B6B">Qual. Synthesis</text>
+  <text x="528" y="193" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6B6B6B">Product Vision</text>
+  <text x="550" y="284" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6B6B6B">Commercial Acumen</text>
+  <text x="528" y="368" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6B6B6B">Market Intel</text>
+  <text x="466" y="436" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6B6B6B">AI-Directed Dev</text>
+  <text x="370" y="464" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6B6B6B">Prototyping</text>
+  <text x="275" y="436" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6B6B6B">Technical Taste</text>
+  <text x="212" y="368" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6B6B6B">Stakeholder Mgmt</text>
+  <text x="190" y="284" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6B6B6B">Exec. Comm.</text>
+  <text x="212" y="193" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#6B6B6B">Team Leadership</text>
+
+  <!-- Legend -->
+  <g transform="translate(135, 510)">
+    <rect x="0" y="-9" width="16" height="16" rx="3" fill="#B44A3A" fill-opacity="0.15" stroke="#B44A3A" stroke-width="1.5"/>
+    <circle cx="8" cy="-1" r="2.5" fill="#B44A3A"/>
+    <text x="24" y="4" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#B44A3A">The Builder</text>
+
+    <rect x="170" y="-9" width="16" height="16" rx="3" fill="#2A7B88" fill-opacity="0.15" stroke="#2A7B88" stroke-width="1.5"/>
+    <circle cx="178" cy="-1" r="2.5" fill="#2A7B88"/>
+    <text x="194" y="4" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2A7B88">The Strategist</text>
+
+    <rect x="350" y="-9" width="16" height="16" rx="3" fill="none" stroke="#9B9488" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <text x="374" y="4" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#9B9488">The Danger Zone</text>
+  </g>
+</svg>

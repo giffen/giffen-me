@@ -235,6 +235,29 @@ const { Content } = await post.render();
     color: var(--ink);
   }
 
+  .prose :global(img) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: var(--space-6) 0;
+  }
+
+  .prose :global(figure) {
+    margin: var(--space-7) 0;
+  }
+
+  .prose :global(figure img) {
+    margin: 0;
+  }
+
+  .prose :global(figcaption) {
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+    margin-top: var(--space-3);
+  }
+
   .prose :global(hr) {
     border: none;
     border-top: 1px solid var(--paper-edge);
