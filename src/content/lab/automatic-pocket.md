@@ -103,7 +103,7 @@ Live on the App Store for iOS. The entire app — from reading the brief to the 
 
 **Last updated: February 27, 2026**
 
-Automatic Pocket is developed by Giffen Good LLC. This privacy policy explains how the app handles your data.
+Automatic Pocket is developed by Giffen Labs. This privacy policy explains how the app handles your data.
 
 ### Data We Collect
 
