@@ -95,6 +95,49 @@ For onset detection, the microphone signal is split through two band-pass filter
 
 ## Status
 
-The web build is fully functional. Native testing (iOS/Android) and App Store submission are the next steps — along with integrating RevenueCat for real in-app purchases to replace the current local paywall placeholder.
+Live on the App Store for iOS. The entire app — from reading the brief to the final commit — was built in one evening with Claude Code acting as the sole developer. The full source is on [GitHub](https://github.com/giffen/automatic-pocket).
 
-The full source is on [GitHub](https://github.com/giffen/automatic-pocket). The entire app — from reading the brief to the final commit — was built in one evening with Claude Code acting as the sole developer.
+---
+
+## Privacy Policy
+
+**Last updated: February 27, 2026**
+
+Automatic Pocket is developed by Giffen Good LLC. This privacy policy explains how the app handles your data.
+
+### Data We Collect
+
+**Microphone audio** — The app accesses your device microphone during training sessions to detect drum hits and score your timing accuracy. Audio is processed entirely on-device in real time. No audio is recorded, stored, or transmitted.
+
+**Session data** — Training session results (tempo, scores, timestamps) are stored locally on your device using AsyncStorage. This data never leaves your device.
+
+**Settings** — Your preferences (tempo, time signature, subdivision, pressure level) are stored locally on your device.
+
+### Data We Do Not Collect
+
+- No personal information (name, email, phone number)
+- No location data
+- No analytics or tracking
+- No advertising identifiers
+- No data shared with third parties
+- No server-side data collection of any kind
+
+### Third-Party Services
+
+Automatic Pocket does not use any third-party analytics, advertising, or tracking services. The app functions entirely offline after installation.
+
+### Data Retention
+
+All data is stored locally on your device. Uninstalling the app removes all stored data. There is no account system and no server-side data to delete.
+
+### Children's Privacy
+
+Automatic Pocket does not knowingly collect any personal information from children. The app contains no user accounts, no social features, and no data collection.
+
+### Changes to This Policy
+
+If this policy changes, the updated version will be posted here with a new "last updated" date.
+
+### Contact
+
+Questions about this privacy policy can be directed to: **hello@giffen.me**
