@@ -16,13 +16,15 @@ This is the story of building the same type of product twice, eight years apart,
 
 ## Flusher: The 2018 App
 
-<img src="/images/writing/flusher/login.png" alt="Flusher login screen" width="25%" />
-<img src="/images/writing/flusher/map.png" alt="Flusher map view" width="25%" />
-<img src="/images/writing/flusher/map_location.png" alt="Flusher map zoomed in" width="25%" />
-<img src="/images/writing/flusher/map_washroom_preview.png" alt="Flusher washroom preview" width="25%" />
-<img src="/images/writing/flusher/washroom_details.png" alt="Flusher washroom details" width="25%" />
+<div class="screenshot-gallery">
+  <img src="/images/writing/flusher/login.png" alt="Flusher login screen" />
+  <img src="/images/writing/flusher/map.png" alt="Flusher map view" />
+  <img src="/images/writing/flusher/map_location.png" alt="Flusher map zoomed in" />
+  <img src="/images/writing/flusher/map_washroom_preview.png" alt="Flusher washroom preview" />
+  <img src="/images/writing/flusher/washroom_details.png" alt="Flusher washroom details" />
+</div>
 
-*Flusher - login, map view, location zoom, washroom preview, and detail screen with cleanliness ratings*
+*Flusher - login, map, location zoom, washroom preview, and detail screen. Click to enlarge.*
 
 Flusher was a mobile app for finding accessible public washrooms. The idea was straightforward: you're out in the city with a digestive condition, you need a bathroom *now*, and you want to know where the nearest clean, accessible one is. The app would map public restrooms, let users rate and review them, and eventually let people list private bathrooms for a small fee.
 
@@ -59,14 +61,16 @@ I want to be clear: this isn't a failure story. The team was talented and commit
 
 ## Brown Note: The 2026 App
 
-<img src="/images/writing/brown-note/IMG_0041.PNG" alt="Brown Note login screen" width="25%" />
-<img src="/images/writing/brown-note/IMG_0035.PNG" alt="Brown Note dashboard" width="25%" />
-<img src="/images/writing/brown-note/IMG_0036.PNG" alt="Brown Note compose screen" width="25%" />
-<img src="/images/writing/brown-note/IMG_0037.PNG" alt="Brown Note inbox" width="25%" />
-<img src="/images/writing/brown-note/IMG_0038.PNG" alt="Brown Note sticker store" width="25%" />
-<img src="/images/writing/brown-note/IMG_0040.PNG" alt="Brown Note sticker unlock" width="25%" />
+<div class="screenshot-gallery">
+  <img src="/images/writing/brown-note/IMG_0041.PNG" alt="Brown Note login screen" />
+  <img src="/images/writing/brown-note/IMG_0035.PNG" alt="Brown Note dashboard" />
+  <img src="/images/writing/brown-note/IMG_0036.PNG" alt="Brown Note compose screen" />
+  <img src="/images/writing/brown-note/IMG_0037.PNG" alt="Brown Note inbox" />
+  <img src="/images/writing/brown-note/IMG_0038.PNG" alt="Brown Note sticker store" />
+  <img src="/images/writing/brown-note/IMG_0040.PNG" alt="Brown Note sticker unlock" />
+</div>
 
-*Brown Note - login, dashboard, compose, inbox, sticker store, and a rare sticker unlock*
+*Brown Note - login, dashboard, compose, inbox, sticker store, and a rare sticker unlock. Click to enlarge.*
 
 Brown Note is a peer support app for people with IBS, Crohn's, and other digestive conditions. You're stuck on the toilet feeling alone, so you write an anonymous message. It gets delivered to someone in the community who writes back with encouragement. No profiles, no medical records - just one person saying "I get it" to another.
 

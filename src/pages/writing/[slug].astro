@@ -242,6 +242,146 @@ const { Content } = await post.render();
     margin: var(--space-6) 0;
   }
 
+  /* Screenshot gallery - horizontal scroll strip */
+  .prose :global(.screenshot-gallery) {
+    display: flex;
+    gap: var(--space-3);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: var(--space-4) 0;
+    margin: var(--space-4) 0;
+  }
+
+  .prose :global(.screenshot-gallery img) {
+    flex: 0 0 auto;
+    width: 160px;
+    height: auto;
+    margin: 0;
+    border-radius: 8px;
+    border: 1px solid var(--paper-edge);
+    scroll-snap-align: start;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .prose :global(.screenshot-gallery img:hover) {
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  .prose :global(.screenshot-gallery + em) {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--ink-muted);
+    text-align: center;
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-5);
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .prose :global(.screenshot-gallery::-webkit-scrollbar) {
+    height: 6px;
+  }
+
+  .prose :global(.screenshot-gallery::-webkit-scrollbar-track) {
+    background: var(--cream-dark);
+    border-radius: 3px;
+  }
+
+  .prose :global(.screenshot-gallery::-webkit-scrollbar-thumb) {
+    background: var(--paper-edge);
+    border-radius: 3px;
+  }
+
+  /* Lightbox overlay */
+  :global(.lightbox-overlay) {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+
+  :global(.lightbox-overlay.active) {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  :global(.lightbox-overlay img) {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  :global(.lightbox-close) {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 8px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  :global(.lightbox-close:hover) {
+    opacity: 1;
+  }
+
+  :global(.lightbox-nav) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 16px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  :global(.lightbox-nav:hover) {
+    opacity: 1;
+  }
+
+  :global(.lightbox-prev) {
+    left: 12px;
+  }
+
+  :global(.lightbox-next) {
+    right: 12px;
+  }
+
+  :global(.lightbox-counter) {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.6);
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+  }
+
+  @media (max-width: 768px) {
+    .prose :global(.screenshot-gallery img) {
+      width: 130px;
+    }
+  }
+
   .prose :global(figure) {
     margin: var(--space-7) 0;
   }
@@ -326,3 +466,60 @@ const { Content } = await post.render();
     }
   }
 </style>
+
+<div class="lightbox-overlay" id="lightbox">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#8249;</button>
+  <img src="" alt="" />
+  <button class="lightbox-nav lightbox-next" aria-label="Next">&#8250;</button>
+  <div class="lightbox-counter"></div>
+</div>
+
+<script>
+  const overlay = document.getElementById('lightbox');
+  if (overlay) {
+    const lbImg = overlay.querySelector('img');
+    const counter = overlay.querySelector('.lightbox-counter');
+    let images = [];
+    let currentIndex = 0;
+
+    function show(index) {
+      currentIndex = index;
+      lbImg.src = images[index].src;
+      lbImg.alt = images[index].alt;
+      counter.textContent = `${index + 1} / ${images.length}`;
+      overlay.classList.add('active');
+    }
+
+    function hide() {
+      overlay.classList.remove('active');
+    }
+
+    document.querySelectorAll('.screenshot-gallery').forEach(gallery => {
+      gallery.querySelectorAll('img').forEach(img => {
+        img.addEventListener('click', () => {
+          images = Array.from(gallery.querySelectorAll('img'));
+          const index = images.indexOf(img);
+          show(index);
+        });
+      });
+    });
+
+    overlay.querySelector('.lightbox-close').addEventListener('click', hide);
+    overlay.querySelector('.lightbox-prev').addEventListener('click', () => {
+      show((currentIndex - 1 + images.length) % images.length);
+    });
+    overlay.querySelector('.lightbox-next').addEventListener('click', () => {
+      show((currentIndex + 1) % images.length);
+    });
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) hide();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (!overlay.classList.contains('active')) return;
+      if (e.key === 'Escape') hide();
+      if (e.key === 'ArrowLeft') show((currentIndex - 1 + images.length) % images.length);
+      if (e.key === 'ArrowRight') show((currentIndex + 1) % images.length);
+    });
+  }
+</script>
