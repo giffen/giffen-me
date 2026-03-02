@@ -31,9 +31,6 @@ This is the story of building the same type of product twice, eight years apart,
 ![Flusher washroom details](/images/writing/flusher/washroom_details.png)
 *The detail screen - cleanliness ratings, wait times, and user notes*
 
-![Flusher settings](/images/writing/flusher/contact.png)
-*Settings and contact screen*
-
 Flusher was a mobile app for finding accessible public washrooms. The idea was straightforward: you're out in the city with a digestive condition, you need a bathroom *now*, and you want to know where the nearest clean, accessible one is. The app would map public restrooms, let users rate and review them, and eventually let people list private bathrooms for a small fee.
 
 ### The Team
@@ -69,8 +66,23 @@ I want to be clear: this isn't a failure story. The team was talented and commit
 
 ## Brown Note: The 2026 App
 
-![Brown Note app](/images/lab/brown-note-feature.png)
-*Brown Note - a peer support app built solo with AI in 24 days (2026)*
+![Brown Note login screen](/images/writing/brown-note/IMG_0041.PNG)
+*Brown Note login - social sign-in, warm brown palette, a toilet with a personality*
+
+![Brown Note dashboard](/images/writing/brown-note/IMG_0035.PNG)
+*The dashboard - streak tracking, nugget balance, and two clear CTAs: post a message or help someone*
+
+![Brown Note compose screen](/images/writing/brown-note/IMG_0036.PNG)
+*Writing a note - 500 characters, attach a sticker, send it to someone who needs it*
+
+![Brown Note inbox](/images/writing/brown-note/IMG_0037.PNG)
+*The inbox - real messages from real people dealing with real stuff*
+
+![Brown Note sticker store](/images/writing/brown-note/IMG_0038.PNG)
+*The sticker store - spend Nuggets on collectibles like "Classic Pile" and "GI Joe"*
+
+![Brown Note sticker unlock](/images/writing/brown-note/IMG_0040.PNG)
+*Unlocking "The Porcelain Paladin" - rare stickers with burst animations and haptics*
 
 Brown Note is a peer support app for people with IBS, Crohn's, and other digestive conditions. You're stuck on the toilet feeling alone, so you write an anonymous message. It gets delivered to someone in the community who writes back with encouragement. No profiles, no medical records - just one person saying "I get it" to another.
 
@@ -124,6 +136,22 @@ Twenty-four days. One person. $354. No status reports. No milestone documents. N
 | **App Store rejections** | Unknown | 1 (fixed same day) |
 
 That's roughly a **50x cost difference** and a **25x time difference**. And the 2026 app shipped more.
+
+## Side by Side: The Apps Themselves
+
+The numbers tell one story. The screenshots tell another.
+
+Both apps open with a login screen featuring a toilet. Both have a teal/brown color palette. Both were built by the same person with the same disease for the same community. But look at what $18K and a team of five got you in 2018 versus what $354 and a solo builder got you in 2026.
+
+Flusher's login is clean - email, password, a toilet icon. Brown Note's login has social sign-in (Google and Apple), a tagline, and a character with a face on the toilet. Small thing, but social auth alone would have been a significant chunk of Flusher's development budget.
+
+Flusher's core screen is a map with pins. It does one thing and does it well - shows you where bathrooms are. Brown Note's dashboard has a streak counter, a nugget balance, recent replies, and two action buttons. It's a full engagement loop on a single screen.
+
+Flusher's detail screen shows cleanliness ratings and wait times for a single washroom. Brown Note's inbox shows 15 messages from people dealing with Crohn's flares, food anxiety, and exhaustion. One app maps toilets. The other maps human connection.
+
+And then there's the sticker store. Flusher didn't have anything like it because gamification features would have added months to an already-slipping timeline. Brown Note has a full collectible economy with common, rare, and legendary stickers - "Classic Pile," "GI Joe," "The Porcelain Paladin" - with unlock animations and haptic feedback. In 2018, that's a feature you cut to ship. In 2026, it took an afternoon.
+
+The point isn't that Brown Note is a "better" app. They solve different problems. But the depth and polish that's possible when one person can build without constraints - that's new.
 
 ## What Actually Changed
 
