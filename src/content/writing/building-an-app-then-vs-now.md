@@ -16,18 +16,33 @@ This is the story of building the same type of product twice, eight years apart,
 
 ## Flusher: The 2018 App
 
-![Flusher app screenshots](/images/writing/flusher-screenshots.png)
-*Flusher - a washroom finder app built with a team of four and a university grant (2017-2019)*
+![Flusher login screen](/images/writing/flusher/login.png)
+*The Flusher login screen - clean toilet logo, teal accent, straightforward auth*
+
+![Flusher map view](/images/writing/flusher/map.png)
+*Washroom pins across downtown Toronto - the core experience*
+
+![Flusher map zoomed in](/images/writing/flusher/map_location.png)
+*Zoomed into the Yonge-Dundas area showing nearby washroom locations*
+
+![Flusher washroom preview](/images/writing/flusher/map_washroom_preview.png)
+*Tapping a pin showed the washroom name, building, and accessibility features*
+
+![Flusher washroom details](/images/writing/flusher/washroom_details.png)
+*The detail screen - cleanliness ratings, wait times, and user notes*
+
+![Flusher settings](/images/writing/flusher/contact.png)
+*Settings and contact screen*
 
 Flusher was a mobile app for finding accessible public washrooms. The idea was straightforward: you're out in the city with a digestive condition, you need a bathroom *now*, and you want to know where the nearest clean, accessible one is. The app would map public restrooms, let users rate and review them, and eventually let people list private bathrooms for a small fee.
 
 ### The Team
 
-There were four of us - myself, Ryan, Andrea, and Ben - working through a company called Workpath. We each brought something different. Ryan led the project and handled operations. Andrea did UX research and design. Ben brought technical chops. And I was the product person with the lived experience that motivated the whole thing.
+There were four of us working through a small company. We each brought something different. One co-founder led the project and handled operations. Another did UX research and design. The third brought technical chops. And I was the product person with the lived experience that motivated the whole thing.
 
 ### The Grant
 
-In November 2017, we were accepted into Ryerson University's Accessibility Project through The Chang School of Continuing Education. The grant funded development of accessibility-focused technology. We were thrilled - Ben's email when the acceptance came through was just "OMG!!!!"
+In November 2017, we were accepted into Ryerson University's Accessibility Project through The Chang School of Continuing Education. The grant funded development of accessibility-focused technology. We were thrilled - one co-founder's email when the acceptance came through was just "OMG!!!!"
 
 The total funding was **$18,000**.
 
@@ -37,20 +52,20 @@ Here's how those 20 months actually played out:
 
 | When | What Happened |
 |------|---------------|
-| **Aug 2017** | Brainstorming phase. Ryan built a UXPin mockup. Andrea compiled Toronto park washroom data into spreadsheets with GPS coordinates. We kicked around names - Poo-go, Shittr, RimTouchr - before landing on Flusher. |
+| **Aug 2017** | Brainstorming phase. One co-founder built a UXPin mockup. Another compiled Toronto park washroom data into spreadsheets with GPS coordinates. We kicked around names - Poo-go, Shittr, RimTouchr - before landing on Flusher. |
 | **Oct 2017** | Created a Trello board. Started organizing tasks. |
 | **Nov 2017** | Grant approved. Launched flusher.co with a Mailchimp signup. Set up G-Suite email addresses. |
-| **Jan 2018** | Monthly planning meetings began. Every second Saturday, 11am to 2pm, four people on a call. Andrea shared a first wireframe draft. Ryan submitted the project scope and budget to Ryerson. The team zeroed out our own hourly rates to redirect more money to the development budget. |
+| **Jan 2018** | Monthly planning meetings began. Every second Saturday, 11am to 2pm, four people on a call. Our designer shared a first wireframe draft. Our project lead submitted the scope and budget to Ryerson. The team zeroed out our own hourly rates to redirect more money to the development budget. |
 | **Mar 2018** | First milestone slip. "Basically everything is a month out from the previous estimates." Signed terms with Ryerson. |
 | **Apr 2018** | First formal status report submitted to Ryerson. |
-| **Jun 2018** | Ryan's email to the team: "To be candid... we're way behind schedule." Development timelines pushed to late summer/fall. Second milestone slip. |
+| **Jun 2018** | Email to the team: "To be candid... we're way behind schedule." Development timelines pushed to late summer/fall. Second milestone slip. |
 | **Sep 2018** | Hired an outside developer. Approved for the Apple Developer Program. Pivoted user research from online surveys to in-person interviews. |
 | **Nov 2018** | Last Trello activity. |
 | **Apr 2019** | A writer from *Gastroenterology and Endoscopy News* reached out for an interview and screenshots. The app existed, it was real, it was in the App Store. But it didn't stay there long. |
 
 Twenty months. Four people. $18,000. Monthly status reports to a university. Three documented timeline slips. And an app that made it to the App Store but eventually faded away.
 
-I want to be clear: this isn't a failure story. The team was talented and committed. Ryan was an incredible project lead. Andrea's UX research was thorough. Ben's technical instincts were sharp. We built a real thing, and a medical publication wanted to write about it. The problem wasn't the people. It was the process. In 2018, this is just what building an app looked like.
+I want to be clear: this isn't a failure story. The team was talented and committed. Our project lead was incredible. The UX research was thorough. The technical instincts were sharp. We built a real thing, and a medical publication wanted to write about it. The problem wasn't the people. It was the process. In 2018, this is just what building an app looked like.
 
 ## Brown Note: The 2026 App
 
