@@ -16,20 +16,13 @@ This is the story of building the same type of product twice, eight years apart,
 
 ## Flusher: The 2018 App
 
-![Flusher login screen](/images/writing/flusher/login.png)
-*The Flusher login screen - clean toilet logo, teal accent, straightforward auth*
+<img src="/images/writing/flusher/login.png" alt="Flusher login screen" width="25%" />
+<img src="/images/writing/flusher/map.png" alt="Flusher map view" width="25%" />
+<img src="/images/writing/flusher/map_location.png" alt="Flusher map zoomed in" width="25%" />
+<img src="/images/writing/flusher/map_washroom_preview.png" alt="Flusher washroom preview" width="25%" />
+<img src="/images/writing/flusher/washroom_details.png" alt="Flusher washroom details" width="25%" />
 
-![Flusher map view](/images/writing/flusher/map.png)
-*Washroom pins across downtown Toronto - the core experience*
-
-![Flusher map zoomed in](/images/writing/flusher/map_location.png)
-*Zoomed into the Yonge-Dundas area showing nearby washroom locations*
-
-![Flusher washroom preview](/images/writing/flusher/map_washroom_preview.png)
-*Tapping a pin showed the washroom name, building, and accessibility features*
-
-![Flusher washroom details](/images/writing/flusher/washroom_details.png)
-*The detail screen - cleanliness ratings, wait times, and user notes*
+*Flusher - login, map view, location zoom, washroom preview, and detail screen with cleanliness ratings*
 
 Flusher was a mobile app for finding accessible public washrooms. The idea was straightforward: you're out in the city with a digestive condition, you need a bathroom *now*, and you want to know where the nearest clean, accessible one is. The app would map public restrooms, let users rate and review them, and eventually let people list private bathrooms for a small fee.
 
@@ -66,23 +59,14 @@ I want to be clear: this isn't a failure story. The team was talented and commit
 
 ## Brown Note: The 2026 App
 
-![Brown Note login screen](/images/writing/brown-note/IMG_0041.PNG)
-*Brown Note login - social sign-in, warm brown palette, a toilet with a personality*
+<img src="/images/writing/brown-note/IMG_0041.PNG" alt="Brown Note login screen" width="25%" />
+<img src="/images/writing/brown-note/IMG_0035.PNG" alt="Brown Note dashboard" width="25%" />
+<img src="/images/writing/brown-note/IMG_0036.PNG" alt="Brown Note compose screen" width="25%" />
+<img src="/images/writing/brown-note/IMG_0037.PNG" alt="Brown Note inbox" width="25%" />
+<img src="/images/writing/brown-note/IMG_0038.PNG" alt="Brown Note sticker store" width="25%" />
+<img src="/images/writing/brown-note/IMG_0040.PNG" alt="Brown Note sticker unlock" width="25%" />
 
-![Brown Note dashboard](/images/writing/brown-note/IMG_0035.PNG)
-*The dashboard - streak tracking, nugget balance, and two clear CTAs: post a message or help someone*
-
-![Brown Note compose screen](/images/writing/brown-note/IMG_0036.PNG)
-*Writing a note - 500 characters, attach a sticker, send it to someone who needs it*
-
-![Brown Note inbox](/images/writing/brown-note/IMG_0037.PNG)
-*The inbox - real messages from real people dealing with real stuff*
-
-![Brown Note sticker store](/images/writing/brown-note/IMG_0038.PNG)
-*The sticker store - spend Nuggets on collectibles like "Classic Pile" and "GI Joe"*
-
-![Brown Note sticker unlock](/images/writing/brown-note/IMG_0040.PNG)
-*Unlocking "The Porcelain Paladin" - rare stickers with burst animations and haptics*
+*Brown Note - login, dashboard, compose, inbox, sticker store, and a rare sticker unlock*
 
 Brown Note is a peer support app for people with IBS, Crohn's, and other digestive conditions. You're stuck on the toilet feeling alone, so you write an anonymous message. It gets delivered to someone in the community who writes back with encouragement. No profiles, no medical records - just one person saying "I get it" to another.
 
