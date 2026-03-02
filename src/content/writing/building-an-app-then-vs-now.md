@@ -34,7 +34,7 @@ There were four of us working through a small company. We each brought something
 
 ### The Grant
 
-In November 2017, we were accepted into Ryerson University's Accessibility Project through The Chang School of Continuing Education. The grant funded development of accessibility-focused technology. We were thrilled - one co-founder's email when the acceptance came through was just "OMG!!!!"
+In November 2017, we were accepted into TMU's (formerly Ryerson) Accessibility Project through The Chang School of Continuing Education. The grant funded development of accessibility-focused technology. We were thrilled - one co-founder's email when the acceptance came through was just "OMG!!!!"
 
 The total funding was **$18,000**.
 
@@ -47,17 +47,17 @@ Here's how those 20 months actually played out:
 | **Aug 2017** | Brainstorming phase. One co-founder built a UXPin mockup. Another compiled Toronto park washroom data into spreadsheets with GPS coordinates. We kicked around names - Poo-go, Shittr, RimTouchr - before landing on Flusher. |
 | **Oct 2017** | Created a Trello board. Started organizing tasks. |
 | **Nov 2017** | Grant approved. Launched flusher.co with a Mailchimp signup. Set up G-Suite email addresses. |
-| **Jan 2018** | Monthly planning meetings began. Every second Saturday, 11am to 2pm, four people on a call. Our designer shared a first wireframe draft. Our project lead submitted the scope and budget to Ryerson. The team zeroed out our own hourly rates to redirect more money to the development budget. |
-| **Mar 2018** | First milestone slip. "Basically everything is a month out from the previous estimates." Signed terms with Ryerson. |
-| **Apr 2018** | First formal status report submitted to Ryerson. |
+| **Jan 2018** | Monthly planning meetings began. Every second Saturday, 11am to 2pm, four people on a call. Our designer shared a first wireframe draft. Our project lead submitted the scope and budget to TMU. The team zeroed out our own hourly rates to redirect more money to the development budget. |
+| **Mar 2018** | First milestone slip. "Basically everything is a month out from the previous estimates." Signed terms with TMU. |
+| **Apr 2018** | First formal status report submitted to TMU. |
 | **Jun 2018** | Email to the team: "To be candid... we're way behind schedule." Development timelines pushed to late summer/fall. Second milestone slip. |
 | **Sep 2018** | Hired an outside developer. Approved for the Apple Developer Program. Pivoted user research from online surveys to in-person interviews. |
 | **Nov 2018** | Last Trello activity. |
-| **Apr 2019** | A writer from *Gastroenterology and Endoscopy News* reached out for an interview and screenshots. The app existed, it was real, it was in the App Store. But it didn't stay there long. |
+| **Apr 2019** | A writer from *Gastroenterology and Endoscopy News* reached out for an interview and screenshots. I also did an interview with CBC about the app. It existed, it was real, it was in the App Store. But it didn't stay there long. |
 
 Twenty months. Four people. $18,000. Monthly status reports to a university. Three documented timeline slips. And an app that made it to the App Store but eventually faded away.
 
-I want to be clear: this isn't a failure story. The team was talented and committed. Our project lead was incredible. The UX research was thorough. The technical instincts were sharp. We built a real thing, and a medical publication wanted to write about it. The problem wasn't the people. It was the process. In 2018, this is just what building an app looked like.
+I want to be clear: this isn't a failure story. The team was talented and committed. Our project lead was incredible. The UX research was thorough. The technical instincts were sharp. We built a real thing. A medical publication wanted to write about it. CBC interviewed us. The problem wasn't the people. It was the process. In 2018, this is just what building an app looked like.
 
 ## Brown Note: The 2026 App
 
@@ -119,7 +119,7 @@ Twenty-four days. One person. $354. No status reports. No milestone documents. N
 | **Platforms** | iOS only | iOS + Android |
 | **Backend endpoints** | Unknown | 26 REST endpoints |
 | **Automated tests** | None documented | 95 |
-| **Status reports filed** | 4+ to Ryerson | 0 |
+| **Status reports filed** | 4+ to TMU | 0 |
 | **Timeline slips** | 3 documented | 0 |
 | **App Store rejections** | Unknown | 1 (fixed same day) |
 
