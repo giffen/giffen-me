@@ -6,7 +6,7 @@ tag: "Essay"
 excerpt: "I've cut back on drumming. I stopped going to the gym. My daughter goes to bed and I open Claude and don't close it until 11:30. I've done more in three months than I did in three years. It feels incredible. I also don't know where it ends."
 ---
 
-George Hotz published a post this week called "Every minute you aren't running 69 agents, you are falling behind." It's satire. His actual point is that the AI anxiety is manufactured — just stop worrying, go create value, and ignore the noise.
+George Hotz published a post this week called ["Every minute you aren't running 69 agents, you are falling behind."](https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html) It's satire. His actual point is that the AI anxiety is manufactured — just stop worrying, go create value, and ignore the noise.
 
 He's right about the anxiety being toxic. But he's wrong that you can just turn it off. Because for some of us, the problem isn't fear. It's the opposite.
 
