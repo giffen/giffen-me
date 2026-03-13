@@ -3,14 +3,14 @@ title: "The Puzzle That Never Ends"
 description: "AI removed the wall that used to make me stop. I'm building more than ever, but I'm not sure what it's costing me."
 date: "2026-03-12"
 tag: "Essay"
-excerpt: "I haven't played drums in months. I stopped going to the gym. My daughter goes to bed and I open Claude and don't close it until 11:30. I've done more in three months than I did in three years. It feels incredible. I also don't know where it ends."
+excerpt: "I've cut back on drumming. I stopped going to the gym. My daughter goes to bed and I open Claude and don't close it until 11:30. I've done more in three months than I did in three years. It feels incredible. I also don't know where it ends."
 ---
 
 George Hotz published a post this week called "Every minute you aren't running 69 agents, you are falling behind." It's satire. His actual point is that the AI anxiety is manufactured — just stop worrying, go create value, and ignore the noise.
 
 He's right about the anxiety being toxic. But he's wrong that you can just turn it off. Because for some of us, the problem isn't fear. It's the opposite.
 
-I haven't played drums in months. I stopped going to the gym. My daughter goes to bed at 7:30 and I open Claude and I don't close it until 11:30. Sometimes later. I'm not doomscrolling or watching TV — I'm building things. Real things. An app that's in the App Store. Automations that changed how my team works. A home server. A blog. A compliance intelligence tool. Bots that run while I sleep.
+I've cut way back on drumming. I stopped going to the gym. My daughter goes to bed at 7:30 and I open Claude and I don't close it until 11:30. Sometimes later. I'm not doomscrolling or watching TV — I'm building things. Real things. An app that's in the App Store. Automations that changed how my team works. A home server. A blog. A compliance intelligence tool. Bots that run while I sleep.
 
 I've done more in three months than I did in three years. That's not an exaggeration. And it feels incredible.
 
@@ -40,7 +40,7 @@ The puzzle never ends now. There is always another thing to optimize, another id
 
 I'm not burned out. I'm not unhappy. I love my job more than I have in years because there's a real chance I can move the needle on any given day. I can change a workflow, build a tool, update a system — things that actually improve someone's experience. I'm vibe coding during meetings that used to eat my time. I'm teaching colleagues. I'm creating value with software, which is the whole reason I got into this business.
 
-But I'm also not going to the gym. I'm not drumming. I'm feeling older and less healthy. My evenings used to be TV, exercise, music. Now it's just Claude. I'm doing more than ever but I'm not sure what it's doing to my brain. I don't know what this costs yet.
+But I'm also not going to the gym. I'm barely drumming. I'm feeling older and less healthy. My evenings used to be TV, exercise, music. Now it's just Claude. I'm doing more than ever but I'm not sure what it's doing to my brain. I don't know what this costs yet.
 
 I'm not comparing myself to anyone. I'm genuinely happy when I see other people creating — it feels like the early internet again where everyone's sharing what they built. But underneath the excitement, there's a question I can't answer: where does this end? Not the technology. Me. Where do *I* end?
 
