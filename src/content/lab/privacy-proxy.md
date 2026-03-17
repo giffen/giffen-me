@@ -15,23 +15,17 @@ I have a pile of Canadian financial documents — bank statements, RRSP contribu
 
 But I'm not sending my Social Insurance Number, bank account numbers, and exact financial figures to an API endpoint. That's not paranoia — it's basic hygiene. A leaked SIN is catastrophic. And while Anthropic's privacy practices are solid, the principle matters: sensitive PII shouldn't leave my network if it doesn't have to.
 
-So I built a pipeline where I can drop a bank statement into a folder on my laptop, ask NanoClaw from WhatsApp to analyze it, and get back a full financial analysis — with my real values restored — without any personal data ever touching the cloud.
+So I built a pipeline where I can run a command on a bank statement PDF and get back a full financial analysis from Claude — with my real values restored — without any personal data ever touching the cloud.
 
 ## How It Works
 
-The end-to-end flow: I drop a PDF from my bank into a folder on my Fedora laptop. A file watcher on my home server picks it up, strips all personal information locally, sends the sanitized text to Claude Sonnet for analysis, de-anonymizes the response, and delivers the result. The whole thing is also triggerable from WhatsApp through NanoClaw.
+The pipeline runs on my home Ubuntu 24.04 server (CPU-only, no GPU). Currently it's a CLI tool: I copy a PDF to the server and run the pipeline manually. The flow is: strip PII locally, send sanitized text to Claude Sonnet for analysis via NanoClaw, de-anonymize the response on the server.
 
-### 1. File Drop via SSHFS
+### 1. File Transfer
 
-My Fedora laptop mounts `~/privacy-proxy/inputs/` on the server via SSHFS with systemd automount. I drag a CIBC statement into `~/server_inputs/2026/03-March/` on my laptop and it lands on the server instantly. No manual transfer, no cloud storage intermediary.
+Currently I copy files to the server manually via SCP. SSHFS automount with systemd is on the roadmap — I've done the research and know the gotchas (systemd runs as root and can't access user SSH keys, mDNS doesn't resolve in systemd's environment, `default_permissions` conflicts with FUSE), but it's not wired up yet.
 
-Getting this working was genuinely harder than building the privacy proxy itself. systemd runs mounts as root (can't read user SSH keys — copy them to `/root/.ssh/`). mDNS hostnames don't resolve in systemd's environment (use IP addresses). `default_permissions` conflicts with FUSE ownership semantics (use explicit `uid`/`gid` instead). `StrictHostKeyChecking` fails silently as "Connection reset by peer." Everyone who tries SSHFS + systemd on Fedora hits this same wall.
-
-### 2. Watchdog Auto-Processing
-
-A `watchdog`-based file watcher (`watcher.py`) monitors the inputs directory recursively. When a new `.pdf`, `.csv`, or `.txt` lands, it waits for the write to complete, infers a session name from the directory structure (e.g., `inputs/2026/03-March/` becomes session `2026-03`), and auto-runs the pipeline with a default query. It skips already-processed files, ignores temp files, and never crashes — errors get logged and watching continues. Runs as a systemd user service.
-
-### 3. Two-Pass PII Sanitization (With Optional Third)
+### 2. Two-Pass PII Sanitization (With Optional Third)
 
 This is the core of the system.
 
@@ -43,36 +37,33 @@ This is the core of the system.
 
 The lesson here: deterministic pattern matching beats LLMs at structured PII detection. The LLM's value is catching what you didn't think to write a pattern for.
 
-### 4. Pre-Flight Safety Gate
+### 3. Pre-Flight Safety Gate
 
 Before anything leaves the server, the sanitized text is scanned one final time against every regex pattern from `patterns.yaml`. If anything matches, the pipeline aborts with an error rather than risk a PII leak.
 
 This matters more than the sanitization itself. Three cleaning passes are great, but the real safety guarantee is the hard stop before the API call. Don't just try to make things safe — verify that they are safe before proceeding. Defense in depth borrowed from security engineering.
 
-### 5. Cloud Reasoning via NanoClaw
+### 4. Cloud Reasoning via NanoClaw
 
-The sanitized text plus the user's query goes to Claude Sonnet through NanoClaw — my personal AI agent built on the Claude Agent SDK, reachable via WhatsApp. The system prompt explicitly instructs Sonnet to use placeholders as-is, never guess or reconstruct real values, and decline any request to reveal information behind placeholders.
+The sanitized text plus the user's query goes to Claude Sonnet through NanoClaw — my personal AI agent built on the Claude Agent SDK, reachable via WhatsApp. The `analyze_financial_doc` tool wraps the full pipeline. The system prompt explicitly instructs Sonnet to use placeholders as-is, never guess or reconstruct real values, and decline any request to reveal information behind placeholders.
 
-Claude does the heavy lifting: spending categorization, anomaly detection, trend analysis, tax optimization suggestions. It just does it on data that looks like `[NAME_1] spent $[AMOUNT_5K_RANGE] at [MERCHANT_3]` instead of my actual figures.
+Claude does the heavy lifting: spending categorization, anomaly detection, tax optimization suggestions. It just does it on data that looks like `[NAME_1] spent $[AMOUNT_5K_RANGE] at [MERCHANT_3]` instead of my actual figures.
 
-### 6. De-anonymization
+### 5. De-anonymization
 
 Claude's response comes back with placeholders (`[NAME_1]`, `[ADDR_1]`, `[ACCT_1]`), which get swapped back to real values on the server. The mapping is encrypted at rest via Fernet — the key comes from a `PRIVACY_PROXY_KEY` environment variable, or is generated ephemerally per session if unset. Mapping data never leaves the server.
 
-### 7. Reporting Layer
+### 6. Reporting
 
-`reporting.py` extracts structured spending data from each analysis — categories and bucketed amounts — and stores it as JSON in `~/privacy-proxy/reports/`. Supports monthly summaries, multi-month trend comparisons, and annual rollups. Also registered as a NanoClaw tool (`spending_report`) so I can message WhatsApp: "Show me my spending trend January through March."
-
-Report files contain only bucketed amounts and category names — zero PII. Every report is scanned against the regex patterns before being written to disk.
+`reporting.py` generates a markdown summary of each analysis. Currently single-document reports — trend analysis across months is on the roadmap.
 
 ```
-Fedora laptop
+Server: ~/privacy-proxy/
     |
-    | SSHFS automount
+    | manual file copy (SCP)
     v
-Server: ~/privacy-proxy/inputs/
+privacy_proxy.py (CLI)
     |
-    | watchdog (watcher.py)
     v
 Regex scanner (patterns.yaml)
     |
@@ -93,7 +84,7 @@ Claude Sonnet (via NanoClaw / WhatsApp)
 De-anonymize on server
     |
     v
-Output + reporting (PII-free JSON)
+Markdown report output
 ```
 
 ## The Interesting Bits
@@ -110,41 +101,28 @@ PII never crosses the network boundary to Anthropic's API. Deterministic local t
 
 This pattern isn't specific to finance. Any sensitive-domain analysis — medical records, legal documents, HR data — could use the same architecture. The `patterns.yaml` is the only Canada-specific piece; swap it for another country's PII patterns and the rest works unchanged.
 
-### Canadian PII Patterns as Open Source
-
-Canadian PII detection patterns — SINs, transit numbers, RRSP identifiers, postal codes — don't really exist as a standalone open-source resource. I'm releasing mine as `canadian-pii-patterns` under MIT. It's regex-based, works with any language, and includes a standalone `validate.py` script. Not a replacement for proper NER, but a solid first pass that catches the structured patterns NER models aren't trained on.
-
 ### CPU-Only Is Fine
 
 With the LLM pass disabled (default), the full pipeline runs in under 5 seconds for a two-page bank statement. Even with `--thorough`, it's 30-45 seconds. No GPU needed. Total hardware cost: whatever server you already have.
-
-## The WhatsApp Flow
-
-What it actually looks like in practice:
-
-1. Download a bank statement PDF on my laptop
-2. Drop it into `~/server_inputs/2026/03-March/`
-3. The watchdog picks it up and auto-processes it
-4. Message NanoClaw on WhatsApp: "Analyze my March CIBC statement — categorize spending and flag anything unusual"
-5. NanoClaw calls `analyze_financial_doc`, the pipeline runs, and I get back a clean analysis with my real names and amounts restored
-6. Later: "Show me my spending trend for Q1" — NanoClaw calls `spending_report` and returns a category-by-category comparison
 
 ## Stack
 
 - **Server**: Ubuntu 24.04, CPU-only home server
 - **Local LLM**: Ollama (Mistral 7B + Llama 3.2 3B), bound to 127.0.0.1 only
 - **PII Detection**: Python — regex (`patterns.yaml`) + spaCy `en_core_web_sm` NER, optional Ollama verification
-- **Agent**: NanoClaw (Claude Agent SDK) with two tools: `analyze_financial_doc` and `spending_report`
+- **Agent**: NanoClaw (Claude Agent SDK) with `analyze_financial_doc` tool
 - **Reasoning**: Claude Sonnet via Anthropic API through NanoClaw
-- **File Transport**: SSHFS with systemd automount
-- **Auto-Processing**: watchdog file watcher as systemd user service
-- **Security**: Fernet-encrypted session mappings, pre-flight PII gate, regex scan on reports before disk write, Ollama firewalled to localhost
-- **Reporting**: Monthly/trend/annual summaries, CLI + NanoClaw tool, PII-free JSON output
+- **Security**: Fernet-encrypted session mappings, pre-flight PII gate, Ollama firewalled to localhost
+- **Reporting**: Markdown summaries via `reporting.py`
 - **Python**: 3.12+, full pytest suite
-- **Open Source**: `canadian-pii-patterns/` standalone package, MIT licensed
 
 ## What's Next
 
+- **SSHFS automount** — systemd mount from Fedora laptop so file drop is seamless (research done, config not yet wired up)
+- **Watchdog auto-processing** — file watcher daemon (`watcher.py`) that monitors the inputs directory and auto-runs the pipeline when new documents land, running as a systemd user service
+- **Spending report NanoClaw tool** — `spending_report` tool so I can ask from WhatsApp: "Show me my spending trend January through March"
+- **Structured JSON reports** — monthly summaries, multi-month trend comparisons, and annual rollups stored as PII-free JSON
+- **Open-source Canadian PII patterns** — extract `patterns.yaml` into a standalone `canadian-pii-patterns` package under MIT with a `validate.py` script
 - OCR support for image-based statements (Tesseract before the pipeline runs)
 - Monthly email digest that auto-sends the spending summary
 - Expand `patterns.yaml` for T4/T5/NOA tax slips
