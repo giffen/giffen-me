@@ -1,10 +1,20 @@
 ---
 title: "The Dimension Spotify Can't Measure"
-description: "I built a song-level music graph to understand why Spotify's recommendations are mid. The most interesting thing I found was a dimension no algorithm can detect."
+description: "I built a Neo4j graph of my music library to pressure-test a graph-database architecture I want to bring into regulatory work. The most interesting thing I found was a dimension no algorithm can detect — and a clean parallel to the compliance problem I do for a living."
 date: "2026-04-12"
 tag: "Case Study"
-excerpt: "Artists aren't atomic. Songs are. And the gap between those two models is where every recommendation system fails."
+excerpt: "Before I bring a graph-database approach to production regulatory data, I wanted to validate the model on a domain I understand at gut level. So I built it on my music library. Here's what I learned about graphs — and why it changes how I'd architect the compliance version."
 ---
+
+## Why I built a music graph (the part that matters for my day job)
+
+I run a compliance product. The architectural question I keep coming back to: could we model the relationships between regulations, substances, customer facilities, and enforcement actions as a queryable graph instead of a stack of relational tables? Each of those entities has connections to the others, and the connections are usually the part that matters — but the data model we have today treats them as flat lists.
+
+Before I bring a graph-database approach to production work, I wanted to validate the model on a domain I understand at gut level. Production data is unforgiving and high-stakes; you need to know the architecture holds up before you commit. So I built it on my music library.
+
+Same Neo4j, same query patterns, same edge typing, same explorer UI. Songs instead of regulations. Production credits instead of substance classifications. "Body response at 165 BPM" instead of "applies-to relationships between facility types." Different vocabulary; same architecture.
+
+What I learned about my music was the side effect. The real thing I was after was the architectural lessons. The music is the test data.
 
 ## The night I realized Spotify doesn't know me
 

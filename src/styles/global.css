@@ -2,22 +2,41 @@
    CSS VARIABLES & BASE STYLES
 ======================================== */
 :root {
-  /* Colors */
+  /* Light theme (default) — warm cream + ink */
   --cream: #FAF7F2;
   --cream-dark: #F0EBE3;
   --ink: #1A1A1A;
   --ink-soft: #3D3D3D;
   --ink-muted: #6B6B6B;
-  --accent: #B44A3A;
-  --accent-light: #C95F4E;
-  --accent-soft: #F5E8E6;
+  --accent: #2E5D3F;
+  --accent-light: #3F7A53;
+  --accent-soft: #E5EEE8;
   --paper-edge: #E5DFD5;
-  
+
+  /* Surfaces (semantic aliases — used by header/footer/cards) */
+  --surface-glass-bg: rgba(250, 247, 242, 0.72);
+  --surface-glass-border: rgba(255, 255, 255, 0.5);
+  --surface-glass-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.06),
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  --surface-footer-bg: var(--ink);
+  --surface-footer-fg: var(--cream);
+  --surface-footer-accent: #4F9269;
+  --surface-footer-divider: rgba(255, 255, 255, 0.1);
+  --surface-footer-muted: rgba(255, 255, 255, 0.5);
+  --surface-footer-soft: rgba(255, 255, 255, 0.7);
+  --surface-footer-border: rgba(255, 255, 255, 0.2);
+
+  /* Grain overlay tuning */
+  --grain-opacity: 0.04;
+  --grain-blend: normal;
+
   /* Typography */
   --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-body: 'Lora', Georgia, serif;
   --font-mono: 'JetBrains Mono', monospace;
-  
+
   /* Spacing */
   --space-1: 4px;
   --space-2: 8px;
@@ -29,7 +48,7 @@
   --space-8: 64px;
   --space-9: 96px;
   --space-10: 128px;
-  
+
   /* Type scale */
   --text-sm: 0.875rem;
   --text-base: 1.125rem;
@@ -39,6 +58,40 @@
   --text-3xl: 2.5rem;
   --text-4xl: 3.5rem;
   --text-5xl: 4.5rem;
+
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  /* Dark theme — warm umber, candlelit-paper feel */
+  --cream: #16110D;
+  --cream-dark: #1F1813;
+  --ink: #F1ECE3;
+  --ink-soft: #C7BFB2;
+  --ink-muted: #8E8676;
+  --accent: #4F9269;
+  --accent-light: #66AB80;
+  --accent-soft: #1F2D24;
+  --paper-edge: #3A332C;
+
+  --surface-glass-bg: rgba(35, 28, 23, 0.72);
+  --surface-glass-border: rgba(255, 255, 255, 0.08);
+  --surface-glass-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.5),
+    0 1px 2px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  --surface-footer-bg: #0E0A07;
+  --surface-footer-fg: var(--ink);
+  --surface-footer-accent: #66AB80;
+  --surface-footer-divider: rgba(255, 255, 255, 0.07);
+  --surface-footer-muted: rgba(241, 236, 227, 0.5);
+  --surface-footer-soft: rgba(241, 236, 227, 0.75);
+  --surface-footer-border: rgba(241, 236, 227, 0.15);
+
+  --grain-opacity: 0.06;
+  --grain-blend: screen;
+
+  color-scheme: dark;
 }
 
 * {
@@ -71,7 +124,8 @@ body::before {
   height: 100%;
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.04;
+  opacity: var(--grain-opacity);
+  mix-blend-mode: var(--grain-blend);
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
 

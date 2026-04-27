@@ -10,42 +10,41 @@ interface Props {
 
 const { title, slug, year, tags, pattern = 1, image } = Astro.props;
 
-// Determine if we're using an image or pattern
 const hasImage = !!image;
 ---
 
-<article class="lab-card" data-has-image={hasImage}>
-  <a href={`/lab/${slug}`} class="lab-card-link"></a>
-  
+<article class="work-card" data-has-image={hasImage}>
+  <a href={`/work/${slug}`} class="work-card-link"></a>
+
   {hasImage ? (
-    <div class="lab-card-bg lab-card-image-bg">
-      <img 
-        src={image} 
-        alt="" 
-        class="lab-card-image"
+    <div class="work-card-bg work-card-image-bg">
+      <img
+        src={image}
+        alt=""
+        class="work-card-image"
         loading="lazy"
       />
-      <div class="lab-card-image-overlay"></div>
-      <div class="lab-card-content">
-        
+      <div class="work-card-image-overlay"></div>
+      <div class="work-card-content">
+
       </div>
     </div>
   ) : (
-    <div class={`lab-card-bg lab-pattern-${pattern}`}>
-      <div class="lab-card-content">
-        <p class="lab-card-meta">{year}</p>
-        <h3 class="lab-card-title">{title}</h3>
-        <div class="lab-card-tags">
+    <div class={`work-card-bg work-pattern-${pattern}`}>
+      <div class="work-card-content">
+        <p class="work-card-meta">{year}</p>
+        <h3 class="work-card-title">{title}</h3>
+        <div class="work-card-tags">
           {tags.map((tag, i) => (
-            <span class="lab-card-tag">{i > 0 ? '• ' : ''}{tag}</span>
+            <span class="work-card-tag">{i > 0 ? '• ' : ''}{tag}</span>
           ))}
         </div>
       </div>
     </div>
   )}
-  
-  <div class="lab-card-overlay">
-    <span class="lab-card-btn">
+
+  <div class="work-card-overlay">
+    <span class="work-card-btn">
       Learn More
       <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </span>
@@ -53,7 +52,7 @@ const hasImage = !!image;
 </article>
 
 <style>
-  .lab-card {
+  .work-card {
     flex: 0 0 200px;
     height: 300px;
     scroll-snap-align: start;
@@ -62,32 +61,31 @@ const hasImage = !!image;
     position: relative;
     cursor: pointer;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    box-shadow: 
+    box-shadow:
       4px 4px 0 0 var(--paper-edge, #d4d0c8),
       1px 1px 4px rgba(0,0,0,0.1);
   }
-  
-  .lab-card:hover {
+
+  .work-card:hover {
     transform: translateY(-8px) rotate(-1deg);
-    box-shadow: 
+    box-shadow:
       6px 10px 0 0 var(--paper-edge, #d4d0c8),
       2px 4px 12px rgba(0,0,0,0.15);
   }
-  
-  .lab-card-bg {
+
+  .work-card-bg {
     position: absolute;
     inset: 0;
     display: flex;
     flex-direction: column;
     padding: var(--space-5, 20px);
   }
-  
-  /* Image background styles */
-  .lab-card-image-bg {
+
+  .work-card-image-bg {
     padding: 0;
   }
-  
-  .lab-card-image {
+
+  .work-card-image {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -95,9 +93,8 @@ const hasImage = !!image;
     object-fit: cover;
     object-position: center;
   }
-  
-  /* Gradient overlay for image readability - vintage paper tint */
-  .lab-card-image-overlay {
+
+  .work-card-image-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(
@@ -108,17 +105,15 @@ const hasImage = !!image;
     );
     z-index: 1;
   }
-  
-  /* Pattern gradient backgrounds (fallback when no image) */
-  .lab-pattern-1 { background: linear-gradient(180deg, #1E4B8E 0%, #152F54 100%); }
-  .lab-pattern-2 { background: linear-gradient(180deg, #8E4B1E 0%, #5C3012 100%); }
-  .lab-pattern-3 { background: linear-gradient(180deg, #1E8E4B 0%, #125C2F 100%); }
-  .lab-pattern-4 { background: linear-gradient(180deg, #4B1E8E 0%, #2F125C 100%); }
-  .lab-pattern-5 { background: linear-gradient(180deg, #8E1E4B 0%, #5C122F 100%); }
-  .lab-pattern-6 { background: linear-gradient(180deg, #2D4A3E 0%, #1A2D26 100%); }
-  
-  /* Book spine effect */
-  .lab-card::before {
+
+  .work-pattern-1 { background: linear-gradient(180deg, #1E4B8E 0%, #152F54 100%); }
+  .work-pattern-2 { background: linear-gradient(180deg, #8E4B1E 0%, #5C3012 100%); }
+  .work-pattern-3 { background: linear-gradient(180deg, #1E8E4B 0%, #125C2F 100%); }
+  .work-pattern-4 { background: linear-gradient(180deg, #4B1E8E 0%, #2F125C 100%); }
+  .work-pattern-5 { background: linear-gradient(180deg, #8E1E4B 0%, #5C122F 100%); }
+  .work-pattern-6 { background: linear-gradient(180deg, #2D4A3E 0%, #1A2D26 100%); }
+
+  .work-card::before {
     content: '';
     position: absolute;
     left: 0;
@@ -128,9 +123,8 @@ const hasImage = !!image;
     background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, transparent 100%);
     z-index: 5;
   }
-  
-  /* Content positioning */
-  .lab-card-content {
+
+  .work-card-content {
     position: relative;
     z-index: 2;
     height: 100%;
@@ -139,14 +133,13 @@ const hasImage = !!image;
     padding: var(--space-5, 20px);
     padding-left: calc(var(--space-5, 20px) + var(--space-3, 12px));
   }
-  
-  /* When image bg is used, content needs different padding since parent has none */
-  .lab-card-image-bg .lab-card-content {
+
+  .work-card-image-bg .work-card-content {
     padding: var(--space-5, 20px);
     padding-left: calc(var(--space-5, 20px) + var(--space-3, 12px));
   }
-  
-  .lab-card-meta {
+
+  .work-card-meta {
     font-family: var(--font-mono, ui-monospace, monospace);
     font-size: 0.6rem;
     color: rgba(255,255,255,0.6);
@@ -155,8 +148,8 @@ const hasImage = !!image;
     margin-bottom: auto;
     text-shadow: 0 1px 2px rgba(0,0,0,0.3);
   }
-  
-  .lab-card-title {
+
+  .work-card-title {
     font-family: var(--font-display, Georgia, serif);
     font-size: var(--text-lg, 1.125rem);
     font-weight: 500;
@@ -165,15 +158,15 @@ const hasImage = !!image;
     margin-bottom: var(--space-3, 12px);
     text-shadow: 0 2px 4px rgba(0,0,0,0.4);
   }
-  
-  .lab-card-tags {
+
+  .work-card-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
     margin-top: auto;
   }
-  
-  .lab-card-tag {
+
+  .work-card-tag {
     font-family: var(--font-mono, ui-monospace, monospace);
     font-size: 0.55rem;
     color: rgba(255,255,255,0.8);
@@ -181,9 +174,8 @@ const hasImage = !!image;
     letter-spacing: 0.05em;
     text-shadow: 0 1px 2px rgba(0,0,0,0.3);
   }
-  
-  /* Hover overlay */
-  .lab-card-overlay {
+
+  .work-card-overlay {
     position: absolute;
     inset: 0;
     background: rgba(26, 26, 26, 0.9);
@@ -194,12 +186,12 @@ const hasImage = !!image;
     transition: opacity 0.3s ease;
     z-index: 10;
   }
-  
-  .lab-card:hover .lab-card-overlay {
+
+  .work-card:hover .work-card-overlay {
     opacity: 1;
   }
-  
-  .lab-card-btn {
+
+  .work-card-btn {
     display: inline-flex;
     align-items: center;
     gap: var(--space-2, 8px);
@@ -213,55 +205,54 @@ const hasImage = !!image;
     border-radius: 6px;
     transition: all 0.2s ease;
   }
-  
-  .lab-card:hover .lab-card-btn:hover {
+
+  .work-card:hover .work-card-btn:hover {
     background: var(--accent, #1f4fd8);
     color: white;
     transform: scale(1.05);
   }
-  
-  .lab-card-btn svg {
+
+  .work-card-btn svg {
     width: 14px;
     height: 14px;
     stroke: currentColor;
     stroke-width: 2;
     fill: none;
   }
-  
-  .lab-card-link {
+
+  .work-card-link {
     position: absolute;
     inset: 0;
     z-index: 20;
   }
 
-  /* Responsive sizing */
   @media (max-width: 1024px) {
-    .lab-card {
+    .work-card {
       flex: 0 0 180px;
       height: 270px;
     }
-    
-    .lab-card-title {
+
+    .work-card-title {
       font-size: 1rem;
     }
   }
 
   @media (max-width: 768px) {
-    .lab-card {
+    .work-card {
       flex: 0 0 160px;
       height: 240px;
     }
-    
-    .lab-card-title {
+
+    .work-card-title {
       font-size: 0.9rem;
     }
-    
-    .lab-card-content {
+
+    .work-card-content {
       padding: var(--space-4, 16px);
       padding-left: calc(var(--space-4, 16px) + var(--space-2, 8px));
     }
-    
-    .lab-card-image-bg .lab-card-content {
+
+    .work-card-image-bg .work-card-content {
       padding: var(--space-4, 16px);
       padding-left: calc(var(--space-4, 16px) + var(--space-2, 8px));
     }

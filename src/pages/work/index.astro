@@ -1,0 +1,252 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const workPosts = await getCollection("work");
+const publishedPosts = workPosts
+  .filter(post => post.data.published !== false)
+  .sort((a, b) => (a.data.date < b.data.date ? 1 : -1));
+
+const statusLabels: Record<string, string> = {
+  "complete": "Shipped",
+  "ongoing": "In Use",
+  "in-progress": "Active",
+  "backlog": "Planned",
+};
+---
+
+<BaseLayout title="Work — Andrew Giffen" description="Selected projects in product strategy, production AI, and platform delivery.">
+  <section class="work-page">
+    <header class="page-header">
+      <p class="page-label">Work</p>
+      <h1 class="page-title">Selected Projects</h1>
+      <p class="page-description">
+        Production AI systems, platform migrations, and the personal builds where
+        I usually pressure-test a stack before it shows up at work.
+      </p>
+    </header>
+
+    <div class="work-grid">
+      {publishedPosts.map((post, index) => {
+        const heroImage = post.data.featuredImage ?? post.data.image;
+        const pattern = post.data.pattern ?? ((index % 6) + 1);
+        return (
+          <article class="work-card">
+            <a href={`/work/${post.slug}`} class="work-card-link">
+              <div class={`work-card-media ${heroImage ? "has-image" : `work-pattern-${pattern}`}`}>
+                {heroImage && (
+                  <img
+                    src={heroImage}
+                    alt=""
+                    class="work-card-image"
+                    loading="lazy"
+                  />
+                )}
+              </div>
+              <div class="work-card-body">
+                <p class="work-card-meta">
+                  <span class="work-card-year">{post.data.date.split("-")[0]}</span>
+                  <span class="work-card-divider">·</span>
+                  <span class="work-card-status">{statusLabels[post.data.status] ?? post.data.status}</span>
+                </p>
+                <h2 class="work-card-title">{post.data.title}</h2>
+                <p class="work-card-description">{post.data.description}</p>
+                <div class="work-card-tags">
+                  {post.data.tags.slice(0, 3).map(tag => (
+                    <span class="work-card-tag">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </a>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .work-page {
+    padding: var(--space-10) var(--space-7);
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    max-width: 600px;
+    margin-bottom: var(--space-9);
+  }
+
+  .page-label {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    margin-bottom: var(--space-5);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .page-label::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: var(--space-5);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  .page-description {
+    font-size: var(--text-lg);
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-7) var(--space-6);
+  }
+
+  .work-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-card-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .work-card-media {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.04),
+      0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .work-card-link:hover .work-card-media {
+    transform: translateY(-4px);
+    box-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.06),
+      0 12px 28px rgba(0, 0, 0, 0.08);
+  }
+
+  .work-card-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .work-card-link:hover .work-card-image {
+    transform: scale(1.02);
+  }
+
+  /* Pattern fallback gradients (only for entries without an image) */
+  .work-pattern-1 { background: linear-gradient(160deg, #1E4B8E 0%, #152F54 100%); }
+  .work-pattern-2 { background: linear-gradient(160deg, #8E4B1E 0%, #5C3012 100%); }
+  .work-pattern-3 { background: linear-gradient(160deg, #1E8E4B 0%, #125C2F 100%); }
+  .work-pattern-4 { background: linear-gradient(160deg, #4B1E8E 0%, #2F125C 100%); }
+  .work-pattern-5 { background: linear-gradient(160deg, #8E1E4B 0%, #5C122F 100%); }
+  .work-pattern-6 { background: linear-gradient(160deg, #2D4A3E 0%, #1A2D26 100%); }
+
+  .work-card-body {
+    padding: var(--space-5) 0 0 0;
+  }
+
+  .work-card-meta {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: var(--space-3);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .work-card-divider {
+    opacity: 0.5;
+  }
+
+  .work-card-status {
+    color: var(--accent);
+  }
+
+  .work-card-title {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.25;
+    margin-bottom: var(--space-3);
+    letter-spacing: -0.01em;
+  }
+
+  .work-card-link:hover .work-card-title {
+    color: var(--accent);
+  }
+
+  .work-card-description {
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-bottom: var(--space-4);
+  }
+
+  .work-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .work-card-tag {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 10px;
+    border: 1px solid var(--paper-edge);
+    border-radius: 4px;
+  }
+
+  @media (max-width: 1024px) {
+    .work-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .work-page {
+      padding: var(--space-9) var(--space-5);
+    }
+
+    .work-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-7);
+    }
+  }
+</style>

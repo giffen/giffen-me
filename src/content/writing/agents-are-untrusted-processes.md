@@ -133,4 +133,4 @@ Agent security needs the same shift. From "tell the agent not to do bad things" 
 Your agent is not your friend. It's a process. Treat it like one.
 ---
 
-*This post describes the security architecture of [NanoClaw](/lab/nanoclaw), my personal AI agent. The privacy proxy pipeline mentioned here is documented in [The Privacy Proxy Pattern](/writing/the-privacy-proxy-pattern) and [Privacy Proxy](/lab/privacy-proxy).*
+*This post describes the security architecture of [NanoClaw](/work/nanoclaw), my personal AI agent. The privacy proxy pipeline mentioned here is documented in [The Privacy Proxy Pattern](/writing/the-privacy-proxy-pattern) and [Privacy Proxy](/work/privacy-proxy).*

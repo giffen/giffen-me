@@ -3,12 +3,11 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("lab");
+  const posts = await getCollection("work");
 
-  // Only generate pages for published posts
   const publishedPosts = posts.filter(post => post.data.published !== false);
-  
-  return posts.map((post) => ({
+
+  return publishedPosts.map((post) => ({
     params: { slug: post.slug },
     props: { post },
   }));
@@ -16,65 +15,52 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
-const hasHero = Boolean(post.data.featuredImage);
+const heroImage = post.data.featuredImage ?? post.data.image;
+
+const statusLabels: Record<string, string> = {
+  "complete": "Shipped",
+  "ongoing": "In Use",
+  "in-progress": "Active",
+  "backlog": "Planned",
+};
 ---
 
-<BaseLayout title={`${post.data.title} — Lab`} description={post.data.description}>
-  <article class="lab-detail">
-    <header class={`article-header ${hasHero ? 'has-hero' : ''}`}>
-      <a href="/lab" class="back-link">
-        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-        Back to Lab
-      </a>
-      {hasHero ? (
-        <div class="article-hero">
-          <img
-            src={post.data.featuredImage}
-            alt={post.data.title}
-            class="article-hero-image"
-            loading="eager"
-            decoding="async"
-            fetchpriority="high"
-          />
-          <div class="article-hero-overlay"></div>
-          <div class="article-hero-content">
-            <div class="article-meta">
-              <span class="article-date">{post.data.date}</span>
-              {post.data.status === 'in-progress' && (
-                <span class="article-status">In Progress</span>
-              )}
-            </div>
+<BaseLayout title={`${post.data.title} — Work`} description={post.data.description}>
+  <article class="work-detail">
+    <a href="/work" class="back-link">
+      <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to Work
+    </a>
 
-            <h1 class="article-title">{post.data.title}</h1>
-            <p class="article-description">{post.data.description}</p>
+    {heroImage && (
+      <figure class="article-hero">
+        <img
+          src={heroImage}
+          alt={post.data.title}
+          class="article-hero-image"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </figure>
+    )}
 
-            <div class="article-tags">
-              {post.data.tags.map((tag) => (
-                <span class="article-tag">{tag}</span>
-              ))}
-            </div>
-          </div>
-        </div>
-      ) : (
-        <div class="article-intro">
-          <div class="article-meta">
-            <span class="article-date">{post.data.date}</span>
-            {post.data.status === 'in-progress' && (
-              <span class="article-status">In Progress</span>
-            )}
-          </div>
+    <header class="article-header">
+      <div class="article-meta">
+        <span class="article-date">{post.data.date}</span>
+        <span class="article-meta-divider">·</span>
+        <span class="article-status">{statusLabels[post.data.status] ?? post.data.status}</span>
+      </div>
 
-          <h1 class="article-title">{post.data.title}</h1>
-          <p class="article-description">{post.data.description}</p>
+      <h1 class="article-title">{post.data.title}</h1>
+      <p class="article-description">{post.data.description}</p>
 
-          <div class="article-tags">
-            {post.data.tags.map((tag) => (
-              <span class="article-tag">{tag}</span>
-            ))}
-          </div>
-        </div>
-      )}
-      
+      <div class="article-tags">
+        {post.data.tags.map((tag) => (
+          <span class="article-tag">{tag}</span>
+        ))}
+      </div>
+
       {(post.data.repoUrl || post.data.liveUrl) && (
         <div class="article-links">
           {post.data.repoUrl && (
@@ -100,7 +86,7 @@ const hasHero = Boolean(post.data.featuredImage);
 </BaseLayout>
 
 <style>
-  .lab-detail {
+  .work-detail {
     padding: var(--space-10) var(--space-7);
     max-width: 800px;
     margin: 0 auto;
@@ -108,12 +94,6 @@ const hasHero = Boolean(post.data.featuredImage);
 
   .article-header {
     margin-bottom: var(--space-8);
-    padding-bottom: var(--space-7);
-    border-bottom: 1px solid var(--paper-edge);
-  }
-
-  .article-header.has-hero {
-    padding-bottom: var(--space-8);
   }
 
   .back-link {
@@ -124,7 +104,7 @@ const hasHero = Boolean(post.data.featuredImage);
     font-size: var(--text-sm);
     color: var(--ink-muted);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     margin-bottom: var(--space-6);
     transition: color 0.2s ease;
   }
@@ -141,82 +121,28 @@ const hasHero = Boolean(post.data.featuredImage);
     fill: none;
   }
 
-  .article-hero {
-    position: relative;
-    border-radius: 16px;
-    overflow: hidden;
-    min-height: 360px;
-    background: var(--ink);
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: var(--space-6);
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
-  }
-
-  .article-hero-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .article-hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      180deg,
-      rgba(14, 14, 16, 0.15) 0%,
-      rgba(14, 14, 16, 0.55) 50%,
-      rgba(14, 14, 16, 0.85) 100%
-    );
-  }
-
-  .article-hero-content {
-    position: relative;
-    z-index: 1;
-    padding: var(--space-7);
-    max-width: 620px;
-  }
-
   .article-meta {
     display: flex;
     align-items: center;
-    gap: var(--space-4);
-    margin-bottom: var(--space-4);
+    gap: var(--space-2);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: var(--space-5);
   }
 
   .article-date {
-    font-family: var(--font-mono);
-    font-size: var(--text-sm);
     color: var(--ink-muted);
   }
 
+  .article-meta-divider {
+    opacity: 0.5;
+  }
+
   .article-status {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
     color: var(--accent);
-    background: var(--accent-soft);
-    padding: 4px 12px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .article-header.has-hero .article-meta {
-    color: rgba(255, 255, 255, 0.7);
-    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
-  }
-
-  .article-header.has-hero .article-date {
-    color: rgba(255, 255, 255, 0.75);
-  }
-
-  .article-header.has-hero .article-status {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.18);
-    border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   .article-title {
@@ -224,56 +150,41 @@ const hasHero = Boolean(post.data.featuredImage);
     font-size: var(--text-4xl);
     font-weight: 400;
     color: var(--ink);
-    line-height: 1.2;
-    margin-bottom: var(--space-4);
-  }
-
-  .article-header.has-hero .article-title {
-    color: var(--cream);
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-5);
   }
 
   .article-description {
     font-size: var(--text-lg);
     color: var(--ink-soft);
     line-height: 1.7;
-    margin-bottom: var(--space-5);
-  }
-
-  .article-header.has-hero .article-description {
-    color: rgba(255, 255, 255, 0.85);
-    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+    margin-bottom: var(--space-6);
+    max-width: 60ch;
   }
 
   .article-tags {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-2);
-    margin-bottom: var(--space-5);
+    margin-bottom: var(--space-6);
   }
 
   .article-tag {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--ink-soft);
-    background: var(--cream-dark);
-    padding: 4px 12px;
+    font-size: 0.7rem;
+    color: var(--ink-muted);
+    background: transparent;
+    padding: 4px 10px;
+    border: 1px solid var(--paper-edge);
     border-radius: 4px;
-  }
-
-  .article-header.has-hero .article-tag {
-    color: rgba(255, 255, 255, 0.85);
-    background: rgba(255, 255, 255, 0.18);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
   }
 
   .article-links {
     display: flex;
-    gap: var(--space-4);
-  }
-
-  .article-header.has-hero .article-links {
-    margin-top: var(--space-5);
+    gap: var(--space-3);
     flex-wrap: wrap;
   }
 
@@ -283,27 +194,46 @@ const hasHero = Boolean(post.data.featuredImage);
     gap: var(--space-2);
     font-family: var(--font-mono);
     font-size: var(--text-sm);
-    color: var(--accent);
+    color: var(--ink-soft);
     padding: var(--space-3) var(--space-5);
-    border: 1px solid var(--accent);
+    border: 1px solid var(--paper-edge);
     border-radius: 6px;
     transition: all 0.2s ease;
   }
 
   .article-link:hover {
-    background: var(--accent);
-    color: white;
+    border-color: var(--accent);
+    color: var(--accent);
   }
 
   .article-link svg {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     stroke: currentColor;
     stroke-width: 1.5;
     fill: none;
   }
 
+  /* Hero image — sits flat in the page, no shadow */
+  .article-hero {
+    margin: 0 0 var(--space-7) 0;
+    padding: 0;
+  }
+
+  .article-hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+
   /* Prose styles for markdown content */
+  .article-content {
+    margin-top: var(--space-8);
+    padding-top: var(--space-7);
+    border-top: 1px solid var(--paper-edge);
+  }
+
   .prose {
     font-size: var(--text-base);
     line-height: 1.8;
@@ -317,6 +247,7 @@ const hasHero = Boolean(post.data.featuredImage);
     color: var(--ink);
     margin-top: var(--space-8);
     margin-bottom: var(--space-4);
+    letter-spacing: -0.01em;
   }
 
   .prose :global(h3) {
@@ -376,7 +307,7 @@ const hasHero = Boolean(post.data.featuredImage);
   .prose :global(a) {
     color: var(--accent);
     text-decoration: underline;
-    text-underline-offset: 2px;
+    text-underline-offset: 3px;
   }
 
   .prose :global(a:hover) {
@@ -407,17 +338,17 @@ const hasHero = Boolean(post.data.featuredImage);
     color: var(--ink);
   }
 
+  .prose :global(img) {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: var(--space-6) 0;
+    border-radius: 8px;
+  }
+
   @media (max-width: 768px) {
-    .lab-detail {
+    .work-detail {
       padding: var(--space-9) var(--space-5);
-    }
-
-    .article-hero {
-      min-height: 280px;
-    }
-
-    .article-hero-content {
-      padding: var(--space-5);
     }
 
     .article-title {
