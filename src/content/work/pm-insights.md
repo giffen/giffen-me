@@ -1,6 +1,6 @@
 ---
-title: "PM Insights — Customer Intelligence System"
-description: "An AI customer-intelligence system that queries 74,000+ recorded calls and 2.5 million transcript sentences. Changed how the product team prioritizes — from gut feel to a queryable source of truth."
+title: "PM Insights - Customer Intelligence System"
+description: "An AI customer-intelligence system that queries 74,000+ recorded calls and 2.5 million transcript sentences. Changed how the product team prioritizes - from gut feel to a queryable source of truth."
 date: "2026-01-20"
 status: "ongoing"
 tags: ["AI", "Customer Intelligence", "Production"]
@@ -34,6 +34,6 @@ The PM organization could now answer questions that used to take a week of stake
 
 ## What I learned building it
 
-The hard problem wasn't the AI. It was getting noisy, incomplete signal — call transcripts have hold music, off-topic tangents, half-finished thoughts — to produce stable enough analysis that PMs trusted it.
+The hard problem wasn't the AI. It was getting noisy, incomplete signal - call transcripts have hold music, off-topic tangents, half-finished thoughts - to produce stable enough analysis that PMs trusted it.
 
 Trust was the deliverable. The AI was the means.

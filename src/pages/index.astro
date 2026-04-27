@@ -13,9 +13,9 @@ const featuredWorkSlugs = [
 ];
 
 const featuredWorkMeta: Record<string, { label: string; badge: string }> = {
-  "nextgen-platform-migration": { label: "Enterprise · Platform", badge: "Shipped" },
-  "pm-insights": { label: "Production · AI", badge: "In Use" },
-  "ehs-applicability-engine": { label: "Production · AI", badge: "In Use" },
+  "nextgen-platform-migration": { label: "Half the enterprise base migrated", badge: "Shipped" },
+  "pm-insights": { label: "74K+ calls, 2.5M sentences in production", badge: "In Use" },
+  "ehs-applicability-engine": { label: "500+ screening questions automated", badge: "In Use" },
 };
 
 const featuredWork = featuredWorkSlugs
@@ -30,9 +30,9 @@ const featuredWritingSlugs = [
 ];
 
 const featuredWritingExcerpts: Record<string, string> = {
-  "pm-spectrum": "The Ravi Mehta competency model is the best PM framework ever built. AI just collapsed half the chart. Here's what replaces it — and what it means for how you build and evaluate product teams.",
+  "pm-spectrum": "The Ravi Mehta competency model is the best PM framework ever built. AI just collapsed half the chart. Here's what replaces it - and what it means for how you build and evaluate product teams.",
   "competitive-intelligence-whatsapp": "Research bots were emailing me insights I never read. So I built a system that accumulates and synthesizes knowledge over months, answers questions from WhatsApp, and produces battlecards for the team.",
-  "the-pressure-test": "Shipping three to five days of work per evening. The bottleneck isn't context length or typing speed — it's whether you spent ten minutes pressure-testing the plan first.",
+  "the-pressure-test": "Shipping three to five days of work per evening. The bottleneck isn't context length or typing speed - it's whether you spent ten minutes pressure-testing the plan first.",
   "ai-features-that-earn-trust": "When the stakes involve legal compliance, workplace safety, and regulatory penalties, enterprise customers need more than impressive demos. They need proof your specialized AI won't become a liability.",
 };
 
@@ -42,7 +42,7 @@ const featuredWriting = featuredWritingSlugs
 ---
 
 <BaseLayout
-  title="Andrew Giffen — Product & Technology Executive"
+  title="Andrew Giffen - Product & Technology Executive"
   description="Director of Product at a global compliance SaaS company. I run the largest business unit and personally ship the AI systems inside it."
 >
 
@@ -155,13 +155,52 @@ const featuredWriting = featuredWritingSlugs
     min-height: 90vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: var(--space-10) var(--space-7) var(--space-9);
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/hero/hero-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.55;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  :root[data-theme="dark"] .hero::before {
+    opacity: 0;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(560px, 70%);
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--paper-edge) 30%,
+      var(--paper-edge) 70%,
+      transparent
+    );
+    pointer-events: none;
   }
 
   .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 760px;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .hero-label {
@@ -171,16 +210,18 @@ const featuredWriting = featuredWritingSlugs
     text-transform: uppercase;
     letter-spacing: 0.18em;
     margin-bottom: var(--space-6);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: var(--space-3);
   }
 
-  .hero-label::before {
+  .hero-label::before,
+  .hero-label::after {
     content: '';
     width: 32px;
     height: 1px;
     background: var(--accent);
+    opacity: 0.6;
   }
 
   .hero-title {
@@ -201,14 +242,15 @@ const featuredWriting = featuredWritingSlugs
   .hero-description {
     font-size: var(--text-lg);
     color: var(--ink-soft);
-    max-width: 56ch;
-    margin-bottom: var(--space-8);
+    max-width: 52ch;
+    margin: 0 auto var(--space-8);
     line-height: 1.6;
   }
 
   .hero-cta {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: var(--space-5);
     flex-wrap: wrap;
   }

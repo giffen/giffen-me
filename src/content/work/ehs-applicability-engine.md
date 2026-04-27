@@ -14,7 +14,7 @@ published: true
 
 Regulatory applicability used to be a manual auditor process. Read the regulation. Read the facility profile. Decide which requirements apply. It was slow, expensive, and inconsistent at scale.
 
-This system does it automatically and gives the auditor structured AI reasoning to review and act on, instead of starting from raw text. Auditor time — the binding constraint of the entire compliance product — got a meaningful lever pulled on it.
+This system does it automatically and gives the auditor structured AI reasoning to review and act on, instead of starting from raw text. Auditor time is the binding constraint on the entire compliance product; this is the lever that frees senior auditors to spend it on the parts of the work where their judgment actually matters.
 
 ## How it works
 
@@ -24,7 +24,7 @@ Human-in-the-loop by design. The AI does the slow first pass; the auditor brings
 
 ## Why it matters for the business
 
-Auditor capacity is the supply-side constraint in compliance SaaS. Anything that lets the same auditor cover more facilities — without sacrificing accuracy — is a direct lever on margin and capacity. Applicability determination is one of the highest-leverage stages of an audit. Automating it well doesn't just save time; it frees senior auditors to spend their time on the parts of the work where their judgment actually matters.
+Auditor capacity is the supply-side constraint in compliance SaaS. Anything that lets the same auditor cover more facilities - without sacrificing accuracy - is a direct lever on margin and capacity. Applicability determination is one of the highest-leverage stages of an audit. Automating it well doesn't just save time; it frees senior auditors to spend their time on the parts of the work where their judgment actually matters.
 
 ## What I learned building it
 

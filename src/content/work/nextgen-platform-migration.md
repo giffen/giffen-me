@@ -14,7 +14,7 @@ published: true
 
 Half the enterprise customer base, off a legacy platform, onto a modern architecture, in a single year. Release cadence went from quarterly to bi-weekly. Net retention held throughout. Customer trust survived a high-stakes year intact.
 
-This is the project I'm most proud of, and the one that most directly proves I can run a complex, high-stakes product program without dropping things.
+This is the proof that I can run a high-stakes program across product, engineering, customer success, support, and executive communication - and hold the dates, the retention, and the release momentum at the same time.
 
 ## How it worked
 
