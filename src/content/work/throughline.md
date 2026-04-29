@@ -6,8 +6,8 @@ status: "in-progress"
 tags: ["AI", "Architecture", "Graph"]
 pattern: 3
 liveUrl: "https://throughline.giffen.me"
-image: "/images/work/throughline-feature.png"
-featuredImage: "/images/work/throughline-feature.png"
+image: "/images/work/throughline-feature.webp"
+featuredImage: "/images/work/throughline-feature.webp"
 published: true
 ---
 
