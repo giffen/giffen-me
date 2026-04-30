@@ -1,7 +1,7 @@
 ---
 title: "Throughline"
-description: "A graph-database approach to modeling domain knowledge as a queryable network. Validated on music; portable to compliance, where regulations, substances, and enforcement actions have the same relational shape."
-date: "2026-04-12"
+description: "A graph database with explicit, named musical evidence on every connection: the architecture for steerable, explainable recommendations. Validated on music; portable to compliance, where regulations, substances, and enforcement actions have the same relational shape."
+date: "2026-04-29"
 status: "in-progress"
 tags: ["AI", "Architecture", "Graph"]
 pattern: 3
@@ -13,7 +13,7 @@ published: true
 
 ## What this is
 
-A song-level music graph that explodes artists into individual songs and connects them by traceable musical dimensions. Each connection between two songs has a reason you can read: "both channel Johnny Marr's arpeggiated jangle, but at different tempos." Roughly 70 songs, 260 song-to-song edges across 18 dimensions, served from a Neo4j backend through a FastAPI layer to a force-directed graph visualization.
+A song-level music graph that explodes artists into individual songs and connects them by traceable musical dimensions. Each connection between two songs has a reason you can read: "both channel Johnny Marr's arpeggiated jangle, but at different tempos." 1,450 songs across 250 artists, ~1,860 prose-annotated SOUNDS_LIKE edges plus ~27,500 reified dimension-value relationships across 18 dimensions, served from a Neo4j backend through a FastAPI layer to both a search-first mobile UI and a force-directed graph visualization.
 
 I built this on music because I wanted to validate a graph-database approach to a domain I understand at gut level before bringing it into compliance work. The architectural question I keep coming back to in regulated AI: could we model the relationships between regulations, substances, customer facilities, and enforcement actions as a queryable graph instead of a stack of relational tables? Each of those entities has connections to the others, and the connections are usually the part that matters - but the data model treats them as flat lists.
 
@@ -25,9 +25,9 @@ Three layers, with deliberate seams between them.
 
 **Neo4j Aura.** Graph database for song / artist / producer / label nodes and SOUNDS_LIKE edges, validated by a formal JSON ontology that constrains node types, relationship types, and tempo bands.
 
-**FastAPI backend.** Python service handling ontology validation, preference data, search, and edge traversal queries.
+**FastAPI backend.** Python service handling search, natural-language intent parsing (Claude Haiku 4.5), playlist generation across the SOUNDS_LIKE graph, and edge traversal queries. Per-query cost runs to fractions of a cent.
 
-**vis.js visualization.** Force-directed constellation explorer. Click a song, see its 18-dimension fingerprint. Follow an edge, see the human-authored reason for the connection. Spotify embeds let you listen as you traverse.
+**vis.js visualization.** Force-directed constellation explorer. Click a song, see its 18-dimension fingerprint. Follow an edge, see the prose reason for the connection (most edges authored by Claude Sonnet 4.6 over LLM-extracted audio features; a few hundred handwritten as seed data). YouTube embeds with a sticky playlist player let you listen as you traverse the result set.
 
 ## What I learned that's portable to compliance
 
