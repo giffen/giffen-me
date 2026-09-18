@@ -114,9 +114,9 @@
       "PPE & Personal Protection",
       "Permits, Signage & Documentation"
     ],
-    "explanation": "This is a non-compliance under Ergonomics & Workplace Conditions. Cal/OSHA's Indoor Heat Illness Prevention standard (CCR 3396) requires employers to provide access to fresh, cool drinking water, designate cool-down rest areas, and implement high-heat procedures when indoor temperatures exceed 82°F. Opening dock doors is not a substitute for these specific requirements. This California-specific standard is stricter than federal OSHA.",
+    "explanation": "This is a non-compliance under Ergonomics & Workplace Conditions. CCR 3396 requires drinking water, cool-down areas and other indoor heat precautions within its scope. The empty cooler and absent cool-down arrangements are findings. Most covered indoor workplaces enter the rule's scope at 82°F; additional assessment and control provisions apply at 87°F, or specified 82°F conditions involving restrictive clothing or high radiant heat. At the stated 88°F, assess and implement applicable engineering and other controls. Opening dock doors alone does not establish adequate protection. Do not confuse these thresholds with outdoor high-heat procedures.",
     "difficulty": 4,
-    "source_reference": "Cal/OSHA Title 8 CCR 3396",
+    "source_reference": "Cal/OSHA Title 8 CCR 3396(a), (c), (d) and (e), https://www.dir.ca.gov/title8/3396.html. Review checked 2026-09-18.",
     "tags": [
       "heat_illness",
       "indoor_heat",
@@ -155,7 +155,7 @@
     "facility_type": "warehouse",
     "jurisdiction": "US-CA",
     "title": "Repetitive Motion Injury Reports Ignored",
-    "scene_description": "At the pick stations, you review the OSHA 300 log and find three workers performing identical picking tasks have reported wrist and shoulder pain over the past six months. Management has not conducted an ergonomic evaluation or implemented any work practice changes. When asked, the supervisor says 'They just need to stretch more — we tell them that at orientation.'",
+    "scene_description": "At the pick stations, you review three repetitive-motion injury cases reported in the past six months by workers performing identical picking tasks. Occupational-health records confirm licensed physicians diagnosed the injuries using objective findings and attributed more than 50% of each injury's cause to that repetitive work. Management has not conducted an ergonomic evaluation or implemented controls. The supervisor says, 'They just need to stretch more — we tell them that at orientation.'",
     "scene_art_key": "repetitive_motion_ignored",
     "scene_image": "assets/ui/encounters/repetitive_motion_ignored.jpg",
     "is_noncompliance": true,
@@ -165,9 +165,9 @@
       "Fire Safety & Emergency Preparedness",
       "PPE & Personal Protection"
     ],
-    "explanation": "This is a non-compliance under Ergonomics & Workplace Conditions. Cal/OSHA's Repetitive Motion Injuries standard (CCR 5110) requires employers to establish a program to minimize repetitive motion injuries when two or more employees performing identical work activities report RMIs. The program must include worksite evaluation, control measures, and employee training. 'Telling them to stretch' does not satisfy the requirement for systematic evaluation and controls. This is a California-specific standard.",
+    "explanation": "This is a non-compliance under Ergonomics & Workplace Conditions. The facts establish CCR 5110's trigger: more than one worker, identical work activity, predominant work-related causation, qualifying physician diagnoses and reports within the last 12 months. The employer must implement a program including worksite evaluation, exposure controls and training. Stretching advice alone is not that program. Pain reports without these additional facts still warrant investigation, but do not by themselves establish every condition of this specific rule.",
     "difficulty": 5,
-    "source_reference": "Cal/OSHA Title 8 CCR 5110",
+    "source_reference": "Cal/OSHA Title 8 CCR 5110(a) and (b), https://www.dir.ca.gov/title8/5110.html. Review checked 2026-09-18.",
     "tags": [
       "ergonomics",
       "repetitive_motion",

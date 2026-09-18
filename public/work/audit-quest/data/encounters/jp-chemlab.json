@@ -229,7 +229,7 @@
     "facility_type": "chemical_lab",
     "jurisdiction": "JP",
     "title": "SDS Available but Risk Assessment Not Updated for New Substances",
-    "scene_description": "The chemical storage room has a binder of Safety Data Sheets organized alphabetically. You notice several recently procured chemicals — received within the last three months — have current SDS documents filed. However, when you ask to see the risk assessments for these new substances, the safety officer shows you a general risk assessment for the storage room that predates the procurement. None of the newly introduced substances have individual risk assessments.",
+    "scene_description": "The chemical storage room has current SDSs for newly introduced substances. The facility's applicable-substance register confirms that these chemicals and concentrations fall within Japan's mandatory risk-assessment scope at the time of this audit. Workers have already begun using them. The safety officer confirms that neither the old room assessment nor any later assessment addresses these substances or their use.",
     "scene_art_key": "risk_assessment_not_updated",
     "scene_image": "assets/ui/encounters/risk_assessment_not_updated.jpg",
     "is_noncompliance": true,
@@ -239,9 +239,9 @@
       "Fire Safety & Emergency Preparedness",
       "Waste Management & Environmental"
     ],
-    "explanation": "This is a non-compliance under Chemical & Hazardous Materials. Since the 2024 ISHL amendment, risk assessment is mandatory for ALL substances that have GHS classification — the obligation now covers the full list of GHS-classified substances, not just the 674 substances on the notification list. New substances introduced to the workplace must have risk assessments completed before use. Having the SDS on file but failing to conduct the mandated risk assessment is a clear non-compliance with the expanded obligation under ISHL Article 57-3.",
+    "explanation": "This is a non-compliance under Chemical Management & Hazcom. The scenario establishes that the substances are within the mandatory scope and are being used without the required assessment. Filing an SDS does not replace assessing the actual work and controls. Japan expanded its designated-substance requirements in phases through 2024, 2025 and 2026; do not assume every substance with any GHS classification became covered at once in 2024. In a real audit, verify substance identity, concentration, designated list and effective date.",
     "difficulty": 5,
-    "source_reference": "ISHL Article 57-3 (2024 amendment), GHS Classification and Labelling Regulations",
+    "source_reference": "ISHL Article 57-3; MHLW 2025 annual report, chemical-management reforms and phased designated-substance expansion. Applicability established by this scenario. Review checked 2026-09-18.",
     "tags": [
       "risk_assessment",
       "sds",
@@ -329,8 +329,8 @@
     "id": "JP-CL-014",
     "facility_type": "chemical_lab",
     "jurisdiction": "JP",
-    "title": "Emergency Shower Flow Rate Below Standard",
-    "scene_description": "In the emergency corridor, you test the emergency safety showers. The showers activate properly when the pull handle is used. However, when you time the flow, the water output appears notably weaker than expected. Checking the maintenance log, the last flow rate test recorded 50 liters per minute — below the JIS standard requirement. The maintenance technician noted 'flow reduced, scheduled for repair' three weeks ago, but no repair has been completed and the shower remains in service as the designated emergency unit.",
+    "title": "Emergency Shower Maintenance Follow-up",
+    "scene_description": "The laboratory's designated emergency shower activates, but its flow is weak. Its commissioning and maintenance specification requires at least 75.7 liters per minute for the installed unit. The latest test records 50 liters per minute. A technician noted 'flow reduced, scheduled for repair' three weeks ago. The repair remains outstanding, no suitable alternative has been provided, and hazardous chemical work continues to rely on this unit.",
     "scene_art_key": "emergency_shower_low_flow",
     "scene_image": "assets/ui/encounters/emergency_shower_low_flow.jpg",
     "is_noncompliance": true,
@@ -340,9 +340,9 @@
       "Machine Guarding & Equipment Safety",
       "Waste Management & Environmental"
     ],
-    "explanation": "This is a non-compliance under Emergency Preparedness. ISHL Article 24 and the Ordinance on Prevention of Hazards Due to Specified Chemical Substances require emergency washing facilities where workers handle hazardous chemicals. JIS T 7201 (aligned with ANSI Z358.1) specifies a minimum flow rate of 75.7 liters per minute for emergency showers. At 50 L/min, this shower fails the standard. More critically, a known deficiency was documented but left unrepaired for three weeks while the unit remains designated as the primary emergency shower — this represents a failure to maintain emergency equipment in operational condition.",
+    "explanation": "This is a non-compliance with the facility's documented emergency-equipment performance criterion, under Fire Safety & Emergency Preparedness. The unit delivers 50 L/min against its specified 75.7 L/min minimum and a known deficiency remains unresolved. Escalate the loss of emergency protection and arrange suitable interim controls and repair before relying on it. The number here is an explicit site design criterion, not a universal Japanese legal threshold. Verify the applicable Japanese duties and adopted equipment standard for a real workplace.",
     "difficulty": 4,
-    "source_reference": "ISHL Article 24, Ordinance on Prevention of Hazards Due to Specified Chemical Substances Article 37, JIS T 7201",
+    "source_reference": "Audit criterion: the commissioning and maintenance specification stated in this scenario. Applicable Japanese statutory provisions and adopted equipment standards require site-specific verification.",
     "tags": [
       "emergency_shower",
       "flow_rate",

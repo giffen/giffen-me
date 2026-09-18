@@ -81,7 +81,7 @@
     "facility_type": "food_processing",
     "jurisdiction": "CN",
     "title": "Sanitizer Mixed by 'Feel' at Double Concentration",
-    "scene_description": "The night sanitation crew is mixing chlorine-based sanitizer for the end-of-shift washdown. The SDS specifies a working concentration of 200 ppm for food contact surfaces per GB 14930.1. A worker is mixing by 'feel' with no measuring equipment. When asked about the concentration, the worker says 'I've done this for 10 years, I know the right amount.' The mixed solution tests at 450 ppm — more than double the required concentration. The worker is wearing rubber gloves but no eye protection or respiratory protection for the mixing process.",
+    "scene_description": "The night sanitation crew mixes chlorine-based sanitizer by 'feel' without measuring equipment. Approved supplier instructions and the site procedure specify a 200 ppm working solution for this task; the mixed liquid tests at 450 ppm. The task's handling instructions require splash eye protection, but the worker has only rubber gloves. No breathing-zone measurements or inhalation exposure assessment are available in the evidence presented.",
     "scene_art_key": "sanitizer_double_concentration",
     "scene_image": "assets/ui/encounters/sanitizer_double_concentration.jpg",
     "is_noncompliance": true,
@@ -91,9 +91,9 @@
       "PPE & Personal Protection",
       "Fire Safety & Emergency Preparedness"
     ],
-    "explanation": "This is a non-compliance under Chemical & Hazardous Materials with dual impact. The over-concentration (450 ppm vs 200 ppm spec) violates GB 14930.1 disinfectant standards and creates a food safety risk — excess chlorine residue on food contact surfaces can exceed GB 2760 limits. Simultaneously, the higher concentration increases worker exposure to chlorine, violating GBZ 2.1 occupational exposure limits. The PPE gap (no eye protection or respiratory protection during mixing) compounds the worker safety violation under Work Safety Law Article 42. Experience-based mixing without measurement fails both regulatory frameworks.",
+    "explanation": "The finding is a failure to follow the stated chemical-mixing and splash-protection requirements, under Chemical Management & Hazcom. The liquid exceeds this task's specified concentration and required eye protection is absent. Correct the mixing process and review safe handling and exposure controls. Liquid solution ppm is not airborne exposure ppm: this evidence does not prove an occupational inhalation limit was exceeded or that a respirator is necessarily required. Verify product instructions, task assessment and applicable Chinese requirements before assigning a specific legal breach.",
     "difficulty": 4,
-    "source_reference": "GB 14930.1, GB 2760, GBZ 2.1, Work Safety Law Art. 42, Food Safety Law Art. 34",
+    "source_reference": "Audit criteria: supplier instructions and site handling procedure stated in this scenario. Chinese legal applicability and inhalation exposure compliance require further verification; solution concentration is not breathing-zone exposure.",
     "tags": [
       "sanitizer",
       "chemical_mixing",

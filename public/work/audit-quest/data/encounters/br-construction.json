@@ -292,22 +292,21 @@
     "scene_description": "In the site office trailer, you review the facility's PGR (Programa de Gerenciamento de Riscos). The document is well-organized and signed by a registered safety engineer (engenheiro de seguran\u00e7a do trabalho). However, you notice the risk inventory covers the earthwork and foundation phase but the site has progressed to structural framing. When you point this out, the safety engineer says, 'The PGR is a living document \u2014 I'm working on the update for the current phase. The risks were assessed verbally during the DDS sessions.'",
     "scene_art_key": "pgr_outdated_phase",
     "scene_image": "assets/ui/encounters/pgr_outdated_phase.jpg",
-    "is_noncompliance": "ambiguous",
+    "is_noncompliance": true,
     "correct_category": "Permits, Signage & Documentation",
     "distractor_categories": [
       "Ergonomics & Workplace Conditions",
       "Chemical Management & Hazcom",
       "Machine Guarding & Equipment Safety"
     ],
-    "explanation": "This is ambiguous \u2014 further investigation is needed. The PGR exists, is signed by a qualified professional, and was valid for a previous phase. Under NR-1 and NR-18, the PGR must be continuously updated to reflect current conditions. However, the NR does not specify exact update timelines, and the engineer's claim of verbal risk assessment during DDS sessions has some merit \u2014 DDS is a recognized practice in Brazilian construction. A strict auditor would flag the documentation gap; a pragmatic one might accept it with a corrective action timeline. This is the hardest encounter in the facility, testing understanding of PGR lifecycle management versus practical construction realities.",
+    "explanation": "This is a non-compliance under Permits, Signage & Documentation. NR-18 clause 18.4.3.1 requires the PGR to reflect the site's current construction stage. Here the inventory covers foundations while structural framing is underway. Record the missing current-stage assessment and require appropriate assessment and controls. Verbal DDS discussions and a promised update do not establish that the documented PGR is current. A corrective-action plan addresses a finding; it does not erase it.",
     "difficulty": 5,
-    "source_reference": "PLACEHOLDER \u2014 NR-1 (PGR requirements), NR-18",
+    "source_reference": "NR-18, clause 18.4.3.1, Ministry of Labour and Employment consolidated text including 2026 amendments. Review checked 2026-09-18.",
     "tags": [
       "pgr",
       "documentation",
       "risk_assessment",
       "phase_update",
-      "ambiguous",
       "tricky"
     ]
   },

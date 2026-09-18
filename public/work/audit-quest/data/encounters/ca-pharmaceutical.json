@@ -178,8 +178,8 @@
     "id": "CA-PH-008",
     "facility_type": "pharmaceutical",
     "jurisdiction": "CA",
-    "title": "Chemical Container with Correct Labels But Outdated SDS",
-    "scene_description": "In the chemical storage room, you examine a 2.5L bottle of isopropyl alcohol. The WHMIS supplier label is intact \u2014 correct product identifier, GHS pictograms (flame, exclamation mark), signal word 'DANGER', and hazard statements all present. However, when you check the SDS binder, the Safety Data Sheet for this product was issued in 2019 and has not been updated. The supplier's website shows a revised SDS from 2024.",
+    "title": "Supplier SDS Revision Review",
+    "scene_description": "The supplier label on a 2.5L bottle of isopropyl alcohol is intact. The SDS binder holds a 2019 sheet. The supplier sent a revised SDS six months ago with significant new handling information, including changed ventilation precautions for this use. The safety manager confirms that update was received but was neither made available to workers nor incorporated into workplace instructions.",
     "scene_art_key": "outdated_sds",
     "scene_image": "assets/ui/encounters/outdated_sds.jpg",
     "is_noncompliance": true,
@@ -189,9 +189,9 @@
       "PPE & Personal Protection",
       "Waste Management & Environmental"
     ],
-    "explanation": "This is a non-compliance under Permits, Signage & Documentation. While the container labeling is correct (which might lead you to think this is a chemical management issue), the actual violation is a documentation failure. Under WHMIS 2015 and the Hazardous Products Regulations, employers must maintain current SDSs \u2014 they must not be older than three years and must be updated when the supplier issues a revision. A 2019 SDS when a 2024 revision exists is a clear documentation gap.",
+    "explanation": "The finding concerns significant new safety information, not SDS age alone. Ontario's WHMIS requirements call for obtaining an up-to-date supplier SDS as soon as practicable when significant new data becomes available. WHMIS does not impose a universal three-year expiry on supplier SDSs. Update the available sheet and review affected instructions and training. This game groups the record-control failure under Permits, Signage & Documentation; Chemical Management & Hazcom is also relevant to the underlying risk.",
     "difficulty": 3,
-    "source_reference": "PLACEHOLDER \u2014 WHMIS 2015, Hazardous Products Regulations s.32.4, Ontario OHSA s.38",
+    "source_reference": "Ontario Regulation 860, section 17(2); Ontario WHMIS employer guide; CCOHS, WHMIS — Safety Data Sheet (SDS). Review checked 2026-09-18.",
     "tags": [
       "whmis",
       "sds",
