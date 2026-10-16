@@ -36,7 +36,7 @@ Here's the part that's actually exciting.
 
 When building costs drop to near zero, use cases that were never economically viable suddenly become buildable. A peer support app for people with a specific chronic illness. A scheduling tool for a specific type of freelancer. A habit tracker designed for a specific hobby. These products were never worth a VC-funded team. They're absolutely worth a solo builder with AI and an evening.
 
-I built [Brown Note](https://brownnote.app) — a niche peer support app for people with digestive conditions — in about three weeks. That product would never have existed in the old economics. The addressable market is too small, the revenue potential too modest. But the cost to build it was roughly $350, so it doesn't need to be a venture-scale business. It just needs to be useful to the people who need it.
+I built [Brown Note](https://www.brownnote.app) — a niche peer support app for people with digestive conditions — in about three weeks. That product would never have existed in the old economics. The addressable market is too small, the revenue potential too modest. But the cost to build it was roughly $350, so it doesn't need to be a venture-scale business. It just needs to be useful to the people who need it.
 
 This is the flip side of the "appocalypse." Yes, generic tools are getting commoditized. But the long tail of specific, opinionated, niche products is about to explode. That's great for users. It's great for builders who deeply understand a specific audience. It's terrible for anyone whose strategy is "build a generic tool and charge a premium."
 
