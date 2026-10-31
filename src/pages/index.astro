@@ -7,15 +7,15 @@ const workPosts = await getCollection("work");
 const writingPosts = await getCollection("writing");
 
 const featuredWorkSlugs = [
-  "nextgen-platform-migration",
-  "pm-insights",
   "ehs-applicability-engine",
+  "pm-insights",
+  "nextgen-platform-migration",
 ];
 
 const featuredWorkMeta: Record<string, { label: string; badge: string }> = {
-  "nextgen-platform-migration": { label: "Half the enterprise base migrated", badge: "Shipped" },
-  "pm-insights": { label: "74K+ calls, 2.5M sentences in production", badge: "In Use" },
-  "ehs-applicability-engine": { label: "500+ screening questions automated", badge: "In Use" },
+  "ehs-applicability-engine": { label: "500+ screening questions automated", badge: "In Production" },
+  "pm-insights": { label: "74K+ calls, 2.5M sentences analyzed", badge: "In Production" },
+  "nextgen-platform-migration": { label: "Half the enterprise base migrated in a year", badge: "Shipped" },
 };
 
 const featuredWork = featuredWorkSlugs
@@ -23,27 +23,49 @@ const featuredWork = featuredWorkSlugs
   .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
 const featuredWritingSlugs = [
-  "pm-spectrum",
-  "competitive-intelligence-whatsapp",
-  "the-pressure-test",
   "ai-features-that-earn-trust",
+  "integration-complexity",
+  "ai-development-workflow",
+  "the-pressure-test",
 ];
 
 const featuredWritingExcerpts: Record<string, string> = {
-  "pm-spectrum": "The Ravi Mehta competency model is the best PM framework ever built. AI just collapsed half the chart. Here's what replaces it - and what it means for how you build and evaluate product teams.",
-  "competitive-intelligence-whatsapp": "Research bots were emailing me insights I never read. So I built a system that accumulates and synthesizes knowledge over months, answers questions from WhatsApp, and produces battlecards for the team.",
-  "the-pressure-test": "Shipping three to five days of work per evening. The bottleneck isn't context length or typing speed - it's whether you spent ten minutes pressure-testing the plan first.",
   "ai-features-that-earn-trust": "When the stakes involve legal compliance, workplace safety, and regulatory penalties, enterprise customers need more than impressive demos. They need proof your specialized AI won't become a liability.",
+  "integration-complexity": "Every B2B backlog fills up with integration requests, and without a framework the loudest customer wins. How I score them on customer value, technical cost and strategic fit.",
+  "ai-development-workflow": "An hour or two a night, a few nights a week. The workflow I use to ship real software with Claude Code in that time: a PRD, a phased plan, and a context folder that remembers where I left off.",
+  "the-pressure-test": "Shipping three to five days of work per evening. The bottleneck isn't context length or typing speed - it's whether you spent ten minutes pressure-testing the plan first.",
 };
 
 const featuredWriting = featuredWritingSlugs
   .map(slug => writingPosts.find(p => p.slug === slug))
   .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+// Things I build on my own time. Each one has a full write-up on giffenlabs.ca.
+const builds = [
+  {
+    title: "Brown Note",
+    status: "Live · iOS & Android",
+    href: "https://www.giffenlabs.ca/specimens/brown-note",
+    excerpt: "A peer-support app for people with IBS and IBD. Built in 24 days for $354, from first commit to App Store submission.",
+  },
+  {
+    title: "Throughline",
+    status: "Live",
+    href: "https://www.giffenlabs.ca/specimens/throughline",
+    excerpt: "A song-level music graph. Name two songs and it plays the path between them, with every hop explained across 18 musical dimensions.",
+  },
+  {
+    title: "Automatic Pocket",
+    status: "TestFlight",
+    href: "https://www.giffenlabs.ca/specimens/automatic-pocket",
+    excerpt: "A timing trainer for bass players. The phone's mic hears your bass, and a needle shows how locked in you are with the kick drum.",
+  },
+];
 ---
 
 <BaseLayout
-  title="Andrew Giffen - Product & Technology Executive"
-  description="Director of Product at a global compliance SaaS company. I run the largest business unit and personally ship the AI systems inside it."
+  title="Andrew Giffen - AI from pilot to production"
+  description="Product leader in regulated enterprise software. I take AI from pilot to production inside compliance-heavy enterprises, and I build a lot of it myself. Toronto."
 >
 
   <!-- Hero Section -->
@@ -51,13 +73,13 @@ const featuredWriting = featuredWritingSlugs
     <div class="hero-content">
       <p class="hero-label animate-in">Andrew Giffen</p>
       <h1 class="hero-title animate-in delay-1">
-        I run a global compliance product.<br>
-        And I build the <em>AI</em> that makes it smarter.
+        I take <em>AI</em> from pilot to production inside regulated enterprises.
       </h1>
       <p class="hero-description animate-in delay-2">
-        Director of Product at a global compliance SaaS company. I run the largest
-        business unit and personally ship the production AI systems inside it.
-        A decade in regulated industries. Toronto.
+        Director of Product at a global compliance SaaS company. A decade in regulated
+        industries: enterprise implementations, an interim CTO stint, and eight years
+        running product. I build production AI myself, and I ship my own apps after
+        hours. Toronto.
       </p>
       <div class="hero-cta animate-in delay-3">
         <a href="/work" class="cta-primary">
@@ -141,6 +163,36 @@ const featuredWriting = featuredWritingSlugs
     <div class="section-footer">
       <a href="/writing" class="section-footer-link">
         See all writing
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Builds Section -->
+  <section class="writing-section builds-section" id="builds">
+    <div class="section-header">
+      <div>
+        <p class="section-label">Builds</p>
+        <h2 class="section-title">Shipped After Hours</h2>
+      </div>
+    </div>
+
+    <div class="builds-grid">
+      {builds.map((build, index) => (
+        <WritingCard
+          title={build.title}
+          slug=""
+          href={build.href}
+          tag={build.status}
+          excerpt={build.excerpt}
+          number={String(index + 1).padStart(2, '0')}
+        />
+      ))}
+    </div>
+
+    <div class="section-footer">
+      <a href="https://www.giffenlabs.ca" class="section-footer-link">
+        Everything at giffenlabs.ca
         <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -232,6 +284,7 @@ const featuredWriting = featuredWritingSlugs
     letter-spacing: -0.03em;
     color: var(--ink);
     margin-bottom: var(--space-7);
+    text-wrap: balance;
   }
 
   .hero-title em {
@@ -505,9 +558,21 @@ const featuredWriting = featuredWritingSlugs
     margin-top: var(--space-8);
   }
 
+  .builds-section {
+    background: var(--cream-dark);
+  }
+
+  .builds-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-7);
+    margin-top: var(--space-8);
+  }
+
   /* Responsive */
   @media (max-width: 1024px) {
-    .writing-grid {
+    .writing-grid,
+    .builds-grid {
       grid-template-columns: 1fr;
     }
   }

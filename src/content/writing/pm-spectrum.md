@@ -93,7 +93,7 @@ In the old model, a PM's primary influence challenge was rallying a team of five
 
 This is the axis that makes the AI-era PM fundamentally different from every PM that came before. It's not "can you code." It's: can you take an idea from concept to working prototype using AI-assisted development?
 
-I [built Brown Note](/writing/building-brown-note) — a full mobile app with a Django backend, REST API, push notifications, and cross-platform deployment — in three weeks for $350. I'm not an engineer. I'm a PM who learned to direct AI tools effectively. That's Technical Building.
+I [built Brown Note](/writing/building-an-app-then-vs-now) — a full mobile app with a Django backend, REST API, push notifications, and cross-platform deployment — in three weeks for $350. I'm not an engineer. I'm a PM who learned to direct AI tools effectively. That's Technical Building.
 
 Kim Faura [reports](https://www.linkedin.com/pulse/three-finger-kim-what-happened-when-i-stopped-typing-started-faura-yense) a PM who refactored 80% of a front-end in four days. Engineers had estimated four months. Boris Cherny at Anthropic deliberately underfunds headcount to force AI adoption. The PM who can ship a prototype themselves collapses the entire handoff chain from idea to validation.
 

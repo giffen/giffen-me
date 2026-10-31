@@ -5,13 +5,14 @@ interface Props {
   tag: string;
   excerpt: string;
   number: string;
+  href?: string;
 }
 
-const { title, slug, tag, excerpt, number } = Astro.props;
+const { title, slug, tag, excerpt, number, href = `/writing/${slug}` } = Astro.props;
 ---
 
 <article class="writing-card">
-  <a href={`/writing/${slug}`} class="writing-card-link"></a>
+  <a href={href} class="writing-card-link" aria-label={title}></a>
   <span class="writing-card-number">{number}</span>
   <p class="writing-card-tag">{tag}</p>
   <h3 class="writing-card-title">{title}</h3>

@@ -80,7 +80,7 @@ It has a gamification layer. Nuggets (points) for helping others, a sticker shop
 
 Me. And Claude.
 
-I acted as PM and tech lead - making architecture decisions, reviewing every line of code, testing on physical devices, and providing all the domain knowledge and product taste. Claude wrote roughly 90% of the code. I've written about that dynamic in detail in my [Brown Note case study](/writing/building-brown-note).
+I acted as PM and tech lead - making architecture decisions, reviewing every line of code, testing on physical devices, and providing all the domain knowledge and product taste. Claude wrote roughly 90% of the code. I've written about that workflow in [How I Ship Products in 1-Hour Chunks](/writing/ai-development-workflow).
 
 ### The Budget
 

@@ -54,9 +54,9 @@ In Kriss's framework, I was the "mimetic" person — the one who doesn't make it
 
 What changed wasn't my personality. The tools changed.
 
-AI compressed the gap between "I have an idea" and "I have a working product" from months to weeks. I built [Brown Note](/writing/building-brown-note) — a full-stack web app, a REST API, a cross-platform mobile app — in about three weeks for roughly $350. I ship features in [one-hour evening sessions](/writing/ai-development-workflow) while my daughter sleeps. I'm a 43-year-old product manager with a toddler. I'm not Roy Lee. I don't have zero latency or indescribable fury. I think things over. I write PRDs. I care about getting it right.
+AI compressed the gap between "I have an idea" and "I have a working product" from months to weeks. I built [Brown Note](https://www.giffenlabs.ca/specimens/brown-note) — a full-stack web app, a REST API, a cross-platform mobile app — in about three weeks for roughly $350. I ship features in [one-hour evening sessions](/writing/ai-development-workflow) while my daughter sleeps. I'm a 43-year-old product manager with a toddler. I'm not Roy Lee. I don't have zero latency or indescribable fury. I think things over. I write PRDs. I care about getting it right.
 
-But I'm building things now that I couldn't build two years ago. Not because I became "highly agentic." Because the barrier to acting on ideas dropped to near zero. [The mountain got shorter](/writing/less-time-more-done).
+But I'm building things now that I couldn't build two years ago. Not because I became "highly agentic." Because the barrier to acting on ideas dropped to near zero. The mountain got shorter.
 
 The bifurcation isn't between personality types. It's between people who've realized the barrier dropped and people who haven't yet. That's a knowledge gap, not a destiny.
 
@@ -90,7 +90,7 @@ So let me be more precise about what I mean by taste.
 
 Taste isn't visionary genius. It's not seeing the future while everyone else is blind. It's something more mundane and more learnable: **enough judgment to generate hypotheses worth testing, and enough discernment to read the results.**
 
-When the cost of building drops to near zero, the cost of being wrong drops too. You don't need to predict the iPhone. You need to notice that your Excel power users [actually want collaboration more than macros](/writing/nextgen-migration). You need to watch how auditors actually work — with clipboards and handwritten notes — and [imagine a product that meets them where they are](/writing/experimentation-advantage). You need to have a chronic illness and realize that [nobody's built a peer support app for people who feel alone on the toilet](/writing/building-brown-note).
+When the cost of building drops to near zero, the cost of being wrong drops too. You don't need to predict the iPhone. You need to notice that your Excel power users [actually want collaboration more than macros](/writing/nextgen-migration). You need to watch how auditors actually work — with clipboards and handwritten notes — and [imagine a product that meets them where they are](/writing/experimentation-advantage). You need to have a chronic illness and realize that [nobody's built a peer support app for people who feel alone on the toilet](https://www.giffenlabs.ca/specimens/brown-note).
 
 Taste is proximity to the problem plus willingness to act on what you see. It comes from paying attention — to how people actually work, to what they complain about, to the gap between the tool they were given and the job they're trying to do. It's not an innate gift. It's a practice.
 
@@ -130,7 +130,7 @@ I'm not "highly agentic" in the way Kriss's article defines it. I don't have zer
 
 The gap closed. Not because I changed. Because the tools changed.
 
-Now I build things in the evening that I couldn't have built two years ago with a full team and a quarter of dedicated engineering time. I ship features in hour-long sessions after my daughter goes to bed. I wrote a [case study about building a full-stack app for $350](/writing/building-brown-note) and a [workflow guide about shipping in one-hour chunks](/writing/ai-development-workflow) because I wanted other people with limited time to know it's possible.
+Now I build things in the evening that I couldn't have built two years ago with a full team and a quarter of dedicated engineering time. I ship features in hour-long sessions after my daughter goes to bed. I wrote a [case study about building a full-stack app for $350](/writing/building-an-app-then-vs-now) and a [workflow guide about shipping in one-hour chunks](/writing/ai-development-workflow) because I wanted other people with limited time to know it's possible.
 
 The bifurcation is real. But it's not fixed, and it's not about who you are. It's about whether you've noticed the mountain got shorter, and whether you have something worth climbing it for.
 

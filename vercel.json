@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/writing/the-puzzle-that-never-ends", "destination": "https://www.giffenlabs.ca/journal/the-puzzle-that-never-ends", "permanent": true },
+    { "source": "/writing/your-first-10-minutes-with-claude-code", "destination": "https://www.giffenlabs.ca/journal/your-first-10-minutes-with-claude-code", "permanent": true },
+    { "source": "/writing/stuck-on-love-will-tear-us-apart", "destination": "https://www.giffenlabs.ca/journal/the-app-that-wont-ship", "permanent": true },
+    { "source": "/writing/building-brown-note", "destination": "https://www.giffenlabs.ca/specimens/brown-note", "permanent": true }
+  ]
+}
