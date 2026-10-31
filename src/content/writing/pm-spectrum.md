@@ -188,7 +188,7 @@ I built this to be used, not just read. Here's how.
 
 ## The Shape Is Changing
 
-Ravi Mehta built the best PM competency framework of the past decade. What I've outlined here isn't a replacement — it's an evolution, driven by the same forces that are [reshaping product teams](/writing/the-new-team) and [redefining what's automatable](/writing/how-much-can-we-automate).
+Ravi Mehta built the best PM competency framework of the past decade. What I've outlined here isn't a replacement — it's an evolution, driven by the same forces that are [reshaping product teams](https://www.giffenlabs.ca/journal/the-new-team) and [redefining what's automatable](https://www.giffenlabs.ca/journal/how-much-can-we-automate).
 
 The old shape had twelve competencies across four balanced areas. The new shape has four axes weighted by a spectrum that every PM needs to navigate. The execution layer that defined half the PM role is being compressed by AI. What remains — Customer Closeness, Strategic Direction, Organizational Influence, and the entirely new axis of Technical Building — is more human, more valuable, and harder to fake than anything on the old chart.
 
