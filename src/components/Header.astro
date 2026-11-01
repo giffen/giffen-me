@@ -15,6 +15,7 @@
       <a href="/writing" class="nav-link">Writing</a>
       <a href="/about" class="nav-link">About</a>
       <a href="/contact" class="nav-link">Contact</a>
+      <a href="https://www.giffenlabs.ca" class="nav-link">Labs ↗</a>
     </div>
     <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
       <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
@@ -151,6 +152,31 @@
     }
 
     .theme-toggle {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header {
+      padding: var(--space-2);
+    }
+
+    .nav-glass {
+      padding: var(--space-2);
+    }
+
+    .nav-links {
+      gap: 0;
+    }
+
+    .nav-link {
+      padding: var(--space-2) 6px;
+      font-size: 0.68rem;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-home {
       width: 32px;
       height: 32px;
     }

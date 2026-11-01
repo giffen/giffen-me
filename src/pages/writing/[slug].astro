@@ -217,7 +217,9 @@ const { Content } = await post.render();
   }
 
   .prose :global(table) {
+    display: block;
     width: 100%;
+    overflow-x: auto;
     border-collapse: collapse;
     margin: var(--space-6) 0;
   }
